@@ -2,11 +2,27 @@
 	"version": 3,
 	"file": "style.css",
 	"sources": [
-		"../scss/style.scss"
+		"../scss/style.scss",
+		"../scss/base/_index.scss",
+		"../scss/components/_index.scss",
+		"../scss/modules/_index.scss",
+		"../scss/modules/_button.scss",
+		"../scss/layout/_index.scss",
+		"../scss/layout/_mixins.scss",
+		"../scss/utilities/_index.scss",
+		"../scss/utilities/_variables.scss"
 	],
 	"sourcesContent": [
-		"\r\n.icon {\r\n    //y:1281;\r\n    //x:27;\r\n    margin-left: 1281px;\r\n    margin-top: 27px;\r\n    height:54px;\r\n    width:60px;\r\n  }\r\n\r\n  "
+		"@import \"base/index\";\r\n@import \"components/index\";\r\n@import \"modules/index\";\r\n@import \"layout/index\";\r\n@import \"utilities/index\";\r\n\r\n.hamburger-menu {\r\n    @include align-items(27px,1281px);\r\n    height:54px;\r\n    width:60px;\r\n  }\r\n\r\n",
+		"",
+		"",
+		"@import \"button\"",
+		"",
+		"@import \"mixins\";",
+		"@mixin align-items($m-top,$m-left){\r\n    margin-top: $m-top;\r\n    margin-left: $m-left;\r\n}\r\n\r\n",
+		"@import \"variables\";",
+		"// Colours\r\n$purple : #926fb1;\r\n$pink_red: #f62459;\r\n$dark_red: #CE4125;\r\n$grey_blue: #67809F;\r\n$green: #2ECC71;\r\n$blue: #4183D7;\r\n$grey: #84858F;\r\n$background_black: #333645;\r\n\r\n// Margins\r\n$m-top: margin-top;\r\n$m-left: margin-left;\r\n"
 	],
 	"names": [],
-	"mappings": ";AACA,AAAA,KAAK,CAAC;EAGF,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;EAChB,MAAM,EAAC,IAAI;EACX,KAAK,EAAC,IAAI;CACX"
+	"mappings": ";AAMA,AAAA,eAAe,CAAC;EMLZ,UAAU,ENMW,IAAI;EMLzB,WAAW,ENKe,MAAM;EAChC,MAAM,EAAC,IAAI;EACX,KAAK,EAAC,IAAI;CACX"
 }

@@ -6,7 +6,18 @@
 
 .hamburger-menu {
     @include align-items(27px,1281px);
-    height:54px;
-    width:60px;
+    $h:54px;
+    $w:60px;
   }
 
+.btn-styles{
+  @include btnstyle($b-radius:5px,
+                    $f-size:17.008px,
+                    $w:129px,
+                    $h:46px,
+                    $l-height:35px,
+                    $text-center:center,
+                  
+                    );
+    
+}

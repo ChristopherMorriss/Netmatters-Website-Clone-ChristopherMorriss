@@ -2,8 +2,16 @@
 .hamburger-menu {
   margin-top: 27px;
   margin-left: 1281px;
-  height: 54px;
-  width: 60px;
+}
+
+/* line 13, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.btn-styles {
+  border-radius: 5px;
+  font-size: 17.008px;
+  width: 129px;
+  height: 46px;
+  line-height: 35px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

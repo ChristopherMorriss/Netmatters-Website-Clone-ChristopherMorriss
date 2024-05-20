@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"\r\n.icon {\r\n    //y:1281;\r\n    //x:27;\r\n    margin-left: 1281px;\r\n    margin-top: 27px;\r\n    height:54px;\r\n    width:60px;\r\n  }\r\n\r\n  "
+	],
+	"names": [],
+	"mappings": ";AACA,AAAA,KAAK,CAAC;EAGF,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;EAChB,MAAM,EAAC,IAAI;EACX,KAAK,EAAC,IAAI;CACX"
+}

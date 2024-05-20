@@ -1,11 +1,13 @@
 
 .icon {
-    //y:1281;
-    //x:27;
-    margin-left: 1281px;
-    margin-top: 27px;
+    @include align-items(27px,1281px);
+    //margin-left: 1281px;
+    // margin-top: 27px;
     height:54px;
     width:60px;
   }
 
-  
+@import "base/index.scss";
+@import "components/index.scss";
+@import "layout/index.scss";
+@import "utilities/index.scss";

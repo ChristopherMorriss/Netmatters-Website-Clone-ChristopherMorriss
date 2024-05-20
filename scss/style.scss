@@ -34,3 +34,18 @@
                    $b: null,);
   background-color: #333645;
 }
+
+#form{
+  background-color: $grey;
+}
+
+#sub-btn{
+  @include btnstyle($b-radius:5px,
+                   $f-size:17.008px,
+                   $w:129px,
+                   $h:46px,
+                   $l-height:35,
+                   $text-center:center,
+                   $b: null,);
+  background-color: #333645;
+}

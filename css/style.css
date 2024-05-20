@@ -26,4 +26,20 @@
   background-color: #333645;
 }
 
+/* line 38, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+#form {
+  background-color: #84858F;
+}
+
+/* line 42, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+#sub-btn {
+  border-radius: 5px;
+  font-size: 17.008px;
+  width: 129px;
+  height: 46px;
+  line-height: 35;
+  text-align: center;
+  background-color: #333645;
+}
+
 /*# sourceMappingURL=style.css.map */

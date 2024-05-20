@@ -3,12 +3,13 @@
     margin-left: $m-left;
 }
 
-@mixin btnstyle($b-radius,$f-size,$w,$h,$l-height,$text-center){
+@mixin btnstyle($b-radius,$f-size,$w,$h,$l-height,$text-center,$b){
     border-radius: $b-radius;
     font-size: $f-size;
     width: $w;
     height: $h;
     line-height: $l-height;
     text-align: $text-center;
+    border: $b;
     
 }

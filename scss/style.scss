@@ -5,7 +5,7 @@
 @import "utilities/index";
 
 .hamburger-menu {
-    @include align-items(27px,1281px);
+    @include align-items(27px,1281px); 
     $h:54px;
     $w:60px;
   }
@@ -17,7 +17,20 @@
                     $h:46px,
                     $l-height:35px,
                     $text-center:center,
-                  
-                    );
-    
+                    $b: null,
+                   );
+  padding: 5px 15px;
+  background-color: #2ECC71; 
+
+}
+
+.top-btn{
+  @include btnstyle($b-radius:null,
+                   $f-size:18px,
+                   $w:102px,
+                   $h:99px,
+                   $l-height:35px,
+                   $text-center:center,
+                   $b: null,);
+  background-color: #333645;
 }

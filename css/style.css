@@ -12,6 +12,18 @@
   height: 46px;
   line-height: 35px;
   text-align: center;
+  padding: 5px 15px;
+  background-color: #2ECC71;
+}
+
+/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.top-btn {
+  font-size: 18px;
+  width: 102px;
+  height: 99px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #333645;
 }
 
 /*# sourceMappingURL=style.css.map */

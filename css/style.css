@@ -55,7 +55,7 @@
   justify-content: space-around;
 }
 
-/* line 70, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 71, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .nav-size {
   display: flex;
   flex-wrap: wrap;
@@ -63,6 +63,11 @@
   align-items: normal;
   justify-content: space-around;
   background-color: #333645;
+}
+
+/* line 80, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+* {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

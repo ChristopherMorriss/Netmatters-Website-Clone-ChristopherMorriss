@@ -50,7 +50,7 @@
                    $l-height:35px,
                    $text-center:center,
                    $b: null,);
-  //background-color: #333645;
+  
 }
 
 .grid{
@@ -64,6 +64,7 @@
   align-content: normal;
   align-items: normal;
   justify-content: space-around;
+  
 
 }
 
@@ -74,4 +75,8 @@
   align-items: normal;
   justify-content: space-around;
   background-color: #333645;
+}
+
+*{
+  box-sizing:border-box;
 }

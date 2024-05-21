@@ -4,8 +4,8 @@
 @import "layout/index";
 @import "utilities/index";
 
-.hamburger-menu {
-    @include align-items(27px,1281px); 
+#hamburger-menu {
+    //@include align-items(27px,1281px); 
     $h:54px;
     $w:60px;
   }
@@ -33,7 +33,13 @@
                    $text-center:center,
                    $b: null,);
   background-color: #333645;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;  
 }
+
+
 
 #form{
   background-color: $grey;
@@ -44,8 +50,13 @@
                    $f-size:17.008px,
                    $w:129px,
                    $h:46px,
-                   $l-height:35,
+                   $l-height:35px,
                    $text-center:center,
                    $b: null,);
   background-color: #333645;
 }
+
+.grid{
+  display: grid;
+}
+

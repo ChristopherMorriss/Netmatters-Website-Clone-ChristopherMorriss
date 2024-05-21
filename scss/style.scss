@@ -5,9 +5,10 @@
 @import "utilities/index";
 
 #hamburger-menu {
-    //@include align-items(27px,1281px); 
-    $h:54px;
-    $w:60px;
+    height:54px;
+    width:60px;
+    //$h:54px;
+    //$w:60px;
   }
 
 .btn-styles{
@@ -33,10 +34,6 @@
                    $text-center:center,
                    $b: null,);
   background-color: #333645;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;  
 }
 
 
@@ -53,10 +50,28 @@
                    $l-height:35px,
                    $text-center:center,
                    $b: null,);
-  background-color: #333645;
+  //background-color: #333645;
 }
 
 .grid{
   display: grid;
 }
 
+.f-container{
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: column;
+  align-content: normal;
+  align-items: normal;
+  justify-content: space-around;
+
+}
+
+.nav-size{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: space-around;
+  background-color: #333645;
+}

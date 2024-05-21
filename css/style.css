@@ -1,4 +1,10 @@
-/* line 13, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 7, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+#hamburger-menu {
+  height: 54px;
+  width: 60px;
+}
+
+/* line 14, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .btn-styles {
   border-radius: 5px;
   font-size: 17.008px;
@@ -10,7 +16,7 @@
   background-color: #2ECC71;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 28, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .top-btn {
   font-size: 18px;
   width: 102px;
@@ -18,18 +24,14 @@
   line-height: 35px;
   text-align: center;
   background-color: #333645;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
-/* line 44, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 41, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 #form {
   background-color: #84858F;
 }
 
-/* line 48, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 45, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 #sub-btn {
   border-radius: 5px;
   font-size: 17.008px;
@@ -37,12 +39,30 @@
   height: 46px;
   line-height: 35px;
   text-align: center;
-  background-color: #333645;
 }
 
-/* line 59, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 56, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .grid {
   display: grid;
+}
+
+/* line 60, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.f-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: space-around;
+}
+
+/* line 70, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.nav-size {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: space-around;
+  background-color: #333645;
 }
 
 /*# sourceMappingURL=style.css.map */

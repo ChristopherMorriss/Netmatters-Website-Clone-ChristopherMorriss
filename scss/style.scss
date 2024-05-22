@@ -22,7 +22,6 @@
                    );
   
   background-color: #2ECC71; 
-  text-decoration: none;
   text-transform: uppercase;
   color:white;
 
@@ -59,9 +58,10 @@
 .grid{
   display: grid;
   margin-left: 200px;
-  grid-template-rows: 100px 100px;
-  grid-template-columns: auto;
-  border: 1px solid;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  //grid-template-areas: ;
+  grid-gap:20px;
 
 }
 
@@ -102,3 +102,10 @@
   color:white;
 }
 
+a{
+  text-decoration: none;
+}
+
+.grid-object{
+  border: 1px solid;
+}

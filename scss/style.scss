@@ -20,8 +20,11 @@
                     $text-center:center,
                     $b: null,
                    );
-  padding: 5px 15px;
+  
   background-color: #2ECC71; 
+  text-decoration: none;
+  text-transform: uppercase;
+  color:white;
 
 }
 
@@ -55,12 +58,16 @@
 
 .grid{
   display: grid;
+  margin-left: 200px;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: auto;
+  border: 1px solid;
+
 }
 
 .f-container{
   display: flex;
   flex-wrap: wrap;
-  //flex-direction: column;
   align-content: normal;
   align-items: normal;
   justify-content: space-around;
@@ -75,6 +82,7 @@
   align-items: normal;
   justify-content: space-around;
   background-color: #333645;
+  margin-bottom: 0;
 }
 
 *{
@@ -85,6 +93,12 @@
   background-image: url("../img/home.webp");
   background-repeat: no-repeat;
   background-size:100vw;
-  color: white;
   height: 515px;
+  margin-top: -22px;
+  max-height: 515px;
 }
+
+.slider,.f-container,.nav-size,button{
+  color:white;
+}
+

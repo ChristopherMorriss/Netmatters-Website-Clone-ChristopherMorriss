@@ -70,4 +70,13 @@
   box-sizing: border-box;
 }
 
+/* line 84, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.slider {
+  background-image: url("../img/home.webp");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  color: white;
+  height: 515px;
+}
+
 /*# sourceMappingURL=style.css.map */

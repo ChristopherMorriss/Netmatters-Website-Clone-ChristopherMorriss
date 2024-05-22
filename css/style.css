@@ -51,7 +51,7 @@
   grid-gap: 20px;
 }
 
-/* line 68, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .f-container {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +60,7 @@
   justify-content: space-around;
 }
 
-/* line 78, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 77, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .nav-size {
   display: flex;
   flex-wrap: wrap;
@@ -71,12 +71,12 @@
   margin-bottom: 0;
 }
 
-/* line 88, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 87, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 92, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 91, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .slider {
   background-image: url("../img/home.webp");
   background-repeat: no-repeat;
@@ -86,19 +86,27 @@
   max-height: 515px;
 }
 
-/* line 101, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
-.slider, .f-container, .nav-size, button {
+/* line 100, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.slider, .f-container, .nav-size, button, a {
   color: white;
 }
 
-/* line 105, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 104, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 109, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+/* line 108, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
 .grid-object {
   border: 1px solid;
+}
+
+/* line 112, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.intro {
+  display: flex;
+  background-color: #333645;
+  height: auto;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */

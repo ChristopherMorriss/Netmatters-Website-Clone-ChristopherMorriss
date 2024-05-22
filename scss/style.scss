@@ -60,7 +60,6 @@
   margin-left: 200px;
   grid-template-rows: 1fr 1fr 1fr ;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  //grid-template-areas: ;
   grid-gap:20px;
 
 }
@@ -98,7 +97,7 @@
   max-height: 515px;
 }
 
-.slider,.f-container,.nav-size,button{
+.slider,.f-container,.nav-size,button,a{
   color:white;
 }
 
@@ -108,4 +107,13 @@ a{
 
 .grid-object{
   border: 1px solid;
+}
+
+.intro{
+  display: flex;
+  background-color: #333645;
+  height: auto;
+  flex-direction: row;
+  
+
 }

@@ -109,4 +109,15 @@ a {
   flex-direction: row;
 }
 
+/* line 130, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.article {
+  border: 1px solid;
+  width: 371px;
+}
+
+/* line 135, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+.article img {
+  width: 371px;
+}
+
 /*# sourceMappingURL=style.css.map */

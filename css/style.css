@@ -124,4 +124,11 @@ footer {
   background-color: #333645;
 }
 
+/* line 135, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/style.scss */
+#fixed-consent {
+  position: fixed;
+  bottom: 0px;
+  margin-left: -350px;
+}
+
 /*# sourceMappingURL=style.css.map */

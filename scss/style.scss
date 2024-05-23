@@ -57,7 +57,7 @@
 
 .grid{
   display: grid;
-  margin-left: 200px;
+  //margin-left: 200px;
   grid-template-rows: 1fr 1fr 1fr ;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   grid-gap:20px;
@@ -118,14 +118,6 @@ a{
 
 }
 
-//.news{
-//   display: flex;
-//   flex-direction: row;
-//   align-content: normal;
-//   align-items: normal;
-//   justify-content: space-around;
-//   margin-bottom: 0;
-// }
 
 .article{
   border: 1px solid;
@@ -134,5 +126,9 @@ a{
 
 .article img{
   width:371px;
+}
+
+footer{
+  background-color: #333645;
 }
 

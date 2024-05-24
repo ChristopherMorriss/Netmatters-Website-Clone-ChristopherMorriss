@@ -1,9 +1,12 @@
 .article{
     border: 1px solid;
+    border-radius:15px;
+    //padding:30px;
+    @extend %container;
     width:371px;
     
     img{
-      width:371px;
+      width:369px;
     }
 }
 

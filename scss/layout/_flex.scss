@@ -1,18 +1,18 @@
 .article{
     border: 1px solid;
     width:371px;
-  }
-  
-  .article img{
-    width:371px;
-  }
+    
+    img{
+      width:371px;
+    }
+}
 
-  .f-container{
-    @include flex($flex-dir: null,
-                  $display: flex,
-                  $flex-wrap: wrap,
-                  $align-content: normal,
-                  $align-items: normal,
-                  $justify-content:space-around,
-                  );
-  }
+.f-container{
+  @include flex($flex-dir: null,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: normal,
+                $align-items: normal,
+                $justify-content:space-around,
+                );
+}

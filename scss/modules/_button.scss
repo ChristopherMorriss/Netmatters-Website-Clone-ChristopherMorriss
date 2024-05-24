@@ -21,7 +21,8 @@
                      $h:99px,
                      $l-height:35px,
                      $text-center:center,
-                     $b: null,);
+                     $b: null,
+                     );
     background-color: #333645;
 }
 
@@ -57,4 +58,32 @@
   text-transform: uppercase;
   color:white;
 
+}
+
+#grey-btn{
+  background-color: $grey_blue;
+}
+
+#green-btn{
+  background-color: $green;
+}
+
+#pred-btn{
+  background-color: $pink_red;
+}
+
+#dred-btn{
+  background-color: $dark_red;
+}
+
+#purple-btn{
+  background-color: $purple;
+}
+
+#blue-btn{
+  background-color: $blue;
+}
+
+#purple-btn{
+  background-color: $purple;
 }

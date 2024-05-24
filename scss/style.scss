@@ -1,42 +1,13 @@
-@import "base/index";
-@import "components/index";
-@import "modules/index";
-@import "layout/index";
 @import "utilities/index";
+@import "base/index";
+@import "layout/index";
+@import "states/index";
+@import "modules/index";
 
-#hamburger-menu {
-    height:54px;
-    width:60px;
-    //$h:54px;
-    //$w:60px;
-  }
 
-.btn-styles{
-  @include btnstyle($b-radius:5px,
-                    $f-size:17.008px,
-                    $w:129px,
-                    $h:46px,
-                    $l-height:35px,
-                    $text-center:center,
-                    $b: null,
-                   );
-  
-  background-color: #2ECC71; 
-  text-transform: uppercase;
-  color:white;
 
-}
 
-.top-btn{
-  @include btnstyle($b-radius:null,
-                   $f-size:18px,
-                   $w:102px,
-                   $h:99px,
-                   $l-height:35px,
-                   $text-center:center,
-                   $b: null,);
-  background-color: #333645;
-}
+
 
 
 
@@ -44,16 +15,7 @@
   background-color: $grey;
 }
 
-#sub-btn{
-  @include btnstyle($b-radius:5px,
-                   $f-size:17.008px,
-                   $w:129px,
-                   $h:46px,
-                   $l-height:35px,
-                   $text-center:center,
-                   $b: null,);
-  
-}
+
 
 .grid{
   display: grid;
@@ -74,19 +36,6 @@
 
 }
 
-.nav-size{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: normal;
-  align-items: normal;
-  justify-content: space-around;
-  background-color: #333645;
-  margin-bottom: 0;
-}
-
-*{
-  box-sizing:border-box;
-}
 
 .slider{
   background-image: url("../img/home.webp");
@@ -101,40 +50,22 @@
   color:white;
 }
 
-a{
-  text-decoration: none;
-}
 
-.grid-object{
-  border: 1px solid;
-}
+
 
 .intro{
   display: flex;
   background-color: #333645;
   height: auto;
   flex-direction: row;
-  
-
 }
 
 
-.article{
-  border: 1px solid;
-  width:371px;
-}
 
-.article img{
-  width:371px;
-}
 
 footer{
   background-color: #333645;
 }
 
-#fixed-consent{
-  position: fixed;
-  bottom:0px;
-  margin-left: -350px;
-}
+
 

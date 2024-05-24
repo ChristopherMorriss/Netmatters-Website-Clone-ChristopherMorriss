@@ -1,0 +1,60 @@
+#fixed-consent{
+    position: fixed;
+    bottom:0px;
+    margin-left: -350px;
+  }
+
+.nav-size{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: space-around;
+  background-color: #333645;
+  margin-bottom: 0;
+}
+
+.top-btn{
+    @include btnstyle($b-radius:null,
+                     $f-size:18px,
+                     $w:102px,
+                     $h:99px,
+                     $l-height:35px,
+                     $text-center:center,
+                     $b: null,);
+    background-color: #333645;
+}
+
+#sub-btn{
+    @include btnstyle($b-radius:5px,
+                     $f-size:17.008px,
+                     $w:129px,
+                     $h:46px,
+                     $l-height:35px,
+                     $text-center:center,
+                     $b: null,);
+    
+}
+
+#hamburger-menu {
+    height:54px;
+    width:60px;
+    //$h:54px;
+    //$w:60px;
+  }
+
+.btn-styles{
+  @include btnstyle($b-radius:5px,
+                    $f-size:17.008px,
+                    $w:129px,
+                    $h:46px,
+                    $l-height:35px,
+                    $text-center:center,
+                    $b: null,
+                   );
+  
+  background-color: #2ECC71; 
+  text-transform: uppercase;
+  color:white;
+
+}

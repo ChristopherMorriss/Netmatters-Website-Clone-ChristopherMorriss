@@ -1,0 +1,14 @@
+.grid{
+    display: grid;
+    //margin-left: 200px;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:20px;
+  
+  
+  
+    &-object{
+      border: 1px solid;
+    }
+}
+  

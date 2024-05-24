@@ -5,49 +5,8 @@
 @import "modules/index";
 
 
-
-
-
-
-
-
-#form{
-  background-color: $grey;
-}
-
-
-
-.grid{
-  display: grid;
-  //margin-left: 200px;
-  grid-template-rows: 1fr 1fr 1fr ;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  grid-gap:20px;
-
-}
-
-.f-container{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: normal;
-  align-items: normal;
-  justify-content: space-around;
-  
-
-}
-
-
-.slider{
-  background-image: url("../img/home.webp");
-  background-repeat: no-repeat;
-  background-size:100vw;
-  height: 515px;
-  margin-top: -22px;
-  max-height: 515px;
-}
-
 .slider,.f-container,.nav-size,button,a{
-  color:white;
+  color:$white;
 }
 
 
@@ -55,7 +14,7 @@
 
 .intro{
   display: flex;
-  background-color: #333645;
+  background-color: $background_black;
   height: auto;
   flex-direction: row;
 }
@@ -64,7 +23,7 @@
 
 
 footer{
-  background-color: #333645;
+  background-color: $background_black;
 }
 
 

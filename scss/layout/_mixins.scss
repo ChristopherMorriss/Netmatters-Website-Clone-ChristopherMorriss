@@ -13,3 +13,12 @@
     border: $b;
     
 }
+
+@mixin flex($flex-dir,$display,$flex-wrap,$align-content,$align-items,$justify-content){
+    flex-direction: $flex-dir;
+    display: $display;
+    flex-wrap: $flex-wrap;
+    align-content: $align-content;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

@@ -53,41 +53,39 @@
                     $text-center:center,
                     $b: null,
                    );
-  
-  background-color: #2ECC71; 
   text-transform: uppercase;
   color:white;
 
 }
 
-#grey-btn{
+.grey-btn{
   background-color: $grey_blue;
 }
 
-#green-btn{
+.green-btn{
   background-color: $green;
 }
 
-#pred-btn{
+.pred-btn{
   background-color: $pink_red;
 }
 
-#dred-btn{
+.dred-btn{
   background-color: $dark_red;
 }
 
-#purple-btn{
+.purple-btn{
   background-color: $purple;
 }
 
-#blue-btn{
+.blue-btn{
   background-color: $blue;
 }
 
-#purple-btn{
+.purple-btn{
   background-color: $purple;
 }
 
-#black-btn{
-  background-color: black;
+.black-btn{
+  background-color: $pure_black;
 }

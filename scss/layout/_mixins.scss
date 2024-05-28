@@ -3,7 +3,7 @@
     margin-left: $m-left;
 }
 
-@mixin btnstyle($b-radius,$f-size,$w,$h,$l-height,$text-center,$b,){
+@mixin btnstyle($b-radius,$f-size,$w,$h,$l-height,$text-center,$b){
     border-radius: $b-radius;
     font-size: $f-size;
     width: $w;
@@ -24,7 +24,14 @@
 
 @mixin hover($bg_colour,$hover_colour){
     background-color: $bg_colour;
-    &-hover{
+    &:hover{
         background-color: $hover_colour;
+    }
+}
+
+@mixin hover-text($txt_colour,$hover_txt_colour){
+    color: $txt_colour;
+    &:hover{
+        color: $hover_txt_colour;
     }
 }

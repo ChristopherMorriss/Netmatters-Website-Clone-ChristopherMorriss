@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   align-content: normal;
   align-items: normal;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #333645;
   margin-bottom: 0;
 }
@@ -68,79 +68,70 @@
   background-color: $grey;
 }
 
-// .grey_blue-btn{
-//   background-color: $grey_blue;
-//   &:hover{
-//     background-color: $grey_blue-hover;
-//   }
-// }
-
 .grey_blue-btn{
   @include hover($grey_blue,$grey_blue-hover);
 }
 
 .green-btn{
-  background-color: $green;
-  &:hover{
-    background-color: $green-hover;
-  }
+  @include hover($green,$green-hover);
 }
 
 .pred-btn{
-  background-color: $pink_red;
-  &:hover{
-    background-color: $pred-hover;
-  }
+  @include hover($pink_red,$pred-hover);
 }
 
 .dred-btn{
-  background-color: $dark_red;
-  &:hover{
-    background-color: $dred-hover;
-  }
+  @include hover($dark_red,$dred-hover);
 }
 
 .blue-btn{
-  background-color: $blue;
-  &:hover{
-    background-color: $blue-hover;
- }
+  @include hover($blue,$blue-hover);
 }
 
 .purple-btn{
-  background-color: $purple;
-  &:hover{
-    background-color: $purple-hover;
-  }
+  @include hover($purple,$purple-hover);
 }
 
 .black-btn{
-  background-color: $black;
-  &:hover{
-    background-color: $black-hover;
-  }
+  @include hover($black,$black-hover);
 }
 
 #instagram{
-  &:hover{
-    background-color: $instagram;
-  }
+  @include hover($black,$instagram);
 }
 
 #linked_in{
-  &:hover{
-    background-color: $linked_in;
-  }
+  @include hover($black,$linked_in);
 }
 
 #twitter{
-  &:hover{
-    background-color: $twitter;
-  }
+  @include hover($black,$twitter);
 }
 #facebook{
-  &:hover{
-    background-color: $facebook;
-  }
+  @include hover($black,$facebook);
+}
+
+.btn-1{
+  @include hover($background_black,$grey_blue_og); 
+}
+
+.btn-2{
+  @include hover($background_black,$blue); 
+}
+
+.btn-3{
+  @include hover($background_black,$green); 
+}
+
+.btn-4{
+  @include hover($background_black,$dark_red); 
+}
+
+.btn-5{
+  @include hover($background_black,$purple); 
+}
+
+.btn-6{
+  @include hover($background_black,$pink_red); 
 }
 

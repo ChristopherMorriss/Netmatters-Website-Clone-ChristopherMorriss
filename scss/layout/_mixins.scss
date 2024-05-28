@@ -21,3 +21,10 @@
     align-items: $align-items;
     justify-content: $justify-content;
 }
+
+@mixin hover($bg_colour,$hover_colour){
+    background-color: $bg_colour;
+    &-hover{
+        background-color: $hover_colour;
+    }
+}

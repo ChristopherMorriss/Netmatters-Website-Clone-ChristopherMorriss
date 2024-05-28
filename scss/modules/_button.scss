@@ -1,7 +1,14 @@
 #fixed-consent{
     position: fixed;
     bottom:0px;
-    margin-left: -350px;
+    border-radius: 0px 10px 0px 10px;
+    border:none;
+    margin-left: -390.275px;
+    background-color: $consent;
+    &:hover{
+      background-color: $consent-hover;
+
+    }
   }
 
 .nav-size{
@@ -24,6 +31,7 @@
                      $b: null,
                      );
     background-color: #333645;
+    
 }
 
 #sub-btn{
@@ -40,8 +48,6 @@
 #hamburger-menu {
     height:54px;
     width:60px;
-    //$h:54px;
-    //$w:60px;
   }
 
 .btn-styles{
@@ -51,7 +57,7 @@
                     $h:46px,
                     $l-height:35px,
                     $text-center:center,
-                    $b: null,
+                    $b: none,
                    );
   text-transform: uppercase;
   color:white;
@@ -59,33 +65,82 @@
 }
 
 .grey-btn{
-  background-color: $grey_blue;
+  background-color: $grey;
+}
+
+// .grey_blue-btn{
+//   background-color: $grey_blue;
+//   &:hover{
+//     background-color: $grey_blue-hover;
+//   }
+// }
+
+.grey_blue-btn{
+  @include hover($grey_blue,$grey_blue-hover);
 }
 
 .green-btn{
   background-color: $green;
+  &:hover{
+    background-color: $green-hover;
+  }
 }
 
 .pred-btn{
   background-color: $pink_red;
+  &:hover{
+    background-color: $pred-hover;
+  }
 }
 
 .dred-btn{
   background-color: $dark_red;
-}
-
-.purple-btn{
-  background-color: $purple;
+  &:hover{
+    background-color: $dred-hover;
+  }
 }
 
 .blue-btn{
   background-color: $blue;
+  &:hover{
+    background-color: $blue-hover;
+ }
 }
 
 .purple-btn{
   background-color: $purple;
+  &:hover{
+    background-color: $purple-hover;
+  }
 }
 
 .black-btn{
-  background-color: $pure_black;
+  background-color: $black;
+  &:hover{
+    background-color: $black-hover;
+  }
 }
+
+#instagram{
+  &:hover{
+    background-color: $instagram;
+  }
+}
+
+#linked_in{
+  &:hover{
+    background-color: $linked_in;
+  }
+}
+
+#twitter{
+  &:hover{
+    background-color: $twitter;
+  }
+}
+#facebook{
+  &:hover{
+    background-color: $facebook;
+  }
+}
+

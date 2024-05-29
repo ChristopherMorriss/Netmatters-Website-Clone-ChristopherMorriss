@@ -35,3 +35,16 @@
                $align-items: normal,
                $justify-content:space-between,)
 }
+
+.partners{
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: normal,
+                $align-items: normal,
+                $justify-content:space-between,);
+  filter: grayscale(1);
+  img:hover{
+    filter: grayscale(0);
+  }
+}

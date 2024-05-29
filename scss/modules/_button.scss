@@ -113,7 +113,9 @@
 
 .btn-1{
   @include hover($background_black,$grey_blue_og); 
+    
 }
+
 
 .btn-2{
   @include hover($background_black,$blue); 

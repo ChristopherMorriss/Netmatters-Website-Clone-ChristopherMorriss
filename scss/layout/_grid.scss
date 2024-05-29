@@ -4,13 +4,14 @@
     //grid-template-rows: 1fr 1fr 1fr ;
     //grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap:20px;
-    
+  
   
   
   
     &-object{
-      border: 1px solid;
+      border: 1px solid #ccc;
       border-radius: 15px;
+      box-shadow: 0 3px 35px rgba(0,0,0,.1);
       @extend %container;
       position: relative;
       top:0px;

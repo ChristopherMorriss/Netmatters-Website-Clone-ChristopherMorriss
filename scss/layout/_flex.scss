@@ -2,7 +2,7 @@
     border: 1px solid;
     //border-radius:15px;
     //padding:30px;
-    @extend %container;
+    @extend %container-align;
     width:371px;
     
     img{
@@ -43,8 +43,11 @@
                 $align-content: normal,
                 $align-items: normal,
                 $justify-content:space-between,);
-  height:auto;
+  overflow-x: hidden;
   filter: grayscale(1);
+  @extend %container-align;
+
+
   img:hover{
     filter: grayscale(0);
   }

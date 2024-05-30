@@ -1,10 +1,11 @@
 .grid{
     display: grid;
-    //margin-left: 200px;
-    //grid-template-rows: 1fr 1fr 1fr ;
-    //grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    @extend %container-align;
+    // margin-left: 200px;
+    // grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap:20px;
-  
+    
   
   
   
@@ -12,7 +13,7 @@
       border: 1px solid #ccc;
       border-radius: 15px;
       box-shadow: 0 3px 35px rgba(0,0,0,.1);
-      @extend %container;
+      padding:30px;
       position: relative;
       top:0px;
       transition: 0.5s ease;
@@ -89,12 +90,13 @@
 
 .object-6{
   @include hover($white,$pink_red);
-  @include hover-text($pink_red,$white) ;
+  @include hover-text($black,$white);
   &:hover{
     button{
       background-color: white;
       @include hover-text($pink_red,null);
     }
   }
+  
 }
 

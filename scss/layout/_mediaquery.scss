@@ -1,14 +1,53 @@
-@media screen and (min-width:414px){
-    #search-normal{
-        display: none;
-    }
+@media (min-width:$br-xs){
+    @include hide($search-mob-display:flex,
+                  $search-norm-display:none,
+                  $support-contact-display:none,
+                  $nav-btn-display:none,
+                  $phone-display:flex,
+                  $view-our-work1:none,
+                  $view-our-work2:flex,
+                  $view-all1:none,
+                  $view-all2:flex,
+                  $mag-glass:none,)
+}
 
-    #support,#contact{
-        display: none;
-    }
+@media (min-width:$br-s){
+    @include hide($search-mob-display:none,
+                  $search-norm-display:flex,
+                  $support-contact-display:none,
+                  $nav-btn-display:none,
+                  $phone-display:none,
+                  $view-our-work1:flex,
+                  $view-our-work2:none,
+                  $view-all1:flex,
+                  $view-all2:none,
+                  $mag-glass:none,)
+}
 
-    // .top-btn{
-    //     display:none;
-    // }
+@media (min-width:$br-m){
+    @include hide($search-mob-display:none,
+                  $search-norm-display:none,
+                  $support-contact-display:flex,
+                  $nav-btn-display:flex,
+                  $phone-display:none,
+                  $view-our-work1:flex,
+                  $view-our-work2:none,
+                  $view-all1:flex,
+                  $view-all2:none,
+                  $mag-glass:flex,)
+}
+
+
+@media (min-width:$br-l){
+    @include hide($search-mob-display:none,
+                  $search-norm-display:flex,
+                  $support-contact-display:flex,
+                  $nav-btn-display:flex,
+                  $phone-display:none,
+                  $view-our-work1:flex,
+                  $view-our-work2:none,
+                  $view-all1:flex,
+                  $view-all2:none,
+                  $mag-glass:flex,)
 }
 

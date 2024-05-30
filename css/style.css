@@ -36,28 +36,110 @@ footer {
 @font-face {
   font-family: 'Poppins';
   src: url(../fonts/Poppins-Black.ttf) format("ttf");
-  font-family: 'Icomoon';
-  src: url(../fonts/icomoon.ttf) format("ttf");
 }
 
-/* line 10, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+/* line 9, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 * {
   font-family: 'Poppins', sans-serif;
 }
 
-/* line 14, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+/* line 13, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 span {
-  font-family: 'icomoon';
+  font-family: "icomoon";
 }
 
-/* line 18, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+/* line 17, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 .grid-object {
   color: black;
 }
 
-/* line 21, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+/* line 20, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 .grid-object:hover a {
   color: white;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?izcwav");
+  src: url("fonts/icomoon.eot?izcwav#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?izcwav") format("truetype"), url("fonts/icomoon.woff?izcwav") format("woff"), url("fonts/icomoon.svg?izcwav#icomoon") format("svg");
+  font-weight: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 42, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 57, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-cogs:before {
+  content: "\e900";
+}
+
+/* line 62, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-bar-graph:before {
+  content: "\e901";
+}
+
+/* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-phone_in_talk:before {
+  content: "\e902";
+}
+
+/* line 72, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-security:before {
+  content: "\e903";
+}
+
+/* line 77, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-school:before {
+  content: "\e904";
+}
+
+/* line 82, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-display:before {
+  content: "\e956";
+}
+
+/* line 87, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-search:before {
+  content: "\e986";
+}
+
+/* line 92, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-embed2:before {
+  content: "\ea80";
+}
+
+/* line 97, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+/* line 102, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/* line 107, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+/* line 112, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-linkedin2:before {
+  content: "\eaca";
 }
 
 /* line 1, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
@@ -245,10 +327,6 @@ span {
   }
   /* line 6, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mediaquery.scss */
   #support, #contact {
-    display: none;
-  }
-  /* line 10, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mediaquery.scss */
-  .top-btn {
     display: none;
   }
 }

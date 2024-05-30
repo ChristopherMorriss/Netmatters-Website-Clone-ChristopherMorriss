@@ -14,17 +14,7 @@ span{
     font-family: "icomoon";
 }
 
-.grid-object {
-    color:black;
-    &:hover{
-            a{
-                color:white;
-            };
-            
-            
-    }
 
-}
 
 @font-face {
     font-family: '#{$icomoon-font-family}';

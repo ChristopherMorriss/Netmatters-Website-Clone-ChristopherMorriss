@@ -60,7 +60,7 @@
                     $b: none,
                    );
   text-transform: uppercase;
-  color:white;
+  //color:white;
 
 }
 
@@ -116,7 +116,6 @@
     
 }
 
-
 .btn-2{
   @include hover($background_black,$blue); 
 }
@@ -137,3 +136,21 @@
   @include hover($background_black,$pink_red); 
 }
 
+#phone{
+  background-color: red;
+  border:1px solid;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.btn-icon{
+  width: 65px;
+  height:65px;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-bottom: 17px;
+  color:$white;
+  margin-top: 17px;
+  line-height: 62px;
+}

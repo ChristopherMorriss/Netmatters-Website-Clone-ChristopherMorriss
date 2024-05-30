@@ -16,10 +16,18 @@
       position: relative;
       top:0px;
       transition: 0.5s ease;
+      color:black;
       &:hover{
+        color:white;
         top:-10px;
         transition: 0.5s ease;
+        button{
+          background-color: white;
+          @include hover-text($grey_blue_og,null)
+        }
+
       }
+      
       // for mobile: margin: auto;
     }
 }
@@ -27,30 +35,66 @@
 .object-1{
   @include hover($white,$grey_blue_og);
   @include hover-text($black,$white);
+  &:hover{
+    button{
+      background-color: white;
+      @include hover-text($grey_blue_og,null)
+    }
+  }
 }
 
 .object-2{
   @include hover($white,$blue);
   @include hover-text($black,$white);
+  &:hover{
+    button{
+      background-color: white;
+      @include hover-text($blue,null)
+    }
+  }
 }
 
 .object-3{
   @include hover($white,$green);
   @include hover-text($black,$white);
+  &:hover{
+    button{
+      background-color: white;
+      @include hover-text($green,null)
+    }
+  }
 }
 
 .object-4{
   @include hover($white,$dark_red);
   @include hover-text($black,$white);
+  &:hover{
+    button{
+      background-color: white;
+      @include hover-text($dark_red,null)
+    }
+  }
 }
 
 .object-5{
   @include hover($white,$purple);
   @include hover-text($black,$white);
+  &:hover{
+    button{
+      background-color: white;
+      @include hover-text($purple,null)
+    }
+  }
 }
 
 .object-6{
   @include hover($white,$pink_red);
-  @include hover-text($black,$white);
+  @include hover-text($pink_red,$white) ;
+  &:hover{
+    button{
+      background-color: white;
+      @include hover-text($pink_red,null);
+    }
+  }
 }
 

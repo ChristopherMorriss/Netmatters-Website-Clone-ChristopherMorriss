@@ -6,16 +6,9 @@ a{
     text-decoration: none;
 }
 
-.slider, .intro, a{
-    color:$white;
-  }
-
-.black-text{
-    color:$black;
-    
-}
 
 button{
     border: none;
-    cursor: pointer;
+    cursor: pointer; //Changes to the cursor to the state it appears when you hover over a link
 }
+

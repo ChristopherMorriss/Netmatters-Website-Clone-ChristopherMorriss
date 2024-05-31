@@ -6,39 +6,9 @@ a {
   text-decoration: none;
 }
 
-.slider, .intro, a {
-  color: #FFFFFF;
-}
-
-.black-text {
-  color: #272936;
-}
-
 button {
   border: none;
   cursor: pointer;
-}
-
-#form {
-  background-color: #84858F;
-}
-
-footer {
-  background-color: #333645;
-}
-
-footer h2 {
-  color: #FFFFFF;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.footer-background {
-  background-color: #212330;
-  color: white;
-  width: 100%;
 }
 
 @font-face {
@@ -144,6 +114,38 @@ footer a:hover {
 
 .icon-linkedin2:before {
   content: "\eaca";
+}
+
+#bold {
+  font-weight: bold;
+}
+
+.slider, .intro, a {
+  color: #FFFFFF;
+}
+
+.black-text {
+  color: #272936;
+}
+
+footer {
+  background-color: #333645;
+}
+
+footer h2 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-background {
+  background-color: #212330;
+  background-size: 100vw;
+  text-align: center;
+  color: white;
 }
 
 .grid {
@@ -284,6 +286,7 @@ footer a:hover {
 .article {
   border: 1px solid;
   width: 371px;
+  margin-bottom: 10px;
 }
 
 .article img {
@@ -333,10 +336,6 @@ footer a:hover {
   filter: none;
 }
 
-.partners img:hover {
-  filter: grayscale(0);
-}
-
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -347,6 +346,11 @@ footer a:hover {
   height: 70px;
   font-size: 26px;
   color: white;
+  margin: 10px;
+}
+
+.search-container {
+  display: flex;
 }
 
 .grid, .article {
@@ -355,7 +359,7 @@ footer a:hover {
   margin-right: auto;
 }
 
-footer {
+footer, .slider {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -732,10 +736,6 @@ footer {
 
 #search-icon {
   margin-left: 0px;
-}
-
-.search-container {
-  display: flex;
 }
 
 .slider {

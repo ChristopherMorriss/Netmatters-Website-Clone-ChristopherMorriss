@@ -1,0 +1,24 @@
+footer{
+    background-color: $background_black;
+    @extend %container-padding-horizontal;
+    @extend %container-padding-vertical;
+    h2{
+      color:$white;
+      text-transform: uppercase;
+    }
+    a{
+      &:hover{
+      text-decoration: underline;
+      }
+    }
+  }
+
+.footer-background{ 
+  //Affects the span containing the copyright information
+  //Need to add fix the copyright background size (so it fills the whole width of the page)
+  //Need to make the copyright breakpoint display at different breakpoints
+  background-color: $footer-black;
+  background-size: 100vw;
+  text-align: center;
+  color:white;
+}

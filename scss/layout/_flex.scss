@@ -1,10 +1,8 @@
 .article{
     border: 1px solid;
-    //border-radius:15px;
-    //padding:30px;
-    @extend %container-align;
+    @extend %container-align; //Extend that sets text and the article box itself to the centre of the page
     width:371px;
-    
+    margin-bottom: 10px;
     img{
       width:369px;
     }
@@ -49,15 +47,10 @@
     overflow-x: hidden;
     filter: grayscale(1);
     &:hover{
-      filter:none;
+      filter:none; //Removes the grayscale filter effect when hovered over
     }
   }
-  //@extend %container-align;
 
-
-  img:hover{
-    filter: grayscale(0);
-  }
 }
 
 .social{
@@ -68,5 +61,10 @@
     height: 70px;
     font-size: 26px;
     color:white;
+    margin: 10px;
+    
   }
+}
+.search-container{
+  display: flex;
 }

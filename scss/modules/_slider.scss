@@ -1,9 +1,11 @@
 .slider{
-    background-image: url("../img/home.webp");
+    //Need to properly align text and button 
+    background-image: url("../img/home.webp"); //Doesn't size properly for non-laptop screen sizes, need to fix this
     background-repeat: no-repeat;
     background-size:100vw;
-    height: 515px;
-    margin-top: -22px;
+    height:515px;
+    margin-top: -22px; //Removes gap between navigation bar and background image
+    @extend %container-padding-horizontal;
     
     
   }

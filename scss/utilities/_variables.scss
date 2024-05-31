@@ -5,7 +5,7 @@ $pink_red: #f62459;
 $pred-hover: #e80a42;
 $dark_red: #CE4125;
 $dred-hover: #c42e2a;
-$grey_blue_og: #67809F; //This was the original colour used for the website, before it was changed to yellow colour below
+$grey_blue_og: #67809F; //This was the original colour used for some aspects of the website, before it was changed to yellow colour below
 $grey_blue: #f7b322; 
 $grey_blue-hover: #e8a008;
 $green: #2ECC71;
@@ -21,6 +21,7 @@ $orange: #ffa500;
 $black: #272936;
 $black-hover: #121318;
 $pure_black: #000000;
+$footer-black: #212330;
 $instagram: #d93175;
 $linked_in: #0077b5;
 $facebook: #3b5998;
@@ -51,16 +52,22 @@ $align-items: align-items;
 $justify-content: justify-content;
 
 //Icons
-$icomoon-font-family: "icomoon" !default;
+$icomoon-font-family: "iconmoon" !default;
 $icomoon-font-path: "fonts" !default;
 
+$icon-star: unquote('"\\e903"');
+$icon-paper-plane: unquote('"\\e901"');
+$icon-send: unquote('"\\e901"');
 $icon-cogs: unquote('"\\e900"');
-$icon-bar-graph: unquote('"\\e901"');
-$icon-phone_in_talk: unquote('"\\e902"');
-$icon-security: unquote('"\\e903"');
-$icon-school: unquote('"\\e904"');
+$icon-bar-graph: unquote('"\\e904"');
+$icon-mouse: unquote('"\\e902"');
+$icon-phone_in_talk: unquote('"\\e905"');
+$icon-security: unquote('"\\e906"');
+$icon-school: unquote('"\\e907"');
 $icon-display: unquote('"\\e956"');
+$icon-bubble: unquote('"\\e96b"');
 $icon-search: unquote('"\\e986"');
+$icon-menu: unquote('"\\e9bd"');
 $icon-embed2: unquote('"\\ea80"');
 $icon-facebook: unquote('"\\ea90"');
 $icon-instagram: unquote('"\\ea92"');

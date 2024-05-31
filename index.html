@@ -12,11 +12,13 @@
         <header>
             <div class="f-container">
                 <img id="n-logo" class="f-line" src="img/netmatters-logo.webp" alt="Netmatters Logo">
-                <button class="btn-styles f-line blue-btn" id="support"><a href="#">Support</a></button>
-                <button class="btn-styles f-line grey-btn" id="contact"><a href="#"></a>Contact</a></button>
-                <input type="text" placeholder="Search..." id="search-normal">
-                <button class="grey-btn" id="search-icon">Search</button>
-                <a href="#"><button class="btn-styles f-line" id="phone"><span class="icon-phone_in_talk"></button></a>
+                <button class="btn-styles f-line blue-btn" id="support"><a href="#"><span class="icon-send"></span>Support</a></button>
+                <button class="btn-styles f-line grey-btn" id="contact"><a href="#"><span class="icon-mouse"></span></a>Contact</a></button>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." id="search-normal">
+                    <button class="grey-btn" id="search-icon"><span class="icon-search"></span></button>
+                </div>
+                <a href="#"><button class="btn-styles f-line" id="phone"><span class="icon_phone_talk"></span></button></a>
                 <img id="hamburger-menu" class="f-line" src="img/menu.png" alt="Menu Button">
                 <input type="text" placeholder="Search..." id="search-mobile">
             </div>
@@ -25,8 +27,8 @@
                 <div class="top-btn btn-2"><a href="#"><span class="icon-display"></span><small>IT</small> Support</a></div>
                 <div class="top-btn btn-3"><a href="#"><span class="icon-bar-graph"></span><small>Digital</small> Marketing</a></div>
                 <div class="top-btn btn-4"><a href="#"><span class="icon-phone_in_talk"></span><small>Telecoms</small> Services</a></div>
-                <div class="top-btn btn-5"><a href="#"><span class="icon-embed2"></span></span><small>Web Design</small></a></div>
-                <div class="top-btn btn-6"><a href="#"><span class="icon-security"></span><small>Cyber Security</small></a></div>
+                <div class="top-btn btn-5"><a href="#"><span class="icon-embed2"></span><small>Web Design</small></a></div>
+                <div class="top-btn btn-6"><a href="#"><span class="icon-security"></span><small>Cyber </small>Security</a></div>
                 <div class="top-btn btn-4"><a href="#"><span class="icon-school"></span><small>Developer </small> Course</a></div>
             </div>
             <div class="slider">
@@ -130,11 +132,11 @@
         </div>
         <div class="review">
             <h1>What Our Clients Think</h1>
-            <img class="star" src="img/star.png" alt="Star">
-            <img class="star" src="img/star.png" alt="Star">
-            <img class="star" src="img/star.png" alt="Star">
-            <img class="star" src="img/star.png" alt="Star">
-            <img class="star" src="img/star.png" alt="Star">
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
             <blockquote><em>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly 
                 skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are! </em>
                 <p class="line-hover">Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></p>
@@ -197,8 +199,7 @@
         <button class="sub-btn"><a href='#'>Subscribe</a></button>
     </form> 
     -->
-    <!-- <span class="icon-cogs"> &#xe900; </span> -->
-    <!-- s<span class="icon-bar-graph"> &#xe901; </span> -->
+
 
 
     
@@ -208,8 +209,8 @@
         <img id="n-logo" class="f-line" src="img/netmatters-logo-inverted.webp" alt="Netmatters Logo">
         <h1>Follow Us On:</h1>
         <button class="black-btn" id="facebook"><span class="icon-facebook"></span></button>
-        <button class="black-btn" id="linked_in"><span class="icon-linkedin2"></span></button>
-        <button class="black-btn" id="twitter"><span class="icon-twitter"></span></button>
+        <button class="black-btn" id="linked_in"><span class="icon-twitter"></span></button>
+        <button class="black-btn" id="twitter"><span class="icon-linkedin2"></span></button>
         <button class="black-btn" id="instagram"><span class="icon-instagram"></span></button>
 
         <h1>About Netmatters</h1>
@@ -242,9 +243,12 @@
         <p><a href="#">Healthcare</a></p>
         <p><a href="#">Education & Training</a></p>
         <p><a href="#">Travel & Leisure</a></p>
-
-        <span>&copy;Copyright Netmatters 2024. All rights reserved. - Sitemap</span>
+    
+    
+        
+        <div class="footer-background">
+            <span>&copy;Copyright Netmatters 2024. All rights reserved. - Sitemap</span>
+        <div>
         <button id="fixed-consent"><a href="#">Manage Consent</a></button>
     </footer>
-
 </html>

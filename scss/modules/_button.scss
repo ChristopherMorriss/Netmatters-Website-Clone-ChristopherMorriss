@@ -3,7 +3,7 @@
     bottom:0px;
     border-radius: 0px 10px 0px 10px;
     border:none;
-    margin-left: -390.275px;
+    left:0px;
     background-color: $consent;
     &:hover{
       background-color: $consent-hover;
@@ -153,4 +153,12 @@
   color:$white;
   margin-top: 17px;
   line-height: 62px;
+}
+
+#search-icon{
+  margin-left: 0px;
+}
+
+.search-container{
+  display: flex;
 }

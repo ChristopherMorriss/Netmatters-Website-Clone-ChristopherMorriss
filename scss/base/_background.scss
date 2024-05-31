@@ -5,4 +5,14 @@
   
 footer{
     background-color: $background_black;
+    a{
+      &:hover{
+      text-decoration: underline;
+      }
+    }
   }
+
+.footer-background{
+  background-color: $footer-black;
+  text-align: center;
+}

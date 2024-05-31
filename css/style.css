@@ -1,36 +1,39 @@
-/* line 1, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 5, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 9, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_base.scss */
 .slider, .intro, a {
   color: #FFFFFF;
 }
 
-/* line 13, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_base.scss */
 .black-text {
   color: #272936;
 }
 
-/* line 18, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_base.scss */
 button {
   border: none;
+  cursor: pointer;
 }
 
-/* line 2, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_background.scss */
 #form {
   background-color: #84858F;
 }
 
-/* line 6, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_background.scss */
 footer {
   background-color: #333645;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-background {
+  background-color: #212330;
+  text-align: center;
 }
 
 @font-face {
@@ -38,30 +41,22 @@ footer {
   src: url(../fonts/Poppins-Black.ttf) format("ttf");
 }
 
-/* line 9, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 * {
   font-family: 'Poppins', sans-serif;
 }
 
-/* line 13, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
-span {
-  font-family: "icomoon";
-}
-
 @font-face {
-  font-family: "icomoon";
-  src: url("fonts/icomoon.eot?izcwav");
-  src: url("fonts/icomoon.eot?izcwav#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?izcwav") format("truetype"), url("fonts/icomoon.woff?izcwav") format("woff"), url("fonts/icomoon.svg?izcwav#icomoon") format("svg");
-  font-weight: normal;
+  font-family: "iconmoon";
+  src: url("fonts/iconmoon.eot?tl9t0p");
+  src: url("fonts/iconmoon.eot?tl9t0p#iefix") format("embedded-opentype"), url("fonts/iconmoon.ttf?tl9t0p") format("truetype"), url("fonts/iconmoon.woff?tl9t0p") format("woff"), url("fonts/iconmoon.svg?tl9t0p#iconmoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-/* line 32, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: "iconmoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -72,73 +67,85 @@ span {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 47, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-star:before {
+  content: "\e903";
+  color: #ffa500;
+  font-size: 2em;
+}
+
+.icon-paper-plane:before {
+  content: "\e901";
+}
+
+.icon-send:before {
+  content: "\e901";
+}
+
 .icon-cogs:before {
   content: "\e900";
 }
 
-/* line 52, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 .icon-bar-graph:before {
-  content: "\e901";
-}
-
-/* line 57, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
-.icon-phone_in_talk:before {
-  content: "\e902";
-}
-
-/* line 62, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
-.icon-security:before {
-  content: "\e903";
-}
-
-/* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
-.icon-school:before {
   content: "\e904";
 }
 
-/* line 72, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-mouse:before {
+  content: "\e902";
+}
+
+.icon-phone_in_talk:before {
+  content: "\e905";
+}
+
+.icon-security:before {
+  content: "\e906";
+}
+
+.icon-school:before {
+  content: "\e907";
+}
+
 .icon-display:before {
   content: "\e956";
 }
 
-/* line 77, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-bubble:before {
+  content: "\e96b";
+}
+
 .icon-search:before {
   content: "\e986";
 }
 
-/* line 82, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
+.icon-menu:before {
+  content: "\e9bd";
+}
+
 .icon-embed2:before {
   content: "\ea80";
 }
 
-/* line 87, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 .icon-facebook:before {
   content: "\ea90";
 }
 
-/* line 92, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 .icon-instagram:before {
   content: "\ea92";
 }
 
-/* line 97, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 .icon-twitter:before {
   content: "\ea96";
 }
 
-/* line 102, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/base/_typography.scss */
 .icon-linkedin2:before {
   content: "\eaca";
 }
 
-/* line 1, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .grid {
   display: grid;
   grid-gap: 20px;
 }
 
-/* line 12, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .grid-object {
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -150,163 +157,134 @@ span {
   color: black;
 }
 
-/* line 21, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .grid-object:hover {
   color: white;
   top: -10px;
   transition: 0.5s ease;
 }
 
-/* line 25, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .grid-object:hover button {
   background-color: white;
   color: #67809F;
 }
 
-/* line 36, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-1 {
   background-color: #FFFFFF;
   color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-1:hover {
   background-color: #67809F;
 }
 
-/* line 34, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-1:hover {
   color: #FFFFFF;
 }
 
-/* line 40, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-1:hover button {
   background-color: white;
   color: #67809F;
 }
 
-/* line 47, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-2 {
   background-color: #FFFFFF;
   color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-2:hover {
   background-color: #4183D7;
 }
 
-/* line 34, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-2:hover {
   color: #FFFFFF;
 }
 
-/* line 51, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-2:hover button {
   background-color: white;
   color: #4183D7;
 }
 
-/* line 58, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-3 {
   background-color: #FFFFFF;
   color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-3:hover {
   background-color: #2ECC71;
 }
 
-/* line 34, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-3:hover {
   color: #FFFFFF;
 }
 
-/* line 62, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-3:hover button {
   background-color: white;
   color: #2ECC71;
 }
 
-/* line 69, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-4 {
   background-color: #FFFFFF;
   color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-4:hover {
   background-color: #CE4125;
 }
 
-/* line 34, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-4:hover {
   color: #FFFFFF;
 }
 
-/* line 73, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-4:hover button {
   background-color: white;
   color: #CE4125;
 }
 
-/* line 80, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-5 {
   background-color: #FFFFFF;
   color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-5:hover {
   background-color: #926fb1;
 }
 
-/* line 34, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-5:hover {
   color: #FFFFFF;
 }
 
-/* line 84, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-5:hover button {
   background-color: white;
   color: #926fb1;
 }
 
-/* line 91, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-6 {
   background-color: #FFFFFF;
   color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-6:hover {
   background-color: #f62459;
 }
 
-/* line 34, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .object-6:hover {
   color: #FFFFFF;
 }
 
-/* line 95, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_grid.scss */
 .object-6:hover button {
   background-color: white;
   color: #f62459;
 }
 
-/* line 1, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_flex.scss */
 .article {
   border: 1px solid;
   width: 371px;
 }
 
-/* line 8, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_flex.scss */
 .article img {
   width: 369px;
 }
 
-/* line 13, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_flex.scss */
 .f-container {
   display: flex;
   flex-wrap: wrap;
@@ -315,7 +293,6 @@ span {
   justify-content: space-around;
 }
 
-/* line 23, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_flex.scss */
 .intro {
   display: flex;
   background-color: #333645;
@@ -323,7 +300,6 @@ span {
   flex-direction: row;
 }
 
-/* line 30, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_flex.scss */
 .heading {
   display: flex;
   flex-wrap: wrap;
@@ -332,223 +308,185 @@ span {
   justify-content: space-between;
 }
 
-/* line 39, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_flex.scss */
 .partners {
   flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   align-content: normal;
   align-items: normal;
   justify-content: space-between;
+}
+
+.partners img {
+  max-height: 70px;
+  max-width: 200px;
   overflow-x: hidden;
   filter: grayscale(1);
 }
 
-/* line 51, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_flex.scss */
+.partners img:hover {
+  filter: none;
+}
+
 .partners img:hover {
   filter: grayscale(0);
 }
 
-/* line 1, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_container.scss */
-.grid, .article, .partners {
+.grid, .article {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: 375px) {
-  /* line 49, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-mobile {
     display: flex;
   }
-  /* line 52, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-normal {
     display: none;
   }
-  /* line 56, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #support, #contact {
     display: none;
   }
-  /* line 60, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .top-btn {
     display: none;
   }
-  /* line 64, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #phone {
     display: flex;
   }
-  /* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-1 {
     display: none;
   }
-  /* line 70, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-2 {
     display: flex;
   }
-  /* line 73, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-1 {
     display: none;
   }
-  /* line 76, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-2 {
     display: flex;
   }
-  /* line 79, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .search-icon {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 49, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-mobile {
     display: none;
   }
-  /* line 52, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-normal {
     display: flex;
   }
-  /* line 56, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #support, #contact {
     display: none;
   }
-  /* line 60, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .top-btn {
     display: none;
   }
-  /* line 64, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #phone {
     display: none;
   }
-  /* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-1 {
     display: flex;
   }
-  /* line 70, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-2 {
     display: none;
   }
-  /* line 73, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-1 {
     display: flex;
   }
-  /* line 76, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-2 {
     display: none;
   }
-  /* line 79, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .search-icon {
     display: none;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 49, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-mobile {
     display: none;
   }
-  /* line 52, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-normal {
     display: none;
   }
-  /* line 56, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #support, #contact {
     display: flex;
   }
-  /* line 60, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .top-btn {
     display: flex;
   }
-  /* line 64, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #phone {
     display: none;
   }
-  /* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-1 {
     display: flex;
   }
-  /* line 70, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-2 {
     display: none;
   }
-  /* line 73, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-1 {
     display: flex;
   }
-  /* line 76, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-2 {
     display: none;
   }
-  /* line 79, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .search-icon {
     display: flex;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 49, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-mobile {
     display: none;
   }
-  /* line 52, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #search-normal {
     display: flex;
   }
-  /* line 56, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #support, #contact {
     display: flex;
   }
-  /* line 60, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .top-btn {
     display: flex;
   }
-  /* line 64, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #phone {
     display: none;
   }
-  /* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-1 {
     display: flex;
   }
-  /* line 70, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #vow-2 {
     display: none;
   }
-  /* line 73, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-1 {
     display: flex;
   }
-  /* line 76, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   #va-2 {
     display: none;
   }
-  /* line 79, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
   .search-icon {
     display: flex;
   }
 }
 
-/* line 2, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/states/_hover.scss */
 .line-hover a:hover {
   text-decoration: underline;
 }
 
-/* line 1, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #fixed-consent {
   position: fixed;
   bottom: 0px;
   border-radius: 0px 10px 0px 10px;
   border: none;
-  margin-left: -390.275px;
+  left: 0px;
   background-color: #75788a;
 }
 
-/* line 8, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #fixed-consent:hover {
   background-color: #999aa2;
 }
 
-/* line 14, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .nav-size {
   display: flex;
   flex-wrap: wrap;
@@ -559,7 +497,6 @@ span {
   margin-bottom: 0;
 }
 
-/* line 24, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .top-btn {
   font-size: 18px;
   width: 102px;
@@ -569,7 +506,6 @@ span {
   background-color: #333645;
 }
 
-/* line 37, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #sub-btn {
   border-radius: 5px;
   font-size: 17.008px;
@@ -579,13 +515,11 @@ span {
   text-align: center;
 }
 
-/* line 48, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #hamburger-menu {
   height: 54px;
   width: 60px;
 }
 
-/* line 53, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-styles {
   border-radius: 5px;
   font-size: 17.008px;
@@ -597,193 +531,155 @@ span {
   text-transform: uppercase;
 }
 
-/* line 67, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .grey-btn {
   background-color: #84858F;
 }
 
-/* line 71, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .grey_blue-btn {
   background-color: #f7b322;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .grey_blue-btn:hover {
   background-color: #e8a008;
 }
 
-/* line 75, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .green-btn {
   background-color: #2ECC71;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .green-btn:hover {
   background-color: #26ab5f;
 }
 
-/* line 79, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .pred-btn {
   background-color: #f62459;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .pred-btn:hover {
   background-color: #e80a42;
 }
 
-/* line 83, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .dred-btn {
   background-color: #CE4125;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .dred-btn:hover {
   background-color: #c42e2a;
 }
 
-/* line 87, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .blue-btn {
   background-color: #4183D7;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .blue-btn:hover {
   background-color: #166af4;
 }
 
-/* line 91, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .purple-btn {
   background-color: #926fb1;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .purple-btn:hover {
   background-color: #7e57a0;
 }
 
-/* line 95, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .black-btn {
   background-color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .black-btn:hover {
   background-color: #121318;
 }
 
-/* line 99, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #instagram {
   background-color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 #instagram:hover {
   background-color: #d93175;
 }
 
-/* line 103, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #linked_in {
   background-color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 #linked_in:hover {
   background-color: #0077b5;
 }
 
-/* line 107, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #twitter {
   background-color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 #twitter:hover {
   background-color: #00aced;
 }
 
-/* line 110, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #facebook {
   background-color: #272936;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 #facebook:hover {
   background-color: #3b5998;
 }
 
-/* line 114, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-1 {
   background-color: #333645;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .btn-1:hover {
   background-color: #67809F;
 }
 
-/* line 119, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-2 {
   background-color: #333645;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .btn-2:hover {
   background-color: #4183D7;
 }
 
-/* line 123, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-3 {
   background-color: #333645;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .btn-3:hover {
   background-color: #2ECC71;
 }
 
-/* line 127, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-4 {
   background-color: #333645;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .btn-4:hover {
   background-color: #CE4125;
 }
 
-/* line 131, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-5 {
   background-color: #333645;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .btn-5:hover {
   background-color: #926fb1;
 }
 
-/* line 135, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-6 {
   background-color: #333645;
 }
 
-/* line 27, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/layout/_mixins.scss */
 .btn-6:hover {
   background-color: #f62459;
 }
 
-/* line 139, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #phone {
   background-color: red;
   border: 1px solid;
 }
 
-/* line 142, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 #phone:hover {
   cursor: pointer;
 }
 
-/* line 147, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_button.scss */
 .btn-icon {
   width: 65px;
   height: 65px;
@@ -795,7 +691,14 @@ span {
   line-height: 62px;
 }
 
-/* line 1, ../../../OneDrive/Documents/GitHub/Netmatters-Website-Clone-ChristopherMorriss/scss/modules/_slider.scss */
+#search-icon {
+  margin-left: 0px;
+}
+
+.search-container {
+  display: flex;
+}
+
 .slider {
   background-image: url("../img/home.webp");
   background-repeat: no-repeat;
@@ -803,5 +706,3 @@ span {
   height: 515px;
   margin-top: -22px;
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,9 @@
   
 footer{
     background-color: $background_black;
+    h2{
+      color:$white;
+    }
     a{
       &:hover{
       text-decoration: underline;

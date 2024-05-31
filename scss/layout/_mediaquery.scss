@@ -9,6 +9,7 @@
                   $view-all1:none,
                   $view-all2:flex,
                   $mag-glass:none,);
+    @include copyright-br(block);
 }
 
 @media (min-width:$br-s){
@@ -22,6 +23,7 @@
                   $view-all1:flex,
                   $view-all2:none,
                   $mag-glass:none,);
+    @include copyright-br(none);
 
 }
 
@@ -36,6 +38,7 @@
                   $view-all1:flex,
                   $view-all2:none,
                   $mag-glass:flex,);
+    @include copyright-br(none);
 
 }
 
@@ -51,6 +54,8 @@
                   $view-all1:flex,
                   $view-all2:none,
                   $mag-glass:flex,);
+    @include copyright-br(none);
+    
     
 }
 

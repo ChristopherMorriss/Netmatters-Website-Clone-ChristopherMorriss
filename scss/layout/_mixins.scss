@@ -81,3 +81,9 @@
     }
 }
 
+@mixin copyright-br($c-br){
+    .breakpoint-br{
+        display: $c-br;
+    }
+
+}

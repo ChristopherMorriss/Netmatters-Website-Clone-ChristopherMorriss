@@ -301,7 +301,7 @@ footer a:hover {
   display: flex;
   background-color: #333645;
   height: auto;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .heading {
@@ -342,8 +342,10 @@ footer a:hover {
 }
 
 .social-btn {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 70px;
+  font-size: 26px;
+  color: white;
 }
 
 .grid, .article {
@@ -383,6 +385,9 @@ footer a:hover {
   .search-icon {
     display: none;
   }
+  .breakpoint-br {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -414,6 +419,9 @@ footer a:hover {
     display: none;
   }
   .search-icon {
+    display: none;
+  }
+  .breakpoint-br {
     display: none;
   }
 }
@@ -449,6 +457,9 @@ footer a:hover {
   .search-icon {
     display: flex;
   }
+  .breakpoint-br {
+    display: none;
+  }
 }
 
 @media (min-width: 1260px) {
@@ -481,6 +492,9 @@ footer a:hover {
   }
   .search-icon {
     display: flex;
+  }
+  .breakpoint-br {
+    display: none;
   }
 }
 

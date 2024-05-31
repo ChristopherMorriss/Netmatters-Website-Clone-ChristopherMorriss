@@ -5,6 +5,8 @@
   
 footer{
     background-color: $background_black;
+    @extend %container-padding-horizontal;
+    @extend %container-padding-vertical;
     h2{
       color:$white;
     }
@@ -18,4 +20,6 @@ footer{
 .footer-background{
   background-color: $footer-black;
   text-align: center;
+  color:white;
+  width:100%;
 }

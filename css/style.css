@@ -38,6 +38,8 @@ footer a:hover {
 .footer-background {
   background-color: #212330;
   text-align: center;
+  color: white;
+  width: 100%;
 }
 
 @font-face {
@@ -352,6 +354,16 @@ footer a:hover {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer {
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 @media (min-width: 375px) {

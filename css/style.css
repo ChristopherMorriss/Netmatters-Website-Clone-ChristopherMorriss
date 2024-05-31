@@ -336,6 +336,16 @@ footer a:hover {
   filter: grayscale(0);
 }
 
+.social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  width: 200px;
+  height: 200px;
+}
+
 .grid, .article {
   text-align: center;
   margin-left: auto;

@@ -8,7 +8,7 @@
                   $view-our-work2:flex,
                   $view-all1:none,
                   $view-all2:flex,
-                  $mag-glass:none,)
+                  $mag-glass:none,);
 }
 
 @media (min-width:$br-s){
@@ -21,7 +21,8 @@
                   $view-our-work2:none,
                   $view-all1:flex,
                   $view-all2:none,
-                  $mag-glass:none,)
+                  $mag-glass:none,);
+
 }
 
 @media (min-width:$br-m){
@@ -34,7 +35,8 @@
                   $view-our-work2:none,
                   $view-all1:flex,
                   $view-all2:none,
-                  $mag-glass:flex,)
+                  $mag-glass:flex,);
+
 }
 
 
@@ -48,6 +50,7 @@
                   $view-our-work2:none,
                   $view-all1:flex,
                   $view-all2:none,
-                  $mag-glass:flex,)
+                  $mag-glass:flex,);
+    
 }
 

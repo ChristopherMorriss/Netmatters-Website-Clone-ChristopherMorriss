@@ -59,3 +59,12 @@
     filter: grayscale(0);
   }
 }
+
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  &-btn{
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -37,7 +37,7 @@
 .partners{
   @include flex($flex-dir: row,
                 $display: flex,
-                $flex-wrap: no-wrap,
+                $flex-wrap: nowrap,
                 $align-content: normal,
                 $align-items: normal,
                 $justify-content:space-between,);
@@ -68,3 +68,4 @@
 .search-container{
   display: flex;
 }
+

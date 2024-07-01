@@ -153,6 +153,8 @@ footer .marginalised a:hover {
 
 .grid {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
@@ -315,6 +317,28 @@ footer .marginalised a:hover {
   align-content: normal;
   align-items: normal;
   justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.f-container #n-logo {
+  width: 60%;
+  height: 60%;
+  margin-top: 13px;
+}
+
+@media (min-width: 994px) {
+  .f-container #n-logo {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 1260px) {
+  .f-container #n-logo {
+    width: auto;
+    height: auto;
+  }
 }
 
 .intro {
@@ -381,7 +405,7 @@ footer .marginalised a:hover {
   }
 }
 
-.grid, .article, .nav-size p, .slider button {
+.article, .nav-size p, .slider button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -392,7 +416,7 @@ footer .marginalised a:hover {
   padding-right: 15px;
 }
 
-footer h2, footer .marginalised a, .grid, .review, .article, .f-container {
+footer h2, footer .marginalised a, .review, .article, .f-container {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -455,8 +479,12 @@ footer h2, footer .marginalised a, .grid, .review, .article, .f-container {
 }
 
 #hamburger-menu {
-  height: 54px;
   width: 60px;
+  height: 60px;
+  font-size: 2.5em;
+  color: #FFFFFF;
+  background-color: #272936;
+  margin-top: 15px;
 }
 
 .btn-styles {
@@ -758,15 +786,40 @@ footer h2, footer .marginalised a, .grid, .review, .article, .f-container {
   display: none;
 }
 
-@media (min-width: 768px) and (max-width: 993px) {
+@media (min-width: 994px) {
   #search-icon {
     display: flex;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 15px;
+    padding-left: 16px;
+  }
+}
+
+@media (min-width: 1260px) {
+  #search-icon {
+    display: flex;
+    width: auto;
+    height: 65px;
+    font-size: 1em;
+    margin-top: 15px;
+    padding-left: 5px;
   }
 }
 
 @media (min-width: 994px) {
-  #search-icon {
+  #search-normal {
+    display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  #search-normal {
     display: flex;
+    height: 65px;
+    margin-top: 15px;
   }
 }
 
@@ -774,20 +827,29 @@ footer h2, footer .marginalised a, .grid, .review, .article, .f-container {
   width: 90vw;
 }
 
-@media (min-width: 768px) and (max-width: 993px) {
-  #search-mobile {
-    display: none;
-  }
-}
-
 @media (min-width: 994px) {
   #search-mobile {
     display: none;
   }
 }
 
+@media (min-width: 1260px) {
+  #search-mobile {
+    display: none;
+  }
+}
+
 #support, #contact {
+  border-radius: 0px;
+  font-size: 17.008px;
+  width: 129px;
+  height: 46px;
+  line-height: 35px;
+  text-align: center;
+  border: none;
+  align-items: center;
   display: none;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 993px) {

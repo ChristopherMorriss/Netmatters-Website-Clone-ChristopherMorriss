@@ -1,16 +1,19 @@
 .grid{
     display: grid;
-    @extend %container-align;
-    @extend %side-margin;
-    // margin-left: 200px;
-    // grid-template-rows: 1fr 1fr 1fr;
-    // grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    //@extend %container-align;
+    //@extend %side-margin;
+    //margin-left: 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap:20px;
     
   
   
   
     &-object{
+      // &.object-4, &.object-5, &.object-6{
+      //     width:200px;
+      // }
       border: 1px solid #ccc;
       border-radius: 15px;
       box-shadow: 0 3px 35px rgba(0,0,0,.1);

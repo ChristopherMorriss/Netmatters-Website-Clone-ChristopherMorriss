@@ -56,8 +56,12 @@
 }
 
 #hamburger-menu {
-    height:54px;
-    width:60px;
+  width:60px;
+  height:60px;
+  font-size: 2.5em;
+  color: $white;
+  background-color: $black;
+  margin-top:15px;
   }
 
 .btn-styles{
@@ -70,7 +74,7 @@
                     $b: none,
                    );
   text-transform: uppercase;
-  //color:white;
+  
 
 }
 
@@ -263,25 +267,56 @@
   margin-left: 0px;
   align-items: center;
   display:none;
-  @include media(medium){
-    display:flex;
-  }
   @include media(large){
     display:flex;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top:15px;
+    padding-left:16px;
+  }
+  @include media(x-large){
+    display:flex;
+    width:auto;
+    height:65px;
+    font-size: 1em;
+    margin-top:15px;
+    padding-left: 5px;
   }
 }
-
-#search-mobile{
-  width:90vw;
-  @include media(medium){
+#search-normal{
+  @include media(large){
     display:none;
   }
+  @include media(x-large){
+    display:flex;
+    height:65px;
+    margin-top:15px;
+  }
+}
+#search-mobile{
+  width:90vw;
   @include media(large){
+    display:none;
+  }
+  @include media(x-large){
     display:none;
   }
 }
 #support,#contact{
+  @include btnstyle($b-radius:0px,
+                    $f-size:17.008px,
+                    $w:129px,
+                    $h:46px,
+                    $l-height:35px,
+                    $text-center:center,
+                    $b: none,
+                   );
+  
+  align-items: center;
   display:none;
+  margin-top:20px;
   @include media(medium){
     display:flex;
   }

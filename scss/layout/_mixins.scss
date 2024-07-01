@@ -92,24 +92,24 @@
 @mixin media($breakpoint){
 
     @if $breakpoint =="small"{
-        @media (min-width:$br-xs){
+        @media (min-width:$br-s){
             @content;
         }
     }
     @else if $breakpoint == "medium"{
-        @media (min-width:$br-s) and (max-width:$br-m){
+        @media (min-width:$br-m) and (max-width:$br-l){
             @content;
         };
     }
 
     @else if $breakpoint =="large"{
-        @media (min-width: ($br-m + 1)){
+        @media (min-width: ($br-l + 1)){
             @content;
 
         };
     }
     @else if $breakpoint =="x-large"{
-        @media (min-width: $br-l){
+        @media (min-width: $br-xl){
             @content;
         };
     }

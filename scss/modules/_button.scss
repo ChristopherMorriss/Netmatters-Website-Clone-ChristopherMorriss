@@ -313,8 +313,6 @@
                     $text-center:center,
                     $b: none,
                    );
-  
-  align-items: center;
   display:none;
   margin-top:20px;
   @include media(medium){
@@ -323,4 +321,7 @@
   @include media(large){
     display:flex;
   }
+  padding-left:10px;
+  padding-top:5px;
 }
+

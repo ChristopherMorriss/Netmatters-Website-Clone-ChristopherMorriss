@@ -3,7 +3,7 @@
     background-image: url("../img/home.webp"); //Doesn't size properly for non-laptop screen sizes, need to fix this
     background-repeat: no-repeat;
     background-size: cover;
-    text-align:center;
+    //text-align:center;
     width:100%;
     height:515px;
     //margin-top: -22px; //Removes gap between navigation bar and background image
@@ -17,10 +17,21 @@
         $justify-content:center
         );
     button{
-      width:50%;
-      height:10%;
+      width:20%;
+      height:13%;
       @extend %container-align;
+      text-transform: uppercase;
         
+    }
+    &-design{
+      height:500px;
+      margin-left:10%;
+      h1{
+        font-size:4em;
+      }
+      h2{
+        font-size:2em;
+      }
     }
   }
   

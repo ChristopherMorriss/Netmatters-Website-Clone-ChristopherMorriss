@@ -52,6 +52,7 @@
 .icon-send {
   &:before {
     content: $icon-send; 
+    padding-right: 5px; 
   }
 }
 .icon-cogs {
@@ -67,6 +68,7 @@
 .icon-mouse {
   &:before {
     content: $icon-mouse; 
+    padding-right: 5px; 
   }
 }
 .icon-phone_in_talk {

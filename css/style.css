@@ -54,6 +54,7 @@ button {
 
 .icon-send:before {
   content: "\e901";
+  padding-right: 5px;
 }
 
 .icon-cogs:before {
@@ -66,6 +67,7 @@ button {
 
 .icon-mouse:before {
   content: "\e902";
+  padding-right: 5px;
 }
 
 .icon-phone_in_talk:before {
@@ -153,12 +155,11 @@ footer .marginalised a:hover {
 
 .grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
 .grid-object {
+  text-align: center;
   border: 1px solid #ccc;
   border-radius: 15px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
@@ -419,6 +420,25 @@ footer .marginalised a:hover {
 footer h2, footer .marginalised a, .review, .article, .f-container {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+#pop-up-menu {
+  display: none;
+  background-color: #333645;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+@media (min-width: 994px) {
+  #pop-up-menu .sub-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  #pop-up-menu .sub-menu {
+    display: none;
+  }
 }
 
 .line-hover a:hover {
@@ -847,9 +867,10 @@ footer h2, footer .marginalised a, .review, .article, .f-container {
   line-height: 35px;
   text-align: center;
   border: none;
-  align-items: center;
   display: none;
   margin-top: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 @media (min-width: 768px) and (max-width: 993px) {
@@ -868,7 +889,6 @@ footer h2, footer .marginalised a, .review, .article, .f-container {
   background-image: url("../img/home.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   width: 100%;
   height: 515px;
   flex-direction: column;
@@ -880,6 +900,20 @@ footer h2, footer .marginalised a, .review, .article, .f-container {
 }
 
 .slider button {
-  width: 50%;
-  height: 10%;
+  width: 20%;
+  height: 13%;
+  text-transform: uppercase;
+}
+
+.slider-design {
+  height: 500px;
+  margin-left: 10%;
+}
+
+.slider-design h1 {
+  font-size: 4em;
+}
+
+.slider-design h2 {
+  font-size: 2em;
 }

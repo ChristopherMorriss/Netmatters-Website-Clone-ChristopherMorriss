@@ -1,0 +1,16 @@
+#pop-up-menu{
+    display:none;
+    background-color: $background_black;
+    color:$white;
+    text-transform: uppercase;
+    @include media(large){
+      .sub-menu{
+        display:none;
+      }
+    }
+    @include media(x-large){
+      .sub-menu{
+        display:none;
+      }
+    }
+  }

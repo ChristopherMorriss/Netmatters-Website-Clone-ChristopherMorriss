@@ -137,11 +137,14 @@ footer h2 {
   text-transform: uppercase;
 }
 
-footer a:hover {
+footer .marginalised a:hover {
   text-decoration: underline;
 }
 
 .footer-background {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
   background-color: #212330;
   background-size: 100vw;
   text-align: center;
@@ -285,15 +288,28 @@ footer a:hover {
 
 .article {
   border: 1px solid;
-  width: 371px;
+  width: 90%;
   margin-bottom: 10px;
 }
 
+@media (min-width: 994px) {
+  .article {
+    width: 371px;
+  }
+}
+
 .article img {
-  width: 369px;
+  width: 100%;
+}
+
+@media (min-width: 994px) {
+  .article img {
+    width: 369px;
+  }
 }
 
 .f-container {
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   align-content: normal;
@@ -317,6 +333,7 @@ footer a:hover {
 }
 
 .partners {
+  overflow-x: hidden;
   flex-direction: row;
   display: flex;
   flex-wrap: nowrap;
@@ -328,7 +345,6 @@ footer a:hover {
 .partners img {
   max-height: 70px;
   max-width: 200px;
-  overflow-x: hidden;
   filter: grayscale(1);
 }
 
@@ -350,167 +366,35 @@ footer a:hover {
 }
 
 .search-container {
-  display: flex;
+  display: none;
 }
 
-.grid, .article {
+@media (min-width: 768px) and (max-width: 993px) {
+  .search-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 994px) {
+  .search-container {
+    display: flex;
+  }
+}
+
+.grid, .article, .nav-size p, .slider button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-footer, .slider {
+.slider {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-footer {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-@media (min-width: 375px) {
-  #search-mobile {
-    display: flex;
-  }
-  #search-normal {
-    display: none;
-  }
-  #support, #contact {
-    display: none;
-  }
-  .top-btn {
-    display: none;
-  }
-  #phone {
-    display: flex;
-  }
-  #vow-1 {
-    display: none;
-  }
-  #vow-2 {
-    display: flex;
-  }
-  #va-1 {
-    display: none;
-  }
-  #va-2 {
-    display: flex;
-  }
-  .search-icon {
-    display: none;
-  }
-  .breakpoint-br {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  #search-mobile {
-    display: none;
-  }
-  #search-normal {
-    display: flex;
-  }
-  #support, #contact {
-    display: none;
-  }
-  .top-btn {
-    display: none;
-  }
-  #phone {
-    display: none;
-  }
-  #vow-1 {
-    display: flex;
-  }
-  #vow-2 {
-    display: none;
-  }
-  #va-1 {
-    display: flex;
-  }
-  #va-2 {
-    display: none;
-  }
-  .search-icon {
-    display: none;
-  }
-  .breakpoint-br {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  #search-mobile {
-    display: none;
-  }
-  #search-normal {
-    display: none;
-  }
-  #support, #contact {
-    display: flex;
-  }
-  .top-btn {
-    display: flex;
-  }
-  #phone {
-    display: none;
-  }
-  #vow-1 {
-    display: flex;
-  }
-  #vow-2 {
-    display: none;
-  }
-  #va-1 {
-    display: flex;
-  }
-  #va-2 {
-    display: none;
-  }
-  .search-icon {
-    display: flex;
-  }
-  .breakpoint-br {
-    display: none;
-  }
-}
-
-@media (min-width: 1260px) {
-  #search-mobile {
-    display: none;
-  }
-  #search-normal {
-    display: flex;
-  }
-  #support, #contact {
-    display: flex;
-  }
-  .top-btn {
-    display: flex;
-  }
-  #phone {
-    display: none;
-  }
-  #vow-1 {
-    display: flex;
-  }
-  #vow-2 {
-    display: none;
-  }
-  #va-1 {
-    display: flex;
-  }
-  #va-2 {
-    display: none;
-  }
-  .search-icon {
-    display: flex;
-  }
-  .breakpoint-br {
-    display: none;
-  }
+footer h2, footer .marginalised a, .grid, .review, .article, .f-container {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .line-hover a:hover {
@@ -538,13 +422,25 @@ footer {
   justify-content: center;
   background-color: #333645;
   margin-bottom: 0;
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  .nav-size {
+    display: flex;
+  }
+}
+
+@media (min-width: 994px) {
+  .nav-size {
+    display: flex;
+  }
 }
 
 .top-btn {
   font-size: 18px;
   width: 102px;
   height: 99px;
-  line-height: 35px;
   text-align: center;
   background-color: #333645;
 }
@@ -772,27 +668,77 @@ footer {
 
 .btn-5 {
   background-color: #333645;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: normal;
+  justify-content: space-between;
 }
 
 .btn-5:hover {
   background-color: #926fb1;
 }
 
+.btn-5 span {
+  color: #926fb1;
+}
+
+.btn-5 span:hover {
+  color: #FFFFFF;
+}
+
+.btn-5:hover span {
+  color: #FFFFFF;
+}
+
 .btn-6 {
   background-color: #333645;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: normal;
+  justify-content: space-between;
 }
 
 .btn-6:hover {
   background-color: #f62459;
 }
 
+.btn-6 span {
+  color: #f62459;
+}
+
+.btn-6 span:hover {
+  color: #FFFFFF;
+}
+
+.btn-6:hover span {
+  color: #FFFFFF;
+}
+
 #phone {
-  background-color: red;
-  border: 1px solid;
+  color: black;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
 }
 
 #phone:hover {
   cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  #phone {
+    display: none;
+  }
+}
+
+@media (min-width: 994px) {
+  #phone {
+    display: none;
+  }
 }
 
 .btn-icon {
@@ -808,12 +754,70 @@ footer {
 
 #search-icon {
   margin-left: 0px;
+  align-items: center;
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  #search-icon {
+    display: flex;
+  }
+}
+
+@media (min-width: 994px) {
+  #search-icon {
+    display: flex;
+  }
+}
+
+#search-mobile {
+  width: 90vw;
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  #search-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 994px) {
+  #search-mobile {
+    display: none;
+  }
+}
+
+#support, #contact {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  #support, #contact {
+    display: flex;
+  }
+}
+
+@media (min-width: 994px) {
+  #support, #contact {
+    display: flex;
+  }
 }
 
 .slider {
   background-image: url("../img/home.webp");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
   height: 515px;
-  margin-top: -22px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: center;
+}
+
+.slider button {
+  width: 50%;
+  height: 10%;
 }

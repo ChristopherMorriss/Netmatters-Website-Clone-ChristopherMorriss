@@ -1,21 +1,34 @@
 .article{
     border: 1px solid;
     @extend %container-align; //Extend that sets text and the article box itself to the centre of the page
-    width:371px;
+    width:90%;
+    @include media(large){
+      width:371px;
+    }
     margin-bottom: 10px;
     img{
-      width:369px;
+      width:100%;
+      @include media(large){
+        width:369px;
+      }
+      
     }
+    @extend %side-margin;
 }
 
 .f-container{
-  @include flex($flex-dir: null,
+  @include flex($flex-dir: row,
                 $display: flex,
                 $flex-wrap: wrap,
                 $align-content: normal,
                 $align-items: normal,
                 $justify-content:space-around,
                 );
+  // #n-logo{
+  //   max-width: 50vw;
+  // };
+  @extend %side-margin;
+
 }
 
 .intro{
@@ -31,20 +44,20 @@
                $flex-wrap: wrap,
                $align-content: normal,
                $align-items: normal,
-               $justify-content:space-between,)
+               $justify-content:space-between);
 }
 
 .partners{
+  overflow-x: hidden;
   @include flex($flex-dir: row,
                 $display: flex,
                 $flex-wrap: nowrap,
                 $align-content: normal,
                 $align-items: normal,
-                $justify-content:space-between,);
+                $justify-content:space-between);
   img{
     max-height:70px;
     max-width:200px;
-    overflow-x: hidden;
     filter: grayscale(1);
     &:hover{
       filter:none; //Removes the grayscale filter effect when hovered over
@@ -66,6 +79,12 @@
   }
 }
 .search-container{
-  display: flex;
+  display: none;
+  @include media(medium){
+    display:flex;
+  }
+  @include media(large){
+    display:flex;
+  }
 }
 

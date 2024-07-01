@@ -1,6 +1,7 @@
 .grid{
     display: grid;
     @extend %container-align;
+    @extend %side-margin;
     // margin-left: 200px;
     // grid-template-rows: 1fr 1fr 1fr;
     // grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -100,3 +101,6 @@
   
 }
 
+.review{
+  @extend %side-margin;
+}

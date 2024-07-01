@@ -19,6 +19,16 @@
   justify-content: center;
   background-color: #333645;
   margin-bottom: 0;
+  display:none;
+  p{
+    @extend %container-align;
+  }
+  @include media(medium){
+    display:flex;
+  }
+  @include media(large){
+    display:flex;
+  }
 }
 
 .top-btn{
@@ -26,7 +36,7 @@
                      $f-size:18px,
                      $w:102px,
                      $h:99px,
-                     $l-height:35px,
+                     $l-height:null,
                      $text-center:center,
                      $b: null,
                      );
@@ -126,7 +136,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between,); 
+                $justify-content:space-between); 
     
 }
 
@@ -145,7 +155,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between,); 
+                $justify-content:space-between); 
 }
 
 .btn-3{
@@ -163,7 +173,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between,); 
+                $justify-content:space-between); 
 }
 
 .btn-4{
@@ -181,23 +191,61 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between,);
+                $justify-content:space-between);
 }
 
 .btn-5{
   @include hover($background_black,$purple); 
+  span{
+    @include hover-text($purple, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between); 
 }
 
 .btn-6{
   @include hover($background_black,$pink_red); 
+  span{
+    @include hover-text($pink_red, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between); 
 }
 
 #phone{
-  background-color: red;
-  border:1px solid;
+  //border:1px solid;
+  color: black;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
   &:hover{
     cursor: pointer;
   }
+  @include media(medium){
+    display:none;
+  }
+  @include media(large){
+    display:none;
+  }
+  
 }
 
 .btn-icon{
@@ -213,6 +261,31 @@
 
 #search-icon{
   margin-left: 0px;
+  align-items: center;
+  display:none;
+  @include media(medium){
+    display:flex;
+  }
+  @include media(large){
+    display:flex;
+  }
 }
 
-
+#search-mobile{
+  width:90vw;
+  @include media(medium){
+    display:none;
+  }
+  @include media(large){
+    display:none;
+  }
+}
+#support,#contact{
+  display:none;
+  @include media(medium){
+    display:flex;
+  }
+  @include media(large){
+    display:flex;
+  }
+}

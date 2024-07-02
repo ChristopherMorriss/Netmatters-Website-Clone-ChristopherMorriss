@@ -45,11 +45,11 @@
                 adaptiveHeight: false,
                 appendArrows: $(element),
                 appendDots: $(element),
-                arrows: false, //Default value: true
+                arrows: false,
                 asNavFor: null,
                 prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="previous">Previous</button>',
                 nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="next">Next</button>',
-                autoplay: true, //Default value: false
+                autoplay: true,
                 autoplaySpeed: 3000,
                 centerMode: false,
                 centerPadding: '50px',
@@ -57,7 +57,7 @@
                 customPaging: function(slider, i) {
                     return '<button type="button" data-role="none">' + (i + 1) + '</button>';
                 },
-                dots: true, //Default value: false
+                dots: true,
                 dotsClass: 'slick-dots',
                 draggable: true,
                 easing: 'linear',

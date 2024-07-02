@@ -17,15 +17,15 @@
         $justify-content:center
         );
     button{
-      width:20%;
-      height:13%;
+      width:15%;
+      min-height:13%;
       @extend %container-align;
       text-transform: uppercase;
         
     }
     &-design{
-      height:500px;
-      margin-left:10%;
+      //height:500px;
+      //margin-left:10%;
       h1{
         font-size:4em;
       }

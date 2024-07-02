@@ -1,11 +1,35 @@
 .slider{
-    //Need to properly align text and button 
-    background-image: url("../img/home.webp"); //Doesn't size properly for non-laptop screen sizes, need to fix this
-    background-repeat: no-repeat;
-    background-size: cover;
-    //text-align:center;
-    width:100%;
-    height:515px;
+    .design-1{
+      background-image: url("../img/home.webp"); 
+      @extend %background-banner;
+    }
+    .design-2{
+      background-image: url("../img/bespoke-bg.webp"); 
+      @extend %background-banner;
+    }
+    .design-3{
+      background-image: url("../img/it-bg.webp"); 
+      @extend %background-banner;
+    }
+    .design-4{
+      background-image: url("../img/digital-marketing-bg.webp"); 
+      @extend %background-banner;
+    }
+    .design-5{
+      background-image: url("../img/telecoms-services-bg.webp"); 
+      @extend %background-banner;
+    }
+    .design-6{
+      background-image: url("../img/web-design-bg.webp"); 
+      @extend %background-banner;
+    }
+    .design-7{
+      background-image: url("../img/cyber-security-bg.webp"); 
+      @extend %background-banner;
+    }
+    // background-size: cover;
+    // width:100%;
+    // height:515px;
     //margin-top: -22px; //Removes gap between navigation bar and background image
     @extend %container-padding-horizontal;
     @include flex( //Flex used for the layout of the text on the banner
@@ -27,10 +51,23 @@
       //height:500px;
       //margin-left:10%;
       h1{
+        @include media(large){
+          font-size:4em;
+          }
+        @include media(x-large){
         font-size:4em;
+        }
       }
       h2{
-        font-size:2em;
+        @include media(large){
+          font-size:1.5em;
+          }
+        @include media(x-large){
+        font-size:1.5em;
+        }
+      }
+      h1,h2,button{
+        margin-left:10%;
       }
     }
   }

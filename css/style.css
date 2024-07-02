@@ -422,6 +422,12 @@ footer h2, footer .marginalised a, .review, .article, .f-container {
   margin-right: 5%;
 }
 
+.slider .design-1, .slider .design-2, .slider .design-3, .slider .design-4, .slider .design-5, .slider .design-6, .slider .design-7 {
+  background-size: cover;
+  width: 100%;
+  height: 515px;
+}
+
 #pop-up-menu {
   display: none;
   background-color: #333645;
@@ -893,11 +899,6 @@ footer h2, footer .marginalised a, .review, .article, .f-container {
 }
 
 .slider {
-  background-image: url("../img/home.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 515px;
   flex-direction: column;
   display: flex;
   flex-wrap: wrap;
@@ -906,16 +907,64 @@ footer h2, footer .marginalised a, .review, .article, .f-container {
   justify-content: center;
 }
 
+.slider .design-1 {
+  background-image: url("../img/home.webp");
+}
+
+.slider .design-2 {
+  background-image: url("../img/bespoke-bg.webp");
+}
+
+.slider .design-3 {
+  background-image: url("../img/it-bg.webp");
+}
+
+.slider .design-4 {
+  background-image: url("../img/digital-marketing-bg.webp");
+}
+
+.slider .design-5 {
+  background-image: url("../img/telecoms-services-bg.webp");
+}
+
+.slider .design-6 {
+  background-image: url("../img/web-design-bg.webp");
+}
+
+.slider .design-7 {
+  background-image: url("../img/cyber-security-bg.webp");
+}
+
 .slider button {
   width: 15%;
   min-height: 13%;
   text-transform: uppercase;
 }
 
-.slider-design h1 {
-  font-size: 4em;
+@media (min-width: 994px) {
+  .slider-design h1 {
+    font-size: 4em;
+  }
 }
 
-.slider-design h2 {
-  font-size: 2em;
+@media (min-width: 1260px) {
+  .slider-design h1 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 994px) {
+  .slider-design h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1260px) {
+  .slider-design h2 {
+    font-size: 1.5em;
+  }
+}
+
+.slider-design h1, .slider-design h2, .slider-design button {
+  margin-left: 10%;
 }

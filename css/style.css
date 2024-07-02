@@ -429,6 +429,13 @@ footer h2, footer .marginalised a, .review, .article, .f-container {
   text-transform: uppercase;
 }
 
+#pop-up-menu a h2, #pop-up-menu a h3, #pop-up-menu a p {
+  background-color: #272936;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
 @media (min-width: 994px) {
   #pop-up-menu .sub-menu {
     display: none;

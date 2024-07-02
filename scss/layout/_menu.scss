@@ -3,6 +3,14 @@
     background-color: $background_black;
     color:$white;
     text-transform: uppercase;
+    a{
+        h2,h3,p{
+        background-color: $black;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        }
+    }
     @include media(large){
       .sub-menu{
         display:none;

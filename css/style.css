@@ -866,4 +866,33 @@ footer h2, footer .marginalised a, .review, .article {
 }
 .slider-design h1, .slider-design h2, .slider-design button {
   margin-left: 10%;
+}
+
+.cookie-popup {
+  position: fixed;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: space-around;
+  top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  z-index: 3;
+  font-size: 1em;
+}
+.cookie-popup P {
+  color: #666;
+}
+.cookie-popup .cookie-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.cookie-popup .cookie-buttons button {
+  height: auto !important;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

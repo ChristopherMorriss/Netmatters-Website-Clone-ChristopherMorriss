@@ -11,3 +11,17 @@ slideOutMenu.addEventListener('click',()=>{
     $('#pop-up-menu').css('display','none'); //The menu is no longer displayed 
   }
 });
+
+let cookieClick=false; //Variable used to check what should happen after the menu is clicked
+                 //It's a boolean variable so it could be represented with true (1) and false (0) instead
+let consentButton= document.querySelector('#fixed-consent'); //Targets the span which contains the hamburger menu icon
+consentButton.addEventListener('click',()=>{
+  if (cookieClick===false){ //If hideOrShow variable =0 (is off) when clicked, display the menu 
+    cookieClick =true; //The hideOrShow variable is now on
+    $('#pop-up-menu').css('display','block'); //The menu is displayed in flexbox
+  }
+  else if (cookieClick===true){ //If hideOrShow variable =1 (is on) when clicked, hide the menu
+    cookieClick =false; //The hideOrShow variable is now off
+    $('#pop-up-menu').css('display','none'); //The menu is no longer displayed 
+  }
+});

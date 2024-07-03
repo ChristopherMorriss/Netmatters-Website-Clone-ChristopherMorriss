@@ -24,6 +24,14 @@
                 $align-items: normal,
                 $justify-content:space-around,
                 );
+  @include media(large){
+                width:auto;
+                height:auto;
+                }
+  @include media(x-large){
+                width:auto;
+                height:auto;
+                }
   #n-logo{
     width:60%;
     height:60%;
@@ -37,7 +45,7 @@
       height:auto;
     }
   };
-  @extend %side-margin;
+  //@extend %side-margin;
   padding-top:20px;
   padding-bottom:20px;
 
@@ -109,3 +117,4 @@
 //                 $justify-content:space-around,
 //                 );
 // }
+

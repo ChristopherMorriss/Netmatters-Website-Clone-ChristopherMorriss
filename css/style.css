@@ -11,6 +11,22 @@ button {
   cursor: pointer;
 }
 
+#container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  z-index: 10;
+  left: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins-Black.ttf) format("ttf");
@@ -379,11 +395,6 @@ footer .marginalised a:hover {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.slider {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 footer h2, footer .marginalised a, .review, .article {

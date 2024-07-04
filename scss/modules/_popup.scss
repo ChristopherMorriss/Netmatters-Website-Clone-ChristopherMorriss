@@ -10,8 +10,9 @@
                   $align-items: normal,
                   $justify-content:space-around,
                 );
-    top:40%;
+    top:50%;
     left:25%;
+    width:60%;
     @include media(small){
         top:15%;
         left:-9%;

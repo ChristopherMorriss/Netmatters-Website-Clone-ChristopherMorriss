@@ -41,7 +41,7 @@
         $justify-content:center
         );
     button{
-      width:90%;
+      width:80%;
       line-height:50px;
       @include media(small){
         width:15%;
@@ -80,6 +80,7 @@
       }
       h1,h2,button{
         margin-left:10%;
+        margin-right:10%;
       }
     }
   }

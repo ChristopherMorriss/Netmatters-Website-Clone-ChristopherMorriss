@@ -492,6 +492,7 @@ footer h2, footer .marginalised a, .review, .article {
   text-align: center;
   border: none;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .grey-btn {
@@ -840,7 +841,7 @@ footer h2, footer .marginalised a, .review, .article {
   background-image: url("../img/cyber-security-bg.webp");
 }
 .slider button {
-  width: 90%;
+  width: 80%;
   line-height: 50px;
   text-transform: uppercase;
 }
@@ -886,6 +887,7 @@ footer h2, footer .marginalised a, .review, .article {
 }
 .slider-design h1, .slider-design h2, .slider-design button {
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 .cookie-popup {
@@ -897,7 +899,8 @@ footer h2, footer .marginalised a, .review, .article {
   align-content: normal;
   align-items: normal;
   justify-content: space-around;
-  top: 10%;
+  top: 40%;
+  left: 25%;
   margin-left: 12.5%;
   margin-right: 12.5%;
   background-color: #FFFFFF;
@@ -905,6 +908,15 @@ footer h2, footer .marginalised a, .review, .article {
   z-index: 3;
   font-size: 1em;
   border: 1px solid grey;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 576px) {
+  .cookie-popup {
+    top: 15%;
+    left: -9%;
+    width: 90%;
+    transform: translate(0%, 0%);
+  }
 }
 .cookie-popup h1 {
   margin-left: 5%;
@@ -915,10 +927,6 @@ footer h2, footer .marginalised a, .review, .article {
   line-height: 2rem;
   margin-left: 5%;
   margin-right: 5%;
-}
-.cookie-popup .cookie-buttons {
-  display: flex;
-  flex-direction: column;
 }
 .cookie-popup .cookie-buttons button {
   height: auto !important;

@@ -2,8 +2,8 @@
     box-sizing:border-box;
 }
 
-a{
-    text-decoration: none;
+a{ 
+    text-decoration: none; //Removes the underline from the anchor tags
 }
 
 
@@ -12,7 +12,7 @@ button{
     cursor: pointer; //Changes to the cursor to the state it appears when you hover over a link
 }
 
-#container{
+#container{ //Container for the whole page, excluding the footer and the pop-up menu
     height:100%;
     position:relative;
     overflow: hidden;
@@ -21,7 +21,7 @@ button{
     left:0;
 }
 
-.container{
+.container{ //Container classs which will be used for any element which needs center alignment and padding
     margin-right:auto;
     margin-left:auto;
     padding-left: 15px;

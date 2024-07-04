@@ -1,4 +1,4 @@
-.slider{
+.slider{ 
     .design-1{
       background-image: url("../img/home.webp"); 
       @extend %background-banner;
@@ -27,10 +27,6 @@
       background-image: url("../img/cyber-security-bg.webp"); 
       @extend %background-banner;
     }
-    // background-size: cover;
-    // width:100%;
-    // height:515px;
-    //margin-top: -22px; //Removes gap between navigation bar and background image
     @include flex( //Flex used for the layout of the text on the banner
         $flex-dir:column,
         $display:flex,

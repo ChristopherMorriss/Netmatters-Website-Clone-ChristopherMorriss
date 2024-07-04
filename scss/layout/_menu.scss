@@ -1,4 +1,4 @@
-#pop-up-menu{
+#pop-up-menu{ //Code for the pop-up menu 
     display:none;
     background-color: $background_black;
     color:$white;
@@ -12,7 +12,7 @@
         }
     }
     @include media(large){
-      .sub-menu{
+      .sub-menu{ //The sub menu doesn't appear on the larger breakpoints
         display:none;
       }
     }

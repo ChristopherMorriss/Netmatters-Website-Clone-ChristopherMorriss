@@ -16,27 +16,24 @@ slideOutMenu.addEventListener('click',()=>{
 let acceptButton= document.querySelector('#accept');
 
 acceptButton.addEventListener('click',()=>{
-  //alert('Cookies accepted!')
-  document.cookie = "username=New cookie; expires=Thu, 18 Dec 2015 12:00:00 UTC";
+  document.cookie = "username=cookie; expires=Thu, 18 Dec 2015 12:00:00 UTC"; //Cookie creation 
   $('.cookie-popup').css('display','none'); 
-  setCookie('cookie','accepted','730');
+  setCookie('cookie','accepted','730'); //Creates a cookie called cookie with the value accepted and an expiry data of 730 days
   });
 
-let consentButton = document.querySelector('#fixed-consent');
-// alert (consentButton);
+let consentButton = document.querySelector('#fixed-consent'); //Shows the popup when clicked
 consentButton.addEventListener('click',()=>{
-  //alert('consent clicked');
   $('.cookie-popup').css('display','block');
 });
 
-function setCookie(cname, cvalue, exdays) {
+function setCookie(cname, cvalue, exdays) { //Function to create a cookie and set its expiry date and value
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
+function getCookie(cname) { //The function to check if a cookie exists
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
@@ -52,8 +49,9 @@ function getCookie(cname) {
   return "";
 }
 
-if (getCookie("cookies") === "accepted") {
-  $('#cookie-checker').hide();
+if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies" is active. If it is, the cookie menu is hidden
+  $('#cookie-popup').hide(); //This is designed to stop the popup from displaying if the cookie has already been accepted
+                             //It is not working properly at the moment
 }
 	
 

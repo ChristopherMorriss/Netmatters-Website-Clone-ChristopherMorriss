@@ -1,9 +1,9 @@
-@mixin align-items($m-top,$m-left){
+@mixin align-items($m-top,$m-left){ //Mixin for aligning items (might delete this as I'm not sure it is used for anything
     margin-top: $m-top;
     margin-left: $m-left;
 }
 
-@mixin btnstyle($b-radius,$f-size,$w,$h,$l-height,$text-center,$b){
+@mixin btnstyle($b-radius,$f-size,$w,$h,$l-height,$text-center,$b){//Mixin for styling many buttons
     border-radius: $b-radius;
     font-size: $f-size;
     width: $w;
@@ -13,7 +13,7 @@
     border: $b;
 }
 
-@mixin flex($flex-dir,$display,$flex-wrap,$align-content,$align-items,$justify-content){
+@mixin flex($flex-dir,$display,$flex-wrap,$align-content,$align-items,$justify-content){//Mixin for flex objects
     flex-direction: $flex-dir;
     display: $display;
     flex-wrap: $flex-wrap;
@@ -22,20 +22,21 @@
     justify-content: $justify-content;
 }
 
-@mixin hover($bg_colour,$hover_colour){
+@mixin hover($bg_colour,$hover_colour){//One colour is assigned as the default and the other is used when the background is hovered over
     background-color: $bg_colour;
     &:hover{
         background-color: $hover_colour;
     }
 }
 
-@mixin hover-text($txt_colour,$hover_txt_colour){
+@mixin hover-text($txt_colour,$hover_txt_colour){ //One colour is assigned as the default and the other is used when the text is hovered over
     color: $txt_colour;
     &:hover{
         color: $hover_txt_colour;
     }
 }
 
+//Mixin to hide or show icons (I will delete this soon as it is unnecessary and inefficient)
 @mixin hide($search-mob-display,
             $search-norm-display,
             $support-contact-display,
@@ -81,6 +82,7 @@
     }
 }
 
+//Mixin which affect the display value of the breakpoint-br class
 @mixin copyright-br($c-br){
     .breakpoint-br{
         display: $c-br;

@@ -64,7 +64,8 @@
   margin-top:15px;
   }
 
-.btn-styles{
+.btn-styles{ //A class added to most button elements which share a similar design. 
+             //Some aspects may be overiden elsewhere for specific buttons
   @include btnstyle($b-radius:5px,
                     $f-size:17.008px,
                     $w:129px,
@@ -84,7 +85,7 @@
   background-color: $grey;
 }
 
-.grey_blue-btn{
+.grey_blue-btn{ 
   @include hover($grey_blue,$grey_blue-hover);
 }
 
@@ -254,7 +255,7 @@
   
 }
 
-.btn-icon{
+.btn-icon{ //Used for buttons which contain an icon inside them (such as the buttons used in the grid)
   width: 65px;
   height:65px;
   border-radius: 50%;
@@ -265,7 +266,7 @@
   line-height: 62px;
 }
 
-#search-icon{
+#search-icon{ 
   margin-left: 0px;
   align-items: center;
   display:none;
@@ -287,7 +288,7 @@
     padding-left: 5px;
   }
 }
-#search-normal{
+#search-normal{ //The search bar which only appears on the biggest viewports
   @include media(large){
     display:none;
   }
@@ -297,7 +298,7 @@
     margin-top:15px;
   }
 }
-#search-mobile{
+#search-mobile{ //The search which appears on mobile or tablet devices only
   width:90vw;
   @include media(large){
     display:none;
@@ -306,7 +307,7 @@
     display:none;
   }
 }
-#support,#contact{
+#support,#contact{ 
   @include btnstyle($b-radius:0px,
                     $f-size:17.008px,
                     $w:129px,

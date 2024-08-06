@@ -1,0 +1,128 @@
+.f-container{
+    @include flex($flex-dir: row,
+                  $display: flex,
+                  $flex-wrap: wrap,
+                  $align-content: normal,
+                  $align-items: normal,
+                  $justify-content:space-around,
+                  );
+    @include media(large){
+                  width:auto;
+                  height:auto;
+                  }
+    @include media(x-large){
+                  width:auto;
+                  height:auto;
+                  }
+    #n-logo{
+      width:60%;
+      height:60%;
+      margin-top:13px;
+      @include media(large){
+        width:auto;
+        height:auto;
+      }
+      @include media(x-large){
+        width:auto;
+        height:auto;
+      }
+    };
+
+    .left-header{
+        @include flex($flex-dir: row,
+                      $display: flex,
+                      $flex-wrap: wrap,
+                      $align-content: normal,
+                      $align-items: normal,
+                      $justify-content:space-around,
+                      );
+        width: 33%;
+    }
+    .right-header{
+        @include flex($flex-dir: row,
+                      $display: flex,
+                      $flex-wrap: wrap,
+                      $align-content: normal,
+                      $align-items: normal,
+                      $justify-content:space-around,
+                      );
+        width:67%;
+    }
+    //@extend %side-margin;
+    padding-top:20px;
+    padding-bottom:20px;
+  
+}
+
+#hamburger-menu{
+    width:60px;
+    height:60px;
+    font-size: 2.5em;
+    color: $white;
+    background-color: $black;
+    margin-top:15px;
+}
+
+#search-icon{ 
+    margin-left: 0px;
+    align-items: center;
+    display:none;
+    @include media(large){
+      display:flex;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 1.5em;
+      margin-top:15px;
+      padding-left:16px;
+    }
+    @include media(x-large){
+      display:flex;
+      width:auto;
+      height:65px;
+      font-size: 1em;
+      margin-top:15px;
+      padding-left: 5px;
+    }
+}
+#search-normal{ //The search bar which only appears on the biggest viewports
+    @include media(large){
+      display:none;
+    }
+    @include media(x-large){
+      display:flex;
+      height:65px;
+      margin-top:15px;
+    }
+  }
+  #search-mobile{ //The search which appears on mobile or tablet devices only
+    width:90vw;
+    @include media(large){
+      display:none;
+    }
+    @include media(x-large){
+      display:none;
+    }
+}
+#support,#contact{ 
+    @include btnstyle($b-radius:0px,
+                      $f-size:17.008px,
+                      $w:129px,
+                      $h:46px,
+                      $l-height:35px,
+                      $text-center:center,
+                      $b: none,
+                      );
+    display:none;
+    margin-top:20px;
+    @include media(medium){
+      display:flex;
+    }
+    @include media(large){
+      display:flex;
+    }
+    padding-left:10px;
+    padding-top:5px;
+}
+  
+  

@@ -16,40 +16,7 @@
     @extend %side-margin;
 }
 
-.f-container{
-  @include flex($flex-dir: row,
-                $display: flex,
-                $flex-wrap: wrap,
-                $align-content: normal,
-                $align-items: normal,
-                $justify-content:space-around,
-                );
-  @include media(large){
-                width:auto;
-                height:auto;
-                }
-  @include media(x-large){
-                width:auto;
-                height:auto;
-                }
-  #n-logo{
-    width:60%;
-    height:60%;
-    margin-top:13px;
-    @include media(large){
-      width:auto;
-      height:auto;
-    }
-    @include media(x-large){
-      width:auto;
-      height:auto;
-    }
-  };
-  //@extend %side-margin;
-  padding-top:20px;
-  padding-bottom:20px;
 
-}
 
 .intro{
   display: flex;

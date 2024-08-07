@@ -356,6 +356,11 @@ footer .marginalised a:hover {
   }
 }
 .f-container #n-logo {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: center;
   max-width: 100%;
 }
 @media (min-width: 994px) {
@@ -374,18 +379,29 @@ footer .marginalised a:hover {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  align-content: normal;
+  align-content: center;
   align-items: normal;
   justify-content: space-around;
-  width: 33%;
-  margin-left: 5%;
+  width: 66%;
+}
+@media (min-width: 994px) {
+  .f-container .left-header {
+    width: 33%;
+  }
+}
+@media (min-width: 1260px) {
+  .f-container .left-header {
+    width: 33%;
+  }
 }
 .f-container .right-header {
   flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: normal;
   align-items: normal;
+  justify-content: flex-end;
+  width: 33%;
 }
 .f-container .right-header button, .f-container .right-header a, .f-container .right-header input {
   margin-left: 20px;
@@ -446,19 +462,6 @@ footer .marginalised a:hover {
     display: flex;
     height: 56px;
     margin-top: 15px;
-  }
-}
-#search-normal #search-mobile {
-  width: 90vw;
-}
-@media (min-width: 994px) {
-  #search-normal #search-mobile {
-    display: none;
-  }
-}
-@media (min-width: 1260px) {
-  #search-normal #search-mobile {
-    display: none;
   }
 }
 
@@ -539,6 +542,39 @@ footer .marginalised a:hover {
   #phone {
     display: none;
   }
+}
+
+#search-mobile {
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  width: 95vw;
+  margin-top: 15px;
+  height: 47px;
+}
+#search-mobile:focus {
+  border: 1px solid #e5e5e5;
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+@media (min-width: 994px) {
+  #search-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1260px) {
+  #search-mobile {
+    display: none;
+  }
+}
+
+.mobile-search .icon-search {
+  position: absolute;
+  margin-top: 28px;
+  margin-left: -30px;
+  font-size: 20px;
 }
 
 .partners {

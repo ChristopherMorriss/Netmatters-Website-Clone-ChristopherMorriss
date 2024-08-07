@@ -18,6 +18,13 @@
       // width:60%;
       // height:60%;
       //margin-top:13px;
+      @include flex($flex-dir: row,
+                      $display: flex,
+                      $flex-wrap: wrap,
+                      $align-content: normal,
+                      $align-items: center,
+                      $justify-content:null,
+                      );
       max-width: 100%;
       
       @include media(large){
@@ -34,24 +41,32 @@
         @include flex($flex-dir: row,
                       $display: flex,
                       $flex-wrap: wrap,
-                      $align-content: normal,
+                      $align-content: center,
                       $align-items: normal,
                       $justify-content:space-around,
                       );
-        width: 33%;
-        margin-left: 5%;
+        width:66%;
+        @include media(large){
+          width: 33%;
+        }
+        @include media(x-large){
+          width: 33%;
+        }
+
     }
     .right-header{
         @include flex($flex-dir: row,
                       $display: flex,
-                      $flex-wrap: wrap,
+                      $flex-wrap: nowrap,
                       $align-content: normal,
                       $align-items: normal,
-                      $justify-content:null,
+                      $justify-content:flex-end,
                       );
+        width:33%;
         button,a,input{
           margin-left: 20px;
         }
+      
         
     }
     //@extend %side-margin;
@@ -110,15 +125,6 @@
     margin-top:15px;
   }
   
-  #search-mobile{ //The search which appears on mobile or tablet devices only
-    width:90vw;
-    @include media(large){
-      display:none;
-    }
-    @include media(x-large){
-      display:none;
-    }
-  }
   padding:5px 15px;
 }
 #support,#contact{ 
@@ -184,6 +190,37 @@
   @include media(large){
     display:none;
   }
+}
+
+#search-mobile{ //The search which appears on mobile or tablet devices only
+  border: 1px solid $border_grey;
+  box-shadow:  inset 0 1px 1px rgba(0, 0, 0, .075);
+  padding:5px 15px;
+  background-color: $search_bg;
+  border-radius: 2px;
+  &:focus{
+    border: 1px solid $border_white;
+    border-color: $search_blue_focus;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
+  }
+  width:95vw;
+  margin-top: 15px; 
+  height: 47px;
+  @include media(large){
+    display:none;
+  }
+  @include media(x-large){
+    display:none;
+  }
+
   
 }
 
+.mobile-search{
+  .icon-search{
+    position: absolute;
+    margin-top: 28px;
+    margin-left: -30px;
+    font-size: 20px;
+  }
+}

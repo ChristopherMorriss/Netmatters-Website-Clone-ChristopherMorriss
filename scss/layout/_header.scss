@@ -26,10 +26,12 @@
                       $justify-content:null,
                       );
       max-width: 100%;
+
       
       @include media(large){
         width:auto;
         height:auto;
+        max-width: 125%;
       }
       @include media(x-large){
         width:auto;
@@ -46,6 +48,9 @@
                       $justify-content:space-around,
                       );
         width:66%;
+        @include media(medium){
+          width:50%;
+        }
         @include media(large){
           width: 33%;
         }
@@ -63,6 +68,12 @@
                       $justify-content:flex-end,
                       );
         width:33%;
+        @include media(medium){
+          width:50%;
+        }
+        @include media(large){
+          width:66%;
+        }
         button,a,input{
           margin-left: 20px;
         }
@@ -81,28 +92,31 @@
     font-size: 2.5em;
     color: $white;
     background-color: $black;
-    margin-top:15px;
+    @include media(large){
+      margin-top: 20px;
+    }
 }
 
 #search-icon{ 
     margin-left: 0px;
     align-items: center;
     display:none;
+    @include media(medium){
+      display:flex;
+    }
     @include media(large){
       display:flex;
       width: 60px;
       height: 60px;
       text-align: center;
       font-size: 1.5em;
-      margin-top:15px;
-      padding-left:16px;
+ 
     }
     @include media(x-large){
       display:flex;
       width:auto;
       height:65px;
       font-size: 1em;
-      margin-top:15px;
       padding-left: 5px;
     }
     
@@ -116,13 +130,17 @@
     border-color: $search_blue_focus;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
   }
+  @include media(medium){
+    display:flex;
+    height:56px;
+    width:174px;
+  }
   @include media(large){
     display:none;
   }
   @include media(x-large){
     display:flex;
     height:56px;
-    margin-top:15px;
   }
   
   padding:5px 15px;
@@ -139,7 +157,7 @@
     display:none;
     margin-top:20px;
     @include media(medium){
-      display:flex;
+      display:none;
     }
     @include media(large){
       display:flex;
@@ -172,6 +190,8 @@
   }
   @include media(large){
     display:flex;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 }  
 
@@ -206,6 +226,9 @@
   width:95vw;
   margin-top: 15px; 
   height: 47px;
+  @include media(medium){
+    display:none;
+  }
   @include media(large){
     display:none;
   }
@@ -218,6 +241,15 @@
 
 .mobile-search{
   .icon-search{
+    @include media(medium){
+      display: none;
+    }
+    @include media(large){
+      display: none;
+    }
+    @include media(x-large){
+      display: none;
+    }
     position: absolute;
     margin-top: 28px;
     margin-left: -30px;

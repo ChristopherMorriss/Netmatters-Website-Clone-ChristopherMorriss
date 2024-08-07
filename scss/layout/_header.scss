@@ -15,9 +15,11 @@
                   height:auto;
                   }
     #n-logo{
-      width:60%;
-      height:60%;
-      margin-top:13px;
+      // width:60%;
+      // height:60%;
+      //margin-top:13px;
+      max-width: 100%;
+      
       @include media(large){
         width:auto;
         height:auto;
@@ -37,6 +39,7 @@
                       $justify-content:space-around,
                       );
         width: 33%;
+        margin-left: 5%;
     }
     .right-header{
         @include flex($flex-dir: row,
@@ -44,19 +47,22 @@
                       $flex-wrap: wrap,
                       $align-content: normal,
                       $align-items: normal,
-                      $justify-content:space-around,
+                      $justify-content:null,
                       );
-        width:67%;
+        button,a,input{
+          margin-left: 20px;
+        }
+        
     }
     //@extend %side-margin;
     padding-top:20px;
     padding-bottom:20px;
-  
+    
 }
 
 #hamburger-menu{
-    width:60px;
-    height:60px;
+    width:63px;
+    height:56px;
     font-size: 2.5em;
     color: $white;
     background-color: $black;
@@ -84,11 +90,14 @@
       margin-top:15px;
       padding-left: 5px;
     }
+    
+  
 }
 #search-normal{ //The search bar which only appears on the biggest viewports
-  height:56px;
-  border: 1px solid $border_white;
+  border: 1px solid $border_grey;
+  
   &:focus{
+    border: 1px solid $border_white;
     border-color: $search_blue_focus;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
   }
@@ -97,7 +106,7 @@
   }
   @include media(x-large){
     display:flex;
-    height:65px;
+    height:56px;
     margin-top:15px;
   }
   
@@ -110,12 +119,13 @@
       display:none;
     }
   }
+  padding:5px 15px;
 }
 #support,#contact{ 
     @include btnstyle($b-radius:0px,
                       $f-size:1.125rem,
-                      $w:129px,
-                      $h:46px,
+                      $w:139px,
+                      $h:56px,
                       $l-height:46px,
                       $text-center:center,
                       $b: none,
@@ -135,6 +145,10 @@
       margin:auto;
     }
     border: 1px solid transparent;
+    span{
+      font-size: 1.438rem;
+      line-height: 45px;
+    }
 }
 
 #support{
@@ -172,3 +186,4 @@
   }
   
 }
+

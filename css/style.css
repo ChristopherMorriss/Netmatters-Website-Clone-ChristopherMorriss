@@ -356,9 +356,7 @@ footer .marginalised a:hover {
   }
 }
 .f-container #n-logo {
-  width: 60%;
-  height: 60%;
-  margin-top: 13px;
+  max-width: 100%;
 }
 @media (min-width: 994px) {
   .f-container #n-logo {
@@ -380,6 +378,7 @@ footer .marginalised a:hover {
   align-items: normal;
   justify-content: space-around;
   width: 33%;
+  margin-left: 5%;
 }
 .f-container .right-header {
   flex-direction: row;
@@ -387,13 +386,14 @@ footer .marginalised a:hover {
   flex-wrap: wrap;
   align-content: normal;
   align-items: normal;
-  justify-content: space-around;
-  width: 67%;
+}
+.f-container .right-header button, .f-container .right-header a, .f-container .right-header input {
+  margin-left: 20px;
 }
 
 #hamburger-menu {
-  width: 60px;
-  height: 60px;
+  width: 63px;
+  height: 56px;
   font-size: 2.5em;
   color: #FFFFFF;
   background-color: #272936;
@@ -428,10 +428,11 @@ footer .marginalised a:hover {
 }
 
 #search-normal {
-  height: 56px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #cccccc;
+  padding: 5px 15px;
 }
 #search-normal:focus {
+  border: 1px solid #e5e5e5;
   border-color: #5bc0de;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
@@ -443,7 +444,7 @@ footer .marginalised a:hover {
 @media (min-width: 1260px) {
   #search-normal {
     display: flex;
-    height: 65px;
+    height: 56px;
     margin-top: 15px;
   }
 }
@@ -464,8 +465,8 @@ footer .marginalised a:hover {
 #support, #contact {
   border-radius: 0px;
   font-size: 1.125rem;
-  width: 129px;
-  height: 46px;
+  width: 139px;
+  height: 56px;
   line-height: 46px;
   text-align: center;
   border: none;
@@ -486,6 +487,10 @@ footer .marginalised a:hover {
 }
 #support a, #contact a {
   margin: auto;
+}
+#support span, #contact span {
+  font-size: 1.438rem;
+  line-height: 45px;
 }
 
 #support {

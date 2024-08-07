@@ -1,30 +1,3 @@
-.article{
-    border: 1px solid;
-    @extend %container-align; //Extend that sets text and the article box itself to the centre of the page
-    width:90%;
-    @include media(large){
-      width:371px;
-    }
-    margin-bottom: 10px;
-    img{
-      width:100%;
-      @include media(large){
-        width:369px;
-      }
-      
-    }
-    @extend %side-margin;
-}
-
-
-
-.intro{
-  display: flex;
-  background-color: $background_black;
-  height: auto;
-  flex-direction: column;
-}
-
 .heading{
  @include flex($flex-dir: null,
                $display: flex,
@@ -34,24 +7,7 @@
                $justify-content:space-between);
 }
 
-.partners{
-  overflow-x: hidden;
-  @include flex($flex-dir: row,
-                $display: flex,
-                $flex-wrap: nowrap,
-                $align-content: normal,
-                $align-items: normal,
-                $justify-content:space-between);
-  img{
-    max-height:70px;
-    max-width:200px;
-    filter: grayscale(1);
-    &:hover{
-      filter:none; //Removes the grayscale filter effect when hovered over
-    }
-  }
 
-}
 
 .social{
   display: flex;
@@ -65,15 +21,7 @@
     
   }
 }
-.search-container{
-  display: none;
-  @include media(medium){
-    display:flex;
-  }
-  @include media(large){
-    display:flex;
-  }
-}
+
 
 // .news{
 //   @include flex($flex-dir: row,

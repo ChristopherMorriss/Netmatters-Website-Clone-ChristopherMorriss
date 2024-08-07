@@ -60,7 +60,7 @@
 .btn-styles{ //A class added to most button elements which share a similar design. 
              //Some aspects may be overiden elsewhere for specific buttons
   @include btnstyle($b-radius:5px,
-                    $f-size:17.008px,
+                    $f-size:1.063rem,
                     $w:129px,
                     $h:46px,
                     $l-height:35px,
@@ -230,23 +230,7 @@
                 $justify-content:space-between); 
 }
 
-#phone{
-  //border:1px solid;
-  color: black;
-  font-size: 2em;
-  display: flex;
-  align-items: center;
-  &:hover{
-    cursor: pointer;
-  }
-  @include media(medium){
-    display:none;
-  }
-  @include media(large){
-    display:none;
-  }
-  
-}
+
 
 .btn-icon{ //Used for buttons which contain an icon inside them (such as the buttons used in the grid)
   width: 65px;
@@ -259,3 +243,15 @@
   line-height: 62px;
 }
 
+#search-icon{
+  height: 56px;
+  width: 63px;
+  border-radius: 0 3px 3px 0;
+  font-size: 23px;
+  text-align: center;
+  color: white;
+  @include hover($consent-hover,$search_grey_hover);
+  span{
+    margin: auto;
+  }
+}

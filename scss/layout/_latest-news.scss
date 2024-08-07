@@ -1,0 +1,17 @@
+.article{
+    border: 1px solid;
+    @extend %container-align; //Extend that sets text and the article box itself to the centre of the page
+    width:90%;
+    @include media(large){
+      width:371px;
+    }
+    margin-bottom: 10px;
+    img{
+      width:100%;
+      @include media(large){
+        width:369px;
+      }
+      
+    }
+    @extend %side-margin;
+}

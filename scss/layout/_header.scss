@@ -86,15 +86,21 @@
     }
 }
 #search-normal{ //The search bar which only appears on the biggest viewports
-    @include media(large){
-      display:none;
-    }
-    @include media(x-large){
-      display:flex;
-      height:65px;
-      margin-top:15px;
-    }
+  height:56px;
+  border: 1px solid $border_white;
+  &:focus{
+    border-color: $search_blue_focus;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
   }
+  @include media(large){
+    display:none;
+  }
+  @include media(x-large){
+    display:flex;
+    height:65px;
+    margin-top:15px;
+  }
+  
   #search-mobile{ //The search which appears on mobile or tablet devices only
     width:90vw;
     @include media(large){
@@ -103,13 +109,14 @@
     @include media(x-large){
       display:none;
     }
+  }
 }
 #support,#contact{ 
     @include btnstyle($b-radius:0px,
-                      $f-size:17.008px,
+                      $f-size:1.125rem,
                       $w:129px,
                       $h:46px,
-                      $l-height:35px,
+                      $l-height:46px,
                       $text-center:center,
                       $b: none,
                       );
@@ -121,8 +128,47 @@
     @include media(large){
       display:flex;
     }
-    padding-left:10px;
-    padding-top:5px;
+    //padding: 5px 15px;
+    border-radius: 3px;
+
+    a{
+      margin:auto;
+    }
+    border: 1px solid transparent;
+}
+
+#support{
+  @include hover($blue,$support-hover);
+}
+
+#contact{
+  @include hover($consent-hover,$grey);
 }
   
+.search-container{
+  display: none;
+  @include media(medium){
+    display:flex;
+  }
+  @include media(large){
+    display:flex;
+  }
+}  
+
+#phone{
+  //border:1px solid;
+  color: black;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  &:hover{
+    cursor: pointer;
+  }
+  @include media(medium){
+    display:none;
+  }
+  @include media(large){
+    display:none;
+  }
   
+}

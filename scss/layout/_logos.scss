@@ -1,0 +1,18 @@
+.partners{
+    overflow-x: hidden;
+    @include flex($flex-dir: row,
+                  $display: flex,
+                  $flex-wrap: nowrap,
+                  $align-content: normal,
+                  $align-items: normal,
+                  $justify-content:space-between);
+    img{
+      max-height:70px;
+      max-width:200px;
+      filter: grayscale(1);
+      &:hover{
+        filter:none; //Removes the grayscale filter effect when hovered over
+      }
+    }
+  
+  }

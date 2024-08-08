@@ -1,0 +1,51 @@
+.nav-size{
+    @include flex($flex-dir:row,
+                  $display: flex,
+                  $flex-wrap: wrap,
+                  $align-content: normal,
+                  $align-items: normal,
+                  $justify-content: null,
+                  );
+    background-color: #333645;
+    display:none;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    padding: 0;
+    p{
+      @extend %container-align;
+    }
+    @include media(large){
+      display:flex;
+    }
+    @include media(x-large){
+      display:flex;
+    }
+    span{
+      font-size: 1.438rem;
+    }
+    
+}
+
+.top-btn{
+    @include btnstyle($b-radius:null,
+                     $f-size:18px,
+                     $w:134.29px,
+                     $h:99px,
+                     $l-height:null,
+                     $text-center:center,
+                     $b: null,
+                     );
+    @include media(x-large){
+        width:167.14px;
+    }
+    background-color: #333645;
+    
+}
+
+.nav-background{
+    background-color: #333645;
+}
+
+.hover-nav{
+  display:none;
+}

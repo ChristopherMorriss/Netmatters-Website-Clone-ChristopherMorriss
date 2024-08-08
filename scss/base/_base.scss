@@ -4,12 +4,14 @@
 
 a{ 
     text-decoration: none; //Removes the underline from the anchor tags
+    
 }
 
 
 button{
     border: none;
     cursor: pointer; //Changes to the cursor to the state it appears when you hover over a link
+    text-transform: uppercase;
 }
 
 #container{ //Container for the whole page, excluding the footer and the pop-up menu
@@ -26,5 +28,18 @@ button{
     margin-left:auto;
     padding-left: 15px;
     padding-right: 15px;
+    @include media(x-large){
+        width:750px;
+    }
+    @include media(large){
+        width:970px;
+    }
+    @include media(x-large){
+        width:1200px;
+    }
+    
 }
 
+small{
+    font-size: 0.625rem;
+}

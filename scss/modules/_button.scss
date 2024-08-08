@@ -11,38 +11,9 @@
     }
   }
 
-.nav-size{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: normal;
-  align-items: normal;
-  justify-content: center;
-  background-color: #333645;
-  margin-bottom: 0;
-  display:none;
-  p{
-    @extend %container-align;
-  }
-  @include media(medium){
-    display:flex;
-  }
-  @include media(large){
-    display:flex;
-  }
-}
 
-.top-btn{
-    @include btnstyle($b-radius:null,
-                     $f-size:18px,
-                     $w:102px,
-                     $h:99px,
-                     $l-height:null,
-                     $text-center:center,
-                     $b: null,
-                     );
-    background-color: #333645;
-    
-}
+
+
 
 #sub-btn{
     @include btnstyle($b-radius:5px,

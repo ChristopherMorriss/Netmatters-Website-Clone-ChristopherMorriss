@@ -9,6 +9,7 @@ a {
 button {
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 #container {
@@ -25,6 +26,25 @@ button {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 994px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+small {
+  font-size: 0.625rem;
 }
 
 @font-face {
@@ -293,7 +313,7 @@ footer .marginalised a:hover {
   margin: 10px;
 }
 
-.slider button, .nav-size p, .article {
+.slider button, .article, .nav-size p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -559,6 +579,7 @@ footer .marginalised a:hover {
   font-size: 2em;
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 #phone:hover {
   cursor: pointer;
@@ -627,6 +648,53 @@ footer .marginalised a:hover {
   }
 }
 
+.nav-size {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  background-color: #333645;
+  display: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: 0;
+}
+@media (min-width: 994px) {
+  .nav-size {
+    display: flex;
+  }
+}
+@media (min-width: 1260px) {
+  .nav-size {
+    display: flex;
+  }
+}
+.nav-size span {
+  font-size: 1.438rem;
+}
+
+.top-btn {
+  font-size: 18px;
+  width: 134.29px;
+  height: 99px;
+  text-align: center;
+  background-color: #333645;
+}
+@media (min-width: 1260px) {
+  .top-btn {
+    width: 167.14px;
+  }
+}
+
+.nav-background {
+  background-color: #333645;
+}
+
+.hover-nav {
+  display: none;
+}
+
 .partners {
   overflow-x: hidden;
   flex-direction: row;
@@ -678,35 +746,6 @@ footer .marginalised a:hover {
 }
 #fixed-consent:hover {
   background-color: #999aa2;
-}
-
-.nav-size {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: normal;
-  align-items: normal;
-  justify-content: center;
-  background-color: #333645;
-  margin-bottom: 0;
-  display: none;
-}
-@media (min-width: 768px) and (max-width: 993px) {
-  .nav-size {
-    display: flex;
-  }
-}
-@media (min-width: 994px) {
-  .nav-size {
-    display: flex;
-  }
-}
-
-.top-btn {
-  font-size: 18px;
-  width: 102px;
-  height: 99px;
-  text-align: center;
-  background-color: #333645;
 }
 
 #sub-btn {

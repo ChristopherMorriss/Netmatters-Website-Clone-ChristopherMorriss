@@ -22,6 +22,14 @@
     justify-content: $justify-content;
 }
 
+@mixin grid($g-display,$g-row,$g-column,$gutter-row,$gutter-column){
+    display: $g-display;
+    grid-template-columns: $g-column;
+    grid-template-rows: $g-row;
+    row-gap: $gutter-row;
+    column-gap: $gutter-column;
+}
+
 @mixin hover($bg_colour,$hover_colour){//One colour is assigned as the default and the other is used when the background is hovered over
     background-color: $bg_colour;
     &:hover{

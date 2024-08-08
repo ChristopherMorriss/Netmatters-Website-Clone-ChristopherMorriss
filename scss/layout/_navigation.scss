@@ -47,19 +47,97 @@
     background-color: #333645;
 }
 
-.hover-nav{
-  h1{
-    color:$white;
-  }
-  display:none;
-}
 
-.hover-submenu1,.hover-submenu3,.hover-submenu4,.hover-submenu5,.hover-submenu6,.hover-submenu7{
-  background-color: $grey;
+.hover-submenu1{
+  background-color: $grey_blue_og;
+  .hover-grid1{
+    @include grid($g-display:grid, 
+                $g-row: null,
+                $g-column:1fr 1fr 1fr,
+                $gutter-row:30px,
+                $gutter-column:20px);
+  }
+  
   display: none;
 }
 
 .hover-submenu2{
   background-color: $blue;
+  .hover-grid2{
+    @include grid($g-display:grid, 
+                $g-row: null,
+                $g-column:1fr 1fr 1fr,
+                $gutter-row:30px,
+                $gutter-column:20px);
+  }
+  display: none;
 }
 
+.hover-submenu3{
+  background-color: $green;
+  .hover-grid3{
+    @include grid($g-display:grid, 
+                $g-row: null,
+                $g-column:1fr 1fr 1fr,
+                $gutter-row:30px,
+                $gutter-column:20px);
+  }
+  display: none;
+}
+
+.hover-submenu4,.hover-submenu7{
+  background-color: $dark-red;
+  .hover-grid4,.hover-grid7{
+    @include grid($g-display:grid, 
+                $g-row: null,
+                $g-column:1fr 1fr 1fr,
+                $gutter-row:30px,
+                $gutter-column:20px);
+  }
+  display: none;
+}
+
+.hover-submenu5{
+  background-color: $purple;
+  .hover-grid5{
+    @include grid($g-display:grid, 
+                $g-row: null,
+                $g-column:1fr 1fr 1fr,
+                $gutter-row:30px,
+                $gutter-column:20px);
+  }
+  display: none;
+}
+
+.hover-submenu6{
+  background-color: $pink_red;
+  .hover-grid6{
+    @include grid($g-display:grid, 
+                $g-row: null,
+                $g-column:1fr 1fr 1fr,
+                $gutter-row:30px,
+                $gutter-column:20px);
+  }
+  display: none;
+}
+
+.white{
+  color:$white;
+}
+
+.hover-submenu1,.hover-submenu2,.hover-submenu3,.hover-submenu4,.hover-submenu5,.hover-submenu6,.hover-submenu7{
+  font-size: 1.2rem;
+  z-index: 5;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 47px 67.5px 0 67.5px;
+  @include media(x-large){
+    border-width: 47px 83.5px 0 83.5px;
+  }
+  border-color: #FF4532 transparent transparent transparent;
+  transform: rotate(0deg);
+}

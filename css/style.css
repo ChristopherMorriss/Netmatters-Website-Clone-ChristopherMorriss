@@ -691,20 +691,99 @@ footer .marginalised a:hover {
   background-color: #333645;
 }
 
-.hover-nav {
+.hover-submenu1 {
+  background-color: #67809F;
   display: none;
 }
-.hover-nav h1 {
-  color: #FFFFFF;
-}
-
-.hover-submenu1, .hover-submenu3, .hover-submenu4, .hover-submenu5, .hover-submenu6, .hover-submenu7 {
-  background-color: #84858F;
-  display: none;
+.hover-submenu1 .hover-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .hover-submenu2 {
   background-color: #4183D7;
+  display: none;
+}
+.hover-submenu2 .hover-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.hover-submenu3 {
+  background-color: #2ECC71;
+  display: none;
+}
+.hover-submenu3 .hover-grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.hover-submenu4, .hover-submenu7 {
+  background-color: #CE4125;
+  display: none;
+}
+.hover-submenu4 .hover-grid4, .hover-submenu4 .hover-grid7, .hover-submenu7 .hover-grid4, .hover-submenu7 .hover-grid7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.hover-submenu5 {
+  background-color: #926fb1;
+  display: none;
+}
+.hover-submenu5 .hover-grid5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.hover-submenu6 {
+  background-color: #f62459;
+  display: none;
+}
+.hover-submenu6 .hover-grid6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.hover-submenu1, .hover-submenu2, .hover-submenu3, .hover-submenu4, .hover-submenu5, .hover-submenu6, .hover-submenu7 {
+  font-size: 1.2rem;
+  z-index: 5;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 47px 67.5px 0 67.5px;
+  border-color: #FF4532 transparent transparent transparent;
+  transform: rotate(0deg);
+}
+@media (min-width: 1260px) {
+  .triangle {
+    border-width: 47px 83.5px 0 83.5px;
+  }
 }
 
 .partners {

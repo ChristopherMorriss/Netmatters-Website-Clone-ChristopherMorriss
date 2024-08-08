@@ -694,6 +694,18 @@ footer .marginalised a:hover {
 .hover-nav {
   display: none;
 }
+.hover-nav h1 {
+  color: #FFFFFF;
+}
+
+.hover-submenu1, .hover-submenu3, .hover-submenu4, .hover-submenu5, .hover-submenu6, .hover-submenu7 {
+  background-color: #84858F;
+  display: none;
+}
+
+.hover-submenu2 {
+  background-color: #4183D7;
+}
 
 .partners {
   overflow-x: hidden;

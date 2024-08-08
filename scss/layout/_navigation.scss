@@ -24,6 +24,7 @@
       font-size: 1.438rem;
     }
     
+    
 }
 
 .top-btn{
@@ -47,5 +48,18 @@
 }
 
 .hover-nav{
+  h1{
+    color:$white;
+  }
   display:none;
 }
+
+.hover-submenu1,.hover-submenu3,.hover-submenu4,.hover-submenu5,.hover-submenu6,.hover-submenu7{
+  background-color: $grey;
+  display: none;
+}
+
+.hover-submenu2{
+  background-color: $blue;
+}
+

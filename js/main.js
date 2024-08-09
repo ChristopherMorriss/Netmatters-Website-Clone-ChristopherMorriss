@@ -56,8 +56,6 @@ if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies
 	
 hover_submenu1=document.querySelector('.hover-submenu1');
 submenu_1=document.querySelector('.submenu_1');
-console.log(submenu_1);
-console.log(hover_submenu1);
 submenu_1.addEventListener('mouseover',()=>{
   hover_submenu1.style.display="grid";
 });
@@ -68,8 +66,6 @@ submenu_1.addEventListener('mouseout',()=>{
 
 hover_submenu2=document.querySelector('.hover-submenu2');
 submenu_2=document.querySelector('.submenu_2');
-console.log(submenu_2);
-console.log(hover_submenu2);
 submenu_2.addEventListener('mouseover',()=>{
   hover_submenu2.style.display="grid";
 });
@@ -80,8 +76,6 @@ submenu_2.addEventListener('mouseout',()=>{
 
 hover_submenu3=document.querySelector('.hover-submenu3');
 submenu_3=document.querySelector('.submenu_3');
-console.log(submenu_3);
-console.log(hover_submenu3);
 submenu_3.addEventListener('mouseover',()=>{
   hover_submenu3.style.display="grid";
 });
@@ -92,8 +86,6 @@ submenu_3.addEventListener('mouseout',()=>{
 
 hover_submenu4=document.querySelector('.hover-submenu4');
 submenu_4=document.querySelector('.submenu_4');
-console.log(submenu_4);
-console.log(hover_submenu4);
 submenu_4.addEventListener('mouseover',()=>{
   hover_submenu4.style.display="grid";
 });
@@ -104,8 +96,6 @@ submenu_4.addEventListener('mouseout',()=>{
 
 hover_submenu5=document.querySelector('.hover-submenu5');
 submenu_5=document.querySelector('.submenu_5');
-console.log(submenu_5);
-console.log(hover_submenu5);
 submenu_5.addEventListener('mouseover',()=>{
   hover_submenu5.style.display="grid";
 });
@@ -116,8 +106,6 @@ submenu_5.addEventListener('mouseout',()=>{
 
 hover_submenu6=document.querySelector('.hover-submenu6');
 submenu_6=document.querySelector('.submenu_6');
-console.log(submenu_6);
-console.log(hover_submenu6);
 submenu_6.addEventListener('mouseover',()=>{
   hover_submenu6.style.display="grid";
 });
@@ -128,8 +116,6 @@ submenu_6.addEventListener('mouseout',()=>{
 
 hover_submenu7=document.querySelector('.hover-submenu7');
 submenu_7=document.querySelector('.submenu_7');
-console.log(submenu_7);
-console.log(hover_submenu7);
 submenu_7.addEventListener('mouseover',()=>{
   hover_submenu7.style.display="grid";
 });

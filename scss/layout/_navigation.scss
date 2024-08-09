@@ -27,6 +27,116 @@
     
 }
 
+.btn-1{
+  @include hover($background_black,$grey_blue_og); 
+  span{
+    @include hover-text($grey_blue_og, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between); 
+    
+}
+
+.btn-2{
+  @include hover($background_black,$blue); 
+  span{
+    @include hover-text($blue, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between); 
+}
+
+.btn-3{
+  @include hover($background_black,$green);
+  span{
+    @include hover-text($green, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between); 
+}
+
+.btn-4{
+  @include hover($background_black,$dark_red); 
+  span{
+    @include hover-text($dark-red, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between);
+}
+
+.btn-5{
+  @include hover($background_black,$purple); 
+  span{
+    @include hover-text($purple, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between); 
+}
+
+.btn-6{
+  @include hover($background_black,$pink_red); 
+  span{
+    @include hover-text($pink_red, $white);
+  }
+  &:hover{
+    span{
+      @include hover-text($white, null);
+    }
+  }
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:space-between); 
+}
+
+
 .top-btn{
     @include btnstyle($b-radius:null,
                      $f-size:18px,
@@ -49,7 +159,7 @@
 
 
 .hover-submenu1{
-  background-color: $grey_blue_og;
+  background-color: $search_grey_hover;
   .hover-grid1{
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -62,7 +172,7 @@
 }
 
 .hover-submenu2{
-  background-color: $blue;
+  background-color: $blue-hover;
   .hover-grid2{
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -74,7 +184,7 @@
 }
 
 .hover-submenu3{
-  background-color: $green;
+  background-color: $green-hover;
   .hover-grid3{
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -86,7 +196,7 @@
 }
 
 .hover-submenu4,.hover-submenu7{
-  background-color: $dark-red;
+  background-color: $dred-hover;
   .hover-grid4,.hover-grid7{
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -98,7 +208,7 @@
 }
 
 .hover-submenu5{
-  background-color: $purple;
+  background-color: $purple-hover;
   .hover-grid5{
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -110,7 +220,7 @@
 }
 
 .hover-submenu6{
-  background-color: $pink_red;
+  background-color: $pred-hover;
   .hover-grid6{
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -134,10 +244,71 @@
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 47px 67.5px 0 67.5px;
+  border-width: 35px 67.5px 0 67.5px;
+  //position: absolute;
   @include media(x-large){
-    border-width: 47px 83.5px 0 83.5px;
+      border-width: 39px 83.5px 0 83.5px;
   }
-  border-color: #FF4532 transparent transparent transparent;
-  transform: rotate(0deg);
+  &-1{
+    border-color: $grey_blue_og transparent transparent transparent;
+    @include media(large){
+      transform: translateX(-12px);
+    }
+    @include media(x-large){
+      transform: translateX(-15px);
+    }
+  }
+  &-2{
+    border-color: $blue transparent transparent transparent;
+    @include media(large){
+      transform: translateX(117px);
+    }
+    @include media(x-large){
+      transform: translateX(153px);
+    }
+  }
+  &-3{
+    border-color: $green transparent transparent transparent;
+    @include media(large){
+      transform: translateX(254px);
+    }
+    @include media(x-large){
+      transform: translateX(320px);
+    }
+  }
+  &-4{
+    border-color: $dark-red transparent transparent transparent;
+    @include media(large){
+      transform: translateX(387px);
+    }
+    @include media(x-large){
+      transform: translateX(486px);
+    }
+  }
+  &-5{
+    border-color: $purple transparent transparent transparent;
+    @include media(large){
+      transform: translateX(523px);
+    }
+    @include media(x-large){
+      transform: translateX(655px);
+    }
+  }
+  &-6{
+    border-color: $pink_red transparent transparent transparent;
+    @include media(large){
+      transform: translateX(655px);
+    }
+    @include media(x-large){
+      transform: translateX(822px);
+    }
+  }
+  &-7{
+    border-color: $dark-red transparent transparent transparent;
+    @include media(large){
+    }
+    @include media(x-large){
+      transform: translateX(988px);
+    }
+  }
 }

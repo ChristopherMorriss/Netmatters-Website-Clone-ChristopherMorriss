@@ -313,7 +313,7 @@ footer .marginalised a:hover {
   margin: 10px;
 }
 
-.slider button, .article, .nav-size p {
+.article, .slider button, .nav-size p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -675,6 +675,7 @@ footer .marginalised a:hover {
 }
 
 .btn-1 {
+  border-bottom: 1px solid #333645;
   background-color: #333645;
   flex-direction: row;
   display: flex;
@@ -696,6 +697,7 @@ footer .marginalised a:hover {
   color: #FFFFFF;
 }
 .btn-2 {
+  border-bottom: 1px solid #333645;
   background-color: #333645;
   flex-direction: row;
   display: flex;
@@ -717,6 +719,7 @@ footer .marginalised a:hover {
   color: #FFFFFF;
 }
 .btn-3 {
+  border-bottom: 1px solid #333645;
   background-color: #333645;
   flex-direction: row;
   display: flex;
@@ -738,6 +741,7 @@ footer .marginalised a:hover {
   color: #FFFFFF;
 }
 .btn-4 {
+  border-bottom: 1px solid #333645;
   background-color: #333645;
   flex-direction: row;
   display: flex;
@@ -759,6 +763,7 @@ footer .marginalised a:hover {
   color: #FFFFFF;
 }
 .btn-5 {
+  border-bottom: 1px solid #333645;
   background-color: #333645;
   flex-direction: row;
   display: flex;
@@ -780,6 +785,7 @@ footer .marginalised a:hover {
   color: #FFFFFF;
 }
 .btn-6 {
+  border-bottom: 1px solid #333645;
   background-color: #333645;
   flex-direction: row;
   display: flex;
@@ -818,75 +824,33 @@ footer .marginalised a:hover {
 }
 
 .hover-submenu1 {
-  background-color: #7e808a;
+  background-color: #84858F;
   display: none;
-}
-.hover-submenu1 .hover-grid1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
 }
 
 .hover-submenu2 {
   background-color: #166af4;
   display: none;
 }
-.hover-submenu2 .hover-grid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
 
 .hover-submenu3 {
   background-color: #26ab5f;
   display: none;
-}
-.hover-submenu3 .hover-grid3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
 }
 
 .hover-submenu4, .hover-submenu7 {
   background-color: #c42e2a;
   display: none;
 }
-.hover-submenu4 .hover-grid4, .hover-submenu4 .hover-grid7, .hover-submenu7 .hover-grid4, .hover-submenu7 .hover-grid7 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
 
 .hover-submenu5 {
   background-color: #7e57a0;
   display: none;
 }
-.hover-submenu5 .hover-grid5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
 
 .hover-submenu6 {
   background-color: #e80a42;
   display: none;
-}
-.hover-submenu6 .hover-grid6 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
 }
 
 .white {
@@ -896,6 +860,15 @@ footer .marginalised a:hover {
 .hover-submenu1, .hover-submenu2, .hover-submenu3, .hover-submenu4, .hover-submenu5, .hover-submenu6, .hover-submenu7 {
   font-size: 1.2rem;
   z-index: 5;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.hover-submenu1 .hover-grid1, .hover-submenu1 .hover-grid2, .hover-submenu1 .hover-grid3, .hover-submenu1 .hover-grid4, .hover-submenu1 .hover-grid5, .hover-submenu1 .hover-grid6, .hover-submenu1 .hover-grid7, .hover-submenu1 .hover-grid8, .hover-submenu2 .hover-grid1, .hover-submenu2 .hover-grid2, .hover-submenu2 .hover-grid3, .hover-submenu2 .hover-grid4, .hover-submenu2 .hover-grid5, .hover-submenu2 .hover-grid6, .hover-submenu2 .hover-grid7, .hover-submenu2 .hover-grid8, .hover-submenu3 .hover-grid1, .hover-submenu3 .hover-grid2, .hover-submenu3 .hover-grid3, .hover-submenu3 .hover-grid4, .hover-submenu3 .hover-grid5, .hover-submenu3 .hover-grid6, .hover-submenu3 .hover-grid7, .hover-submenu3 .hover-grid8, .hover-submenu4 .hover-grid1, .hover-submenu4 .hover-grid2, .hover-submenu4 .hover-grid3, .hover-submenu4 .hover-grid4, .hover-submenu4 .hover-grid5, .hover-submenu4 .hover-grid6, .hover-submenu4 .hover-grid7, .hover-submenu4 .hover-grid8, .hover-submenu5 .hover-grid1, .hover-submenu5 .hover-grid2, .hover-submenu5 .hover-grid3, .hover-submenu5 .hover-grid4, .hover-submenu5 .hover-grid5, .hover-submenu5 .hover-grid6, .hover-submenu5 .hover-grid7, .hover-submenu5 .hover-grid8, .hover-submenu6 .hover-grid1, .hover-submenu6 .hover-grid2, .hover-submenu6 .hover-grid3, .hover-submenu6 .hover-grid4, .hover-submenu6 .hover-grid5, .hover-submenu6 .hover-grid6, .hover-submenu6 .hover-grid7, .hover-submenu6 .hover-grid8, .hover-submenu7 .hover-grid1, .hover-submenu7 .hover-grid2, .hover-submenu7 .hover-grid3, .hover-submenu7 .hover-grid4, .hover-submenu7 .hover-grid5, .hover-submenu7 .hover-grid6, .hover-submenu7 .hover-grid7, .hover-submenu7 .hover-grid8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .triangle {
@@ -990,9 +963,89 @@ footer .marginalised a:hover {
 .triangle-7 {
   border-color: #CE4125 transparent transparent transparent;
 }
+@media (min-width: 994px) {
+  .triangle-7 {
+    transform: translateX(791px);
+  }
+}
 @media (min-width: 1260px) {
   .triangle-7 {
     transform: translateX(988px);
+  }
+}
+
+.slider {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: center;
+}
+.slider .design-1 {
+  background-image: url("../img/home.webp");
+}
+.slider .design-2 {
+  background-image: url("../img/bespoke-bg.webp");
+}
+.slider .design-3 {
+  background-image: url("../img/it-bg.webp");
+}
+.slider .design-4 {
+  background-image: url("../img/digital-marketing-bg.webp");
+}
+.slider .design-5 {
+  background-image: url("../img/telecoms-services-bg.webp");
+}
+.slider .design-6 {
+  background-image: url("../img/web-design-bg.webp");
+}
+.slider .design-7 {
+  background-image: url("../img/cyber-security-bg.webp");
+}
+.slider button {
+  width: 80%;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  .slider button {
+    width: 15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  .slider button {
+    width: 15%;
+  }
+}
+@media (min-width: 994px) {
+  .slider button {
+    width: 15%;
+  }
+}
+@media (min-width: 1260px) {
+  .slider button {
+    width: 15%;
+  }
+}
+@media (min-width: 994px) {
+  .slider-design h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1260px) {
+  .slider-design h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 994px) {
+  .slider-design h2 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1260px) {
+  .slider-design h2 {
+    font-size: 1.5em;
   }
 }
 
@@ -1176,85 +1229,6 @@ footer .marginalised a:hover {
 }
 #search-icon span {
   margin: auto;
-}
-
-.slider {
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: normal;
-  align-items: normal;
-  justify-content: center;
-}
-.slider .design-1 {
-  background-image: url("../img/home.webp");
-}
-.slider .design-2 {
-  background-image: url("../img/bespoke-bg.webp");
-}
-.slider .design-3 {
-  background-image: url("../img/it-bg.webp");
-}
-.slider .design-4 {
-  background-image: url("../img/digital-marketing-bg.webp");
-}
-.slider .design-5 {
-  background-image: url("../img/telecoms-services-bg.webp");
-}
-.slider .design-6 {
-  background-image: url("../img/web-design-bg.webp");
-}
-.slider .design-7 {
-  background-image: url("../img/cyber-security-bg.webp");
-}
-.slider button {
-  width: 80%;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-@media (min-width: 576px) {
-  .slider button {
-    width: 15%;
-  }
-}
-@media (min-width: 768px) and (max-width: 993px) {
-  .slider button {
-    width: 15%;
-  }
-}
-@media (min-width: 994px) {
-  .slider button {
-    width: 15%;
-  }
-}
-@media (min-width: 1260px) {
-  .slider button {
-    width: 15%;
-  }
-}
-@media (min-width: 994px) {
-  .slider-design h1 {
-    font-size: 4em;
-  }
-}
-@media (min-width: 1260px) {
-  .slider-design h1 {
-    font-size: 4em;
-  }
-}
-@media (min-width: 994px) {
-  .slider-design h2 {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 1260px) {
-  .slider-design h2 {
-    font-size: 1.5em;
-  }
-}
-.slider-design h1, .slider-design h2, .slider-design button {
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .cookie-popup {

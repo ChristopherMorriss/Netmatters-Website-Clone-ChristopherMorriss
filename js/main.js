@@ -59,8 +59,13 @@ submenu_1=document.querySelector('.submenu_1');
 submenu_1.addEventListener('mouseover',()=>{
   hover_submenu1.style.display="grid";
 });
-
 submenu_1.addEventListener('mouseout',()=>{
+  hover_submenu1.style.display="none";
+});
+hover_submenu1.addEventListener('mouseover',()=>{
+  hover_submenu1.style.display="grid";
+});
+hover_submenu1.addEventListener('mouseout',()=>{
   hover_submenu1.style.display="none";
 });
 
@@ -69,8 +74,13 @@ submenu_2=document.querySelector('.submenu_2');
 submenu_2.addEventListener('mouseover',()=>{
   hover_submenu2.style.display="grid";
 });
-
 submenu_2.addEventListener('mouseout',()=>{
+  hover_submenu2.style.display="none";
+});
+hover_submenu2.addEventListener('mouseover',()=>{
+  hover_submenu2.style.display="grid";
+});
+hover_submenu2.addEventListener('mouseout',()=>{
   hover_submenu2.style.display="none";
 });
 
@@ -79,8 +89,13 @@ submenu_3=document.querySelector('.submenu_3');
 submenu_3.addEventListener('mouseover',()=>{
   hover_submenu3.style.display="grid";
 });
-
 submenu_3.addEventListener('mouseout',()=>{
+  hover_submenu3.style.display="none";
+});
+hover_submenu3.addEventListener('mouseover',()=>{
+  hover_submenu3.style.display="grid";
+});
+hover_submenu3.addEventListener('mouseout',()=>{
   hover_submenu3.style.display="none";
 });
 
@@ -89,8 +104,13 @@ submenu_4=document.querySelector('.submenu_4');
 submenu_4.addEventListener('mouseover',()=>{
   hover_submenu4.style.display="grid";
 });
-
 submenu_4.addEventListener('mouseout',()=>{
+  hover_submenu4.style.display="none";
+});
+hover_submenu4.addEventListener('mouseover',()=>{
+  hover_submenu4.style.display="grid";
+});
+hover_submenu4.addEventListener('mouseout',()=>{
   hover_submenu4.style.display="none";
 });
 
@@ -99,8 +119,13 @@ submenu_5=document.querySelector('.submenu_5');
 submenu_5.addEventListener('mouseover',()=>{
   hover_submenu5.style.display="grid";
 });
-
 submenu_5.addEventListener('mouseout',()=>{
+  hover_submenu5.style.display="none";
+});
+hover_submenu5.addEventListener('mouseover',()=>{
+  hover_submenu5.style.display="grid";
+});
+hover_submenu5.addEventListener('mouseout',()=>{
   hover_submenu5.style.display="none";
 });
 
@@ -109,8 +134,13 @@ submenu_6=document.querySelector('.submenu_6');
 submenu_6.addEventListener('mouseover',()=>{
   hover_submenu6.style.display="grid";
 });
-
 submenu_6.addEventListener('mouseout',()=>{
+  hover_submenu6.style.display="none";
+});
+hover_submenu6.addEventListener('mouseover',()=>{
+  hover_submenu6.style.display="grid";
+});
+hover_submenu6.addEventListener('mouseout',()=>{
   hover_submenu6.style.display="none";
 });
 
@@ -119,12 +149,15 @@ submenu_7=document.querySelector('.submenu_7');
 submenu_7.addEventListener('mouseover',()=>{
   hover_submenu7.style.display="grid";
 });
-
 submenu_7.addEventListener('mouseout',()=>{
   hover_submenu7.style.display="none";
 });
-
-
+hover_submenu7.addEventListener('mouseover',()=>{
+  hover_submenu7.style.display="grid";
+});
+hover_submenu7.addEventListener('mouseout',()=>{
+  hover_submenu7.style.display="none";
+});
 
 
 	

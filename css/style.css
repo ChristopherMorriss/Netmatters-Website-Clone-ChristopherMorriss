@@ -313,7 +313,7 @@ footer .marginalised a:hover {
   margin: 10px;
 }
 
-.article, .slider button, .nav-size p {
+.article, .nav-size p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -982,11 +982,22 @@ footer .marginalised a:hover {
   align-items: normal;
   justify-content: center;
 }
+.slider:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(270deg, transparent 25%, #000);
+  z-index: 3;
+}
 .slider .design-1 {
   background-image: url("../img/home.webp");
 }
 .slider .design-2 {
   background-image: url("../img/bespoke-bg.webp");
+  position: sticky;
 }
 .slider .design-3 {
   background-image: url("../img/it-bg.webp");
@@ -1007,6 +1018,7 @@ footer .marginalised a:hover {
   width: 80%;
   line-height: 50px;
   text-transform: uppercase;
+  z-index: 4;
 }
 @media (min-width: 576px) {
   .slider button {
@@ -1047,6 +1059,16 @@ footer .marginalised a:hover {
   .slider-design h2 {
     font-size: 1.5em;
   }
+}
+
+.slider-content {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: normal;
+  justify-content: center;
+  z-index: 4;
 }
 
 .partners {

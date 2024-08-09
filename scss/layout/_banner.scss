@@ -1,12 +1,39 @@
 .slider{ 
+    &:before{
+        content:"";
+        position: absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        background: linear-gradient(270deg,transparent 25%,#000);
+        z-index:3;
+    }
     .design-1{
       background-image: url("../img/home.webp"); 
       @extend %background-banner;
     }
+    // .design-1:before{
+        
+    // }
     .design-2{
+      
       background-image: url("../img/bespoke-bg.webp"); 
       @extend %background-banner;
+      position: sticky;
     }
+    // .design-2:before{
+    //     content:"";
+    //     position: absolute;
+    //     top:0px;
+    //     bottom:0px;
+    //     left:0px;
+    //     right:0px;
+    //     background: linear-gradient(270deg,transparent 25%,#000);
+    //     z-index:3;
+    // }
+
+    
     .design-3{
       background-image: url("../img/it-bg.webp"); 
       @extend %background-banner;
@@ -50,9 +77,8 @@
       @include media(x-large){
         width:15%;
       };
-      @extend %container-align;
       text-transform: uppercase;
-        
+      z-index:4;
     }
     &-design{
       //height:500px;
@@ -80,4 +106,15 @@
     }
   }
   
-.slider-content{}
+.slider-content{
+    @include flex( //Flex used for the layout of the text on the banner
+        $flex-dir:column,
+        $display:flex,
+        $flex-wrap:wrap,
+        $align-content:normal,
+        $align-items:normal,
+        $justify-content:center
+        );
+    z-index: 4;
+    
+}

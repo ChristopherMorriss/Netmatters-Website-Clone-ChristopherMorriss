@@ -1,5 +1,8 @@
 .slider{ 
-    &:before{
+    .design-1{
+      background-image: url("../img/home.webp"); 
+      @extend %background-banner;
+      &:before{
         content:"";
         position: absolute;
         top:0px;
@@ -8,10 +11,7 @@
         right:0px;
         background: linear-gradient(270deg,transparent 25%,#000);
         z-index:3;
-    }
-    .design-1{
-      background-image: url("../img/home.webp"); 
-      @extend %background-banner;
+     }
     }
     // .design-1:before{
         
@@ -20,18 +20,8 @@
       
       background-image: url("../img/bespoke-bg.webp"); 
       @extend %background-banner;
-      position: sticky;
     }
-    // .design-2:before{
-    //     content:"";
-    //     position: absolute;
-    //     top:0px;
-    //     bottom:0px;
-    //     left:0px;
-    //     right:0px;
-    //     background: linear-gradient(270deg,transparent 25%,#000);
-    //     z-index:3;
-    // }
+    
 
     
     .design-3{
@@ -65,6 +55,7 @@
     button{
       width:80%;
       line-height:50px;
+      //padding:5px 20px;
       @include media(small){
         width:15%;
       };
@@ -86,23 +77,28 @@
       h1{
         @include media(large){
           font-size:4em;
+          line-height: 5rem;
           }
         @include media(x-large){
-        font-size:4em;
+          font-size:4em;
+          line-height: 5rem;
         }
       }
-      h2{
+      p{
         @include media(large){
-          font-size:1.5em;
-          }
+          font-size:1.625rem;
+          line-height: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 0.375rem;
+        }
         @include media(x-large){
-        font-size:1.5em;
+          font-size:1.625rem;
+          line-height: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 0.375rem;
         }
       }
-    //   h1,h2,button{
-    //     margin-left:10%;
-    //     margin-right:10%;
-    //   }
+
     }
   }
   
@@ -116,5 +112,6 @@
         $justify-content:center
         );
     z-index: 4;
-    
+    position: relative;
+    height:100%;
 }

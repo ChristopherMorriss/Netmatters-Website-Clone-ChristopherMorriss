@@ -47,6 +47,10 @@ small {
   font-size: 0.625rem;
 }
 
+header {
+  letter-spacing: 0.4px;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins-Black.ttf) format("ttf");
@@ -982,7 +986,10 @@ footer .marginalised a:hover {
   align-items: normal;
   justify-content: center;
 }
-.slider:before {
+.slider .design-1 {
+  background-image: url("../img/home.webp");
+}
+.slider .design-1:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -992,12 +999,8 @@ footer .marginalised a:hover {
   background: linear-gradient(270deg, transparent 25%, #000);
   z-index: 3;
 }
-.slider .design-1 {
-  background-image: url("../img/home.webp");
-}
 .slider .design-2 {
   background-image: url("../img/bespoke-bg.webp");
-  position: sticky;
 }
 .slider .design-3 {
   background-image: url("../img/it-bg.webp");
@@ -1043,21 +1046,29 @@ footer .marginalised a:hover {
 @media (min-width: 994px) {
   .slider-design h1 {
     font-size: 4em;
+    line-height: 5rem;
   }
 }
 @media (min-width: 1260px) {
   .slider-design h1 {
     font-size: 4em;
+    line-height: 5rem;
   }
 }
 @media (min-width: 994px) {
-  .slider-design h2 {
-    font-size: 1.5em;
+  .slider-design p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.375rem;
   }
 }
 @media (min-width: 1260px) {
-  .slider-design h2 {
-    font-size: 1.5em;
+  .slider-design p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.375rem;
   }
 }
 
@@ -1069,6 +1080,8 @@ footer .marginalised a:hover {
   align-items: normal;
   justify-content: center;
   z-index: 4;
+  position: relative;
+  height: 100%;
 }
 
 .partners {

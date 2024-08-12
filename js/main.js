@@ -13,13 +13,13 @@ slideOutMenu.addEventListener('click',()=>{
 });
 
 
-let acceptButton= document.querySelector('#accept');
+// let acceptButton= document.querySelector('#accept');
 
-acceptButton.addEventListener('click',()=>{
-  document.cookie = "username=cookie; expires=Thu, 18 Dec 2015 12:00:00 UTC"; //Cookie creation 
-  $('.cookie-popup').css('display','none'); 
-  setCookie('cookie','accepted','730'); //Creates a cookie called cookie with the value accepted and an expiry data of 730 days
-  });
+// acceptButton.addEventListener('click',()=>{
+//   document.cookie = "username=cookie; expires=Thu, 18 Dec 2015 12:00:00 UTC"; //Cookie creation 
+//   $('.cookie-popup').css('display','none'); 
+//   setCookie('cookie','accepted','730'); //Creates a cookie called cookie with the value accepted and an expiry data of 730 days
+//   });
 
 let consentButton = document.querySelector('#fixed-consent'); //Shows the popup when clicked
 consentButton.addEventListener('click',()=>{

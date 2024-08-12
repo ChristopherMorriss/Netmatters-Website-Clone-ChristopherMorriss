@@ -1,117 +1,116 @@
 .slider{ 
-    .design-1{
-      background-image: url("../img/home.webp"); 
-      @extend %background-banner;
-      &:before{
-        content:"";
-        position: absolute;
-        top:0px;
-        bottom:0px;
-        left:0px;
-        right:0px;
-        background: linear-gradient(270deg,transparent 25%,#000);
-        z-index:3;
-     }
-    }
-    // .design-1:before{
-        
-    // }
-    .design-2{
+  .design-1{
+    background-image: url("../img/home.webp"); 
+    @extend %background-banner;
+    &:before{
+      content:"";
+      position: absolute;
+      top:0px;
+      bottom:0px;
+      left:0px;
+      right:0px;
+      background: linear-gradient(270deg,transparent 25%,#000);
+      z-index:3;
+   }
+  }
+  // .design-1:before{
       
-      background-image: url("../img/bespoke-bg.webp"); 
-      @extend %background-banner;
-    }
-    
-
-    
-    .design-3{
-      background-image: url("../img/it-bg.webp"); 
-      @extend %background-banner;
-    }
-    .design-4{
-      background-image: url("../img/digital-marketing-bg.webp"); 
-      @extend %background-banner;
-    }
-    .design-5{
-      background-image: url("../img/telecoms-services-bg.webp"); 
-      @extend %background-banner;
-    }
-    .design-6{
-      background-image: url("../img/web-design-bg.webp"); 
-      @extend %background-banner;
-    }
-    .design-7{
-      background-image: url("../img/cyber-security-bg.webp"); 
-      @extend %background-banner;
-    }
-    @include flex( //Flex used for the layout of the text on the banner
-        $flex-dir:column,
-        $display:flex,
-        $flex-wrap:wrap,
-        $align-content:normal,
-        $align-items:normal,
-        $justify-content:center
-        );
-    button{
-      width:80%;
-      line-height:50px;
-      //padding:5px 20px;
-      @include media(small){
-        width:15%;
-      };
-      @include media(medium){
-        width:15%;
-      };
-      @include media(large){
-        width:15%;
-      };
-      @include media(x-large){
-        width:15%;
-      };
-      text-transform: uppercase;
-      z-index:4;
-    }
-    &-design{
-      //height:500px;
-      //margin-left:10%;
-      h1{
-        @include media(large){
-          font-size:4em;
-          line-height: 5rem;
-          }
-        @include media(x-large){
-          font-size:4em;
-          line-height: 5rem;
-        }
-      }
-      p{
-        @include media(large){
-          font-size:1.625rem;
-          line-height: 2.5rem;
-          font-weight: 600;
-          margin-bottom: 0.375rem;
-        }
-        @include media(x-large){
-          font-size:1.625rem;
-          line-height: 2.5rem;
-          font-weight: 600;
-          margin-bottom: 0.375rem;
-        }
-      }
-
-    }
+  // }
+  .design-2{
+    background-image: url("../img/bespoke-bg.webp"); 
+    @extend %background-banner;
   }
   
+
+  
+  .design-3{
+    background-image: url("../img/it-bg.webp"); 
+    @extend %background-banner;
+  }
+  .design-4{
+    background-image: url("../img/digital-marketing-bg.webp"); 
+    @extend %background-banner;
+  }
+  .design-5{
+    background-image: url("../img/telecoms-services-bg.webp"); 
+    @extend %background-banner;
+  }
+  .design-6{
+    background-image: url("../img/web-design-bg.webp"); 
+    @extend %background-banner;
+  }
+  .design-7{
+    background-image: url("../img/cyber-security-bg.webp"); 
+    @extend %background-banner;
+  }
+  @include flex( //Flex used for the layout of the text on the banner
+      $flex-dir:column,
+      $display:flex,
+      $flex-wrap:wrap,
+      $align-content:normal,
+      $align-items:normal,
+      $justify-content:center
+      );
+  button{
+    width:80%;
+    line-height:50px;
+    //padding:5px 20px;
+    @include media(small){
+      width:15%;
+    };
+    @include media(medium){
+      width:15%;
+    };
+    @include media(large){
+      width:15%;
+    };
+    @include media(x-large){
+      width:15%;
+    };
+    text-transform: uppercase;
+    z-index:4;
+  }
+  &-design{
+    //height:500px;
+    //margin-left:10%;
+    h1{
+      @include media(large){
+        font-size:4em;
+        line-height: 5rem;
+        }
+      @include media(x-large){
+        font-size:4em;
+        line-height: 5rem;
+      }
+    }
+    p{
+      @include media(large){
+        font-size:1.625rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 0.375rem;
+      }
+      @include media(x-large){
+        font-size:1.625rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 0.375rem;
+      }
+    }
+
+  }
+}
+
 .slider-content{
-    @include flex( //Flex used for the layout of the text on the banner
-        $flex-dir:column,
-        $display:flex,
-        $flex-wrap:wrap,
-        $align-content:normal,
-        $align-items:normal,
-        $justify-content:center
-        );
-    z-index: 4;
-    position: relative;
-    height:100%;
+  @include flex( //Flex used for the layout of the text on the banner
+      $flex-dir:column,
+      $display:flex,
+      $flex-wrap:wrap,
+      $align-content:normal,
+      $align-items:normal,
+      $justify-content:center
+      );
+  z-index: 4;
+  position: relative;
+  height:100%;
 }

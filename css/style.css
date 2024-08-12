@@ -60,16 +60,16 @@ header {
 }
 
 @font-face {
-  font-family: "iconmoon";
-  src: url("../fonts/iconmoon.eot?tl9t0p");
-  src: url("../fonts/iconmoon.eot?tl9t0p#iefix") format("embedded-opentype"), url("../fonts/iconmoon.ttf?tl9t0p") format("truetype"), url("../fonts/iconmoon.woff?tl9t0p") format("woff"), url("../fonts/iconmoon.svg?tl9t0p#iconmoon") format("svg");
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?dpfmnu");
+  src: url("../fonts/icomoon.eot?dpfmnu#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?dpfmnu") format("truetype"), url("../fonts/icomoon.woff?dpfmnu") format("woff"), url("../fonts/icomoon.svg?dpfmnu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "iconmoon" !important;
+  font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -80,60 +80,80 @@ header {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-star:before {
-  content: "\e903";
-  color: #ffa500;
-  font-size: 2em;
-}
-
-.icon-paper-plane:before {
-  content: "\e901";
-}
-
-.icon-send:before {
-  content: "\e901";
-  padding-right: 5px;
-}
-
-.icon-cogs:before {
+.icon-bar-graph:before {
   content: "\e900";
 }
 
-.icon-bar-graph:before {
-  content: "\e904";
+.icon-transfer:before {
+  content: "\e901";
 }
 
-.icon-mouse:before {
-  content: "\e902";
-  padding-right: 5px;
+.icon-arrows:before {
+  content: "\e901";
 }
 
-.icon-phone_in_talk:before {
-  content: "\e905";
+.icon-headphones:before {
+  content: "\e910";
 }
 
-.icon-security:before {
-  content: "\e906";
+.icon-bullhorn:before {
+  content: "\e91a";
 }
 
-.icon-school:before {
-  content: "\e907";
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+.icon-ticket:before {
+  content: "\e939";
+}
+
+.icon-cart:before {
+  content: "\e93a";
+}
+
+.icon-clock:before {
+  content: "\e94e";
 }
 
 .icon-display:before {
   content: "\e956";
 }
 
-.icon-bubble:before {
-  content: "\e96b";
+.icon-laptop:before {
+  content: "\e957";
+}
+
+.icon-mobile:before {
+  content: "\e958";
+}
+
+.icon-drive:before {
+  content: "\e963";
 }
 
 .icon-search:before {
   content: "\e986";
 }
 
-.icon-menu:before {
-  content: "\e9bd";
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+
+.icon-download3:before {
+  content: "\e9c7";
+}
+
+.icon-earth:before {
+  content: "\e9ca";
+}
+
+.icon-shuffle:before {
+  content: "\ea30";
+}
+
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }
 
 .icon-embed2:before {
@@ -154,6 +174,130 @@ header {
 
 .icon-linkedin2:before {
   content: "\eaca";
+}
+
+.icon-angle-double-right:before {
+  content: "\e902";
+}
+
+.icon-star:before {
+  content: "\e903";
+}
+
+.icon-lock:before {
+  content: "\e904";
+}
+
+.icon-flask:before {
+  content: "\e905";
+}
+
+.icon-clipboard:before {
+  content: "\e906";
+}
+
+.icon-paste:before {
+  content: "\e906";
+}
+
+.icon-handshake-o:before {
+  content: "\e907";
+}
+
+.icon-dashboard:before {
+  content: "\e908";
+}
+
+.icon-tachometer:before {
+  content: "\e908";
+}
+
+.icon-phone-square:before {
+  content: "\e909";
+}
+
+.icon-pencil:before {
+  content: "\e90a";
+}
+
+.icon-envelope:before {
+  content: "\e90b";
+}
+
+.icon-money:before {
+  content: "\e90c";
+}
+
+.icon-graduation-cap:before {
+  content: "\e90d";
+}
+
+.icon-cloud-download:before {
+  content: "\e90e";
+}
+
+.icon-cloud:before {
+  content: "\e90f";
+}
+
+.icon-group:before {
+  content: "\e911";
+}
+
+.icon-users:before {
+  content: "\e911";
+}
+
+.icon-cogs:before {
+  content: "\e912";
+}
+
+.icon-gears:before {
+  content: "\e912";
+}
+
+.icon-paperplane:before {
+  content: "\e913";
+}
+
+.icon-send:before {
+  content: "\e913";
+}
+
+.icon-flight:before {
+  content: "\e913";
+}
+
+.icon-email:before {
+  content: "\e913";
+}
+
+.icon-chat:before {
+  content: "\e914";
+}
+
+.icon-help:before {
+  content: "\e915";
+}
+
+.icon-security:before {
+  content: "\e916";
+}
+
+.icon-call:before {
+  content: "\e917";
+}
+
+.icon-trending_up:before {
+  content: "\e918";
+}
+
+.icon-phone_in_talk:before {
+  content: "\e919";
+}
+
+.icon-mouse:before {
+  content: "\e91b";
 }
 
 #bold {

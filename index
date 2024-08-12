@@ -102,7 +102,7 @@
                     <div class="hover-grid1 container line-hover">
                         <p><a href="#"><span class="icon-cogs"></span>Bespoke CRM</a></p>
                         <p><a href="#"><span class="icon-briefcase"></span>Business Automation</a></p>
-                        <p><a href="#"><span class="icon-angle-double-right"></span>Software Integrations</a></p>
+                        <p><a href="#"><span class="icon-"></span>Software Integrations</a></p>
                         <p><a href="#"><span class="icon-security"></span>Mobile App Development</a></p>
                         <p><a href="#"><span class="icon-security"></span>Bespoke Databases</a></p>
                         <p><a href="#"><span class="icon-security"></span>Sharepoint Development</a></p>
@@ -609,13 +609,13 @@
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
     <script>
-         $('.slider').slick();
-         $('.partners').slick({
+         ('.slider').slick();
+         ('.partners').slick({
              dots:false,
              slidesToShow: 5,
          });
 
-        //  $('.f-container').sticky({topSpacing:0});
+        //  ('.f-container').sticky({topSpacing:0});
     </script>
     </body>
     <footer>
@@ -658,6 +658,61 @@
             <p><a href="#">Healthcare</a></p>
             <p><a href="#">Education & Training</a></p>
             <p><a href="#">Travel & Leisure</a></p>
+            <span class="icon-star"></span>
+            <span class="icon-email"></span>
+            <span class="icon-cogs"></span>
+            <span class="icon-gears"></span>
+            <span class="icon-phone_in_talk"></span>
+            <span class="icon-star"></span>
+            <span class="icon-security"></span>
+            <span class="icon-graduation-cap"></span>
+            <span class="icon-display"></span>
+            <span class="icon-search"></span>
+            <span class="icon-embed2"></span>
+            <span class="icon-facebook"></span>
+            <span class="icon-instagram"></span>
+            <span class="icon-twitter"></span>
+            <span class="icon-linkedin2"></span>
+            <span class="icon-send"></span>
+            <span class="icon-laptop"></span>
+            <span class="icon-mobile"></span>
+            <!--
+            icon-trending_up: 18
+            icon-transfer: 01
+            icon-arrows: 01
+            icon-headphones: 10
+            icon-bullhorn: 1a
+            icon-folder-open: 30
+            icon-ticket: 39
+            icon-cart: 3a
+            icon-clock: 4e
+            icon-mobile: 58
+            icon-drive: 63
+            icon-briefcase: ae
+            icon-download3: c7
+            icon-earth: ca
+            icon-shuffle: (a30
+            icon-arrow-right2: (a3c
+            icon-angle-double-right: 02
+            icon-lock: 04
+            icon-flask: 05
+            icon-clipboard: 06
+            icon-paste: 06
+            icon-handshake-o: 07
+            icon-dashboard: 08
+            icon-tachometer: 08
+            icon-phone-square: 09
+            icon-pencil: 0a
+            icon-envelope: 0b
+            icon-money: 0c
+            icon-cloud-download: 0e
+            icon-cloud: 0f
+            icon-group: 11
+            icon-users: 11
+            icon-chat: 14
+            icon-help: 15
+            icon-call
+            icon-trending_up -->
         </div>
     
     

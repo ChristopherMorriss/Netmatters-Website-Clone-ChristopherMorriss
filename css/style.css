@@ -337,6 +337,18 @@ footer .marginalised a:hover {
   display: grid;
   grid-gap: 20px;
 }
+@media (min-width: 994px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (min-width: 1260px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 .grid-object {
   text-align: center;
   border: 1px solid #ccc;

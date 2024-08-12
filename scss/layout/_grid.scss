@@ -1,10 +1,15 @@
 .grid{
     display: grid;
-    //@extend %container-align;
-    //@extend %side-margin;
     //margin-left: 200px;
-    //grid-template-rows: 1fr 1fr 1fr;
-    //grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    @include media(large){
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
+    }
+    @include media(x-large){
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
+    }
+    
     grid-gap:20px;
     
   

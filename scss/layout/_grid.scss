@@ -147,3 +147,20 @@
   } 
   margin-bottom: 50px;
 }
+
+#vow-1{
+  display:none;
+  @include media(large){
+    display: flex;
+  }
+}
+
+#vow-2{
+  display:flex;
+  font-weight: 600;
+  font-size: 1.625rem;
+  @include media(large){
+    display: none;
+  }
+
+}

@@ -27,7 +27,7 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 1260px) {
+@media (min-width: 768px) and (max-width: 993px) {
   .container {
     width: 750px;
   }
@@ -182,6 +182,8 @@ header {
 
 .icon-star:before {
   content: "\e903";
+  color: #ffa500;
+  font-size: 50px;
 }
 
 .icon-lock:before {
@@ -485,6 +487,26 @@ footer .marginalised a:hover {
 @media (min-width: 1260px) {
   .grid2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+#vow-1 {
+  display: none;
+}
+@media (min-width: 994px) {
+  #vow-1 {
+    display: flex;
+  }
+}
+
+#vow-2 {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+@media (min-width: 994px) {
+  #vow-2 {
+    display: none;
   }
 }
 
@@ -1317,6 +1339,21 @@ footer .marginalised a:hover {
   .article img {
     width: 369px;
   }
+}
+
+.intro {
+  display: flex;
+  background-color: #333645;
+  height: auto;
+  flex-direction: column;
+  letter-spacing: 0.4px;
+}
+.intro h1 {
+  margin-bottom: 40px;
+}
+.intro p {
+  margin-bottom: 25px;
+  line-height: 1.875rem;
 }
 
 .line-hover a:hover {

@@ -28,7 +28,7 @@ button{
     margin-left:auto;
     padding-left: 15px;
     padding-right: 15px;
-    @include media(x-large){
+    @include media(medium){
         width:750px;
     }
     @include media(large){

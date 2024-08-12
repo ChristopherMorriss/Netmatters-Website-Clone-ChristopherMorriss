@@ -3,4 +3,12 @@
     background-color: $background_black;
     height: auto;
     flex-direction: column;
+    h1{
+      margin-bottom: 40px;
+    }
+    letter-spacing: 0.4px;
+    p{
+      margin-bottom: 25px;
+      line-height: 1.875rem;
+    }
   }

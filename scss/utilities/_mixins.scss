@@ -1,8 +1,3 @@
-@mixin align-items($m-top,$m-left){ //Mixin for aligning items (might delete this as I'm not sure it is used for anything
-    margin-top: $m-top;
-    margin-left: $m-left;
-}
-
 @mixin btnstyle($b-radius,$f-size,$w,$h,$l-height,$text-center,$b){//Mixin for styling many buttons
     border-radius: $b-radius;
     font-size: $f-size;

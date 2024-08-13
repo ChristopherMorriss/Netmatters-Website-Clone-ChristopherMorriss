@@ -543,6 +543,11 @@ footer .marginalised a:hover {
   margin-right: auto;
 }
 
+.padding {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 .article, footer h2, footer .marginalised a {
   margin-left: 5%;
   margin-right: 5%;
@@ -1357,6 +1362,21 @@ footer .marginalised a:hover {
   margin-bottom: 25px;
   line-height: 1.875rem;
 }
+@media (min-width: 994px) {
+  .intro {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: normal;
+    align-items: normal;
+  }
+}
+@media (min-width: 1260px) {
+  .intro {
+    flex-direction: row;
+    display: flex;
+  }
+}
 
 .black-btn, .google-btn, .trustpilot-btn {
   border-radius: 6px;
@@ -1376,19 +1396,41 @@ footer .marginalised a:hover {
   line-height: 1.875rem;
   font-weight: 600;
   font-size: 1.3rem;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 .quote .quote-author {
   color: #a3a8ac;
   font-size: 1.1rem;
+  margin-top: 40px;
 }
 
 .google-btn {
   background-color: #4387f6;
 }
+.google-btn:hover {
+  background-color: #166af4;
+}
 
 .trustpilot-btn {
   background-color: #00b67b;
+}
+.trustpilot-btn:hover {
+  background-color: #26ab5f;
+}
+
+.btn-group br {
+  display: block;
+}
+@media (min-width: 576px) {
+  .btn-group br {
+    display: none;
+  }
+}
+@media (min-width: 994px) {
+  .btn-group br {
+    display: block;
+  }
 }
 
 .line-hover a:hover {

@@ -13,6 +13,12 @@
       margin-bottom: 25px;
       line-height: 1.875rem;
     }
+    @include media(large){
+      @include flex($flex-dir:row,$display:flex,$flex-wrap:nowrap,$align-content:normal,$align-items:normal,$justify-content:null);
+    }
+    @include media(x-large){
+      @include flex($flex-dir:row,$display:flex,$flex-wrap:null,$align-content:null,$align-items:null,$justify-content:null);
+    }
   }
 
   .black-btn,.google-btn,.trustpilot-btn{
@@ -34,17 +40,36 @@
     line-height: 1.875rem;
     font-weight: 600;
     font-size: 1.3rem;
+    margin-top:40px;
+    margin-bottom: 40px;
     .quote-author{
       color: $quote-author;
       font-size: 1.1rem;
+      margin-top:40px;
     }
-    margin-bottom: 40px;
+    
   }
 
   .google-btn{
-    background-color: $google-blue;
+    @include hover($google-blue,$blue-hover);
   }
 
   .trustpilot-btn{
-    background-color: $trustpilot-green;
+    @include hover ($trustpilot-green,$green-hover);
   }
+
+  .btn-group{
+    br{
+      display: block;
+      @include media(small){
+        display:none;
+      }
+      @include media(large){
+        display: block;
+      }
+    }
+  }
+
+  // .review{
+  //   width:474px;
+  // }

@@ -131,6 +131,11 @@
 .grid2{
   @include grid($g-display:grid,$g-row:null,$g-column:1fr,$gutter-row:20px,$gutter-column:20px);
   
+  @include media(medium){
+    grid-template-columns: repeat(2,minmax(300px,1fr));
+    //grid-template-rows: 200px;
+
+  }
   @include media(large){
     grid-template-columns: repeat(2,minmax(300px,1fr));
     //grid-template-rows: 200px;

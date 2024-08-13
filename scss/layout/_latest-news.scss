@@ -1,17 +1,80 @@
 .article{
+
     border: 1px solid;
-    @extend %container-align; //Extend that sets text and the article box itself to the centre of the page
-    width:90%;
-    @include media(large){
-      width:371px;
-    }
+    // width:371px;
+    // @include media(large){
+    //   width:371px;
+    // }
     margin-bottom: 10px;
     img{
       width:100%;
-      @include media(large){
-        width:369px;
-      }
-      
+      // @include media(large){
+      //   width:369px;
+      // }
+
     }
-    @extend %side-margin;
+    position: relative;
+  
+    .img-btn{
+      position: absolute;
+      right:0;
+    }
+ 
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    padding:30px;
+    top:0px;
+    transition: 0.5s ease;
+    border-radius: 0  0 3px 3px;
+    &:hover{
+      top:-10px;
+      transition: 0.5s ease;
+    }
 }
+
+#va-1{
+  font-weight: 600;
+  display:none;
+  @include media(large){
+    display:block;
+  }
+}
+
+#va-2{
+  display:flex;
+  font-weight: 600;
+  font-size: 1.625rem;
+  @include media(large){
+    display:none;
+  }
+}
+
+
+.red-text{
+  color: $dark_red;
+}
+.green-text{
+  color:$green;
+}
+.blue-text{
+  color: $blue;
+}
+
+.news{
+  .container{
+    @include media(x-large){
+      @include flex($flex-dir:row,
+                    $display:flex,
+                    $flex-wrap:nowrap,
+                    $align-content:normal,
+                    $align-items:normal,
+                    $justify-content:null);
+        }
+  }
+  
+}
+
+.article{
+  margin-left: 15px;
+}
+

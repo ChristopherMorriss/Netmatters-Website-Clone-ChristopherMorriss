@@ -479,6 +479,11 @@ footer .marginalised a:hover {
        column-gap: 20px;
   margin-bottom: 50px;
 }
+@media (min-width: 768px) and (max-width: 993px) {
+  .grid2 {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
 @media (min-width: 994px) {
   .grid2 {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -537,7 +542,7 @@ footer .marginalised a:hover {
   margin: 10px;
 }
 
-.article, .nav-size p {
+.nav-size p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -548,7 +553,7 @@ footer .marginalised a:hover {
   padding-top: 50px;
 }
 
-.article, footer h2, footer .marginalised a {
+footer h2, footer .marginalised a {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -1329,21 +1334,72 @@ footer .marginalised a:hover {
 
 .article {
   border: 1px solid;
-  width: 90%;
   margin-bottom: 10px;
-}
-@media (min-width: 994px) {
-  .article {
-    width: 371px;
-  }
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  top: 0px;
+  transition: 0.5s ease;
+  border-radius: 0 0 3px 3px;
 }
 .article img {
   width: 100%;
 }
+.article .img-btn {
+  position: absolute;
+  right: 0;
+}
+.article:hover {
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+#va-1 {
+  font-weight: 600;
+  display: none;
+}
 @media (min-width: 994px) {
-  .article img {
-    width: 369px;
+  #va-1 {
+    display: block;
   }
+}
+
+#va-2 {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+@media (min-width: 994px) {
+  #va-2 {
+    display: none;
+  }
+}
+
+.red-text {
+  color: #CE4125;
+}
+
+.green-text {
+  color: #2ECC71;
+}
+
+.blue-text {
+  color: #4183D7;
+}
+
+@media (min-width: 1260px) {
+  .news .container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: normal;
+    align-items: normal;
+  }
+}
+
+.article {
+  margin-left: 15px;
 }
 
 .intro {
@@ -1363,7 +1419,7 @@ footer .marginalised a:hover {
   line-height: 1.875rem;
 }
 @media (min-width: 994px) {
-  .intro {
+  .intro .container {
     flex-direction: row;
     display: flex;
     flex-wrap: nowrap;
@@ -1372,7 +1428,7 @@ footer .marginalised a:hover {
   }
 }
 @media (min-width: 1260px) {
-  .intro {
+  .intro .container {
     flex-direction: row;
     display: flex;
   }
@@ -1387,6 +1443,7 @@ footer .marginalised a:hover {
   border: 1px solid transparent;
   margin-bottom: 17px;
   padding: 10px 30px;
+  margin-left: 10px;
 }
 .black-btn span, .google-btn span, .trustpilot-btn span {
   margin-left: 12px;
@@ -1398,6 +1455,7 @@ footer .marginalised a:hover {
   font-size: 1.3rem;
   margin-top: 40px;
   margin-bottom: 40px;
+  font-style: italic;
 }
 .quote .quote-author {
   color: #a3a8ac;
@@ -1430,6 +1488,20 @@ footer .marginalised a:hover {
 @media (min-width: 994px) {
   .btn-group br {
     display: block;
+  }
+}
+@media (min-width: 1260px) {
+  .btn-group br {
+    display: none;
+  }
+}
+
+.review {
+  margin-left: 10px;
+}
+@media (min-width: 994px) {
+  .review {
+    width: 50%;
   }
 }
 

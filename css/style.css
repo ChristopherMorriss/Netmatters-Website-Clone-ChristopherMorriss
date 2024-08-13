@@ -543,7 +543,7 @@ footer .marginalised a:hover {
   margin-right: auto;
 }
 
-.article, footer h2, footer .marginalised a, .review {
+.article, footer h2, footer .marginalised a {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -1350,10 +1350,45 @@ footer .marginalised a:hover {
 }
 .intro h1 {
   margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 2.25rem;
 }
 .intro p {
   margin-bottom: 25px;
   line-height: 1.875rem;
+}
+
+.black-btn, .google-btn, .trustpilot-btn {
+  border-radius: 6px;
+  font-size: 20px;
+  height: auto;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-bottom: 17px;
+  padding: 10px 30px;
+}
+.black-btn span, .google-btn span, .trustpilot-btn span {
+  margin-left: 12px;
+}
+
+.quote {
+  line-height: 1.875rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+.quote .quote-author {
+  color: #a3a8ac;
+  font-size: 1.1rem;
+}
+
+.google-btn {
+  background-color: #4387f6;
+}
+
+.trustpilot-btn {
+  background-color: #00b67b;
 }
 
 .line-hover a:hover {

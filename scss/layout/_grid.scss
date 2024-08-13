@@ -126,9 +126,7 @@
   
 }
 
-.review{
-  @extend %side-margin;
-}
+
 
 .grid2{
   @include grid($g-display:grid,$g-row:null,$g-column:1fr,$gutter-row:20px,$gutter-column:20px);
@@ -164,3 +162,19 @@
   }
 
 }
+
+.heading{
+  @include flex($flex-dir: null,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: normal,
+                $align-items: normal,
+                $justify-content:space-between);
+   h1{
+     font-size: 2.25rem
+   }
+   h2{
+     font-size: 2.7rem;
+     font-weight: 400;
+   }
+ }

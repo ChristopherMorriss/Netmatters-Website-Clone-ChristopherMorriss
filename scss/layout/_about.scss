@@ -5,10 +5,46 @@
     flex-direction: column;
     h1{
       margin-bottom: 40px;
+      font-weight: 600;
+      font-size:2.25rem;
     }
     letter-spacing: 0.4px;
     p{
       margin-bottom: 25px;
       line-height: 1.875rem;
     }
+  }
+
+  .black-btn,.google-btn,.trustpilot-btn{
+    @include btnstyle($b-radius:6px,
+                      $f-size:20px,
+                      $w:null,
+                      $h:auto,
+                      $l-height:35px,
+                      $text-center:center,
+                      $b:1px solid transparent);
+    margin-bottom: 17px;
+    padding: 10px 30px;
+    span{
+      margin-left:12px;
+    }
+  }
+
+  .quote{
+    line-height: 1.875rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    .quote-author{
+      color: $quote-author;
+      font-size: 1.1rem;
+    }
+    margin-bottom: 40px;
+  }
+
+  .google-btn{
+    background-color: $google-blue;
+  }
+
+  .trustpilot-btn{
+    background-color: $trustpilot-green;
   }

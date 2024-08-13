@@ -44,52 +44,6 @@
     }
 }
 
-//Mixin to hide or show icons (I will delete this soon as it is unnecessary and inefficient)
-@mixin hide($search-mob-display,
-            $search-norm-display,
-            $support-contact-display,
-            $nav-btn-display,
-            $phone-display,
-            $view-our-work1,
-            $view-our-work2,
-            $view-all1,
-            $view-all2,
-            $mag-glass,){
-    #search-mobile{
-        display: $search-mob-display;
-    }
-    #search-normal{
-        display: $search-norm-display;
-    }
-
-    #support,#contact{
-        display: $support-contact-display;
-    }
-
-    .top-btn{
-        display: $nav-btn-display;
-    }
-
-    #phone{
-        display:$phone-display;
-    }
-    #vow-1{
-        display: $view-our-work1;
-    }
-    #vow-2{
-        display: $view-our-work2;
-    }
-    #va-1{
-        display: $view-all1;
-    }
-    #va-2{
-        display: $view-all2;
-    }
-    .search-icon{
-        display: $mag-glass;
-    }
-}
-
 //Mixin which affect the display value of the breakpoint-br class
 @mixin copyright-br($c-br){
     .breakpoint-br{

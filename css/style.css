@@ -1338,17 +1338,20 @@ footer h2, footer .marginalised a {
   position: relative;
   border: 1px solid #ccc;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  padding: 30px;
   top: 0px;
   transition: 0.5s ease;
   border-radius: 0 0 3px 3px;
 }
-.article img {
+.article .img-news img {
   width: 100%;
 }
 .article .img-btn {
   position: absolute;
   right: 0;
+}
+.article .img-btn:hover {
+  text-decoration: underline;
+  color: white;
 }
 .article:hover {
   top: -10px;
@@ -1400,6 +1403,41 @@ footer h2, footer .marginalised a {
 
 .article {
   margin-left: 15px;
+}
+
+.read-btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+}
+
+.article-title {
+  display: flex;
+  align-items: center;
+}
+
+.read-time {
+  margin-left: 5px;
+  color: rgba(51, 54, 69, 0.5);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.article-info {
+  color: #666;
+}
+
+.article-footer {
+  display: flex;
+  align-items: center;
+}
+
+.article-info, .article h3 {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .intro {

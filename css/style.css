@@ -51,6 +51,10 @@ header {
   letter-spacing: 0.4px;
 }
 
+hr {
+  color: #666;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins-Black.ttf) format("ttf");
@@ -542,6 +546,11 @@ footer .marginalised a:hover {
   margin: 10px;
 }
 
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .nav-size p {
   text-align: center;
   margin-left: auto;
@@ -626,6 +635,27 @@ footer h2, footer .marginalised a {
 }
 @media (min-width: 1260px) {
   .f-container #n-logo {
+    width: auto;
+    height: auto;
+  }
+}
+.f-container #in-logo {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: normal;
+  align-items: center;
+  max-width: 100%;
+}
+@media (min-width: 994px) {
+  .f-container #in-logo {
+    width: auto;
+    height: auto;
+    max-width: 125%;
+  }
+}
+@media (min-width: 1260px) {
+  .f-container #in-logo {
     width: auto;
     height: auto;
   }
@@ -1391,13 +1421,22 @@ footer h2, footer .marginalised a {
   color: #4183D7;
 }
 
+.news .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 994px) {
+  .news .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (min-width: 1260px) {
   .news .container {
-    flex-direction: row;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: normal;
-    align-items: normal;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -1433,11 +1472,35 @@ footer h2, footer .marginalised a {
 .article-footer {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.article-info, .article h3 {
+.article-info, .news-title {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.text-footer {
+  padding-left: 20px;
+}
+.text-footer h3 {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.article-3 {
+  display: grid;
+}
+@media (min-width: 994px) {
+  .article-3 {
+    display: none;
+  }
+}
+@media (min-width: 1260px) {
+  .article-3 {
+    display: grid;
+  }
 }
 
 .intro {

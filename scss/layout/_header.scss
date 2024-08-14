@@ -39,6 +39,31 @@
       }
     };
 
+    #in-logo{
+      // width:60%;
+      // height:60%;
+      //margin-top:13px;
+      @include flex($flex-dir: row,
+                      $display: flex,
+                      $flex-wrap: wrap,
+                      $align-content: normal,
+                      $align-items: center,
+                      $justify-content:null,
+                      );
+      max-width: 100%;
+
+      
+      @include media(large){
+        width:auto;
+        height:auto;
+        max-width: 125%;
+      }
+      @include media(x-large){
+        width:auto;
+        height:auto;
+      }
+    };
+
     .left-header{
         @include flex($flex-dir: row,
                       $display: flex,

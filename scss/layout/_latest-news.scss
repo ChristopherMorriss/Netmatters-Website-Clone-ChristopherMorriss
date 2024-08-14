@@ -67,16 +67,33 @@
 
 .news{
   .container{
+    @include grid($g-display:grid,$g-row:null,$g-column:1fr,$gutter-row:20px,$gutter-column:20px);
+    grid-template-columns: 1fr;
+    @include media(large){
+      grid-template-columns: 1fr 1fr;
+    }
     @include media(x-large){
-      @include flex($flex-dir:row,
-                    $display:flex,
-                    $flex-wrap:nowrap,
-                    $align-content:normal,
-                    $align-items:normal,
-                    $justify-content:null);
-        }
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    // @include media(large){
+    //   @include flex($flex-dir:row,
+    //                 $display:flex,
+    //                 $flex-wrap:nowrap,
+    //                 $align-content:normal,
+    //                 $align-items:normal,
+    //                 $justify-content:null);
+
+    // }
+    // @include media(x-large){
+    //   @include flex($flex-dir:row,
+    //                 $display:flex,
+    //                 $flex-wrap:nowrap,
+    //                 $align-content:normal,
+    //                 $align-items:normal,
+    //                 $justify-content:null);
+    //     }
   }
-  
+
 }
 
 .article{
@@ -114,9 +131,29 @@
 .article-footer{
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.article-info,.article h3{
+.article-info,.news-title{
   padding-left:30px;
   padding-right: 30px;
+}
+
+.text-footer{
+  padding-left: 20px;
+  h3{
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+}
+
+.article-3{
+  display:grid;
+  @include media(large){
+    display:none;
+  }
+  @include media(x-large){
+    display: grid;
+  }
 }

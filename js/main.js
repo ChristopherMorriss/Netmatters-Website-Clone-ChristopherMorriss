@@ -160,4 +160,10 @@ hover_submenu7.addEventListener('mouseout',()=>{
 });
 
 
-	
+hover_partners1=document.querySelector('.triangle-partners-1');
+console.log(hover_partners1)
+partners1=document.querySelector('.partners-1');
+partners1.addEventListener('mouseover',()=>{
+  console.log('This is being triggered!');
+  hover_partners1.style.display="block";
+});

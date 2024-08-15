@@ -1531,17 +1531,32 @@ footer h2, footer .marginalised a {
   max-width: 47px;
 }
 
+.hover-partners {
+  color: #FFFFFF;
+}
+
 .triangle-partners {
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 0 38px 54px 38px;
-  border-color: transparent transparent #FF0B0A transparent;
+  border-width: 0 36px 34px 36px;
+  border-color: transparent transparent #333645 transparent;
   transform: rotate(180deg);
 }
-
-.hover-partners {
+.triangle-partners-1, .triangle-partners-2, .triangle-partners-3, .triangle-partners-4, .triangle-partners-5, .triangle-partners-6, .triangle-partners-7, .triangle-partners-8, .triangle-partners-9, .triangle-partners-10, .triangle-partners-11, .triangle-partners-12, .triangle-partners-13 {
   display: none;
+  max-width: 20%;
+}
+
+.tooltip-box {
+  background-color: #333645;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: normal;
+  justify-content: center;
+  text-align: center;
 }
 
 .intro {

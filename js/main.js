@@ -161,9 +161,196 @@ hover_submenu7.addEventListener('mouseout',()=>{
 
 
 hover_partners1=document.querySelector('.triangle-partners-1');
-console.log(hover_partners1)
 partners1=document.querySelector('.partners-1');
 partners1.addEventListener('mouseover',()=>{
-  console.log('This is being triggered!');
   hover_partners1.style.display="block";
+});
+partners1.addEventListener('mouseout',()=>{
+  hover_partners1.style.display="none";
+});
+hover_partners1.addEventListener('mouseover',()=>{
+  hover_partners1.style.display="block";
+});
+hover_partners1.addEventListener('mouseout',()=>{
+  hover_partners1.style.display="none";
+});
+
+hover_partners2=document.querySelector('.triangle-partners-2');
+partners2=document.querySelector('.partners-2');
+partners2.addEventListener('mouseover',()=>{
+  hover_partners2.style.display="block";
+});
+partners2.addEventListener('mouseout',()=>{
+  hover_partners2.style.display="none";
+});
+hover_partners2.addEventListener('mouseover',()=>{
+  hover_partners2.style.display="block";
+});
+hover_partners2.addEventListener('mouseout',()=>{
+  hover_partners2.style.display="none";
+});
+
+hover_partners3=document.querySelector('.triangle-partners-3');
+partners3=document.querySelector('.partners-3');
+partners3.addEventListener('mouseover',()=>{
+  hover_partners3.style.display="block";
+});
+partners3.addEventListener('mouseout',()=>{
+  hover_partners3.style.display="none";
+});
+hover_partners3.addEventListener('mouseover',()=>{
+  hover_partners3.style.display="block";
+});
+hover_partners3.addEventListener('mouseout',()=>{
+  hover_partners3.style.display="none";
+});
+
+hover_partners4=document.querySelector('.triangle-partners-4');
+partners4=document.querySelector('.partners-4');
+partners4.addEventListener('mouseover',()=>{
+  hover_partners4.style.display="block";
+});
+partners4.addEventListener('mouseout',()=>{
+  hover_partners4.style.display="none";
+});
+hover_partners4.addEventListener('mouseover',()=>{
+  hover_partners4.style.display="block";
+});
+hover_partners4.addEventListener('mouseout',()=>{
+  hover_partners4.style.display="none";
+});
+
+hover_partners5=document.querySelector('.triangle-partners-5');
+partners5=document.querySelector('.partners-5');
+partners5.addEventListener('mouseover',()=>{
+  hover_partners5.style.display="block";
+});
+partners5.addEventListener('mouseout',()=>{
+  hover_partners5.style.display="none";
+});
+hover_partners5.addEventListener('mouseover',()=>{
+  hover_partners5.style.display="block";
+});
+hover_partners5.addEventListener('mouseout',()=>{
+  hover_partners5.style.display="none";
+});
+
+hover_partners6=document.querySelector('.triangle-partners-6');
+partners6=document.querySelector('.partners-6');
+partners6.addEventListener('mouseover',()=>{
+  hover_partners6.style.display="block";
+});
+partners6.addEventListener('mouseout',()=>{
+  hover_partners6.style.display="none";
+});
+hover_partners6.addEventListener('mouseover',()=>{
+  hover_partners6.style.display="block";
+});
+hover_partners6.addEventListener('mouseout',()=>{
+  hover_partners6.style.display="none";
+});
+
+hover_partners7=document.querySelector('.triangle-partners-7');
+partners7=document.querySelector('.partners-7');
+partners7.addEventListener('mouseover',()=>{
+  hover_partners7.style.display="block";
+});
+partners7.addEventListener('mouseout',()=>{
+  hover_partners7.style.display="none";
+});
+hover_partners7.addEventListener('mouseover',()=>{
+  hover_partners7.style.display="block";
+});
+hover_partners7.addEventListener('mouseout',()=>{
+  hover_partners7.style.display="none";
+});
+
+hover_partners8=document.querySelector('.triangle-partners-8');
+partners8=document.querySelector('.partners-8');
+partners8.addEventListener('mouseover',()=>{
+  hover_partners8.style.display="block";
+});
+partners8.addEventListener('mouseout',()=>{
+  hover_partners8.style.display="none";
+});
+hover_partners8.addEventListener('mouseover',()=>{
+  hover_partners8.style.display="block";
+});
+hover_partners8.addEventListener('mouseout',()=>{
+  hover_partners8.style.display="none";
+});
+
+hover_partners9=document.querySelector('.triangle-partners-9');
+partners9=document.querySelector('.partners-9');
+partners9.addEventListener('mouseover',()=>{
+  hover_partners9.style.display="block";
+});
+partners9.addEventListener('mouseout',()=>{
+  hover_partners9.style.display="none";
+});
+hover_partners9.addEventListener('mouseover',()=>{
+  hover_partners9.style.display="block";
+});
+hover_partners9.addEventListener('mouseout',()=>{
+  hover_partners9.style.display="none";
+});
+
+hover_partners10=document.querySelector('.triangle-partners-10');
+partners10=document.querySelector('.partners-10');
+partners10.addEventListener('mouseover',()=>{
+  hover_partners10.style.display="block";
+});
+partners10.addEventListener('mouseout',()=>{
+  hover_partners10.style.display="none";
+});
+hover_partners10.addEventListener('mouseover',()=>{
+  hover_partners10.style.display="block";
+});
+hover_partners10.addEventListener('mouseout',()=>{
+  hover_partners10.style.display="none";
+});
+
+hover_partners11=document.querySelector('.triangle-partners-11');
+partners11=document.querySelector('.partners-11');
+partners11.addEventListener('mouseover',()=>{
+  hover_partners11.style.display="block";
+});
+partners11.addEventListener('mouseout',()=>{
+  hover_partners11.style.display="none";
+});
+hover_partners11.addEventListener('mouseover',()=>{
+  hover_partners11.style.display="block";
+});
+hover_partners11.addEventListener('mouseout',()=>{
+  hover_partners11.style.display="none";
+});
+
+hover_partners12=document.querySelector('.triangle-partners-12');
+partners12=document.querySelector('.partners-12');
+partners12.addEventListener('mouseover',()=>{
+  hover_partners12.style.display="block";
+});
+partners12.addEventListener('mouseout',()=>{
+  hover_partners12.style.display="none";
+});
+hover_partners12.addEventListener('mouseover',()=>{
+  hover_partners12.style.display="block";
+});
+hover_partners12.addEventListener('mouseout',()=>{
+  hover_partners12.style.display="none";
+});
+
+hover_partners13=document.querySelector('.triangle-partners-13');
+partners13=document.querySelector('.partners-13');
+partners13.addEventListener('mouseover',()=>{
+  hover_partners13.style.display="block";
+});
+partners13.addEventListener('mouseout',()=>{
+  hover_partners13.style.display="none";
+});
+hover_partners13.addEventListener('mouseover',()=>{
+  hover_partners13.style.display="block";
+});
+hover_partners13.addEventListener('mouseout',()=>{
+  hover_partners13.style.display="none";
 });

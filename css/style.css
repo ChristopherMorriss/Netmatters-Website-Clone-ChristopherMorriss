@@ -1547,6 +1547,18 @@ footer h2, footer .marginalised a {
   display: none;
   max-width: 20%;
 }
+.triangle-partners-1 button, .triangle-partners-2 button, .triangle-partners-3 button, .triangle-partners-4 button, .triangle-partners-5 button, .triangle-partners-6 button, .triangle-partners-7 button, .triangle-partners-8 button, .triangle-partners-9 button, .triangle-partners-10 button, .triangle-partners-11 button, .triangle-partners-12 button, .triangle-partners-13 button {
+  border-radius: 6px;
+  font-size: 20px;
+  height: auto;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-bottom: 17px;
+  padding: 10px 30px;
+  margin-left: 10px;
+  color: #FFFFFF;
+}
 
 .tooltip-box {
   background-color: #333645;

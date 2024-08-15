@@ -1531,10 +1531,6 @@ footer h2, footer .marginalised a {
   max-width: 47px;
 }
 
-.hover-partners {
-  color: #FFFFFF;
-}
-
 .triangle-partners {
   width: 0px;
   height: 0px;
@@ -1544,8 +1540,13 @@ footer h2, footer .marginalised a {
   transform: rotate(180deg);
 }
 .triangle-partners-1, .triangle-partners-2, .triangle-partners-3, .triangle-partners-4, .triangle-partners-5, .triangle-partners-6, .triangle-partners-7, .triangle-partners-8, .triangle-partners-9, .triangle-partners-10, .triangle-partners-11, .triangle-partners-12, .triangle-partners-13 {
+  position: relative;
+  color: #FFFFFF;
   display: none;
   max-width: 20%;
+  position: absolute;
+  bottom: 130px;
+  left: 0px;
 }
 .triangle-partners-1 button, .triangle-partners-2 button, .triangle-partners-3 button, .triangle-partners-4 button, .triangle-partners-5 button, .triangle-partners-6 button, .triangle-partners-7 button, .triangle-partners-8 button, .triangle-partners-9 button, .triangle-partners-10 button, .triangle-partners-11 button, .triangle-partners-12 button, .triangle-partners-13 button {
   border-radius: 6px;

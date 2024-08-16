@@ -16,3 +16,45 @@
     }
   
   }
+
+.triangle-partners {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 36px 34px 36px;
+  border-color: transparent transparent $background_black transparent;
+  transform: rotate(180deg);
+  &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+    position: relative;
+    color: $white;
+    // display:contents;
+    display: none;
+    max-width: 20%;
+    button{
+      @include btnstyle($b-radius:6px,
+                        $f-size:20px,
+                        $w:null,
+                        $h:auto,
+                        $l-height:35px,
+                        $text-center:center,
+                        $b:1px solid transparent);
+    margin-bottom: 17px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    color:$white;
+    }
+    left: 0px;
+    z-index: 7;
+  }
+}
+  
+.tooltip-box{
+  background-color: $background_black;
+  @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:center); 
+  text-align: center;
+}

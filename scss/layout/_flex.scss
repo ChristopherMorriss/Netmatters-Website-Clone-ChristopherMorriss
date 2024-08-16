@@ -1,25 +1,4 @@
-.social{
-  display: flex;
-  flex-wrap: wrap;
-  &-btn{
-    width: 100px;
-    height: 70px;
-    font-size: 26px;
-    color:white;
-    margin: 10px;
-  }
-}
 
-
-// .news{
-//   @include flex($flex-dir: row,
-//                 $display: flex,
-//                 $flex-wrap: nowrap,
-//                 $align-content: normal,
-//                 $align-items: normal,
-//                 $justify-content:space-around,
-//                 );
-// }
 
 .section{
   padding-top: 50px;

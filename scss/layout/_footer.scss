@@ -1,0 +1,79 @@
+footer{
+    padding: 27px 0px 0px;
+    @include media(x-large){
+        padding: 47px 0px 0px;
+    }
+    background-color: $background_black;
+    h2{
+      color:$white;
+      text-transform: uppercase;
+      @extend %side-margin;
+    }
+    .marginalised{
+        @include flex($flex-dir: row,
+                      $display: flex,
+                      $flex-wrap: nowrap,
+                      $align-content: center,
+                      $align-items: normal,
+                      $justify-content:null);
+        a{
+            &:hover{
+            text-decoration: underline;
+            }
+        }
+    }
+    @include flex($flex-dir: row,
+                $display: flex,
+                $flex-wrap: wrap,
+                $align-content: center,
+                $align-items: normal,
+                $justify-content:null);
+  }
+
+.footer-background{ 
+  //Affects the span containing the copyright information
+  //Need to make the copyright breakpoint display at different breakpoints
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background-color: $footer-black;
+  background-size: 100vw;
+  text-align: center;
+  color:white;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    &-btn{
+      font-size: 26px;
+      color:white;
+      margin-right: 7px;
+      line-height: 26px;
+      padding: 12px 22px 16px;
+      border-radius: 0px;
+      border: none;
+      margin-left:0px;
+    }
+    span{
+        position:relative;
+        top:4px;
+    }
+  }
+
+  #in-logo{
+    width:250px;
+    @include media(small){
+        width:320px;
+    }
+  }
+
+.footer{
+    &-1,&-2,&-3,&-4{
+        max-width: 25%;
+    }
+}
+
+.footer-logos{
+    width: 400px;
+}

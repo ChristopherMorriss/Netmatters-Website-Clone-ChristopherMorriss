@@ -534,18 +534,6 @@ footer .marginalised a:hover {
   font-weight: 400;
 }
 
-.social {
-  display: flex;
-  flex-wrap: wrap;
-}
-.social-btn {
-  width: 100px;
-  height: 70px;
-  font-size: 26px;
-  color: white;
-  margin: 10px;
-}
-
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1362,6 +1350,46 @@ footer h2, footer .marginalised a {
   filter: none;
 }
 
+.triangle-partners {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 36px 34px 36px;
+  border-color: transparent transparent #333645 transparent;
+  transform: rotate(180deg);
+}
+.triangle-partners-1, .triangle-partners-2, .triangle-partners-3, .triangle-partners-4, .triangle-partners-5, .triangle-partners-6, .triangle-partners-7, .triangle-partners-8, .triangle-partners-9, .triangle-partners-10, .triangle-partners-11, .triangle-partners-12, .triangle-partners-13 {
+  position: relative;
+  color: #FFFFFF;
+  display: none;
+  max-width: 20%;
+  left: 0px;
+  z-index: 7;
+}
+.triangle-partners-1 button, .triangle-partners-2 button, .triangle-partners-3 button, .triangle-partners-4 button, .triangle-partners-5 button, .triangle-partners-6 button, .triangle-partners-7 button, .triangle-partners-8 button, .triangle-partners-9 button, .triangle-partners-10 button, .triangle-partners-11 button, .triangle-partners-12 button, .triangle-partners-13 button {
+  border-radius: 6px;
+  font-size: 20px;
+  height: auto;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-bottom: 17px;
+  padding: 10px 30px;
+  margin-left: 10px;
+  color: #FFFFFF;
+}
+
+.tooltip-box {
+  background-color: #333645;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: normal;
+  justify-content: center;
+  text-align: center;
+}
+
 .article {
   border: 1px solid;
   margin-bottom: 10px;
@@ -1424,6 +1452,9 @@ footer h2, footer .marginalised a {
   font-size: 1rem;
 }
 
+.news {
+  z-index: 3;
+}
 .news .container {
   flex-direction: column;
   display: flex;
@@ -1531,47 +1562,6 @@ footer h2, footer .marginalised a {
   max-width: 47px;
 }
 
-.triangle-partners {
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 36px 34px 36px;
-  border-color: transparent transparent #333645 transparent;
-  transform: rotate(180deg);
-}
-.triangle-partners-1, .triangle-partners-2, .triangle-partners-3, .triangle-partners-4, .triangle-partners-5, .triangle-partners-6, .triangle-partners-7, .triangle-partners-8, .triangle-partners-9, .triangle-partners-10, .triangle-partners-11, .triangle-partners-12, .triangle-partners-13 {
-  position: relative;
-  color: #FFFFFF;
-  display: none;
-  max-width: 20%;
-  position: absolute;
-  bottom: 130px;
-  left: 0px;
-}
-.triangle-partners-1 button, .triangle-partners-2 button, .triangle-partners-3 button, .triangle-partners-4 button, .triangle-partners-5 button, .triangle-partners-6 button, .triangle-partners-7 button, .triangle-partners-8 button, .triangle-partners-9 button, .triangle-partners-10 button, .triangle-partners-11 button, .triangle-partners-12 button, .triangle-partners-13 button {
-  border-radius: 6px;
-  font-size: 20px;
-  height: auto;
-  line-height: 35px;
-  text-align: center;
-  border: 1px solid transparent;
-  margin-bottom: 17px;
-  padding: 10px 30px;
-  margin-left: 10px;
-  color: #FFFFFF;
-}
-
-.tooltip-box {
-  background-color: #333645;
-  flex-direction: row;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: normal;
-  justify-content: center;
-  text-align: center;
-}
-
 .intro {
   display: flex;
   background-color: #333645;
@@ -1673,6 +1663,81 @@ footer h2, footer .marginalised a {
   .review {
     width: 50%;
   }
+}
+
+footer {
+  padding: 27px 0px 0px;
+  background-color: #333645;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: normal;
+}
+@media (min-width: 1260px) {
+  footer {
+    padding: 47px 0px 0px;
+  }
+}
+footer h2 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+footer .marginalised {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: normal;
+}
+footer .marginalised a:hover {
+  text-decoration: underline;
+}
+
+.footer-background {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: #212330;
+  background-size: 100vw;
+  text-align: center;
+  color: white;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-btn {
+  font-size: 26px;
+  color: white;
+  margin-right: 7px;
+  line-height: 26px;
+  padding: 12px 22px 16px;
+  border-radius: 0px;
+  border: none;
+  margin-left: 0px;
+}
+.social span {
+  position: relative;
+  top: 4px;
+}
+
+#in-logo {
+  width: 250px;
+}
+@media (min-width: 576px) {
+  #in-logo {
+    width: 320px;
+  }
+}
+
+.footer-1, .footer-2, .footer-3, .footer-4 {
+  max-width: 25%;
+}
+
+.footer-logos {
+  width: 400px;
 }
 
 .line-hover a:hover {

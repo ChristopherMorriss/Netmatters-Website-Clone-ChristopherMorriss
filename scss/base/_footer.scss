@@ -3,14 +3,13 @@ footer{
     h2{
       color:$white;
       text-transform: uppercase;
-      @extend %side-margin;
+   
     }
     .marginalised{
       a{
         &:hover{
         text-decoration: underline;
         }
-        @extend %side-margin;
       }
     }
 

@@ -4,12 +4,15 @@ footer{
         padding: 47px 0px 0px;
     }
     background-color: $background_black;
-    h2{
+    h4{
       color:$white;
       text-transform: uppercase;
-      @extend %side-margin;
+    }
+    p{
+        font-size: 0.8125rem;
     }
     .marginalised{
+        //@include grid($g-display:grid,$g-row:null,$g-column:1fr 1fr,$gutter-row:20px,$gutter-column:20px);
         @include flex($flex-dir: row,
                       $display: flex,
                       $flex-wrap: nowrap,
@@ -70,10 +73,38 @@ footer{
 
 .footer{
     &-1,&-2,&-3,&-4{
-        max-width: 25%;
+        max-width: 50%;
+        @include media(large){
+            max-width: 25%;
+        }
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 .footer-logos{
-    width: 400px;
+    width: 300px;
+    @include media(x-large){
+        width: 400px;
+    }
 }
+
+.footer-contents{
+    @include flex($flex-dir: row,
+                      $display: flex,
+                      $flex-wrap: wrap,
+                      $align-content: center,
+                      $align-items: normal,
+                      $justify-content:null);
+    @include media(large){
+        display:block;
+        justify-content: space-evenly;
+
+    }
+    @include media(large){
+        display:block;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+}
+

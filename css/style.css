@@ -55,6 +55,14 @@ hr {
   color: #666;
 }
 
+h4 {
+  color: #FFFFFF;
+}
+
+body {
+  letter-spacing: 0.4px;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins-Black.ttf) format("ttf");
@@ -548,11 +556,6 @@ footer .marginalised a:hover {
 .padding {
   padding-bottom: 50px;
   padding-top: 50px;
-}
-
-footer h2, footer .marginalised a {
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .slider .design-7, .slider .design-6, .slider .design-5, .slider .design-4, .slider .design-3, .slider .design-2, .slider .design-1 {
@@ -1679,9 +1682,12 @@ footer {
     padding: 47px 0px 0px;
   }
 }
-footer h2 {
+footer h4 {
   color: #FFFFFF;
   text-transform: uppercase;
+}
+footer p {
+  font-size: 0.8125rem;
 }
 footer .marginalised {
   flex-direction: row;
@@ -1733,11 +1739,44 @@ footer .marginalised a:hover {
 }
 
 .footer-1, .footer-2, .footer-3, .footer-4 {
-  max-width: 25%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 994px) {
+  .footer-1, .footer-2, .footer-3, .footer-4 {
+    max-width: 25%;
+  }
 }
 
 .footer-logos {
-  width: 400px;
+  width: 300px;
+}
+@media (min-width: 1260px) {
+  .footer-logos {
+    width: 400px;
+  }
+}
+
+.footer-contents {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: normal;
+}
+@media (min-width: 994px) {
+  .footer-contents {
+    display: block;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 994px) {
+  .footer-contents {
+    display: block;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
 }
 
 .line-hover a:hover {

@@ -39,13 +39,8 @@
     }
 }
 
-//Mixin which affect the display value of the breakpoint-br class
-@mixin copyright-br($c-br){
-    .breakpoint-br{
-        display: $c-br;
-    }
 
-}
+
 
 //Mixin to replace the media query declarations 
 @mixin media($breakpoint){

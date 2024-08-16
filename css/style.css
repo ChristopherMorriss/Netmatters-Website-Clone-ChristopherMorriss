@@ -57,6 +57,8 @@ hr {
 
 h4 {
   color: #FFFFFF;
+  font-weight: 400;
+  margin-bottom: 26px;
 }
 
 body {
@@ -1671,11 +1673,6 @@ footer .marginalised a:hover {
 footer {
   padding: 27px 0px 0px;
   background-color: #333645;
-  flex-direction: row;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: normal;
 }
 @media (min-width: 1260px) {
   footer {
@@ -1691,28 +1688,30 @@ footer p {
 }
 footer .marginalised {
   flex-direction: row;
-  display: flex;
-  flex-wrap: nowrap;
+  display: block;
+  flex-wrap: wrap;
   align-content: center;
   align-items: normal;
+}
+@media (min-width: 576px) {
+  footer .marginalised {
+    display: flex;
+  }
 }
 footer .marginalised a:hover {
   text-decoration: underline;
 }
 
-.footer-background {
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  background-color: #212330;
-  background-size: 100vw;
-  text-align: center;
-  color: white;
-}
-
 .social {
-  display: flex;
+  width: 90%;
+  display: block;
   flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .social {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .social-btn {
   font-size: 26px;
@@ -1739,13 +1738,22 @@ footer .marginalised a:hover {
 }
 
 .footer-1, .footer-2, .footer-3, .footer-4 {
-  max-width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  .footer-1, .footer-2, .footer-3, .footer-4 {
+    width: 50%;
+  }
 }
 @media (min-width: 994px) {
   .footer-1, .footer-2, .footer-3, .footer-4 {
-    max-width: 25%;
+    width: 25%;
+  }
+}
+@media (min-width: 1260px) {
+  .footer-1, .footer-2, .footer-3, .footer-4 {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1760,12 +1768,12 @@ footer .marginalised a:hover {
 
 .footer-contents {
   flex-direction: row;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   align-content: center;
   align-items: normal;
 }
-@media (min-width: 994px) {
+@media (min-width: 768px) and (max-width: 993px) {
   .footer-contents {
     display: block;
     justify-content: space-evenly;
@@ -1777,6 +1785,22 @@ footer .marginalised a:hover {
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
+}
+@media (min-width: 1260px) {
+  .footer-contents {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer-background {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: #212330;
+  background-size: 100vw;
+  text-align: center;
+  color: white;
 }
 
 .line-hover a:hover {

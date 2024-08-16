@@ -13,41 +13,34 @@ footer{
     }
     .marginalised{
         //@include grid($g-display:grid,$g-row:null,$g-column:1fr 1fr,$gutter-row:20px,$gutter-column:20px);
+
         @include flex($flex-dir: row,
-                      $display: flex,
-                      $flex-wrap: nowrap,
+                      $display: block,
+                      $flex-wrap: wrap,
                       $align-content: center,
                       $align-items: normal,
                       $justify-content:null);
+        @include media(small){
+            display: flex;
+        }
         a{
             &:hover{
             text-decoration: underline;
             }
         }
     }
-    @include flex($flex-dir: row,
-                $display: flex,
-                $flex-wrap: wrap,
-                $align-content: center,
-                $align-items: normal,
-                $justify-content:null);
+ 
   }
 
-.footer-background{ 
-  //Affects the span containing the copyright information
-  //Need to make the copyright breakpoint display at different breakpoints
-  left:0px;
-  bottom:0px;
-  width:100%;
-  background-color: $footer-black;
-  background-size: 100vw;
-  text-align: center;
-  color:white;
-}
-
 .social{
-    display: flex;
+    width:90%;
+    display: block;
     flex-wrap: wrap;
+    @include media(small){
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
     &-btn{
       font-size: 26px;
       color:white;
@@ -73,12 +66,18 @@ footer{
 
 .footer{
     &-1,&-2,&-3,&-4{
-        max-width: 50%;
-        @include media(large){
-            max-width: 25%;
+        width:100%;
+        @include media(medium){
+            width: 50%;
         }
-        padding-left: 15px;
-        padding-right: 15px;
+        @include media(large){
+            width: 25%;
+        }
+        @include media(x-large){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
     }
 }
 
@@ -91,12 +90,12 @@ footer{
 
 .footer-contents{
     @include flex($flex-dir: row,
-                      $display: flex,
+                      $display: block,
                       $flex-wrap: wrap,
                       $align-content: center,
                       $align-items: normal,
                       $justify-content:null);
-    @include media(large){
+    @include media(medium){
         display:block;
         justify-content: space-evenly;
 
@@ -106,5 +105,21 @@ footer{
         justify-content: space-evenly;
         flex-wrap: nowrap;
     }
+    @include media(x-large){
+        display: flex;
+        flex-direction: row;
+        justify-content: null;
+    }
 }
 
+.footer-background{ 
+    //Affects the span containing the copyright information
+    //Need to make the copyright breakpoint display at different breakpoints
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background-color: $footer-black;
+    background-size: 100vw;
+    text-align: center;
+    color:white;
+  }

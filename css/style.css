@@ -582,18 +582,6 @@ li {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-@media (min-width: 994px) {
-  .f-container {
-    width: auto;
-    height: auto;
-  }
-}
-@media (min-width: 1260px) {
-  .f-container {
-    width: auto;
-    height: auto;
-  }
-}
 .f-container #n-logo {
   flex-direction: row;
   display: flex;
@@ -601,19 +589,6 @@ li {
   align-content: normal;
   align-items: center;
   max-width: 100%;
-}
-@media (min-width: 994px) {
-  .f-container #n-logo {
-    width: auto;
-    height: auto;
-    max-width: 125%;
-  }
-}
-@media (min-width: 1260px) {
-  .f-container #n-logo {
-    width: auto;
-    height: auto;
-  }
 }
 .f-container #in-logo {
   flex-direction: row;
@@ -643,7 +618,9 @@ li {
   align-content: center;
   align-items: normal;
   justify-content: space-around;
-  width: 66%;
+  width: 66.6667%;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .f-container .left-header {
@@ -652,22 +629,23 @@ li {
 }
 @media (min-width: 994px) {
   .f-container .left-header {
-    width: 33%;
+    width: 33.3333%;
   }
 }
 @media (min-width: 1260px) {
   .f-container .left-header {
-    width: 33%;
+    width: 33.3333%;
   }
 }
 .f-container .right-header {
   flex-direction: row;
   display: flex;
   flex-wrap: nowrap;
-  align-content: normal;
   align-items: normal;
-  justify-content: flex-end;
-  width: 33%;
+  width: 33.3333%;
+  padding-top: 7px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .f-container .right-header {
@@ -676,11 +654,11 @@ li {
 }
 @media (min-width: 994px) {
   .f-container .right-header {
-    width: 66%;
+    width: 66.6667%;
   }
 }
 .f-container .right-header button, .f-container .right-header a, .f-container .right-header input {
-  margin-left: 20px;
+  margin: auto;
 }
 
 #hamburger-menu {
@@ -689,11 +667,6 @@ li {
   font-size: 2.5em;
   color: #FFFFFF;
   background-color: #272936;
-}
-@media (min-width: 994px) {
-  #hamburger-menu {
-    margin-top: 20px;
-  }
 }
 
 #search-icon {
@@ -756,13 +729,13 @@ li {
 #support, #contact {
   border-radius: 0px;
   font-size: 1.125rem;
-  width: 139px;
   height: 56px;
   line-height: 46px;
   text-align: center;
   border: none;
   display: none;
-  margin-top: 20px;
+  width: auto;
+  padding: 5px 15px;
   border-radius: 3px;
   border: 1px solid transparent;
 }
@@ -782,6 +755,9 @@ li {
 #support span, #contact span {
   font-size: 1.438rem;
   line-height: 45px;
+}
+#support span .icon-mouse, #support span .icon-send, #contact span .icon-mouse, #contact span .icon-send {
+  margin-right: 5px;
 }
 
 #support {
@@ -809,8 +785,6 @@ li {
 @media (min-width: 994px) {
   .search-container {
     display: flex;
-    margin-left: 20px;
-    margin-top: 20px;
   }
 }
 
@@ -1790,30 +1764,74 @@ footer .marginalised a:hover {
     display: none;
   }
 }
-
-.copyright {
-  display: flex;
+@media (min-width: 994px) {
+  .breakpoint-br {
+    display: none;
+  }
+}
+@media (min-width: 1260px) {
+  .breakpoint-br {
+    display: none;
+  }
 }
 
-#sitemap-lg {
-  display: none;
-  margin-left: 10px;
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-top: -2px;
+@media (min-width: 768px) and (max-width: 993px) {
+  .copyright {
+    display: flex;
+  }
 }
-@media (min-width: 576px) {
-  #sitemap-lg {
+@media (min-width: 994px) {
+  .copyright {
+    display: flex;
+  }
+}
+@media (min-width: 1260px) {
+  .copyright {
     display: flex;
   }
 }
 
-#sitemap-s {
+#sitemap-lg {
   display: block;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-top: -2px;
 }
-@media (min-width: 576px) {
-  #sitemap-s {
-    display: none;
+@media (min-width: 768px) and (max-width: 993px) {
+  #sitemap-lg {
+    margin-left: 10px;
+    display: flex;
+  }
+}
+@media (min-width: 994px) {
+  #sitemap-lg {
+    margin-left: 10px;
+    display: flex;
+  }
+}
+@media (min-width: 1260px) {
+  #sitemap-lg {
+    margin-left: 10px;
+    display: flex;
+  }
+}
+
+i {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  i {
+    display: flex;
+  }
+}
+@media (min-width: 994px) {
+  i {
+    display: flex;
+  }
+}
+@media (min-width: 1260px) {
+  i {
+    display: flex;
   }
 }
 

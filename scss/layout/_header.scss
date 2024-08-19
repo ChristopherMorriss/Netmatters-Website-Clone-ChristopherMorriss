@@ -6,18 +6,7 @@
                   $align-items: normal,
                   $justify-content:space-around,
                   );
-    @include media(large){
-                  width:auto;
-                  height:auto;
-                  }
-    @include media(x-large){
-                  width:auto;
-                  height:auto;
-                  }
     #n-logo{
-      // width:60%;
-      // height:60%;
-      //margin-top:13px;
       @include flex($flex-dir: row,
                       $display: flex,
                       $flex-wrap: wrap,
@@ -26,23 +15,9 @@
                       $justify-content:null,
                       );
       max-width: 100%;
-
-      
-      @include media(large){
-        width:auto;
-        height:auto;
-        max-width: 125%;
-      }
-      @include media(x-large){
-        width:auto;
-        height:auto;
-      }
     };
 
     #in-logo{
-      // width:60%;
-      // height:60%;
-      //margin-top:13px;
       @include flex($flex-dir: row,
                       $display: flex,
                       $flex-wrap: wrap,
@@ -72,38 +47,42 @@
                       $align-items: normal,
                       $justify-content:space-around,
                       );
-        width:66%;
+        width:66.6667%;
         @include media(medium){
           width:50%;
         }
         @include media(large){
-          width: 33%;
+          width: 33.3333%;
         }
         @include media(x-large){
-          width: 33%;
+          width: 33.3333%;
         }
+        margin-left: -15px;
+        margin-right: -15px;
+        
 
     }
     .right-header{
         @include flex($flex-dir: row,
                       $display: flex,
                       $flex-wrap: nowrap,
-                      $align-content: normal,
+                      $align-content: null,
                       $align-items: normal,
-                      $justify-content:flex-end,
+                      $justify-content:null,
                       );
-        width:33%;
+        width:33.3333%;
         @include media(medium){
           width:50%;
         }
         @include media(large){
-          width:66%;
+          width:66.6667%;
         }
         button,a,input{
-          margin-left: 20px;
+          margin: auto;
         }
-      
-        
+        padding-top: 7px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
     padding-top:20px;
     padding-bottom:20px;
@@ -116,9 +95,6 @@
     font-size: 2.5em;
     color: $white;
     background-color: $black;
-    @include media(large){
-      margin-top: 20px;
-    }
 }
 
 #search-icon{ 
@@ -172,21 +148,21 @@
 #support,#contact{ 
     @include btnstyle($b-radius:0px,
                       $f-size:1.125rem,
-                      $w:139px,
+                      $w:null,
                       $h:56px,
                       $l-height:46px,
                       $text-center:center,
                       $b: none,
                       );
     display:none;
-    margin-top:20px;
     @include media(medium){
       display:none;
     }
     @include media(large){
       display:flex;
     }
-    //padding: 5px 15px;
+    width:auto;
+    padding: 5px 15px;
     border-radius: 3px;
 
     a{
@@ -196,6 +172,9 @@
     span{
       font-size: 1.438rem;
       line-height: 45px;
+      .icon-mouse,.icon-send{
+        margin-right: 5px;
+      }
     }
 }
 
@@ -214,8 +193,6 @@
   }
   @include media(large){
     display:flex;
-    margin-left: 20px;
-    margin-top: 20px;
   }
 }  
 

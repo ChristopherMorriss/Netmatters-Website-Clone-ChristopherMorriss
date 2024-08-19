@@ -33,7 +33,6 @@
                       $b:1px solid transparent);
     margin-bottom: 17px;
     padding: 10px 30px;
-    margin-left: 10px;
     span{
       margin-left: 12px;
     }
@@ -50,18 +49,23 @@
       color: $quote-author;
       font-size: 1.1rem;
       margin-top:40px;
+      font-style: initial;
     }
     
   }
 
   .google-btn{
     @include hover($google-blue,$blue-hover);
+    //margin-right: 8px;
   }
 
   .trustpilot-btn{
     @include hover ($trustpilot-green,$green-hover);
   }
 
+  .black-1{
+    margin-right: 8px;
+  }
   .btn-group{
     br{
       display: block;

@@ -954,7 +954,7 @@ li {
 .btn-3:hover span {
   color: #FFFFFF;
 }
-.btn-4 {
+.btn-4, .btn-7 {
   border-bottom: 1px solid #333645;
   background-color: #333645;
   flex-direction: row;
@@ -964,16 +964,16 @@ li {
   align-items: normal;
   justify-content: space-between;
 }
-.btn-4:hover {
+.btn-4:hover, .btn-7:hover {
   background-color: #CE4125;
 }
-.btn-4 span {
+.btn-4 span, .btn-7 span {
   color: #CE4125;
 }
-.btn-4 span:hover {
+.btn-4 span:hover, .btn-7 span:hover {
   color: #FFFFFF;
 }
-.btn-4:hover span {
+.btn-4:hover span, .btn-7:hover span {
   color: #FFFFFF;
 }
 .btn-5 {
@@ -1053,7 +1053,7 @@ li {
 }
 
 .hover-submenu4, .hover-submenu7 {
-  background-color: #c42e2a;
+  background-color: #a33313;
   display: none;
 }
 
@@ -1083,6 +1083,9 @@ li {
   grid-template-columns: 1fr 1fr 1fr;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+.hover-submenu1 span, .hover-submenu2 span, .hover-submenu3 span, .hover-submenu4 span, .hover-submenu5 span, .hover-submenu6 span, .hover-submenu7 span {
+  margin-right: 10px;
 }
 
 .triangle {
@@ -1257,12 +1260,7 @@ li {
   .slider-design h1 {
     font-size: 4em;
     line-height: 5rem;
-  }
-}
-@media (min-width: 1260px) {
-  .slider-design h1 {
-    font-size: 4em;
-    line-height: 5rem;
+    margin: 0 0 1.25rem;
   }
 }
 @media (min-width: 994px) {

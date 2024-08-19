@@ -78,11 +78,12 @@
       @include media(large){
         font-size:4em;
         line-height: 5rem;
+        margin: 0 0 1.25rem;
         }
-      @include media(x-large){
-        font-size:4em;
-        line-height: 5rem;
-      }
+      // @include media(x-large){
+      //   font-size:4em;
+      //   line-height: 5rem;
+      // }
     }
     p{
       @include media(large){

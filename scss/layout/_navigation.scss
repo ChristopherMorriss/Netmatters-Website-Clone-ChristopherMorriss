@@ -85,7 +85,7 @@
                 $justify-content:space-between); 
 }
 
-.btn-4{
+.btn-4,.btn-7{
   border-bottom: 1px solid $background_black;
   @include hover($background_black,$dark_red); 
   span{
@@ -180,7 +180,7 @@
 }
 
 .hover-submenu4,.hover-submenu7{
-  background-color: $dred-hover;
+  background-color: $submenu-dred;
   display: none;
 }
 
@@ -211,8 +211,10 @@
                 $gutter-row:null,
                 $gutter-column:20px);
   }
+  span{
+    margin-right: 10px;
+  }
 }
-
 .triangle {
   width: 0px;
   height: 0px;
@@ -285,3 +287,5 @@
     }
   }
 }
+
+

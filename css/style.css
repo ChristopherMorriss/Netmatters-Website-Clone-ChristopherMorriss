@@ -19,6 +19,10 @@ button {
   z-index: 10;
   left: 0;
 }
+#container .shade {
+  cursor: pointer;
+  margin-left: -350px;
+}
 #container .shade:after {
   height: 100%;
   width: 100%;
@@ -78,6 +82,10 @@ body {
 
 li {
   list-style: none;
+}
+
+html {
+  background-color: #FFFFFF;
 }
 
 @font-face {
@@ -569,7 +577,7 @@ li {
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: 10;
+  z-index: -1;
 }
 #pop-up-menu a h2, #pop-up-menu a h3, #pop-up-menu a p {
   background-color: #272936;
@@ -2022,8 +2030,8 @@ i {
 }
 
 .cookie-popup {
+  box-shadow: 5px 15px rgba(0, 0, 0, 0.5);
   position: fixed;
-  margin: auto;
   flex-direction: column;
   display: flex;
   flex-wrap: wrap;
@@ -2033,8 +2041,6 @@ i {
   top: 50%;
   left: 25%;
   width: 60%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
   background-color: #FFFFFF;
   border-radius: 5px;
   z-index: 3;
@@ -2044,21 +2050,24 @@ i {
 }
 @media (min-width: 576px) {
   .cookie-popup {
-    top: 15%;
-    left: -9%;
-    width: 90%;
     transform: translate(0%, 0%);
   }
 }
-.cookie-popup h1 {
-  margin-left: 5%;
-  margin-right: 5%;
+.cookie-popup .cookie-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.42857143px;
+}
+.cookie-popup .cookie-header h3 {
+  font-size: 1.625rem;
+  margin: 0;
+  line-height: 1.42857143;
+  color: #333645;
+  font-weight: 400;
 }
 .cookie-popup P {
   color: #666;
   line-height: 2rem;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 .cookie-popup .cookie-buttons button {
   height: auto !important;

@@ -40,7 +40,6 @@ footer{
         display: flex;
         flex-wrap: nowrap;
     }
-    
     &-btn{
       font-size: 26px;
       color:white;
@@ -49,7 +48,7 @@ footer{
       padding: 12px 22px 16px;
       border-radius: 0px;
       border: none;
-      margin-left:0px;
+      margin-left: 0px;
     }
     span{
         position:relative;
@@ -170,12 +169,16 @@ footer{
 i{
     display: none;
     @include media(medium){
+        margin-right: 5px;
         display:flex;
     }
     @include media(large){
+        margin-right: 5px;
         display:flex;
     }
     @include media(x-large){
+        margin-right: 10px;
         display:flex;
     }
 }
+

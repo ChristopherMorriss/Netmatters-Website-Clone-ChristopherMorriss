@@ -551,9 +551,14 @@ li {
 
 #pop-up-menu {
   display: none;
+  width: 350px;
   background-color: #333645;
   color: #FFFFFF;
   text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
 }
 #pop-up-menu a h2, #pop-up-menu a h3, #pop-up-menu a p {
   background-color: #272936;
@@ -1505,20 +1510,17 @@ li {
 
 .article-1, .article-2 {
   margin-bottom: 30px;
-  width: auto;
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .article-1, .article-2 {
     width: 50%;
     margin-right: 15px;
-    margin-bottom: auto;
   }
 }
 @media (min-width: 994px) {
   .article-1, .article-2 {
     width: auto;
     margin-right: 15px;
-    margin-bottom: auto;
   }
 }
 
@@ -1846,16 +1848,19 @@ i {
 }
 @media (min-width: 768px) and (max-width: 993px) {
   i {
+    margin-right: 5px;
     display: flex;
   }
 }
 @media (min-width: 994px) {
   i {
+    margin-right: 5px;
     display: flex;
   }
 }
 @media (min-width: 1260px) {
   i {
+    margin-right: 10px;
     display: flex;
   }
 }

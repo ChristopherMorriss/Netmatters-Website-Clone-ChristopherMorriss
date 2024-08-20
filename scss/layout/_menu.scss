@@ -1,8 +1,13 @@
 #pop-up-menu{ //Code for the pop-up menu 
     display:none;
+    width:350px;
     background-color: $background_black;
     color:$white;
     text-transform: uppercase;
+    position:absolute;
+    top:0px;
+    right:0px;
+    z-index:10;
     a{
         h2,h3,p{
         background-color: $black;

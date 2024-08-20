@@ -156,16 +156,13 @@
 
 .article-1,.article-2{
   margin-bottom: 30px;
-  width:auto;
   @include media(medium){
     width:50%;
     margin-right: 15px;
-    margin-bottom: auto;
   }
   @include media(large){
     width:auto;
     margin-right: 15px;
-    margin-bottom: auto;
   }
 }
 

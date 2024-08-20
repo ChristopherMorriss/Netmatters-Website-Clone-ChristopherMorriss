@@ -413,3 +413,16 @@ hover_partners13.addEventListener('mouseover',()=>{
 hover_partners13.addEventListener('mouseout',()=>{
   hover_partners13.style.display="none";
 });
+
+let hamburger_menu=document.querySelector('#hamburger-menu');
+let side_menu_toggle=0;
+hamburger_menu.addEventListener('click',()=>{
+  if (side_menu_toggle ===0){
+    $('#container').css('margin-left','-350px');
+    side_menu_toggle=1;
+  }
+  else if (side_menu_toggle ===1){
+    $('#container').css('margin-left','0');
+    side_menu_toggle=0;
+  }
+});

@@ -1,18 +1,10 @@
 .article{
 
     border: 1px solid;
-    // width:371px;
-    // @include media(large){
-    //   width:371px;
-    // }
     margin-bottom: 10px;
     .img-news{
       img{
         width:100%;
-        // @include media(large){
-        //   width:369px;
-        // }
-
       }
     }
     position: relative;

@@ -15,12 +15,27 @@ button{
 }
 
 #container{ //Container for the whole page, excluding the footer and the pop-up menu
-    height:100%;
     position:relative;
     overflow: hidden;
     transition: all .5s;
     z-index:10;
     left:0;
+    .shade{
+        &:after{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            opacity: 1;
+            transition: opacity 0.5s;
+            background: rgba(0, 0, 0, 0.4);
+            content: '';
+            z-index: 8;
+        }
+    }
+    
+    
 }
 
 .container{ //Container classs which will be used for any element which needs center alignment and padding

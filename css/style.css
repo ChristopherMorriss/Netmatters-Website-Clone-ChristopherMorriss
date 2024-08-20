@@ -13,12 +13,23 @@ button {
 }
 
 #container {
-  height: 100%;
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
   z-index: 10;
   left: 0;
+}
+#container .shade:after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 1;
+  transition: opacity 0.5s;
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  z-index: 8;
 }
 
 .container {

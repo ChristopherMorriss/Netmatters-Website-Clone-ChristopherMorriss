@@ -1216,12 +1216,7 @@ html {
 }
 
 .slider {
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: normal;
-  align-items: normal;
-  justify-content: center;
+  position: relative;
 }
 .slider .design-1 {
   background-image: url("../img/home.webp");
@@ -1260,6 +1255,15 @@ html {
 }
 .slider button span {
   margin-left: 10px;
+}
+.slider-design .slider-design {
+  display: flex !important;
+  overflow: hidden;
+  min-height: 550px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
 }
 @media (min-width: 994px) {
   .slider-design h1 {

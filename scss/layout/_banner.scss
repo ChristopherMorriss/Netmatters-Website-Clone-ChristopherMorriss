@@ -1,8 +1,18 @@
 .slider{
+  position: relative;
   .design-1{
     background-image: url("../img/home.webp"); 
     @extend %background-banner;
-
+      //   &:before{
+      //   content:"";
+      //   position: absolute;
+      //   top:0px;
+      //   bottom:0px;
+      //   left:0px;
+      //   right:0px;
+      //   background: linear-gradient(270deg,transparent 25%,#000);
+      //   z-index:3;
+      // }
   
   }
 
@@ -33,14 +43,14 @@
     background-image: url("../img/cyber-security-bg.webp"); 
     @extend %background-banner;
   }
-  @include flex( //Flex used for the layout of the text on the banner
-      $flex-dir:column,
-      $display:flex,
-      $flex-wrap:wrap,
-      $align-content:normal,
-      $align-items:normal,
-      $justify-content:center
-      );
+  // @include flex( //Flex used for the layout of the text on the banner
+  //     $flex-dir:column,
+  //     $display:flex,
+  //     $flex-wrap:wrap,
+  //     $align-content:normal,
+  //     $align-items:normal,
+  //     $justify-content:center
+  //     );
   button{
     width:250px;
     line-height:50px;
@@ -71,6 +81,15 @@
     z-index:4;
   }
   &-design{
+    .slider-design {
+      display: flex !important;
+      overflow: hidden;
+      min-height: 550px;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+    }
     h1{
       @include media(large){
         font-size:4em;

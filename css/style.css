@@ -562,12 +562,6 @@ html {
   padding-top: 50px;
 }
 
-.img_banner, .slider .design-7, .slider .design-6, .slider .design-5, .slider .design-4, .slider .design-3, .slider .design-2, .slider .design-1 {
-  background-size: cover;
-  width: 100%;
-  height: 515px;
-}
-
 #pop-up-menu {
   display: none;
   width: 350px;
@@ -1333,10 +1327,11 @@ html {
   top: 0;
   bottom: 0;
   width: 100% !important;
+  height: 515px;
   opacity: 0.5;
   position: absolute;
 }
-@media (min-width: 768px) and (max-width: 993px) {
+@media (min-width: 992px) {
   .img_banner {
     opacity: 1;
   }

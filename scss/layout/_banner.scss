@@ -2,7 +2,7 @@
   position: relative;
   .design-1{
     background-image: url("../img/home.webp"); 
-    @extend %background-banner;
+
       //   &:before{
       //   content:"";
       //   position: absolute;
@@ -18,30 +18,30 @@
 
   .design-2{
     background-image: url("../img/bespoke-bg.webp"); 
-    @extend %background-banner;
+
   }
   
 
   
   .design-3{
     background-image: url("../img/it-bg.webp"); 
-    @extend %background-banner;
+
   }
   .design-4{
     background-image: url("../img/digital-marketing-bg.webp"); 
-    @extend %background-banner;
+
   }
   .design-5{
     background-image: url("../img/telecoms-services-bg.webp"); 
-    @extend %background-banner;
+
   }
   .design-6{
     background-image: url("../img/web-design-bg.webp"); 
-    @extend %background-banner;
+
   }
   .design-7{
     background-image: url("../img/cyber-security-bg.webp"); 
-    @extend %background-banner;
+
   }
   // @include flex( //Flex used for the layout of the text on the banner
   //     $flex-dir:column,
@@ -170,13 +170,14 @@
   top: 0;
   bottom: 0;
   width: 100% !important;
+  //background-size: cover;
+  height:515px;
   opacity: 0.5;
   position: absolute;
 
-  @include media(medium){
-    opacity:1;
+  @media (min-width: 992px) {
+    opacity: 1;
   }
-  @extend %background-banner;
   &:before{
     content:"";
     position: absolute;

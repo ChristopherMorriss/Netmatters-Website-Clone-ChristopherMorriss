@@ -1329,6 +1329,18 @@ html {
   }
 }
 
+.img_banner {
+  top: 0;
+  bottom: 0;
+  width: 100% !important;
+  opacity: 0.5;
+  position: absolute;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  .img_banner {
+    opacity: 1;
+  }
+}
 .img_banner:before {
   content: "";
   position: absolute;
@@ -1338,6 +1350,12 @@ html {
   right: 0px;
   background: linear-gradient(270deg, transparent 25%, #000);
   z-index: 3;
+}
+.img_banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .partners {

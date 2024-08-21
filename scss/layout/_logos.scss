@@ -3,12 +3,14 @@
     @include flex($flex-dir: row,
                   $display: flex,
                   $flex-wrap: nowrap,
-                  $align-content: normal,
-                  $align-items: normal,
+                  $align-content: null,
+                  $align-items: center,
                   $justify-content:space-between);
     img{
+      margin-right: 50px;
       max-height:70px;
       max-width:200px;
+      width:auto !important;
       filter: grayscale(1);
       &:hover{
         filter:none; //Removes the grayscale filter effect when hovered over
@@ -57,4 +59,9 @@
                 $align-items: normal,
                 $justify-content:center); 
   text-align: center;
+}
+
+.partner-container{
+  padding: 0px 20px;
+  position: relative;
 }

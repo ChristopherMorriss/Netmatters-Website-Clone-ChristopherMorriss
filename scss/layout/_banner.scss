@@ -2,16 +2,7 @@
   .design-1{
     background-image: url("../img/home.webp"); 
     @extend %background-banner;
-    &:before{
-      content:"";
-      position: absolute;
-      top:0px;
-      bottom:0px;
-      left:0px;
-      right:0px;
-      background: linear-gradient(270deg,transparent 25%,#000);
-      z-index:3;
-   }
+
   
   }
 
@@ -146,3 +137,27 @@
   height:100%;
 }
 
+// .slider-design{
+//   content:"";
+//   position: absolute;
+//   top:0px;
+//   bottom:0px;
+//   left:0px;
+//   right:0px;
+//   background: linear-gradient(270deg,transparent 25%,#000);
+//   z-index:3;
+// }
+
+.img_banner{
+  @extend %background-banner;
+  &:before{
+    content:"";
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background: linear-gradient(270deg,transparent 25%,#000);
+    z-index:3;
+ }
+}

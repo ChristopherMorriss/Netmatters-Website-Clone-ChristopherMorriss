@@ -1256,7 +1256,7 @@ html {
 .slider button span {
   margin-left: 10px;
 }
-.slider-design .slider-design {
+.slider-design {
   display: flex !important;
   overflow: hidden;
   min-height: 550px;

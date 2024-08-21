@@ -81,15 +81,14 @@
     z-index:4;
   }
   &-design{
-    .slider-design {
-      display: flex !important;
-      overflow: hidden;
-      min-height: 550px;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-      background-color: #000;
-    }
+    display: flex !important;
+    overflow: hidden;
+    min-height: 550px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    
     h1{
       @include media(large){
         font-size:4em;

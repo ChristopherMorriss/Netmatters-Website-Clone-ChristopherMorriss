@@ -2091,7 +2091,7 @@ i {
   border-radius: 3px;
   white-space: normal;
 }
-.cookie-popup .cookie-buttons #accept, .cookie-popup .cookie-buttons .change {
+.cookie-popup .cookie-buttons .accept-button, .cookie-popup .cookie-buttons .change-button {
   padding-left: 15px;
   padding-right: 15px;
   width: 40%;

@@ -1372,6 +1372,7 @@ html {
 }
 
 .triangle-partners {
+  margin: auto;
   width: 0px;
   height: 0px;
   border-style: solid;
@@ -1383,7 +1384,6 @@ html {
   position: relative;
   color: #FFFFFF;
   display: none;
-  max-width: 20%;
   left: 0px;
   z-index: 7;
 }
@@ -1409,6 +1409,14 @@ html {
   align-items: normal;
   justify-content: center;
   text-align: center;
+  padding: 20px;
+  font-size: 0.875rem;
+}
+.tooltip-box h3 {
+  position: relative;
+  font-size: 1.125rem;
+  padding-bottom: 17px;
+  margin: 0;
 }
 
 .partner-container {

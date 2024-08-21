@@ -7,7 +7,15 @@
     text-align: $text-center;
     border: $b;
 }
-
+@mixin button($height,$l-height,$padding,$text-transform,$font-size,$border-radius,$white-space){
+    height: $height;
+    line-height: $l-height;
+    padding: $padding;
+    text-transform: $text-transform;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    white-space: $white-space;
+}
 @mixin flex($flex-dir,$display,$flex-wrap,$align-content,$align-items,$justify-content){//Mixin for flex objects
     flex-direction: $flex-dir;
     display: $display;

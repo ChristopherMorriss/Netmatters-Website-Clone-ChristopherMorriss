@@ -1,10 +1,10 @@
 .partners{
-    overflow-x: hidden;
+    //overflow-x: hidden;
     @include flex($flex-dir: row,
                   $display: flex,
                   $flex-wrap: nowrap,
                   $align-content: null,
-                  $align-items: center,
+                  $align-items: null,
                   $justify-content:space-between);
     img{
       margin-right: 50px;
@@ -75,3 +75,23 @@
   padding: 0px 20px;
   position: relative;
 }
+
+.all-logos{
+  display: flex;
+  align-items: end;
+}
+
+.full-tooltip{
+  display: none;
+  position: absolute;
+  bottom: 100%;
+}
+
+.logo-container{
+  &:hover{
+    .full-tooltip{
+      display: block;
+    }
+  }
+}
+

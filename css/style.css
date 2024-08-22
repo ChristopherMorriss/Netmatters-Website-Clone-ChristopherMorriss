@@ -1360,7 +1360,6 @@ html {
   justify-content: space-between;
 }
 .partners img {
-  margin-right: 50px;
   max-height: 70px;
   max-width: 200px;
   width: auto !important;
@@ -1382,30 +1381,27 @@ html {
 .triangle-partners-1, .triangle-partners-2, .triangle-partners-3, .triangle-partners-4, .triangle-partners-5, .triangle-partners-6, .triangle-partners-7, .triangle-partners-8, .triangle-partners-9, .triangle-partners-10, .triangle-partners-11, .triangle-partners-12, .triangle-partners-13 {
   position: relative;
   color: #FFFFFF;
-  left: 0px;
   z-index: 7;
 }
 .triangle-partners-1 button, .triangle-partners-2 button, .triangle-partners-3 button, .triangle-partners-4 button, .triangle-partners-5 button, .triangle-partners-6 button, .triangle-partners-7 button, .triangle-partners-8 button, .triangle-partners-9 button, .triangle-partners-10 button, .triangle-partners-11 button, .triangle-partners-12 button, .triangle-partners-13 button {
-  border-radius: 6px;
-  font-size: 20px;
-  height: auto;
+  border-radius: 3px;
+  font-size: 16px;
   line-height: 35px;
   text-align: center;
   border: 1px solid transparent;
+  margin-top: 11px;
+  display: flex;
   margin-bottom: 17px;
   padding: 10px 30px;
-  margin-left: 10px;
   color: #FFFFFF;
+}
+.triangle-partners-1 button span, .triangle-partners-2 button span, .triangle-partners-3 button span, .triangle-partners-4 button span, .triangle-partners-5 button span, .triangle-partners-6 button span, .triangle-partners-7 button span, .triangle-partners-8 button span, .triangle-partners-9 button span, .triangle-partners-10 button span, .triangle-partners-11 button span, .triangle-partners-12 button span, .triangle-partners-13 button span {
+  margin-right: -4px;
+  margin-left: 12px;
 }
 
 .tooltip-box {
   background-color: #333645;
-  flex-direction: row;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: normal;
-  justify-content: center;
   text-align: center;
   padding: 20px;
   font-size: 0.875rem;
@@ -1431,10 +1427,20 @@ html {
   display: none;
   position: absolute;
   bottom: 100%;
+  width: 280px;
 }
 
+.logo-container {
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+}
 .logo-container:hover .full-tooltip {
   display: block;
+}
+
+.text-icon {
+  display: flex;
 }
 
 .article {

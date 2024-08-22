@@ -7,7 +7,7 @@
                   $align-items: null,
                   $justify-content:space-between);
     img{
-      margin-right: 50px;
+      //display: flex;
       max-height:70px;
       max-width:200px;
       width:auto !important;
@@ -30,35 +30,33 @@
   &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
     position: relative;
     color: $white;
-    // display:contents;
-    //display: none;
-    //max-width: 20%;
     button{
-      @include btnstyle($b-radius:6px,
-                        $f-size:20px,
+      @include btnstyle($b-radius:3px,
+                        $f-size:16px,
                         $w:null,
-                        $h:auto,
+                        $h:null,
                         $l-height:35px,
                         $text-center:center,
                         $b:1px solid transparent);
-    margin-bottom: 17px;
-    padding: 10px 30px;
-    margin-left: 10px;
-    color:$white;
+      
+      margin-top: 11px;
+      display: flex;
+      margin-bottom: 17px;
+      padding: 10px 30px;
+      color:$white;
+      span{
+        margin-right: -4px;
+        margin-left: 12px;
+
+      }
     }
-    left: 0px;
+    // left: 0px;
     z-index: 7;
   }
 }
   
 .tooltip-box{
   background-color: $background_black;
-  @include flex($flex-dir: row,
-                $display: flex,
-                $flex-wrap: wrap,
-                $align-content: center,
-                $align-items: normal,
-                $justify-content:center); 
   text-align: center;
  
   padding: 20px;
@@ -85,9 +83,13 @@
   display: none;
   position: absolute;
   bottom: 100%;
+  width:280px;
 }
 
 .logo-container{
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
   &:hover{
     .full-tooltip{
       display: block;
@@ -95,3 +97,6 @@
   }
 }
 
+.text-icon{
+  display: flex;
+}

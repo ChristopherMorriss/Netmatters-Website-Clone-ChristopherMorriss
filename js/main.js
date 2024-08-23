@@ -24,18 +24,25 @@ slideOutMenu.addEventListener('click',()=>{
 });
 
 
-// let acceptButton= document.querySelector('#accept');
-
-// acceptButton.addEventListener('click',()=>{
-//   document.cookie = "username=cookie; expires=Thu, 18 Dec 2015 12:00:00 UTC"; //Cookie creation 
-//   $('.cookie-popup').css('display','none'); 
-//   setCookie('cookie','accepted','730'); //Creates a cookie called cookie with the value accepted and an expiry data of 730 days
-//   });
 
 let consentButton = document.querySelector('#fixed-consent'); //Shows the popup when clicked
 consentButton.addEventListener('click',()=>{
   $('.cookie-popup').css('display','block');
 });
+
+let manageConsent=document.querySelector('#fixed-consent');
+let cookieShadow=document.querySelector('.cookie-shadow');
+let cookiePopup=document.querySelector('.cookie-popup');
+let acceptCookies=document.querySelector('#accept');
+manageConsent.addEventListener('click',()=>{
+  cookieShadow.style.display = "flex";
+  cookiePopup.style.display = "flex";
+});
+
+
+
+  
+ 
 
 function setCookie(cname, cvalue, exdays) { //Function to create a cookie and set its expiry date and value
   const d = new Date();
@@ -60,10 +67,21 @@ function getCookie(cname) { //The function to check if a cookie exists
   return "";
 }
 
+acceptCookies.addEventListener('click',()=>{
+  cookieShadow.style.display = "none";
+  cookiePopup.style.display = "none";
+  document.cookie = "username=cookie; expires=Thu, 18 Dec 2015 12:00:00 UTC"; //Cookie creation 
+  setCookie('cookie','accepted','730'); //Creates a cookie called cookie with the value accepted and an expiry data of 730 days
+})
+
 if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies" is active. If it is, the cookie menu is hidden
-  $('#cookie-popup').hide(); //This is designed to stop the popup from displaying if the cookie has already been accepted
-                             //It is not working properly at the moment
+  $('#cookie-popup').css("display","none"); //This is designed to stop the popup from displaying if the cookie has already been accepted
+  //It is not working properly at the moment
 }
+else{
+  $('#cookie-popup').css("display","block");
+}
+
 	
 hover_submenu1=document.querySelector('.hover-submenu1');
 submenu_1=document.querySelector('.submenu_1');
@@ -227,41 +245,30 @@ hover_submenu7.addEventListener('mouseout',()=>{
   $('.btn-7 span').css('color','#CE4125');
 });
 
-let manageConsent=document.querySelector('#fixed-consent');
-let cookieShadow=document.querySelector('.cookie-shadow');
-let cookiePopup=document.querySelector('.cookie-popup');
-let acceptCookies=document.querySelector('#accept');
-manageConsent.addEventListener('click',()=>{
-  cookieShadow.style.display = "flex";
-  cookiePopup.style.display = "flex";
-});
-acceptCookies.addEventListener('click',()=>{
-  cookieShadow.style.display = "none";
-  cookiePopup.style.display = "none";
-})
 
 
-// let toggle=1;
-// let page_container=document.querySelector('body');//:not(#hamburger-menu)
-// page_container.addEventListener('click',()=>{
-//   console.log('activated');
-//   console.log(toggle);
-//   if (toggle >=2){
-//     $('header').toggleClass('shade');
-//     toggle-=1;
-//     if (toggle !== 2){
-//       $('#pop-up-menu').css('display','none');
-//       $('#container').css('margin-left','0px'); 
-//     }
-//   }
+
+let toggle=1;
+let page_container=document.querySelector('body');//:not(#hamburger-menu)
+page_container.addEventListener('click',()=>{
+  console.log('activated');
+  console.log(toggle);
+  if (toggle >=2){
+    $('header').toggleClass('shade');
+    toggle-=1;
+    if (toggle !== 2){
+      $('#pop-up-menu').css('display','none');
+      $('#container').css('margin-left','0px'); 
+    }
+  }
     
 
-// });
+});
 
-// let hamburger_menu=document.querySelector('#hamburger-menu');
-// hamburger_menu.addEventListener('click',()=>{
-//   $('#container').css('margin-left','-350px'); 
-//   $('#pop-up-menu').css('z-index','10');
-//   $('#pop-up-menu').css('display','block');
-//   toggle+=2;
-// });
+let hamburger_menu=document.querySelector('#hamburger-menu');
+hamburger_menu.addEventListener('click',()=>{
+  $('#container').css('margin-left','-350px'); 
+  $('#pop-up-menu').css('z-index','10');
+  $('#pop-up-menu').css('display','block');
+  toggle+=2;
+});

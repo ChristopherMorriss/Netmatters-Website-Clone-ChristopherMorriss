@@ -82,7 +82,7 @@ acceptCookies.addEventListener('click',()=>{
 
 if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies" is active. If it is, the cookie menu is hidden
   $('#cookie-popup').css("display","none"); //This is designed to stop the popup from displaying if the cookie has already been accepted
-  //It is not working properly at the moment
+  console.log('Cookie accepted so it doesnt show');
 }
 else{
   $('#cookie-popup').css("display","block");

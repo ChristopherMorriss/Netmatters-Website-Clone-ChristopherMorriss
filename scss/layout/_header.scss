@@ -95,6 +95,34 @@
     font-size: 2.5em;
     color: $white;
     background-color: $black;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    .line{
+      transition-duration: 0.22s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      height: 4px;
+      width: 33px;
+      background-color: $white;
+      display: block;
+      margin: auto;
+      &:before, &:after{
+        content: "";
+        display: block;
+        background-color: #fff;
+        position: relative;
+        height: 4px;
+        width: 33px;
+      }
+      &:before{
+        transition: 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+        top: -10px;
+      }
+      &:after{
+        transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        bottom: -6px;
+      }
+    }
 }
 
 #search-icon{ 
@@ -258,3 +286,4 @@
     font-size: 20px;
   }
 }
+

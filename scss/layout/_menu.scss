@@ -1,6 +1,29 @@
 #pop-up-menu{ //Code for the pop-up menu 
+  .icon-cogs{
+    color: $grey_blue_og;
+  }
+  .icon-display{
+    color: $blue;
+  }
+  .icon-bar-graph{
+    color: $green;
+  }
+  .icon-embed2{
+    color: $purple;
+  }
+  .icon-graduation-cap,.icon-phone_in_talk{
+    color:$dark_red;
+  }
+  .icon-security{
+    color:$pink_red;
+  }
     display:none;
-    width:350px;
+    text-align: center;
+    width:275px;
+    @include media(large){
+      width:350px;
+      text-align: start;
+    }
     background-color: $background_black;
     color:$white;
     text-transform: uppercase;
@@ -15,6 +38,23 @@
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 15px;
+        margin: auto;
+      }
+    }
+    span{
+      font-size: 1.438rem;
+      padding-bottom: 10px;
+      .icon-angle-double-right{
+        padding-bottom: 0px;
+        padding-right: 15px;
+        font-size: 11px;
+      }
+    }
+    small{
+      font-size: 0.625rem;
+      padding-bottom: 1px;
+      @include media(large){
+        padding-bottom: 0px;
       }
     }
     p{
@@ -35,4 +75,26 @@
 .menu-title{
   padding:20px;
   line-height: 1;
+  outline:1px solid rgba(0,0,0,.25);
+  border-radius: 3px;
 }
+
+.slide-popup-hidden{
+  display: none;
+  @include media(large){
+     display: block;
+  }
+}
+
+.menu-sections{
+  padding:21px;
+}
+
+.sub-menu{
+  padding: 18px 0 19px;
+}
+
+.sub-contact{
+  margin-bottom: 20px;
+}
+

@@ -82,7 +82,32 @@ else{
   $('#cookie-popup').css("display","block");
 }
 
+// for (i=0;i<7;i++){
+//   hover_submenu=document.querySelector(`.hover-submenu${i}`);
+//   submenu=document.querySelector(`.submenu_${i}`);
+//   submenu.addEventListener('mouseover',()=>{
+//     hover_submenu.style.display="grid";
+//     $(`.submenu_${i}`).css('background-color','#67809F');
+//     $(`.btn-${i} span`).css('color','white');
+//   });
+//   submenu_[i].addEventListener('mouseout',()=>{
+//     hover_submenu[i].style.display="none";
+//     $(`.submenu_${i}`).css('background-color','#333645');
+//     $(`.btn-${i} span`).css('color','#67809F');
+//   });
+//   hover_submenu[i].addEventListener('mouseover',()=>{
+//     hover_submenu[i].style.display="grid";
+//     $(`.submenu_${i}`).css('background-color','#67809F');
+//     $(`.btn-${i} span`).css('color','white');
+//   });
+//   hover_submenu[i].addEventListener('mouseout',()=>{
+//     hover_submenu[i].style.display="none";
+//     $(`.submenu_${i}`).css('background-color','#333645');
+//     $(`.btn-${i} span`).css('color','#67809F');
+// });
+// }
 	
+//Code for the navigation bar - needs to be made much more efficient
 hover_submenu1=document.querySelector('.hover-submenu1');
 submenu_1=document.querySelector('.submenu_1');
 submenu_1.addEventListener('mouseover',()=>{
@@ -105,7 +130,6 @@ hover_submenu1.addEventListener('mouseout',()=>{
   $('.submenu_1').css('background-color','#333645');
   $('.btn-1 span').css('color','#67809F');
 });
-
 
 hover_submenu2=document.querySelector('.hover-submenu2');
 submenu_2=document.querySelector('.submenu_2');
@@ -249,7 +273,7 @@ hover_submenu7.addEventListener('mouseout',()=>{
 
 
 let toggle=1;
-let page_container=document.querySelector('body');//:not(#hamburger-menu)
+let page_container=document.querySelector('body');
 page_container.addEventListener('click',()=>{
   console.log('activated');
   console.log(toggle);
@@ -272,3 +296,11 @@ hamburger_menu.addEventListener('click',()=>{
   $('#pop-up-menu').css('display','block');
   toggle+=2;
 });
+
+//Important things to do:
+//Fix issues with partners carousel
+//Implement sticky header
+//Add transition to hamburger menu
+//Improve efficiency of navigation hover effects
+//Change button elements to styled <a> tags
+//Fix cookie issue

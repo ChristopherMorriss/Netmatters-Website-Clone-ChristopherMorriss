@@ -37,6 +37,9 @@
     span{
       @include hover-text($white, null);
     }
+    .hover-submenu1{
+      display: grid;
+    }
   }
   @include flex($flex-dir: row,
                 $display: flex,
@@ -132,6 +135,9 @@
   &:hover{
     span{
       @include hover-text($white, null);
+    }
+    .hover-submenu6{
+      display: grid;
     }
   }
   @include flex($flex-dir: row,
@@ -288,4 +294,11 @@
   }
 }
 
-
+// Part of code that I plan to use to replace inneficient javascript hover effects
+// .submenu-2{ 
+//   &:hover{
+//     .hover-submenu2{
+//       display: grid;
+//     }
+//   }
+// }

@@ -86,6 +86,7 @@ if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies
 }
 else{
   $('#cookie-popup').css("display","block");
+  console.log('Needs to be accepted before it disappears')
 }
 
 // for (i=0;i<7;i++){

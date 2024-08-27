@@ -5,11 +5,19 @@ $('.slider').slick({
   dots: true,
   adaptiveHeight: true,
 });
-$('.partners').slick({
+// $('.partners').slick({
+//   dots:false,
+//   slidesToShow: 6,
+//   autoplay:true,
+//   autoplaySpeed: 4000
+// });
+$('.all-logos').slick({
   dots:false,
-  slidesToShow: 6,
+  //slidesToShow: 6,
   autoplay:true,
-  autoplaySpeed: 4000
+  autoplaySpeed: 4000,
+  variableWidth:true
+
 });
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked
                  //It's a boolean variable so it could be represented with true (1) and false (0) instead

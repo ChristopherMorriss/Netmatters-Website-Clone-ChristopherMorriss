@@ -63,7 +63,7 @@
 .slick-slide {
     float: left;
     height: 100%;
-    width: 100%;
+    //width: 100%;
     min-height: 1px;
     [dir="rtl"] & {
         float: right;
@@ -82,7 +82,8 @@
     }
 
     .slick-initialized & {
-        display: block;
+        //display: block;
+        display: flex;
     }
 
     .slick-loading & {

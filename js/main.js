@@ -81,7 +81,9 @@ acceptCookies.addEventListener('click',()=>{
 })
 
 if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies" is active. If it is, the cookie menu is hidden
-  $('.cookie-popup').css("display","none"); //This is designed to stop the popup from displaying if the cookie has already been accepted
+  //$('.cookie-popup').css("display","none"); //This is designed to stop the popup from displaying if the cookie has already been accepted
+  cookieShadow.style.display = "none";
+  cookiePopup.style.display = "none";
   console.log('Cookie accepted so it doesnt show');
   //$('#hamburger-menu')
 }

@@ -285,8 +285,6 @@ hover_submenu7.addEventListener('mouseout',()=>{
 let toggle=1;
 let page_container=document.querySelector('body');
 page_container.addEventListener('click',()=>{
-  console.log('activated');
-  console.log(toggle);
   if (toggle >=2){
     $('header').toggleClass('shade');
     toggle-=1;
@@ -308,9 +306,11 @@ hamburger_menu.addEventListener('click',()=>{
 });
 
 //Important things to do:
-//Fix issues with partners carousel
+//Improve partners carousel slide functionality
 //Implement sticky header
 //Add transition to hamburger menu
+//Fix cookie issue
+
+//Second priority:
 //Improve efficiency of navigation hover effects
 //Change button elements to styled <a> tags
-//Fix cookie issue

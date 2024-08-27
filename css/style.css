@@ -774,6 +774,14 @@ html {
   display: block;
   margin: auto;
 }
+#hamburger-menu .line:active {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#hamburger-menu .line:active span {
+  transition-duration: 0.22s;
+}
 #hamburger-menu .line:before, #hamburger-menu .line:after {
   content: "";
   display: block;
@@ -1531,7 +1539,6 @@ html {
 
 .all-logos {
   display: flex !important;
-  align-items: end;
 }
 
 .full-tooltip {

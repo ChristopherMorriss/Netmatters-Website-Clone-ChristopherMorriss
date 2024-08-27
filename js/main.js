@@ -8,6 +8,8 @@ $('.slider').slick({
 $('.partners').slick({
   dots:false,
   slidesToShow: 6,
+  autoplay:true,
+  autoplaySpeed: 4000
 });
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked
                  //It's a boolean variable so it could be represented with true (1) and false (0) instead

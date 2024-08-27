@@ -88,6 +88,9 @@
 
 .menu-sections{
   padding:21px;
+  @include media(large){
+    padding:0px;
+  }
 }
 
 .sub-menu{

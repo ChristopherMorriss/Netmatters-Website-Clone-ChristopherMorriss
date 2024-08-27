@@ -5,12 +5,6 @@ $('.slider').slick({
   dots: true,
   adaptiveHeight: true,
 });
-// $('.partners').slick({
-//   dots:false,
-//   slidesToShow: 6,
-//   autoplay:true,
-//   autoplaySpeed: 4000
-// });
 $('.all-logos').slick({
   dots:false,
   //slidesToShow: 6,
@@ -59,6 +53,8 @@ function setCookie(cname, cvalue, exdays) { //Function to create a cookie and se
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  let cookies = document.cookie;
+  console.log(cookies);
 }
 
 function getCookie(cname) { //The function to check if a cookie exists
@@ -299,6 +295,7 @@ page_container.addEventListener('click',()=>{
 
 let hamburger_menu=document.querySelector('#hamburger-menu');
 hamburger_menu.addEventListener('click',()=>{
+  $('line').toggleClass('activated');
   $('#container').css('margin-left','-350px'); 
   $('#pop-up-menu').css('z-index','10');
   $('#pop-up-menu').css('display','block');

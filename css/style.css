@@ -657,6 +657,11 @@ html {
 .menu-sections {
   padding: 21px;
 }
+@media (min-width: 994px) {
+  .menu-sections {
+    padding: 0px;
+  }
+}
 
 .sub-menu {
   padding: 18px 0 19px;
@@ -2216,7 +2221,6 @@ i {
   align-content: normal;
   align-items: normal;
   justify-content: space-around;
-  display: none;
   width: auto;
   transform: translate(0%, 0%);
   background-color: #FFFFFF;
@@ -2318,7 +2322,6 @@ i {
   /* align-items: center; */
   justify-content: center;
   padding: 30px;
-  display: none;
 }
 
 .cookie-align {

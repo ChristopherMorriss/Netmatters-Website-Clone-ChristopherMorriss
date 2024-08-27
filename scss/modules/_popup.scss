@@ -8,7 +8,7 @@
                   $align-items: normal,
                   $justify-content:space-around,
                 );
-    display:none;
+    //display:none;
     width:auto;
     @include media(medium){
         width:600px;
@@ -110,7 +110,7 @@
     /* align-items: center; */
     justify-content: center; 
     padding: 30px;
-    display: none;
+    //display: none;
 }
 
 .cookie-align{

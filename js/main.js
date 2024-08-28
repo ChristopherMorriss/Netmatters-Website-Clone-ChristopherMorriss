@@ -14,7 +14,7 @@ $('.all-logos').slick({
   draggable: false
 
 });
-$('.sticky').sticky({
+$('.sticky-header').sticky({
   topSpacing:0
 });
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked

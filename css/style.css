@@ -669,6 +669,7 @@ html {
 }
 
 .f-container {
+  background-color: #FFFFFF;
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
@@ -992,6 +993,18 @@ html {
   .mobile-search .icon-search {
     display: none;
   }
+}
+
+.sticky-header {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: fixed;
+  z-index: 11;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  animation-duration: 0.25s;
+  transition: all 0.5s;
 }
 
 .nav-size {

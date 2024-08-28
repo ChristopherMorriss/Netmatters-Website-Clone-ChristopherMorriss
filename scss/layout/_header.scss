@@ -298,7 +298,7 @@
 }
 
 .sticky-header{
-  //display: none;
+  display: none;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -308,5 +308,44 @@
   box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
   animation-duration: .25s;
   transition: all .5s;
-  //animation-name: SlideInDown;
+}
+
+header{
+  transition: all 500ms ease;
+}
+
+.white-bg{
+  background-color: $white;
+}
+
+.animation{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slideInDown{
+  animation-name: slideInDown;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes slideOutUp {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.slideOutUp {
+  animation-name: slideOutUp;
 }

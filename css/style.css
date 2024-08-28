@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -996,6 +997,7 @@ html {
 }
 
 .sticky-header {
+  display: none;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -1005,6 +1007,45 @@ html {
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
   animation-duration: 0.25s;
   transition: all 0.5s;
+}
+
+header {
+  transition: all 500ms ease;
+}
+
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.animation {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+@keyframes slideOutUp {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.slideOutUp {
+  animation-name: slideOutUp;
 }
 
 .nav-size {
@@ -1055,10 +1096,6 @@ html {
 .btn-1:hover span {
   color: #FFFFFF;
 }
-.btn-1:hover .hover-submenu1 {
-  display: grid;
-}
-
 .btn-2 {
   border-bottom: 1px solid #333645;
   background-color: #333645;
@@ -1344,6 +1381,17 @@ html {
   }
 }
 
+.anchor-1:hover + .hover-submenu1 {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.hover-submenu1:hover {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
 .slider {
   position: relative;
 }

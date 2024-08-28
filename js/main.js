@@ -14,9 +14,7 @@ $('.all-logos').slick({
   draggable: false
 
 });
-$('.sticky-header').sticky({
-  topSpacing:0
-});
+
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked
                  //It's a boolean variable so it could be represented with true (1) and false (0) instead
 let slideOutMenu = document.querySelector('#hamburger-menu'); //Targets the span which contains the hamburger menu icon
@@ -123,26 +121,27 @@ else{
 //Code for the navigation bar - needs to be made much more efficient
 hover_submenu1=document.querySelector('.hover-submenu1');
 submenu_1=document.querySelector('.submenu_1');
-submenu_1.addEventListener('mouseover',()=>{
-  hover_submenu1.style.display="grid";
-  $('.submenu_1').css('background-color','#67809F');
-  $('.btn-1 span').css('color','white');
-});
-submenu_1.addEventListener('mouseout',()=>{
-  hover_submenu1.style.display="none";
-  $('.submenu_1').css('background-color','#333645');
-  $('.btn-1 span').css('color','#67809F');
-});
-hover_submenu1.addEventListener('mouseover',()=>{
-  hover_submenu1.style.display="grid";
-  $('.submenu_1').css('background-color','#67809F');
-  $('.btn-1 span').css('color','white');
-});
-hover_submenu1.addEventListener('mouseout',()=>{
-  hover_submenu1.style.display="none";
-  $('.submenu_1').css('background-color','#333645');
-  $('.btn-1 span').css('color','#67809F');
-});
+// submenu_1.addEventListener('mouseover',()=>{
+//   console.log('Being activated');
+//   hover_submenu1.style.display="grid";
+//   $('.submenu_1').css('background-color','#67809F');
+//   $('.btn-1 span').css('color','white');
+// });
+// submenu_1.addEventListener('mouseout',()=>{
+//   hover_submenu1.style.display="none";
+//   $('.submenu_1').css('background-color','#333645');
+//   $('.btn-1 span').css('color','#67809F');
+// });
+// hover_submenu1.addEventListener('mouseover',()=>{
+//   hover_submenu1.style.display="grid";
+//   $('.submenu_1').css('background-color','#67809F');
+//   $('.btn-1 span').css('color','white');
+// });
+// hover_submenu1.addEventListener('mouseout',()=>{
+//   hover_submenu1.style.display="none";
+//   $('.submenu_1').css('background-color','#333645');
+//   $('.btn-1 span').css('color','#67809F');
+// });
 
 hover_submenu2=document.querySelector('.hover-submenu2');
 submenu_2=document.querySelector('.submenu_2');
@@ -308,6 +307,37 @@ hamburger_menu.addEventListener('click',()=>{
   $('#pop-up-menu').css('display','block');
   toggle+=2;
 });
+
+
+let lastScrollTop = 0;
+let up_not_down = 0;
+window.addEventListener('scroll', function() {
+    //Code that triggers when scrolling upwards
+    let currentScrollTop = window.scrollY || document.documentElement.scrollTop;
+    if (currentScrollTop < lastScrollTop) {
+        console.log('Scrolling up');
+        // Add your code for scroll up event here
+        up_not_down = 1;
+        //$('.sticky-header').css('display','block');
+    }
+    else{
+      up_not_down =0;
+    } 
+
+    lastScrollTop = currentScrollTop;
+});
+
+window.addEventListener('scroll', (event) => {
+  // console.log(up_not_down);
+  if (up_not_down != 1){
+    $('.sticky-header').css('display','none');
+    console.log('scrolling down');
+  }
+  up_not_down = 0;
+  //console.log(up_not_down);
+  
+});
+
 
 //Important things to do:
 //Improve partners carousel slide functionality

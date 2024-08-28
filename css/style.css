@@ -1382,9 +1382,16 @@ header {
 }
 
 .anchor-1:hover + .hover-submenu1 {
-  display: grid;
+  display: grid !important;
   right: 0px;
   margin-top: 100px;
+}
+
+.anchor-1:has(+ .hover-submenu1 :hover) .submenu_1 {
+  background-color: #67809F;
+}
+.anchor-1:has(+ .hover-submenu1 :hover) span {
+  color: #FFFFFF;
 }
 
 .hover-submenu1:hover {
@@ -1392,6 +1399,33 @@ header {
   right: 0px;
   margin-top: 100px;
 }
+
+.anchor-2:hover + .hover-submenu2 {
+  display: grid !important;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-2:has(+ .hover-submenu2 :hover) .submenu_2 {
+  background-color: #4183D7;
+}
+.anchor-2:has(+ .hover-submenu2 :hover) span {
+  color: #FFFFFF;
+}
+
+.hover-submenu2:hover {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.minor-fixes {
+  text-transform: none;
+}
+.minor-fixes p {
+  margin-left: 0px;
+}
+
 .slider {
   position: relative;
 }

@@ -120,7 +120,7 @@ else{
 	
 //Code for the navigation bar - needs to be made much more efficient
 hover_submenu1=document.querySelector('.hover-submenu1');
-submenu_1=document.querySelector('.submenu_1');
+//submenu_1=document.querySelector('.submenu_1');
 // submenu_1.addEventListener('mouseover',()=>{
 //   console.log('Being activated');
 //   hover_submenu1.style.display="grid";
@@ -143,28 +143,28 @@ submenu_1=document.querySelector('.submenu_1');
 //   $('.btn-1 span').css('color','#67809F');
 // });
 
-hover_submenu2=document.querySelector('.hover-submenu2');
-submenu_2=document.querySelector('.submenu_2');
-submenu_2.addEventListener('mouseover',()=>{
-  hover_submenu2.style.display="grid";
-  $('.submenu_2').css('background-color','#4183D7');
-  $('.btn-2 span').css('color','white');
-});
-submenu_2.addEventListener('mouseout',()=>{
-  hover_submenu2.style.display="none";
-  $('.submenu_2').css('background-color','#333645');
-  $('.btn-2 span').css('color','#4183D7');
-});
-hover_submenu2.addEventListener('mouseover',()=>{
-  hover_submenu2.style.display="grid";
-  $('.submenu_2').css('background-color','#4183D7');
-  $('.btn-2 span').css('color','white');
-});
-hover_submenu2.addEventListener('mouseout',()=>{
-  hover_submenu2.style.display="none";
-  $('.submenu_2').css('background-color','#333645');
-  $('.btn-2 span').css('color','#4183D7');
-});
+// hover_submenu2=document.querySelector('.hover-submenu2');
+// submenu_2=document.querySelector('.submenu_2');
+// submenu_2.addEventListener('mouseover',()=>{
+//   hover_submenu2.style.display="grid";
+//   $('.submenu_2').css('background-color','#4183D7');
+//   $('.btn-2 span').css('color','white');
+// });
+// submenu_2.addEventListener('mouseout',()=>{
+//   hover_submenu2.style.display="none";
+//   $('.submenu_2').css('background-color','#333645');
+//   $('.btn-2 span').css('color','#4183D7');
+// });
+// hover_submenu2.addEventListener('mouseover',()=>{
+//   hover_submenu2.style.display="grid";
+//   $('.submenu_2').css('background-color','#4183D7');
+//   $('.btn-2 span').css('color','white');
+// });
+// hover_submenu2.addEventListener('mouseout',()=>{
+//   hover_submenu2.style.display="none";
+//   $('.submenu_2').css('background-color','#333645');
+//   $('.btn-2 span').css('color','#4183D7');
+// });
 
 hover_submenu3=document.querySelector('.hover-submenu3');
 submenu_3=document.querySelector('.submenu_3');

@@ -29,9 +29,10 @@
 
 .btn-1{
   border-bottom: 1px solid $background_black;
-  @include hover($background_black,$grey_blue_og); 
+  @include hover($background_black, $grey_blue_og); 
   span{
     @include hover-text($grey_blue_og, $white);
+
   }
   &:hover{
     span{
@@ -206,7 +207,7 @@
   z-index: 5;
   position: absolute;
   width:100%;
-  padding-bottom: 50px;
+  padding-bottom: 50px; 
   .hover-grid1,.hover-grid2,.hover-grid3,.hover-grid4,.hover-grid5,.hover-grid6,.hover-grid7,.hover-grid8{
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -295,21 +296,64 @@
 .anchor-1{ 
   &:hover{
     + .hover-submenu1{
-      display: grid;
+      display: grid !important;
       right:0px;
       margin-top: 100px;
-      
     }
   }
 }
 
+.anchor-1:has(+ .hover-submenu1 :hover){ //Only works for the grid itself and not the downward padding
+  .submenu_1{
+    background-color: $grey_blue_og;
+  }
+  span{
+    color:$white;
+  }
+}
 .hover-submenu1{ 
   &:hover{
     display: grid;
     right:0px;
     margin-top: 100px;
-    + .anchor-1{
-           
+  }
+}
+///
+.anchor-2{ 
+  &:hover{
+    + .hover-submenu2{
+      display: grid !important;
+      right:0px;
+      margin-top: 100px;
     }
   }
 }
+
+.anchor-2:has(+ .hover-submenu2 :hover){ //Only works for the grid itself and not the downward padding
+  .submenu_2{
+    background-color: $blue;
+  }
+  span{
+    color:$white;
+  }
+}
+.hover-submenu2{ 
+  &:hover{
+    display: grid;
+    right:0px;
+    margin-top: 100px;
+    
+    
+  }
+}
+
+.minor-fixes{
+  text-transform: none;
+  p{
+    margin-left: 0px;
+  }
+}
+
+// .side-fixer{
+//   //A div created to fix the issue where the hover-submenu1 ignored the sides when hovering
+// }

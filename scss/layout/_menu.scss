@@ -42,13 +42,16 @@
       }
     }
     span{
-      font-size: 1.438rem;
+      padding-bottom: 0px;
+      padding-right: 15px;
+      font-size: 11px;
+      // font-size: 1.438rem;
       padding-bottom: 10px;
-      .icon-angle-double-right{
-        padding-bottom: 0px;
-        padding-right: 15px;
-        font-size: 11px;
-      }
+      // .icon-angle-double-right{
+      //   padding-bottom: 0px;
+      //   padding-right: 15px;
+      //   font-size: 11px;
+      // }
     }
     small{
       font-size: 0.625rem;

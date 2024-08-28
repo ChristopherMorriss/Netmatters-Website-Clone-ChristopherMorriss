@@ -10,8 +10,12 @@ $('.all-logos').slick({
   //slidesToShow: 6,
   autoplay:true,
   autoplaySpeed: 4000,
-  variableWidth:true
+  variableWidth:true,
+  draggable: false
 
+});
+$('.sticky').sticky({
+  topSpacing:0
 });
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked
                  //It's a boolean variable so it could be represented with true (1) and false (0) instead
@@ -54,7 +58,7 @@ function setCookie(cname, cvalue, exdays) { //Function to create a cookie and se
   let expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   let cookies = document.cookie;
-  console.log(cookies);
+  //console.log(cookies);
 }
 
 function getCookie(cname) { //The function to check if a cookie exists
@@ -81,15 +85,14 @@ acceptCookies.addEventListener('click',()=>{
 })
 
 if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies" is active. If it is, the cookie menu is hidden
-  //$('.cookie-popup').css("display","none"); //This is designed to stop the popup from displaying if the cookie has already been accepted
+  //The code below is designed to stop the popup from displaying if the cookie has already been accepted
+  //It works but you can see the popup briefly before it is hidden
   cookieShadow.style.display = "none";
   cookiePopup.style.display = "none";
-  console.log('Cookie accepted so it doesnt show');
-  //$('#hamburger-menu')
 }
 else{
   $('#cookie-popup').css("display","block");
-  console.log('Needs to be accepted before it disappears')
+  //console.log('Needs to be accepted before it disappears')
 }
 
 // for (i=0;i<7;i++){
@@ -310,7 +313,7 @@ hamburger_menu.addEventListener('click',()=>{
 //Improve partners carousel slide functionality
 //Implement sticky header
 //Add transition to hamburger menu
-//Fix cookie issue
+//Improve slide out menu style
 
 //Second priority:
 //Improve efficiency of navigation hover effects

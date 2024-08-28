@@ -47,7 +47,7 @@
       span{
         margin-right: -4px;
         margin-left: 12px;
-
+        align-content: center;
       }
     }
     // left: 0px;
@@ -99,5 +99,13 @@
 
 .text-icon{
   display: flex;
+  margin-left: 15px;
 }
 
+.set-1{
+  img{
+    max-width: none;
+    margin-right: 50px;
+  }
+  
+}

@@ -607,13 +607,10 @@ html {
   margin: auto;
 }
 #pop-up-menu span {
-  font-size: 1.438rem;
-  padding-bottom: 10px;
-}
-#pop-up-menu span .icon-angle-double-right {
   padding-bottom: 0px;
   padding-right: 15px;
   font-size: 11px;
+  padding-bottom: 10px;
 }
 #pop-up-menu small {
   font-size: 0.625rem;
@@ -1522,6 +1519,7 @@ html {
 .triangle-partners-1 button span, .triangle-partners-2 button span, .triangle-partners-3 button span, .triangle-partners-4 button span, .triangle-partners-5 button span, .triangle-partners-6 button span, .triangle-partners-7 button span, .triangle-partners-8 button span, .triangle-partners-9 button span, .triangle-partners-10 button span, .triangle-partners-11 button span, .triangle-partners-12 button span, .triangle-partners-13 button span {
   margin-right: -4px;
   margin-left: 12px;
+  align-content: center;
 }
 
 .tooltip-box {
@@ -1564,6 +1562,12 @@ html {
 
 .text-icon {
   display: flex;
+  margin-left: 15px;
+}
+
+.set-1 img {
+  max-width: none;
+  margin-right: 50px;
 }
 
 .article {

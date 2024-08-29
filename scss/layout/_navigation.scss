@@ -90,7 +90,7 @@
   border-bottom: 1px solid $background_black;
   @include hover($background_black,$dark_red); 
   span{
-    @include hover-text($dark-red, $white);
+    @include hover-text($dark_red, $white);
   }
   &:hover{
     span{
@@ -207,8 +207,9 @@
   z-index: 5;
   position: absolute;
   width:100%;
-  padding-bottom: 50px; 
+  top:102px;
   .hover-grid1,.hover-grid2,.hover-grid3,.hover-grid4,.hover-grid5,.hover-grid6,.hover-grid7,.hover-grid8{
+    margin-bottom: 50px;
     @include grid($g-display:grid, 
                 $g-row: null,
                 $g-column:1fr 1fr 1fr,
@@ -255,7 +256,7 @@
     }
   }
   &-4{
-    border-color: $dark-red transparent transparent transparent;
+    border-color: $dark_red transparent transparent transparent;
     @include media(large){
       transform: translateX(387px);
     }
@@ -282,7 +283,7 @@
     }
   }
   &-7{
-    border-color: $dark-red transparent transparent transparent;
+    border-color: $dark_red transparent transparent transparent;
     @include media(large){
       transform: translateX(791px);
     }
@@ -346,10 +347,142 @@
     
   }
 }
+///
+.anchor-3{ 
+  &:hover{
+    + .hover-submenu3{
+      display: grid !important;
+      right:0px;
+      margin-top: 100px;
+    }
+  }
+}
 
+.anchor-3:has(+ .hover-submenu3 :hover){ //Only works for the grid itself and not the downward padding
+  .submenu_3{
+    background-color: $green;
+  }
+  span{
+    color:$white;
+  }
+}
+.hover-submenu3{ 
+  &:hover{
+    display: grid;
+    right:0px;
+    margin-top: 100px;
+  }
+}
+///
+.anchor-4{ 
+  &:hover{
+    + .hover-submenu4{
+      display: grid !important;
+      right:0px;
+      margin-top: 100px;
+    }
+  }
+}
+
+.anchor-4:has(+ .hover-submenu4 :hover){ //Only works for the grid itself and not the downward padding
+  .submenu_4{
+    background-color: $dark_red;
+  }
+  span{
+    color:$white;
+  }
+}
+.hover-submenu4{ 
+  &:hover{
+    display: grid;
+    right:0px;
+    margin-top: 100px;
+  }
+}
+
+///
+.anchor-5{ 
+  &:hover{
+    + .hover-submenu5{
+      display: grid !important;
+      right:0px;
+      margin-top: 100px;
+    }
+  }
+}
+
+.anchor-5:has(+ .hover-submenu5 :hover){ //Only works for the grid itself and not the downward padding
+  .submenu_5{
+    background-color: $purple;
+  }
+  span{
+    color:$white;
+  }
+}
+.hover-submenu5{ 
+  &:hover{
+    display: grid;
+    right:0px;
+    margin-top: 100px;
+  }
+}
+///
+.anchor-6{ 
+  &:hover{
+    + .hover-submenu6{
+      display: grid !important;
+      right:0px;
+      margin-top: 100px;
+    }
+  }
+}
+
+.anchor-6:has(+ .hover-submenu6 :hover){ //Only works for the grid itself and not the downward padding
+  .submenu_6{
+    background-color: $pink_red;
+  }
+  span{
+    color:$white;
+  }
+}
+.hover-submenu6{ 
+  &:hover{
+    display: grid;
+    right:0px;
+    margin-top: 100px;
+  }
+}
+
+///
+.anchor-7{ 
+  &:hover{
+    + .hover-submenu7{
+      display: grid !important;
+      right:0px;
+      margin-top: 100px;
+    }
+  }
+}
+
+.anchor-7:has(+ .hover-submenu7 :hover){ //Only works for the grid itself and not the downward padding
+  .submenu_7{
+    background-color: $dark_red;
+  }
+  span{
+    color:$white;
+  }
+}
+.hover-submenu7{ 
+  &:hover{
+    display: grid;
+    right:0px;
+    margin-top: 100px;
+  }
+}
 .minor-fixes{
   text-transform: none;
   p{
+    text-align: start;
     margin-left: 0px;
   }
 }
@@ -357,3 +490,4 @@
 // .side-fixer{
 //   //A div created to fix the issue where the hover-submenu1 ignored the sides when hovering
 // }
+

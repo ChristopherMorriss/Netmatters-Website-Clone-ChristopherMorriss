@@ -1266,9 +1266,10 @@ header {
   z-index: 5;
   position: absolute;
   width: 100%;
-  padding-bottom: 50px;
+  top: 102px;
 }
 .hover-submenu1 .hover-grid1, .hover-submenu1 .hover-grid2, .hover-submenu1 .hover-grid3, .hover-submenu1 .hover-grid4, .hover-submenu1 .hover-grid5, .hover-submenu1 .hover-grid6, .hover-submenu1 .hover-grid7, .hover-submenu1 .hover-grid8, .hover-submenu2 .hover-grid1, .hover-submenu2 .hover-grid2, .hover-submenu2 .hover-grid3, .hover-submenu2 .hover-grid4, .hover-submenu2 .hover-grid5, .hover-submenu2 .hover-grid6, .hover-submenu2 .hover-grid7, .hover-submenu2 .hover-grid8, .hover-submenu3 .hover-grid1, .hover-submenu3 .hover-grid2, .hover-submenu3 .hover-grid3, .hover-submenu3 .hover-grid4, .hover-submenu3 .hover-grid5, .hover-submenu3 .hover-grid6, .hover-submenu3 .hover-grid7, .hover-submenu3 .hover-grid8, .hover-submenu4 .hover-grid1, .hover-submenu4 .hover-grid2, .hover-submenu4 .hover-grid3, .hover-submenu4 .hover-grid4, .hover-submenu4 .hover-grid5, .hover-submenu4 .hover-grid6, .hover-submenu4 .hover-grid7, .hover-submenu4 .hover-grid8, .hover-submenu5 .hover-grid1, .hover-submenu5 .hover-grid2, .hover-submenu5 .hover-grid3, .hover-submenu5 .hover-grid4, .hover-submenu5 .hover-grid5, .hover-submenu5 .hover-grid6, .hover-submenu5 .hover-grid7, .hover-submenu5 .hover-grid8, .hover-submenu6 .hover-grid1, .hover-submenu6 .hover-grid2, .hover-submenu6 .hover-grid3, .hover-submenu6 .hover-grid4, .hover-submenu6 .hover-grid5, .hover-submenu6 .hover-grid6, .hover-submenu6 .hover-grid7, .hover-submenu6 .hover-grid8, .hover-submenu7 .hover-grid1, .hover-submenu7 .hover-grid2, .hover-submenu7 .hover-grid3, .hover-submenu7 .hover-grid4, .hover-submenu7 .hover-grid5, .hover-submenu7 .hover-grid6, .hover-submenu7 .hover-grid7, .hover-submenu7 .hover-grid8 {
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   -moz-column-gap: 20px;
@@ -1419,10 +1420,106 @@ header {
   margin-top: 100px;
 }
 
+.anchor-3:hover + .hover-submenu3 {
+  display: grid !important;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-3:has(+ .hover-submenu3 :hover) .submenu_3 {
+  background-color: #2ECC71;
+}
+.anchor-3:has(+ .hover-submenu3 :hover) span {
+  color: #FFFFFF;
+}
+
+.hover-submenu3:hover {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-4:hover + .hover-submenu4 {
+  display: grid !important;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-4:has(+ .hover-submenu4 :hover) .submenu_4 {
+  background-color: #CE4125;
+}
+.anchor-4:has(+ .hover-submenu4 :hover) span {
+  color: #FFFFFF;
+}
+
+.hover-submenu4:hover {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-5:hover + .hover-submenu5 {
+  display: grid !important;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-5:has(+ .hover-submenu5 :hover) .submenu_5 {
+  background-color: #926fb1;
+}
+.anchor-5:has(+ .hover-submenu5 :hover) span {
+  color: #FFFFFF;
+}
+
+.hover-submenu5:hover {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-6:hover + .hover-submenu6 {
+  display: grid !important;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-6:has(+ .hover-submenu6 :hover) .submenu_6 {
+  background-color: #f62459;
+}
+.anchor-6:has(+ .hover-submenu6 :hover) span {
+  color: #FFFFFF;
+}
+
+.hover-submenu6:hover {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-7:hover + .hover-submenu7 {
+  display: grid !important;
+  right: 0px;
+  margin-top: 100px;
+}
+
+.anchor-7:has(+ .hover-submenu7 :hover) .submenu_7 {
+  background-color: #CE4125;
+}
+.anchor-7:has(+ .hover-submenu7 :hover) span {
+  color: #FFFFFF;
+}
+
+.hover-submenu7:hover {
+  display: grid;
+  right: 0px;
+  margin-top: 100px;
+}
+
 .minor-fixes {
   text-transform: none;
 }
 .minor-fixes p {
+  text-align: start;
   margin-left: 0px;
 }
 

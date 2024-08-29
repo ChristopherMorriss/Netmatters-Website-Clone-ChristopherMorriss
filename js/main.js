@@ -298,9 +298,19 @@ page_container.addEventListener('click',()=>{
     
 
 });
+let clone=document.querySelector('.clone');
+clone.addEventListener('click',()=>{
+  $('.scroll-container').css('display','block');
+  $('line').toggleClass('activated');
+  $('#container').css('margin-left','-350px'); 
+  $('#pop-up-menu').css('z-index','10');
+  $('#pop-up-menu').css('display','block');
+  toggle+=2;
+});
 
 let hamburger_menu=document.querySelector('#hamburger-menu');
 hamburger_menu.addEventListener('click',()=>{
+  $('.scroll-container').css('display','block');
   $('line').toggleClass('activated');
   $('#container').css('margin-left','-350px'); 
   $('#pop-up-menu').css('z-index','10');
@@ -318,7 +328,7 @@ window.addEventListener('scroll', function() {
         console.log('Scrolling up');
         // Add your code for scroll up event here
         up_not_down = 1;
-        //$('.sticky-header').css('display','block');
+        $('.sticky-header').css('display','block');
     }
     else{
       up_not_down =0;
@@ -338,6 +348,10 @@ window.addEventListener('scroll', (event) => {
   
 });
 
+document.getElementById('scroll1').addEventListener('scroll', function() {
+  document.getElementById('scroll1').scrollTop = this.scrollTop;
+  document.getElementById('scroll1').scrollLeft = this.scrollLeft;
+});
 
 //Important things to do:
 //Improve partners carousel slide functionality

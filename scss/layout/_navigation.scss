@@ -491,3 +491,24 @@
 //   //A div created to fix the issue where the hover-submenu1 ignored the sides when hovering
 // }
 
+.scroll-container {
+  display: none;
+  overflow: auto;
+  //border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#scroll1 {
+  
+  position: absolute;
+  height: 100vw;
+  width: 400px;
+  top: 0px;
+  right: 0px;
+  z-index: 11;
+}
+
+.content{
+  width:350px;
+  height:100vw;
+}

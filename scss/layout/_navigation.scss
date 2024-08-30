@@ -169,7 +169,7 @@
 
 
 .hover-submenu1{
-  background-color: $grey;
+  background-color: $hover-sub-grey;
   display: none;
 }
 
@@ -183,8 +183,8 @@
   display: none;
 }
 
-.hover-submenu4,.hover-submenu7{
-  background-color: $submenu-dred;
+.hover-submenu4{
+  background-color: $hover-sub-dred;
   display: none;
 }
 
@@ -195,6 +195,11 @@
 
 .hover-submenu6{
   background-color: $pred-hover;
+  display: none;
+}
+
+.hover-submenu7{
+  background-color: $submenu-dred;
   display: none;
 }
 
@@ -503,7 +508,7 @@
   //position: absolute;
   height: auto;
   @include media(large){
-    height: 100vw;
+    //height: 100vw;
   }
   width: 400px;
   top: 0px;
@@ -515,7 +520,7 @@
   width: 350px;
   height: 100vh;
   //height: 1078px;
-  @include media(x-large){
-    height: 2417px;
-  }
+  // @include media(x-large){
+  //   height: 2417px;
+  // } 
 }

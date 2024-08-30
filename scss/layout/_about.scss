@@ -1,4 +1,18 @@
 .intro{
+  .black-btn,.google-btn,.trustpilot-btn{
+    @include btnstyle($b-radius:6px,
+                      $f-size:20px,
+                      $w:null,
+                      $h:auto,
+                      $l-height:35px,
+                      $text-center:center,
+                      $b:1px solid transparent);
+    margin-bottom: 17px;
+    padding: 10px 30px;
+    span{
+      margin-left: 12px;
+      }
+    }
     display: flex;
     background-color: $background_black;
     height: auto;
@@ -23,20 +37,7 @@
     }
   }
 
-  .black-btn,.google-btn,.trustpilot-btn{
-    @include btnstyle($b-radius:6px,
-                      $f-size:20px,
-                      $w:null,
-                      $h:auto,
-                      $l-height:35px,
-                      $text-center:center,
-                      $b:1px solid transparent);
-    margin-bottom: 17px;
-    padding: 10px 30px;
-    span{
-      margin-left: 12px;
-    }
-  }
+  
 
   .quote{
     line-height: 1.875rem;

@@ -659,7 +659,7 @@ html {
   text-align: center;
   font-size: 1rem;
 }
-@media (min-width: 1260px) {
+@media (min-width: 994px) {
   .menu-section-1 {
     padding: 0px;
     text-align: start;
@@ -668,6 +668,11 @@ html {
 }
 .menu-section-1 p {
   padding-left: 0px !important;
+}
+@media (min-width: 994px) {
+  .menu-section-1 p {
+    padding-left: 15px !important;
+  }
 }
 
 .sub-menu {
@@ -1241,7 +1246,7 @@ header {
 }
 
 .hover-submenu1 {
-  background-color: #84858F;
+  background-color: #526781;
   display: none;
 }
 
@@ -1255,8 +1260,8 @@ header {
   display: none;
 }
 
-.hover-submenu4, .hover-submenu7 {
-  background-color: #a33313;
+.hover-submenu4 {
+  background-color: #BC2C28;
   display: none;
 }
 
@@ -1267,6 +1272,11 @@ header {
 
 .hover-submenu6 {
   background-color: #e80a42;
+  display: none;
+}
+
+.hover-submenu7 {
+  background-color: #a33313;
   display: none;
 }
 
@@ -1550,20 +1560,9 @@ header {
   right: 0px;
   z-index: 11;
 }
-@media (min-width: 994px) {
-  #scroll1 {
-    height: 100vw;
-  }
-}
-
 .content {
   width: 350px;
   height: 100vh;
-}
-@media (min-width: 1260px) {
-  .content {
-    height: 2417px;
-  }
 }
 
 .slider {
@@ -1652,13 +1651,12 @@ header {
   height: 100%;
 }
 .slider-content h1 {
-  text-align: center;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
   font-weight: 600;
 }
-@media (min-width: 1260px) {
+@media (min-width: 994px) {
   .slider-content h1 {
     text-align: start;
   }
@@ -1669,7 +1667,7 @@ header {
   line-height: 1.75rem;
   font-weight: 600;
 }
-@media (min-width: 1260px) {
+@media (min-width: 994px) {
   .slider-content {
     flex-direction: column;
     display: flex;
@@ -1985,6 +1983,19 @@ header {
   flex-direction: column;
   letter-spacing: 0.4px;
 }
+.intro .black-btn, .intro .google-btn, .intro .trustpilot-btn {
+  border-radius: 6px;
+  font-size: 20px;
+  height: auto;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-bottom: 17px;
+  padding: 10px 30px;
+}
+.intro .black-btn span, .intro .google-btn span, .intro .trustpilot-btn span {
+  margin-left: 12px;
+}
 .intro h1 {
   margin-bottom: 40px;
   font-weight: 600;
@@ -2008,20 +2019,6 @@ header {
     flex-direction: row;
     display: flex;
   }
-}
-
-.black-btn, .google-btn, .trustpilot-btn {
-  border-radius: 6px;
-  font-size: 20px;
-  height: auto;
-  line-height: 35px;
-  text-align: center;
-  border: 1px solid transparent;
-  margin-bottom: 17px;
-  padding: 10px 30px;
-}
-.black-btn span, .google-btn span, .trustpilot-btn span {
-  margin-left: 12px;
 }
 
 .quote {
@@ -2100,6 +2097,10 @@ footer h4 {
 }
 footer p {
   font-size: 0.8125rem;
+}
+footer .black-btn {
+  width: 25%;
+  text-align: center;
 }
 footer .marginalised {
   flex-direction: row;
@@ -2296,14 +2297,19 @@ i {
   }
 }
 
+.sizing-div {
+  width: 320px;
+}
+
 .line-hover a:hover {
   text-decoration: underline;
 }
 
 #fixed-consent {
+  text-transform: none;
   position: fixed;
   bottom: 0px;
-  border-radius: 0px 10px 0px 10px;
+  border-radius: 0px 10px 0px 0px;
   border: none;
   left: 0px;
   background-color: #75788a;

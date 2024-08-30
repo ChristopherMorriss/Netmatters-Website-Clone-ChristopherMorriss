@@ -1,7 +1,8 @@
 #fixed-consent{
+  text-transform: none;
     position: fixed;
     bottom:0px;
-    border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 10px 0px 0px;
     border:none;
     left:0px;
     background-color: $consent;

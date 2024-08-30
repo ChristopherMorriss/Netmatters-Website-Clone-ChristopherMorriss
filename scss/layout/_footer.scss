@@ -11,6 +11,10 @@ footer{
     p{
         font-size: 0.8125rem;
     }
+    .black-btn{
+        width:25%;
+        text-align: center;
+    }
     .marginalised{
         //@include grid($g-display:grid,$g-row:null,$g-column:1fr 1fr,$gutter-row:20px,$gutter-column:20px);
 
@@ -182,3 +186,6 @@ i{
     }
 }
 
+.sizing-div{
+    width:320px;
+}

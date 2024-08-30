@@ -177,8 +177,6 @@ window.addEventListener('scroll', function() {
 //Improve partners carousel slide functionality
 //Implement sticky header
 //Add transition to hamburger menu
-//Improve slide out menu style
 
 //Second priority:
-//Improve efficiency of navigation hover effects
 //Change button elements to styled <a> tags

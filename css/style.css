@@ -553,17 +553,6 @@ html {
   padding-bottom: 50px;
 }
 
-.nav-size p {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.padding {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
 #pop-up-menu {
   display: none;
   width: 275px;
@@ -887,6 +876,9 @@ html {
   border-radius: 3px;
   border: 1px solid transparent;
 }
+#support span, #contact span {
+  margin-right: 5px;
+}
 @media (min-width: 768px) and (max-width: 993px) {
   #support, #contact {
     display: none;
@@ -899,6 +891,7 @@ html {
 }
 #support a, #contact a {
   margin: auto;
+  display: flex;
 }
 #support span, #contact span {
   font-size: 1.438rem;
@@ -1100,7 +1093,7 @@ header {
   flex-wrap: wrap;
   align-content: center;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn-1:hover {
   background-color: #67809F;
@@ -1122,7 +1115,7 @@ header {
   flex-wrap: wrap;
   align-content: center;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn-2:hover {
   background-color: #4183D7;
@@ -1144,7 +1137,7 @@ header {
   flex-wrap: wrap;
   align-content: center;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn-3:hover {
   background-color: #2ECC71;
@@ -1166,7 +1159,7 @@ header {
   flex-wrap: wrap;
   align-content: center;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn-4:hover, .btn-7:hover {
   background-color: #CE4125;
@@ -1188,7 +1181,7 @@ header {
   flex-wrap: wrap;
   align-content: center;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn-5:hover {
   background-color: #926fb1;
@@ -1210,7 +1203,7 @@ header {
   flex-wrap: wrap;
   align-content: center;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn-6:hover {
   background-color: #f62459;
@@ -1590,7 +1583,7 @@ header {
   background-image: url("../img/cyber-security-bg.webp");
 }
 .slider button {
-  width: 250px;
+  width: 220px;
   line-height: 50px;
   padding: 5px 20px;
   margin-top: 1.938rem;
@@ -1640,6 +1633,7 @@ header {
 }
 
 .slider-content {
+  text-align: center;
   flex-direction: column;
   display: flex;
   flex-wrap: wrap;
@@ -1650,22 +1644,25 @@ header {
   position: relative;
   height: 100%;
 }
+@media (min-width: 994px) {
+  .slider-content {
+    text-align: start;
+  }
+}
 .slider-content h1 {
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
   font-weight: 600;
 }
-@media (min-width: 994px) {
-  .slider-content h1 {
-    text-align: start;
-  }
-}
 .slider-content p {
   margin-bottom: 0.375rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
+}
+.slider-content .purple-btn {
+  width: 250px;
 }
 @media (min-width: 994px) {
   .slider-content {
@@ -2099,8 +2096,21 @@ footer p {
   font-size: 0.8125rem;
 }
 footer .black-btn {
-  width: 25%;
+  width: 35%;
+  margin-bottom: 10px;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  footer .black-btn {
+    width: 25%;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 994px) {
+  footer .black-btn {
+    width: 25%;
+    margin-bottom: 0px;
+  }
 }
 footer .marginalised {
   flex-direction: row;
@@ -2572,4 +2582,8 @@ i {
 .cookie-align {
   display: flex;
   align-items: center;
+}
+
+.consent-grey-btn {
+  background-color: #999aa2;
 }/*# sourceMappingURL=style.css.map */

@@ -11,8 +11,17 @@ footer{
     p{
         font-size: 0.8125rem;
     }
-    .black-btn{
-        width:25%;
+    .black-btn{ //Social media buttons
+        width:35%;
+        margin-bottom: 10px;
+        @include media(medium){
+            width:25%;
+            margin-bottom: 0px;
+        }
+        @include media(large){
+            width:25%;
+            margin-bottom: 0px;
+        }
         text-align: center;
     }
     .marginalised{
@@ -69,12 +78,12 @@ footer{
 
 .footer{
     &-1,&-2,&-3,&-4{
-        width:100%;
+        width:100%; //Fills up the whole width at the smallest viewport
         @include media(medium){
-            width: 50%;
+            width: 50%; //Splits into 2 per row for medium viwport
         }
         @include media(large){
-            width: 25%;
+            width: 25%; //All 4 columns are displayed on one ow for the largest viewport
         }
         @include media(x-large){
             padding-left: 15px;
@@ -126,7 +135,7 @@ footer{
     color:white;
   }
 
-.breakpoint-br{
+.breakpoint-br{ //Breakpoint only appears at "small" or lower viewports
     @include media(medium){
         display: none;
     }
@@ -139,7 +148,6 @@ footer{
 }
 
 .copyright{
-    //padding: 5px 0px 10px;
     @include media(medium){
         display: flex;
     }
@@ -186,6 +194,6 @@ i{
     }
 }
 
-.sizing-div{
-    width:320px;
+.sizing-div{ //Used to limit the size of the social media buttons
+    width:320px; 
 }

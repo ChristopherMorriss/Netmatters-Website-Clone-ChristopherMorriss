@@ -2,18 +2,6 @@
   position: relative;
   .design-1{
     background-image: url("../img/home.webp"); 
-
-      //   &:before{
-      //   content:"";
-      //   position: absolute;
-      //   top:0px;
-      //   bottom:0px;
-      //   left:0px;
-      //   right:0px;
-      //   background: linear-gradient(270deg,transparent 25%,#000);
-      //   z-index:3;
-      // }
-  
   }
 
   .design-2{
@@ -43,33 +31,13 @@
     background-image: url("../img/cyber-security-bg.webp"); 
 
   }
-  // @include flex( //Flex used for the layout of the text on the banner
-  //     $flex-dir:column,
-  //     $display:flex,
-  //     $flex-wrap:wrap,
-  //     $align-content:normal,
-  //     $align-items:normal,
-  //     $justify-content:center
-  //     );
   button{
-    width:250px;
+    width:220px;
     line-height:50px;
     padding:5px 20px;
     margin-top: 1.938rem;
     font-size: 1.25rem;
     border-radius: 3px;
-    // @include media(small){
-    //   width:224px;
-    // };
-    // @include media(medium){
-    //   width:22%;
-    // };
-    // @include media(large){
-    //   width:22%;
-    // };
-    // @include media(x-large){
-    //   width:22%;
-    // };
     a{
       display: flex;
       align-items: center;
@@ -115,6 +83,10 @@
 }
 
 .slider-content{
+  text-align: center;
+  @include media(large){
+    text-align: start;
+  }
   @include flex( 
       $flex-dir:column,
       $display:flex,
@@ -124,10 +96,6 @@
       $justify-content:center
       );
     h1{
-      //text-align: center;
-      @include media(large){
-        text-align: start;
-      }
       font-size: 2.5rem;
       line-height: 3rem;
       margin: 0 0 1.25rem;
@@ -138,6 +106,9 @@
       font-size: 1.25rem;
       line-height: 1.75rem;
       font-weight: 600;
+    }
+    .purple-btn{
+      width:250px; //The text is slightly longer for the purple button, so it has more width than the other buttons
     }
     @include media(large){
       @include flex( //Flex used for the layout of the text on the banner
@@ -155,27 +126,15 @@
   height:100%;
 }
 
-// .slider-design{
-//   content:"";
-//   position: absolute;
-//   top:0px;
-//   bottom:0px;
-//   left:0px;
-//   right:0px;
-//   background: linear-gradient(270deg,transparent 25%,#000);
-//   z-index:3;
-// }
-
 .img_banner{
   top: 0;
   bottom: 0;
-  width: 100% !important;
-  //background-size: cover;
+  width: 100% !important; 
   opacity: 0.5;
   position: absolute;
 
   @media (min-width: 992px) {
-    opacity: 1;
+    opacity: 1; 
   }
   &:before{
     content:"";

@@ -11,9 +11,6 @@
     text-transform: uppercase;
     font-size: 1.125rem;
     padding: 0;
-    p{
-      @extend %container-align;
-    }
     @include media(large){
       display:flex;
     }
@@ -44,7 +41,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between); 
+                $justify-content:center); 
     
 }
 
@@ -64,7 +61,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between); 
+                $justify-content:center); 
 }
 
 .btn-3{
@@ -83,7 +80,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between); 
+                $justify-content:center); 
 }
 
 .btn-4,.btn-7{
@@ -102,7 +99,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between);
+                $justify-content:center);
 }
 
 .btn-5{
@@ -121,7 +118,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between); 
+                $justify-content:center); 
 }
 
 .btn-6{
@@ -143,7 +140,7 @@
                 $flex-wrap: wrap,
                 $align-content: center,
                 $align-items: normal,
-                $justify-content:space-between); 
+                $justify-content:center); 
 }
 
 
@@ -204,7 +201,7 @@
 }
 
 .white{
-  color:$white;
+  color:$white; 
 }
 
 .hover-submenu1,.hover-submenu2,.hover-submenu3,.hover-submenu4,.hover-submenu5,.hover-submenu6,.hover-submenu7{

@@ -18,7 +18,7 @@
     color:$pink_red;
   }
     display:none;
-    text-align: center;
+    //text-align: center;
     width:275px;
     @include media(large){
       width:350px;
@@ -43,15 +43,14 @@
     }
     span{
       padding-bottom: 0px;
-      padding-right: 15px;
-      font-size: 11px;
-      // font-size: 1.438rem;
+      //padding-right: 15px;
+      //font-size: 11px;
+      font-size: 1.438rem;
       padding-bottom: 10px;
-      // .icon-angle-double-right{
-      //   padding-bottom: 0px;
-      //   padding-right: 15px;
-      //   font-size: 11px;
-      // }
+    }
+    .icon-angle-double-right{
+      font-size: 10px;
+      padding-right: 15px;
     }
     small{
       font-size: 0.625rem;
@@ -89,11 +88,21 @@
   }
 }
 
-.menu-sections{
+.menu-section-1{
   padding:21px;
-  @include media(large){
+  text-align: center;
+  font-size: 1rem;
+  @include media(x-large){
     padding:0px;
+    text-align: start;
+    font-size: 0.875rem;
   }
+  p{
+    padding-left: 0px !important;
+  }
+  // @include media(large){
+  //   padding:0px;
+  // }
 }
 
 .sub-menu{

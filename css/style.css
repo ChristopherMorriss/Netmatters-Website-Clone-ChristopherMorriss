@@ -566,7 +566,6 @@ html {
 
 #pop-up-menu {
   display: none;
-  text-align: center;
   width: 275px;
   background-color: #333645;
   color: #FFFFFF;
@@ -609,9 +608,12 @@ html {
 }
 #pop-up-menu span {
   padding-bottom: 0px;
-  padding-right: 15px;
-  font-size: 11px;
+  font-size: 1.438rem;
   padding-bottom: 10px;
+}
+#pop-up-menu .icon-angle-double-right {
+  font-size: 10px;
+  padding-right: 15px;
 }
 #pop-up-menu small {
   font-size: 0.625rem;
@@ -652,13 +654,20 @@ html {
   }
 }
 
-.menu-sections {
+.menu-section-1 {
   padding: 21px;
+  text-align: center;
+  font-size: 1rem;
 }
-@media (min-width: 994px) {
-  .menu-sections {
+@media (min-width: 1260px) {
+  .menu-section-1 {
     padding: 0px;
+    text-align: start;
+    font-size: 0.875rem;
   }
+}
+.menu-section-1 p {
+  padding-left: 0px !important;
 }
 
 .sub-menu {
@@ -1003,9 +1012,14 @@ html {
   bottom: 0px;
   position: fixed;
   z-index: 11;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  height: 165px;
   animation-duration: 0.25s;
   transition: all 0.5s;
+}
+@media (min-width: 1260px) {
+  .sticky-header {
+    height: 202px;
+  }
 }
 
 header {
@@ -1529,17 +1543,27 @@ header {
 }
 
 #scroll1 {
-  position: absolute;
-  height: 100vw;
+  position: fixed;
+  height: auto;
   width: 400px;
   top: 0px;
   right: 0px;
   z-index: 11;
 }
+@media (min-width: 994px) {
+  #scroll1 {
+    height: 100vw;
+  }
+}
 
 .content {
   width: 350px;
-  height: 100vw;
+  height: 100vh;
+}
+@media (min-width: 1260px) {
+  .content {
+    height: 2417px;
+  }
 }
 
 .slider {

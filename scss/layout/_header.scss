@@ -100,12 +100,31 @@
     transition-duration: 0.15s;
     transition-timing-function: linear;
     .line{
-      &:active{
-          transform: rotate(225deg);
-          transition-delay: 0.12s;
-          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-duration: 0.22s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+      ::before{
+        transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+      }
+      ::after{
+        transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+      +.activated{      
           span{
+            transform: rotate(225deg);
+            transition-delay: 0.12s;
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
             transition-duration: 0.22s;
+            ::before{
+              top: 0;
+              opacity: 0;
+              transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+            } 
+            ::after{
+              transform: rotate(-90deg);
+              transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+              bottom: 4px;
+            }
           }
       }
       
@@ -334,7 +353,9 @@ header{
 .slideInDown{
   animation-name: slideInDown;
 }
-
+.slideOutUp {
+  animation-name: slideOutUp;
+}
 @keyframes slideInDown {
   0% {
     transform: translate3d(0, -100%, 0);
@@ -354,6 +375,5 @@ header{
     transform: translate3d(0, -100%, 0);
   }
 }
-.slideOutUp {
-  animation-name: slideOutUp;
-}
+
+

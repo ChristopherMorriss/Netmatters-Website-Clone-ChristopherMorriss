@@ -7,7 +7,7 @@
                   $justify-content: null,
                   );
     background-color: #333645;
-    display:none;
+    display:none; //The navigation only appears for the large and x-large viewports
     text-transform: uppercase;
     font-size: 1.125rem;
     padding: 0;
@@ -24,8 +24,8 @@
     
 }
 
-.btn-1{
-  border-bottom: 1px solid $background_black;
+.btn-1{ //This and similarly named buttons are the navigation bar buttons
+  border-bottom: 1px solid $background_black; //Border created to separate the triangle and the button when hovered over
   @include hover($background_black, $grey_blue_og); 
   span{
     @include hover-text($grey_blue_og, $white);
@@ -165,51 +165,45 @@
 }
 
 
-.hover-submenu1{
+.hover-submenu1{ 
   background-color: $hover-sub-grey;
-  display: none;
 }
 
 .hover-submenu2{
   background-color: $blue-hover;
-  display: none;
 }
 
 .hover-submenu3{
   background-color: $green-hover;
-  display: none;
 }
 
 .hover-submenu4{
   background-color: $hover-sub-dred;
-  display: none;
 }
 
 .hover-submenu5{
   background-color: $purple-hover;
-  display: none;
 }
 
 .hover-submenu6{
   background-color: $pred-hover;
-  display: none;
 }
 
 .hover-submenu7{
   background-color: $submenu-dred;
-  display: none;
 }
 
 .white{
   color:$white; 
 }
 
-.hover-submenu1,.hover-submenu2,.hover-submenu3,.hover-submenu4,.hover-submenu5,.hover-submenu6,.hover-submenu7{
+.hover-submenu{ //Class for styling all the submenus
   font-size: 1.2rem;
   z-index: 5;
   position: absolute;
   width:100%;
   top:102px;
+  display: none; //The menu only appears when the navigation button is hovered over
   .hover-grid1,.hover-grid2,.hover-grid3,.hover-grid4,.hover-grid5,.hover-grid6,.hover-grid7,.hover-grid8{
     margin-bottom: 50px;
     @include grid($g-display:grid, 

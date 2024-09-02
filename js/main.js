@@ -111,7 +111,7 @@ page_container.addEventListener('click',()=>{
 let clone=document.querySelector('.clone');
 clone.addEventListener('click',()=>{
   $('.scroll-container').css('display','block');
-  $('line').toggleClass('activated');
+  $('.line').toggleClass('activated');
   $('#container').css('margin-left','-350px'); 
   $('#pop-up-menu').css('z-index','10');
   $('#pop-up-menu').css('display','block');
@@ -121,7 +121,7 @@ clone.addEventListener('click',()=>{
 let hamburger_menu=document.querySelector('#hamburger-menu');
 hamburger_menu.addEventListener('click',()=>{
   $('.scroll-container').css('display','block');
-  $('line').toggleClass('activated');
+  $('.line').toggleClass('activated');
   $('#container').css('margin-left','-350px'); 
   $('#pop-up-menu').css('z-index','10');
   $('#pop-up-menu').css('display','block');
@@ -139,10 +139,10 @@ window.addEventListener('scroll', function() {
         console.log('Scrolling up');
         up_not_down = 1;
         $('.sticky-header').css('display','block');
-        //$('.sticky-header').toggleClass('slideOutUp');
-        //$('.sticky-header').toggleClass('slideInDown');
+        $('.sticky-header').toggleClass('slideInDown');
     }
     else{
+      $('.sticky-header').toggleClass('slideInDown');
       up_not_down =0;
     } 
 
@@ -150,19 +150,17 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', (event) => {
-  // console.log(up_not_down);
-  
+  //console.log(up_not_down);
   if (up_not_down != 1){
     $('.sticky-header').css('display','none');
-    $('.sticky-header').toggleClass('slideOutUp');
-    $('.sticky-header').toggleClass('slideInDown');
     console.log('scrolling down');
   }
   up_not_down = 0;
   //console.log(up_not_down);
   
 });
-
+// $('.sticky-header').toggleClass('slideOutUp');
+// $('.sticky-header').toggleClass('slideInDown');
 document.getElementById('scroll1').addEventListener('scroll', function() {
   document.getElementById('scroll1').scrollTop = this.scrollTop;
   document.getElementById('scroll1').scrollLeft = this.scrollLeft;

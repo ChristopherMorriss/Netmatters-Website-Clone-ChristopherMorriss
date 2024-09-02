@@ -38,22 +38,6 @@
 
 
 
-.btn-styles{ //A class added to most button elements which share a similar design. 
-             //Some aspects may be overiden elsewhere for specific buttons
-  @include btnstyle($b-radius:5px,
-                    $f-size:1.063rem,
-                    $w:129px,
-                    $h:46px,
-                    $l-height:35px,
-                    $text-center:center,
-                    $b: none,
-                   );
-  text-transform: uppercase;
-  color:$white;
-
-  
-
-}
 
 .grey-btn{
   background-color: $grey;
@@ -106,6 +90,7 @@
 
 
 .btn-icon{ //Used for buttons which contain an icon inside them (such as the buttons used in the grid)
+  margin: auto;
   width: 65px;
   height:65px;
   border-radius: 50%;
@@ -120,6 +105,12 @@
   height: 56px;
   width: 63px;
   border-radius: 0 3px 3px 0;
+  @include media(large){
+    border-radius: 3px;
+  }
+  @include media(x-large){
+    border-radius: 0 3px 3px 0;
+  }
   font-size: 23px;
   text-align: center;
   color: white;
@@ -129,28 +120,43 @@
   }
 }
 
-// .btn{
-//   height: auto;
-//   line-height: 35px;
-//   padding: 5px 15px;
-//   text-transform: uppercase;
-//   font-size: 1.063rem;
-//   border-radius: 3px;
-//   white-space: normal;
-//   display: inline-block;
-//   margin-bottom: 0;
-//   font-weight: 400;
-//   text-align: center;
-//   vertical-align: middle;
-//   cursor: pointer;
-//   background-image: none;
-//   border: 1px solid transparent;
-//   white-space: nowrap;
-//   padding: 6px 12px;
-//   font-size: 14px;
-//   line-height: 1.42857143;
-//   border-radius: 2px;
-// }
+.btn{
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 2px;
+}
 
-    
+.btn-styles{ //A class added to most button elements which share a similar design. 
+  //Some aspects may be overiden elsewhere for specific buttons
+@include btnstyle($b-radius:5px,
+         $f-size:1.063rem,
+         $w:129px,
+         $h:46px,
+         $l-height:35px,
+         $text-center:center,
+         $b: none,
+        );
+text-transform: uppercase;
+color:$white;
+
+
+
+}    
     

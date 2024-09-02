@@ -60,7 +60,7 @@
   @include hover($white,$grey_blue_og);
   @include hover-text($black,$white);
   &:hover{
-    button{
+    .btn-icon,.btn{
       background-color: white;
       @include hover-text($grey_blue_og,null)
     }
@@ -71,7 +71,7 @@
   @include hover($white,$blue);
   @include hover-text($black,$white);
   &:hover{
-    button{
+    .btn-icon,.btn{
       background-color: white;
       @include hover-text($blue,null)
     }
@@ -82,7 +82,7 @@
   @include hover($white,$green);
   @include hover-text($black,$white);
   &:hover{
-    button{
+    .btn-icon,.btn{
       background-color: white;
       @include hover-text($green,null)
     }
@@ -93,7 +93,7 @@
   @include hover($white,$dark_red);
   @include hover-text($black,$white);
   &:hover{
-    button{
+    .btn-icon,.btn{
       background-color: white;
       @include hover-text($dark_red,null)
     }
@@ -104,7 +104,7 @@
   @include hover($white,$purple);
   @include hover-text($black,$white);
   &:hover{
-    button{
+    .btn-icon,.btn{
       background-color: white;
       @include hover-text($purple,null)
     }
@@ -115,7 +115,7 @@
   @include hover($white,$pink_red);
   @include hover-text($black,$white);
   &:hover{
-    button{
+    .btn-icon,.btn{
       background-color: white;
       @include hover-text($pink_red,null);
     }

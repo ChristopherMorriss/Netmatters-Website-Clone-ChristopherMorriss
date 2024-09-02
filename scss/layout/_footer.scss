@@ -45,36 +45,7 @@ footer{
  
   }
 
-.social{
-    width:90%;
-    display: block;
-    flex-wrap: wrap;
-    @include media(small){
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    &-btn{
-      font-size: 26px;
-      color:white;
-      margin-right: 7px;
-      line-height: 26px;
-      padding: 12px 22px 16px;
-      border-radius: 0px;
-      border: none;
-      margin-left: 0px;
-    }
-    span{
-        position:relative;
-        top:4px;
-    }
-  }
 
-  #in-logo{
-    width:250px;
-    @include media(small){
-        width:320px;
-    }
-  }
 
 .footer{
     &-1,&-2,&-3,&-4{
@@ -196,4 +167,35 @@ i{
 
 .sizing-div{ //Used to limit the size of the social media buttons
     width:320px; 
+    .social{
+        width:90%;
+        display: block;
+        flex-wrap: wrap;
+        @include media(small){
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        &-btn{
+          font-size: 26px;
+          color:white;
+          margin-right: 7px;
+          line-height: 26px;
+          padding: 12px 22px 16px;
+          border-radius: 0px;
+          border: none;
+          margin-left: 0px;
+        }
+        span{
+            position:relative;
+            top:4px;
+        }
+      }
+    
+      #in-logo{
+        width:250px;
+        @include media(small){
+            width:320px;
+        }
+      }
+    
 }

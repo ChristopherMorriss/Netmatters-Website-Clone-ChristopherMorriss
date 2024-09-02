@@ -92,15 +92,6 @@
 
 }
 
-.read-btn{
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
 
 .article-title{
   display:flex;
@@ -177,6 +168,21 @@
   }
 }
 
+.news{
+  .img-btn{
+    padding:0px;
+  }
+  .read-btn{
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+}
 
 
 

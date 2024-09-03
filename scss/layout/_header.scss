@@ -90,6 +90,35 @@
     
 }
 
+#hamburger-menu.activated span{
+  transform: rotate(225deg);
+  transition-delay: .12s;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+#hamburger-menu.activated ::before{
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+}
+#hamburger-menu.activated ::after{
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  bottom: 4px;
+}    
+      //     span{
+      //       transform: rotate(225deg);
+      //       transition-delay: 0.12s;
+      //       transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      //       transition-duration: 0.22s;
+      //     }
+.line::before{
+  transition: 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+  top: -10px;
+}
+.line::after{
+  transition: 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  bottom: -6px;
+}
 #hamburger-menu{
     width:63px;
     height:56px;
@@ -100,36 +129,8 @@
     transition-duration: 0.15s;
     transition-timing-function: linear;
     .line{
-      transition-duration: 0.22s;
-      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-
-      ::before{
-        transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-      }
-      ::after{
-        transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-      }
-      +.activated{      
-          span{
-            transform: rotate(225deg);
-            transition-delay: 0.12s;
-            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            transition-duration: 0.22s;
-            ::before{
-              top: 0;
-              opacity: 0;
-              transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-            } 
-            ::after{
-              transform: rotate(-90deg);
-              transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
-              bottom: 4px;
-            }
-          }
-      }
-      
-      transition-duration: 0.22s;
-      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition-duration: .22s;
+        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
       height: 4px;
       width: 33px;
       background-color: $white;
@@ -143,14 +144,14 @@
         height: 4px;
         width: 33px;
       }
-      &:before{
-        transition: 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-        top: -10px;
-      }
-      &:after{
-        transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-        bottom: -6px;
-      }
+      // &:before{
+      //   transition: 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+      //   top: -10px;
+      // }
+      // &:after{
+      //   transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      //   bottom: -6px;
+      // }
     }
 }
 

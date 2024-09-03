@@ -762,6 +762,34 @@ html {
   margin: auto;
 }
 
+#hamburger-menu.activated span {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#hamburger-menu.activated ::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+}
+
+#hamburger-menu.activated ::after {
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  bottom: 4px;
+}
+
+.line::before {
+  transition: 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+  top: -10px;
+}
+
+.line::after {
+  transition: 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  bottom: -6px;
+}
+
 #hamburger-menu {
   width: 63px;
   height: 56px;
@@ -775,35 +803,11 @@ html {
 #hamburger-menu .line {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   height: 4px;
   width: 33px;
   background-color: #FFFFFF;
   display: block;
   margin: auto;
-}
-#hamburger-menu .line ::before {
-  transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-}
-#hamburger-menu .line ::after {
-  transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-#hamburger-menu .line + .activated span {
-  transform: rotate(225deg);
-  transition-delay: 0.12s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition-duration: 0.22s;
-}
-#hamburger-menu .line + .activated span ::before {
-  top: 0;
-  opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-}
-#hamburger-menu .line + .activated span ::after {
-  transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
-  bottom: 4px;
 }
 #hamburger-menu .line:before, #hamburger-menu .line:after {
   content: "";
@@ -812,14 +816,6 @@ html {
   position: relative;
   height: 4px;
   width: 33px;
-}
-#hamburger-menu .line:before {
-  transition: 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-  top: -10px;
-}
-#hamburger-menu .line:after {
-  transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  bottom: -6px;
 }
 
 #search-icon {

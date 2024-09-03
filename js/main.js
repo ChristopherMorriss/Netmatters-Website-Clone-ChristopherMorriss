@@ -102,7 +102,8 @@ page_container.addEventListener('click',()=>{
     if (toggle !== 2){
       $('#pop-up-menu').css('display','none');
       $('.scroll-container').css('display','none');
-      $('#container').css('margin-left','0px'); 
+      $('#container').css('margin-left','0px');
+      $('#hamburger-menu').removeClass('activated'); 
     }
   }
     
@@ -121,7 +122,7 @@ clone.addEventListener('click',()=>{
 let hamburger_menu=document.querySelector('#hamburger-menu');
 hamburger_menu.addEventListener('click',()=>{
   $('.scroll-container').css('display','block');
-  $('.line').toggleClass('activated');
+  $('#hamburger-menu').toggleClass('activated');
   $('#container').css('margin-left','-350px'); 
   $('#pop-up-menu').css('z-index','10');
   $('#pop-up-menu').css('display','block');

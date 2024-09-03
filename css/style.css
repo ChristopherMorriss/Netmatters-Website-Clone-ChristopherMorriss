@@ -720,8 +720,6 @@ html {
   align-items: normal;
   justify-content: space-around;
   width: 66.6667%;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .f-container .left-header {
@@ -744,9 +742,7 @@ html {
   flex-wrap: nowrap;
   align-items: normal;
   width: 33.3333%;
-  padding-top: 7px;
-  margin-left: -15px;
-  margin-right: -15px;
+  padding: 7px 0px;
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .f-container .right-header {
@@ -757,9 +753,6 @@ html {
   .f-container .right-header {
     width: 66.6667%;
   }
-}
-.f-container .right-header button, .f-container .right-header a, .f-container .right-header input {
-  margin: auto;
 }
 
 #hamburger-menu.activated span, #hamburger-menu-clone.activated span {
@@ -902,7 +895,6 @@ html {
   }
 }
 #support a, #support-clone a, #contact a, #contact-clone a {
-  margin: auto;
   display: flex;
 }
 #support span, #support-clone span, #contact span, #contact-clone span {
@@ -1072,6 +1064,10 @@ header {
     transform: translate3d(0, -100%, 0);
   }
 }
+header .right-header .marg-left {
+  margin-left: 20px;
+}
+
 .nav-size {
   flex-direction: row;
   display: flex;
@@ -1250,7 +1246,7 @@ header {
 }
 
 .hover-submenu2 {
-  background-color: #166af4;
+  background-color: #286ABD;
 }
 
 .hover-submenu3 {
@@ -1965,7 +1961,9 @@ header {
 }
 
 .news .img-btn {
-  padding: 0px;
+  margin-top: 10px;
+  padding: 0px 10px;
+  font-weight: 600;
 }
 .news .read-btn {
   height: auto;

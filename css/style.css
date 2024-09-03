@@ -966,8 +966,6 @@ html {
 }
 #search-mobile:focus, #search-mobile-clone:focus {
   border: 1px solid #e5e5e5;
-  border-color: #5bc0de;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 @media (min-width: 768px) and (max-width: 993px) {
   #search-mobile, #search-mobile-clone {
@@ -2320,6 +2318,9 @@ i {
   position: fixed;
   bottom: 0px;
   border-radius: 0px 10px 0px 0px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 22px;
   border: none;
   left: 0px;
   background-color: #75788a;

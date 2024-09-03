@@ -104,6 +104,7 @@ page_container.addEventListener('click',()=>{
       $('.scroll-container').css('display','none');
       $('#container').css('margin-left','0px');
       $('#hamburger-menu').removeClass('activated'); 
+      $('.clone').removeClass('activated');
     }
   }
     
@@ -112,7 +113,7 @@ page_container.addEventListener('click',()=>{
 let clone=document.querySelector('.clone');
 clone.addEventListener('click',()=>{
   $('.scroll-container').css('display','block');
-  $('.line').toggleClass('activated');
+  $('.clone').toggleClass('activated');
   $('#container').css('margin-left','-350px'); 
   $('#pop-up-menu').css('z-index','10');
   $('#pop-up-menu').css('display','block');
@@ -173,10 +174,7 @@ window.addEventListener('scroll', function() {
 });
 //Important things to do:
 //Improve partners carousel slide functionality
-//Add transition to hamburger menu
-
-//Second priority:
-//Change button elements to styled <a> tags
+//Get slide out menu to move out correctly
 
 /*Feedback tasks to complete:
 Submission passes HTML validator - https://validator.w3.org/

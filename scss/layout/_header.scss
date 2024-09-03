@@ -7,7 +7,7 @@
                   $align-items: normal,
                   $justify-content:space-around,
                   );
-    #n-logo{
+    #n-logo,#n-logo-clone{
       @include flex($flex-dir: row,
                       $display: flex,
                       $flex-wrap: wrap,
@@ -90,17 +90,17 @@
     
 }
 
-#hamburger-menu.activated span{
+#hamburger-menu.activated span,#hamburger-menu-clone.activated span{
   transform: rotate(225deg);
   transition-delay: .12s;
   transition-timing-function: cubic-bezier(.215,.61,.355,1);
 }
-#hamburger-menu.activated ::before{
+#hamburger-menu.activated ::before,#hamburger-menu-clone.activated ::before{
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
 }
-#hamburger-menu.activated ::after{
+#hamburger-menu.activated ::after,#hamburger-menu-clone.activated ::after{
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   bottom: 4px;
@@ -119,7 +119,7 @@
   transition: 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   bottom: -6px;
 }
-#hamburger-menu{
+#hamburger-menu, #hamburger-menu-clone{
     width:63px;
     height:56px;
     font-size: 2.5em;
@@ -155,7 +155,7 @@
     }
 }
 
-#search-icon{ 
+#search-icon,#search-icon-clone{ 
     margin-left: 0px;
     align-items: center;
     display:none;
@@ -180,7 +180,7 @@
     
   
 }
-#search-normal{ //The search bar which only appears on the biggest viewports
+#search-normal,#search-normal-clone{ //The search bar which only appears on the biggest viewports
   border: 1px solid $border_grey;
   
   &:focus{
@@ -203,7 +203,7 @@
   
   padding:5px 15px;
 }
-#support,#contact{ 
+#support,#support-clone,#contact,#contact-clone{ 
     @include btnstyle($b-radius:0px,
                       $f-size:1.125rem,
                       $w:null,
@@ -240,11 +240,11 @@
     }
 }
 
-#support{
+#support,#support-clone{
   @include hover($blue,$support-hover);
 }
 
-#contact{
+#contact,#contact-clone{
   @include hover($consent-hover,$grey);
 }
   
@@ -258,7 +258,7 @@
   }
 }  
 
-#phone{
+#phone,#phone-clone{
   //border:1px solid;
   color: black;
   font-size: 2em;
@@ -276,7 +276,7 @@
   }
 }
 
-#search-mobile{ //The search which appears on mobile or tablet devices only
+#search-mobile,#search-mobile-clone{ //The search which appears on mobile or tablet devices only
   border: 1px solid $border_grey;
   box-shadow:  inset 0 1px 1px rgba(0, 0, 0, .075);
   padding:5px 15px;

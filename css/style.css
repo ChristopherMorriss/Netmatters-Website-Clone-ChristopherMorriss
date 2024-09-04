@@ -1561,6 +1561,12 @@ header .right-header .marg-left {
   align-items: center;
 }
 
+h2.white {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .slider {
   position: relative;
 }
@@ -2321,7 +2327,8 @@ i {
   text-transform: none;
   position: fixed;
   bottom: 0px;
-  border-radius: 0px 10px 0px 0px;
+  border-top-right-radius: 10px;
+  padding: 0px 10px;
   font-weight: 600;
   font-size: 0.8rem;
   line-height: 22px;
@@ -2625,4 +2632,11 @@ i {
 
 .consent-grey-btn {
   background-color: #999aa2;
+}
+
+#privacy-policy {
+  color: #666;
+}
+#privacy-policy:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

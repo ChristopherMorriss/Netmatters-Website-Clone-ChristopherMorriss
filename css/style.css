@@ -1088,6 +1088,9 @@ header .right-header .marg-left {
     display: flex;
   }
 }
+.nav-size .hover span {
+  font-size: 1.2rem;
+}
 .nav-size span {
   font-size: 1.438rem;
 }
@@ -1551,6 +1554,11 @@ header .right-header .marg-left {
 .content {
   width: 350px;
   height: 100vh;
+}
+
+.hover, .centred {
+  display: flex;
+  align-items: center;
 }
 
 .slider {
@@ -2307,10 +2315,6 @@ i {
   .sizing-div #in-logo {
     width: 320px;
   }
-}
-
-.line-hover a:hover {
-  text-decoration: underline;
 }
 
 #fixed-consent {

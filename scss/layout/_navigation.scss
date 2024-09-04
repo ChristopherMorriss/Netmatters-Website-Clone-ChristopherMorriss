@@ -17,6 +17,11 @@
     @include media(x-large){
       display:flex;
     }
+    .hover{
+      span{
+        font-size: 1.2rem;
+      }
+    }
     span{
       font-size: 1.438rem;
     }
@@ -199,7 +204,7 @@
 }
 
 .hover-submenu{ //Class for styling all the submenus
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
   z-index: 5;
   position: absolute;
   width:100%;
@@ -515,4 +520,9 @@
   // @include media(x-large){
   //   height: 2417px;
   // } 
+}
+
+.hover,.centred{
+  display:flex;
+  align-items: center;
 }

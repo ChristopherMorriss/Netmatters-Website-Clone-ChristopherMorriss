@@ -184,10 +184,8 @@ Header
   Buttons have correct styling
   Desktop:
     Elements are appropriately sized 
-    Spacing between elements are equal 
   IPad Landscape:
-    Elements are appropriately sized 
-    Spacing between elements are equal 
+    Elements are appropriately sized  
   iPad Portrait:
     Header items are layout correctly
   iPhone X:

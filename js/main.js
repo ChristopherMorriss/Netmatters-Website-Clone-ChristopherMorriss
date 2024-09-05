@@ -223,7 +223,6 @@ Latest News
   Author text is correctly styled
 
 Footer
-  Logo correctly sized
   Socials are correctly styled 
   Column headings are styled correctly
   Links are correctly styled 

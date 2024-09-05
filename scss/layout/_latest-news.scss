@@ -45,6 +45,12 @@
   }
 }
 
+.view{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
 
 .red-text{
   color: $dark_red;
@@ -94,6 +100,7 @@
 
 .article-title{
   display:flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -178,11 +185,14 @@
 
 .news{
   .img-btn{
+    z-index: 2;
     margin-top:10px;
     padding: 0px 10px;
     font-weight: 600;
   }
   .read-btn{
+    position: relative;
+    z-index: 2;
     height: auto;
     line-height: 35px;
     padding: 5px 15px;
@@ -204,3 +214,11 @@
 }
 
 
+.article-link{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}

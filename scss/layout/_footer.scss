@@ -207,9 +207,21 @@ i{
 
 .footer-list{
     h4{
-        margin-left: 40px;
+        margin-left: 0px;
+        @include media(medium){
+            margin-left: 40px;
+        }
         @include media(x-large){
             margin-left: 40px;
+        }
+    }
+    ul{
+        margin-left: -40px;
+        @include media(medium){
+            margin-left: 0px;
+        }
+        @include media(large){
+            margin-left: 0px;
         }
     }
 }

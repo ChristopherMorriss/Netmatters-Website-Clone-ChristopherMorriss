@@ -5,7 +5,7 @@
                   $flex-wrap: wrap,
                   $align-content: normal,
                   $align-items: normal,
-                  $justify-content:space-around,
+                  $justify-content:start,
                   );
     #n-logo,#n-logo-clone{
       @include flex($flex-dir: row,
@@ -26,8 +26,8 @@
                       $align-items: center,
                       $justify-content:null,
                       );
-      max-width: 100%;
-
+      //max-width: 100%;
+      
       
       @include media(large){
         width:auto;
@@ -49,11 +49,14 @@
                       $justify-content:space-around,
                       );
         width:50%;
+        @include media(small){
+          width: 66.66%;
+        }
         @include media(medium){
-          width:50%;
+          width: 50%;
         }
         @include media(large){
-          width: 33.3333%;
+          width: 41.7777%;
         }
         @include media(x-large){
           width: 33.3333%;
@@ -68,18 +71,21 @@
                       $flex-wrap: nowrap,
                       $align-content: null,
                       $align-items: normal,
-                      $justify-content:null,
+                      $justify-content:end,
                       );
         width:33.3333%;
         @include media(medium){
           width:50%;
         }
         @include media(large){
-          width:66.6667%;
+          width:58.2222%;
         }
-        // button,a,input{
-        //   margin: auto;
-        // }
+        @include media(x-large){
+          width:66.667%;
+        }
+        button,a,input{
+          margin: auto;
+        }
         padding: 7px 0px;
     }
     padding-top:20px;
@@ -161,6 +167,7 @@
       display:flex;
     }
     @include media(large){
+      margin-left: 20px;
       display:flex;
       width: 60px;
       height: 60px;
@@ -261,7 +268,6 @@
   font-size: 2em;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
   &:hover{
     cursor: pointer;
   }
@@ -282,7 +288,7 @@
   &:focus{
     border: 1px solid $border_white;
   }
-  width:90vw;
+  width:95vw;
   margin-top: 15px; 
   height: 47px;
   @include media(medium){
@@ -378,4 +384,10 @@ header{
       margin-left:20px;
     }
   }
+}
+
+.right-header,.left-header{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin:0px;
 }

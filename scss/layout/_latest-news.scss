@@ -1,5 +1,4 @@
 .article{
-
     border: 1px solid;
     margin-bottom: 10px;
     .img-news{
@@ -122,6 +121,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 10px;
+  //border-top: 1px solid #ccc;
 }
 
 .article-info,.news-title{
@@ -140,11 +140,11 @@
 .article-1,.article-2{
   margin-bottom: 30px;
   @include media(medium){
-    width:50%;
+    width:50%; //Both articles share the same line at the medium media query
     margin-right: 15px;
   }
   @include media(large){
-    width:auto;
+    width:auto; //All three articles share the same line at the large media query
     margin-right: 15px;
   }
 }
@@ -186,6 +186,9 @@
   
 }
 
+.separator{ //Creates the line which is used to separate the main article contents and the article footer
+  border-top: 1px solid #ccc;
+}
 
 
 

@@ -48,7 +48,7 @@
                       $align-items: normal,
                       $justify-content:space-around,
                       );
-        width:66.6667%;
+        width:50%;
         @include media(medium){
           width:50%;
         }
@@ -122,6 +122,7 @@
     font-size: 2.5em;
     color: $white;
     background-color: $black;
+    border-radius: 3px;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
     transition-timing-function: linear;
@@ -179,7 +180,7 @@
 }
 #search-normal,#search-normal-clone{ //The search bar which only appears on the biggest viewports
   border: 1px solid $border_grey;
-  
+  font-size: 14px;
   &:focus{
     border: 1px solid $border_white;
     border-color: $search_blue_focus;
@@ -281,7 +282,7 @@
   &:focus{
     border: 1px solid $border_white;
   }
-  width:95vw;
+  width:90vw;
   margin-top: 15px; 
   height: 47px;
   @include media(medium){

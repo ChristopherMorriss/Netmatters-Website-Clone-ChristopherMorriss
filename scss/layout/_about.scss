@@ -8,7 +8,7 @@
                       $text-center:center,
                       $b:1px solid transparent);
     margin-bottom: 17px;
-    padding: 10px 30px;
+    padding: 10px 22px;
     span{
       margin-left: 12px;
       }
@@ -57,7 +57,7 @@
 
   .google-btn{
     @include hover($google-blue,$blue-hover);
-    //margin-right: 8px;
+    margin-right: 8px;
   }
 
   .trustpilot-btn{

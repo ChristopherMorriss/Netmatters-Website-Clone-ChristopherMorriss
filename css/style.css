@@ -672,6 +672,10 @@ html {
   margin-bottom: 20px;
 }
 
+.flex {
+  display: flex;
+}
+
 .f-container {
   background-color: #FFFFFF;
   flex-direction: row;
@@ -719,7 +723,7 @@ html {
   align-content: center;
   align-items: normal;
   justify-content: space-around;
-  width: 66.6667%;
+  width: 50%;
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .f-container .left-header {
@@ -789,6 +793,7 @@ html {
   font-size: 2.5em;
   color: #FFFFFF;
   background-color: #272936;
+  border-radius: 3px;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;
@@ -842,6 +847,7 @@ html {
 
 #search-normal, #search-normal-clone {
   border: 1px solid #cccccc;
+  font-size: 14px;
   padding: 5px 15px;
 }
 #search-normal:focus, #search-normal-clone:focus {
@@ -960,7 +966,7 @@ html {
   padding: 5px 15px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-  width: 95vw;
+  width: 90vw;
   margin-top: 15px;
   height: 47px;
 }
@@ -1987,6 +1993,10 @@ h2.white {
   margin-bottom: 10px;
 }
 
+.separator {
+  border-top: 1px solid #ccc;
+}
+
 .intro {
   display: flex;
   background-color: #333645;
@@ -2002,7 +2012,7 @@ h2.white {
   text-align: center;
   border: 1px solid transparent;
   margin-bottom: 17px;
-  padding: 10px 30px;
+  padding: 10px 22px;
 }
 .intro .black-btn span, .intro .google-btn span, .intro .trustpilot-btn span {
   margin-left: 12px;
@@ -2049,6 +2059,7 @@ h2.white {
 
 .google-btn {
   background-color: #4387f6;
+  margin-right: 8px;
 }
 .google-btn:hover {
   background-color: #166af4;

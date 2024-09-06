@@ -66,19 +66,7 @@
 }
 
 .news{
-  z-index: 3;
   .container{
-    // @include grid($g-display:grid,$g-row:null,$g-column:1fr,$gutter-row:20px,$gutter-column:20px);
-    // grid-template-columns: 1fr;
-    // @include media(medium){
-    //   grid-template-columns: 0.5fr 0.5fr;
-    // }
-    // @include media(large){
-    //   grid-template-columns: 1fr 1fr;
-    // }
-    // @include media(x-large){
-    //   grid-template-columns: 1fr 1fr 1fr;
-    // }
     @include flex($flex-dir:column,
                   $display:flex,
                   $flex-wrap:nowrap,

@@ -29,7 +29,6 @@
       top:0px;
       transition: 0.5s ease;
       color:black;
-      height: 330px;
       &:hover{
         color:white;
         top:-10px;
@@ -178,5 +177,6 @@
    h2{
      font-size: 2.7rem;
      font-weight: 400;
+     color: $background_black;
    }
  }

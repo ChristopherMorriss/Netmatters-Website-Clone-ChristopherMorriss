@@ -124,6 +124,7 @@ footer{
 }
 
 .copyright{
+    padding: 5px 0px 10px;
     @include media(medium){
         display: flex;
     }

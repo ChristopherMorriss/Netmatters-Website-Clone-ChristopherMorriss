@@ -48,7 +48,7 @@
                       $align-items: normal,
                       $justify-content:space-around,
                       );
-        width:50%;
+        width:66.6667%;
         @include media(small){
           width: 66.66%;
         }
@@ -123,6 +123,10 @@
   bottom: -6px;
 }
 #hamburger-menu, #hamburger-menu-clone{
+    margin-right: 2.5%;
+    @include media(medium){
+      margin-right: auto;
+    }
     width:63px;
     height:56px;
     font-size: 2.5em;
@@ -264,6 +268,7 @@
 
 #phone,#phone-clone{
   //border:1px solid;
+  margin-right: 0px;
   color: black;
   font-size: 2em;
   display: flex;

@@ -559,6 +559,12 @@ html {
   }
 }
 
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -694,7 +700,7 @@ html {
   flex-wrap: wrap;
   align-content: normal;
   align-items: normal;
-  justify-content: start;
+  justify-content: flex-start;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1122,21 +1128,17 @@ header .right-header .marg-left {
 @media (min-width: 994px) {
   .nav-size {
     display: flex;
-    width: 100%;
-    justify-content: center;
   }
 }
 @media (min-width: 1260px) {
   .nav-size {
     display: flex;
-    width: 100%;
-    justify-content: center;
   }
 }
-.nav-size .hover span {
+.nav-size span {
   font-size: 1.2rem;
 }
-.nav-size span {
+.nav-size .top-btn span {
   font-size: 1.438rem;
 }
 
@@ -1296,7 +1298,7 @@ header .right-header .marg-left {
 }
 
 .hover-submenu3 {
-  background-color: #26ab5f;
+  background-color: #25A25A;
 }
 
 .hover-submenu4 {
@@ -1327,7 +1329,7 @@ header .right-header .marg-left {
   top: 102px;
   display: none;
 }
-.hover-submenu .hover-grid1, .hover-submenu .hover-grid2, .hover-submenu .hover-grid3, .hover-submenu .hover-grid4, .hover-submenu .hover-grid5, .hover-submenu .hover-grid6, .hover-submenu .hover-grid7, .hover-submenu .hover-grid8 {
+.hover-submenu .hover-grid {
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1580,6 +1582,8 @@ header .right-header .marg-left {
 .minor-fixes p {
   text-align: start;
   margin-left: 0px;
+  display: flex;
+  align-items: center;
 }
 
 .scroll-container {
@@ -1610,6 +1614,13 @@ h2.white {
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: 500;
+}
+
+.underline {
+  font-size: 1.2rem;
+}
+.underline:hover {
+  text-decoration: underline;
 }
 
 .slider {
@@ -1705,7 +1716,7 @@ h2.white {
     line-height: 2.5rem;
   }
 }
-.slider-content .purple-btn {
+.slider-content #long-btn {
   width: 250px;
 }
 @media (min-width: 994px) {

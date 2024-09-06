@@ -13,21 +13,21 @@
     padding: 0;
     @include media(large){
       display:flex;
-      width:100%;
-      justify-content: center;
+      // width:100%;
+      // justify-content: center;
     }
     @include media(x-large){
       display:flex;
-      width:100%;
-      justify-content: center;
-    }
-    .hover{
-      span{
-        font-size: 1.2rem;
-      }
+      // width:100%;
+      // justify-content: center;
     }
     span{
-      font-size: 1.438rem;
+        font-size: 1.2rem;
+    }
+    .top-btn{
+      span{
+        font-size: 1.438rem;
+      }
     }
     
     
@@ -184,7 +184,7 @@
 }
 
 .hover-submenu3{
-  background-color: $green-hover;
+  background-color: $hover-sub-green;
 }
 
 .hover-submenu4{
@@ -214,7 +214,7 @@
   width:100%;
   top:102px;
   display: none; //The menu only appears when the navigation button is hovered over
-  .hover-grid1,.hover-grid2,.hover-grid3,.hover-grid4,.hover-grid5,.hover-grid6,.hover-grid7,.hover-grid8{
+  .hover-grid{
     margin-bottom: 50px;
     @include grid($g-display:grid, 
                 $g-row: null,
@@ -490,6 +490,8 @@
   p{
     text-align: start;
     margin-left: 0px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -535,4 +537,11 @@ h2.white {
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: 500;
+}
+
+.underline{
+  &:hover{
+    text-decoration: underline;
+  }
+  font-size: 1.2rem;
 }

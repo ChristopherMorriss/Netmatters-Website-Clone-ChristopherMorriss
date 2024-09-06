@@ -5,7 +5,7 @@
                   $flex-wrap: wrap,
                   $align-content: normal,
                   $align-items: normal,
-                  $justify-content:start,
+                  $justify-content:flex-start,
                   );
     #n-logo,#n-logo-clone{
       @include flex($flex-dir: row,

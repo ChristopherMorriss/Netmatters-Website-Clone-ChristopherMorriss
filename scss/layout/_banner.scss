@@ -91,7 +91,7 @@
         line-height: 2.5rem
       }
     }
-    .purple-btn{
+    #long-btn{
       width:250px; //The text is slightly longer for the purple button, so it has more width than the other buttons
     }
     @include media(large){

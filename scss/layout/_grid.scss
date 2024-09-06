@@ -61,7 +61,7 @@
   &:hover{
     .btn-icon,.btn{
       background-color: white;
-      @include hover-text($grey_blue_og,null)
+      @include hover-text($grey_blue_og,null);
     }
   }
 }
@@ -189,3 +189,9 @@
     display:block;
   }
  }
+
+.btn-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

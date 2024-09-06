@@ -137,7 +137,7 @@ window.addEventListener('scroll', function() {
     //Code that triggers when scrolling upwards
     let currentScrollTop = window.scrollY || document.documentElement.scrollTop;
     if (currentScrollTop < lastScrollTop) {
-        console.log('Scrolling up');
+        //console.log('Scrolling up');
         up_not_down = 1;
         $('.sticky-header').css('display','block');
         $('.sticky-header').removeClass('slideOutUp');
@@ -166,59 +166,8 @@ window.addEventListener('scroll', function() {
       $('.sticky-header').css('display','none');
   }
 });
-//Important things to do:
-//Improve partners carousel slide functionality
-//Get slide out menu to move out correctly
 
 /*Feedback tasks to complete:
 Submission passes HTML validator - https://validator.w3.org/
 Submisison uses mixins for the buttons and navigation
-Cursor becomes a pointer on anything clickable (link/buttons) 
-Header
-  Buttons have correct styling
-  Desktop:
-    Elements are appropriately sized 
-  IPad Landscape:
-    Elements are appropriately sized  
-  iPad Portrait:
-    Header items are layout correctly
-  iPhone X:
-    Header items are layout correctly
-
-Navigation
-  Dropdown nav layout and styling is correct 
-
-Banner
-  Height of the banner is correct 
-  Content is present: title, sub title, and button  
-  Button is correctly styled and contains arrow icon 
-
-Service Cards
-  Title and link are styled and aligned either side of page at the top
-  Cards are correctly styled:
-  - Border
-  - Border radius
-  - Background
-  - Box-shadow
-  - Icon background is a circle
-  - Icon and button colour
-  Card content layout is centred and correctly spaced
-
-About
-  Text fonts and styling are correct e.g. colour, weight, size etc
-  Button styling is correct e.g. colour, font, border radius, arrow icon
-
-Latest News
-  Title and link are styled and aligned either side of page 
-  Cards show a category tag in the top right 
-  Card content layout and spacing is correct 
-  Card title and button are correcty coloured 
-  Author image is circular
-  Author text is correctly styled
-
-Footer
-  Socials are correctly styled 
-  Column headings are styled correctly
-  Links are correctly styled 
-  Bottom footer is present and correct 
 */

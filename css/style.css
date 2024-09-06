@@ -68,10 +68,6 @@ header {
   letter-spacing: 0.4px;
 }
 
-hr {
-  color: #666;
-}
-
 h4 {
   color: #FFFFFF;
   font-weight: 400;
@@ -766,7 +762,7 @@ html {
   display: flex;
   flex-wrap: nowrap;
   align-items: normal;
-  justify-content: end;
+  justify-content: flex-end;
   width: 33.3333%;
   padding: 7px 0px;
 }
@@ -2429,6 +2425,11 @@ i {
 }
 @media (min-width: 994px) {
   .footer-list ul {
+    margin-left: -40px;
+  }
+}
+@media (min-width: 1260px) {
+  .footer-list ul {
     margin-left: 0px;
   }
 }
@@ -2458,15 +2459,6 @@ i {
   bottom: 5px;
   right: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#sub-btn {
-  border-radius: 5px;
-  font-size: 17.008px;
-  width: 129px;
-  height: 46px;
-  line-height: 35px;
-  text-align: center;
 }
 
 .grey-btn {

@@ -71,7 +71,7 @@
                       $flex-wrap: nowrap,
                       $align-content: null,
                       $align-items: normal,
-                      $justify-content:end,
+                      $justify-content: flex-end,
                       );
         width:33.3333%;
         @include media(medium){

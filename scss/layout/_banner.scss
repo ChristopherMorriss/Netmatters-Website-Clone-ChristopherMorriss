@@ -29,7 +29,7 @@
 
   }
   .btn{
-    width:220px;
+    width:220px; //All buttons except the first have this width
     line-height:50px;
     padding:5px 20px;
     margin-top: 1.938rem;
@@ -120,7 +120,7 @@
   @media (min-width: 992px) {
     opacity: 1; 
   }
-  &:before{
+  &:before{ //The gradient which darkens the banner's background images
     content:"";
     position: absolute;
     top:0px;

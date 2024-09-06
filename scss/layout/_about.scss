@@ -57,7 +57,7 @@
 
   .google-btn{
     @include hover($google-blue,$blue-hover);
-    margin-right: 8px;
+    margin-right: 8px; //Creates small gap between the google button and the trustpilot button
   }
 
   .trustpilot-btn{
@@ -65,10 +65,10 @@
   }
 
   .black-1{
-    margin-right: 8px;
+    margin-right: 8px; //Creates small gap between the first black button and the second black button
   }
   .btn-group{
-    br{
+    br{ //Used to determine if the about buttons should be adjacent to each other or should be on top of each other
       display: block;
       @include media(small){
         display: none;
@@ -86,5 +86,6 @@
     @include media(large){
       width:50%;
     }
-    margin-left:10px;
+    margin-left:10px; //Creates a small gap between the review and intro (larger viewports)
+                      // or between the left of the page and the review (smaller viewports)
   }

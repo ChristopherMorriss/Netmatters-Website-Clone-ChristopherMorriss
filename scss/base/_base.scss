@@ -42,7 +42,7 @@ button{
     
 }
 
-.container{ //Container classs which is used for any element which needs center alignment and padding
+.container{ //Container class which is used for any element which needs center alignment and padding
     margin-right:auto;
     margin-left:auto;
     padding-left: 15px;
@@ -67,9 +67,6 @@ header{
     letter-spacing: 0.4px;
 }
 
-hr{
-    color: $article-text;
-}
 
 h4{
     color: $white;

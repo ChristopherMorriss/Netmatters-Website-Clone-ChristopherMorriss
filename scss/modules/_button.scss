@@ -26,23 +26,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
 
-
-
-
-#sub-btn{
-    @include btnstyle($b-radius:5px,
-                     $f-size:17.008px,
-                     $w:129px,
-                     $h:46px,
-                     $l-height:35px,
-                     $text-center:center,
-                     $b: null,);
-    
-}
-
-
-
-
 .grey-btn{
   background-color: $grey;
 }

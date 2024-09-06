@@ -169,5 +169,4 @@ window.addEventListener('scroll', function() {
 
 /*Feedback tasks to complete:
 Submission passes HTML validator - https://validator.w3.org/
-Submisison uses mixins for the buttons and navigation
 */

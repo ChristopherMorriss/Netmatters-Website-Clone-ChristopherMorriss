@@ -180,3 +180,12 @@
      color: $background_black;
    }
  }
+
+ .filler-line{
+  @include media(large){
+    display:none;
+  }
+  @include media(x-large){
+    display:block;
+  }
+ }

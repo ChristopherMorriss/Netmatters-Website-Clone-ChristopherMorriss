@@ -90,10 +90,9 @@ if (getCookie("cookie") === "accepted") { //Used to check if the cookie "cookies
 }
 else{
   $('#cookie-popup').css("display","block");
-  //console.log('Needs to be accepted before it disappears')
 }
 
-let toggle=1;
+let toggle=1; //Toggle is uesd to prevent clicks on the body from having any effect on the menu when it is closed
 let page_container=document.querySelector('body');
 page_container.addEventListener('click',()=>{
   if (toggle >=2){
@@ -151,15 +150,10 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', (event) => {
-  //console.log(up_not_down);
   if (up_not_down != 1){
-    $('.sticky-header').addClass('slideOutUp'); //If the display: none code below is used, the animation doesn't work
-    //$('.sticky-header').css('display','none');
-    console.log('scrolling down');
+    $('.sticky-header').addClass('slideOutUp'); 
   }
   up_not_down = 0;
-  //console.log(up_not_down);
-  
 });
 
 document.getElementById('scroll1').addEventListener('scroll', function() {

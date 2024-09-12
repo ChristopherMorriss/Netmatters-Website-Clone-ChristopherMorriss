@@ -11,7 +11,7 @@
             require_once realpath(__DIR__ . "/vendor/autoload.php");
             use Dotenv\Dotenv;
             $dotenv = Dotenv::createImmutable(__DIR__);
-            $dotenv->load();?>
+            $dotenv->load();?> 
     <title>Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters</title>
     </head>
 
@@ -1375,7 +1375,7 @@
             </div>
         </div>
     </div>
-
+    <?php include "php/footer.php"; ?>
 
 
 

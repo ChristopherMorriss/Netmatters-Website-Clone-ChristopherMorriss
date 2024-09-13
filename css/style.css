@@ -2475,9 +2475,17 @@ i {
   margin: 0 0 28px;
   color: #333645;
 }
+.contact-page h2 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
 
 .office-addresses {
   margin-bottom: 40px;
+}
+.office-addresses p {
+  color: #666;
 }
 
 .office-box {

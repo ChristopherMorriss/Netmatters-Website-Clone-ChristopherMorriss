@@ -40,10 +40,18 @@
         margin: 0 0 28px;
         color: $background-black;
     }
+    h2{
+        font-size: 1.25rem;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
 }
 
 .office-addresses{
     margin-bottom: 40px;
+    p{
+        color: $article-text;
+    }
     //display: flex;
 }
 

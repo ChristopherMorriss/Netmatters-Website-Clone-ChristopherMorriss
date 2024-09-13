@@ -1,4 +1,75 @@
 .shadow-start{
-    box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
-    padding: 14px 0 13px;
+    display: none;
+    @include media(large){
+        box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
+        padding: 14px 0 13px;
+    }  
+}
+
+.black-link{
+    color: $background-black;
+}
+
+#bold-link{
+    font-weight: 700;
+}
+
+.one-line{
+    font-size: .8125rem;
+    margin: 0;
+    padding: 0;
+    color: $background-black;
+    display: flex;
+    li+li::before{
+        content: "/\A0";
+        padding: 0 5px;
+        color: $background-black;
+    }
+}
+
+.contact-page{
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+        
+    }
+    h1{
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin: 0 0 28px;
+        color: $background-black;
+    }
+}
+
+.office-addresses{
+    margin-bottom: 40px;
+    //display: flex;
+}
+
+.office-box{
+    @include media(large){
+        width:33%;
+    }
+    border: 1px $border-grey solid;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    //overflow-x: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+.our-offices-bg{
+    background-color: $background-black;
+    margin-bottom: 50px;
+    //margin-top: -50px;
+    padding: 24px 0;
+    .our-offices{
+        color:$white;
+    }
+}
+
+.office-content{
+    padding: 30px;
 }

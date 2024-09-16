@@ -15,9 +15,8 @@
     <title>Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters</title>
     </head>
 
-    <body>
+    <body class="contact-page">
         <div id="container">
-
             <header>
                 <?php include "php/header.php" ?>
                 <?php include "php/sticky-header.php" ?>
@@ -28,96 +27,135 @@
             </header>
             <div class="shadow-start">
                 <div class="container">
-                    <ul>
-                        <li><a href="#">Home</a></li>
+                    <ul class="one-line"> 
+                        <li><a href="#" class="black-link" id="bold-link">Home</a></li>
                         <li>Our Offices</li>
                     </ul>
                 </div>
             </div>
-            <h1>Our Offices</h1>
-            <div class="office-adresses">
-                <div class="office-address-1">
+            <div class="section our-offices-bg">
+                <div class="container">
+                    <h1 class="our-offices">Our Offices</h1>
+                </div>
+            </div>
+            <div class="office-addresses container">
+                <div class="office-address-1 office-box">
                     <div class="office-img">
-                        <img src="img/cambridge.jpg" alt="Cambridge Office">
+                        <a><img src="img/cambridge.jpg" alt="Cambridge Office"></a>
                     </div>
-                    <div class="office-content"></div>
-                    <h2>Cambridge Office</h2>
-                    <p>
-                    Unit 1.31,
-                    St John's Innovation Centre,
-                    Cowley Road, Milton,
-                    Cambridge,
-                    CB4 0WS
-                    </p>
-                    <div class="telephone">01223 37 57 72</div>
+                    <div class="office-content">
+                        <h2>Cambridge Office</h2>
+                        <p>
+                            Unit 1.31,<br>
+                            St John's Innovation Centre,<br>
+                            Cowley Road, Milton,<br>
+                            Cambridge,<br>
+                            CB4 0WS<br>
+                        </p>
+                        <div class="telephone"><a href="#">01223 37 57 72</a></div>
+                        <a href="#" class="btn purple-btn">View More</a>
+                    </div>
                 </div> 
-                <div class="office-address-2">
+                <div class="office-address-2 office-box">
                     <div class="office-img">
-                        <img src="img/wymondham.jpg" alt="Wymondham Office">
+                        <a><img src="img/wymondham.jpg" alt="Wymondham Office"></a>
                     </div>
-                    <div class="office-content"></div>
-                    <h2>Wymondham Office</h2>
-                    <p>
-                    Unit 15,
-                    Penfold Drive,
-                    Gateway 11 Business Park,
-                    Wymondham, Norfolk,
-                    NR18 0WZ
-                    </p>
-                    <div class="telephone">01603 70 40 20</div>
+                    <div class="office-content">
+                        <h2>Wymondham Office</h2>
+                        <p>
+                            Unit 15,<br>
+                            Penfold Drive,<br>
+                            Gateway 11 Business Park,<br>
+                            Wymondham, Norfolk,<br>
+                            NR18 0WZ<br>
+                        </p>
+                        <div class="telephone"><a href="#">01603 70 40 20</a></div>
+                        <a href="#" class="btn purple-btn">View More</a>
+                    </div>
                 </div> 
-                <div class="office-address-3">
+                <div class="office-address-3 office-box">
                     <div class="office-img">
-                        <img src="img/yarmouth-2.jpg" alt="Great Yarmouth Office">
+                        <a><img src="img/yarmouth-2.jpg" alt="Great Yarmouth Office"></a>
                     </div>
-                    <div class="office-content"></div>
-                    <h2>Great Yarmouth Office</h2>
-                    <p>
-                    Suite F23,
-                    Beacon Innovation Centre,
-                    Beacon Park, Gorleston,
-                    Great Yarmouth, Norfolk,
-                    NR31 7RA
-                    </p>
-                    <div class="telephone">01493 60 32 04</div>
+                    <div class="office-content">
+                        <h2>Great Yarmouth Office</h2>
+                        <p>
+                            Suite F23,<br>
+                            Beacon Innovation Centre,<br>
+                            Beacon Park, Gorleston,<br>
+                            Great Yarmouth, Norfolk,<br>
+                            NR31 7RA<br>
+                        </p>
+                        <div class="telephone"><a href="#">01493 60 32 04</a></div>
+                        <a href="#" class="btn purple-btn">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
-        
-    <form id="form">
-        <h1>Email Newsletter Sign-Up</h1>
-        <h2>Your Name</h2>
-        <input type="text" id="name" name="user-name">
-        <h2>Your Email</h2>
-        <input type="text" id="email" name="user-email"><br>
-        <h2>Company Name</h2>
-        <h2>Your Telephone Number</h2>
-        <input type="checkbox"id="check" name="user-checkbox">
-        <p>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a>
-        for more information on how we keep your data safe. </p>
-        <span>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</span>
-        <div class="enquiry-field">
-            <button>Send Enquiry</button>
-            <small>Fields Required</small>
+    <div class="container">
+        <div class="flex-enquiry">
+            <div id="active-hours">
+                <div class="bold">
+                    <p><strong>Email us on:</strong><br></p>
+                    <p><a href="#" class="h3" id="sales-email">sales@netmatters.com</a></p>
+                    <p><strong>Business hours:</strong></p>
+                    <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
+                    <p><strong><a href="#" class="accordian">Out Of Hours IT Support<em></em></a></p>
+                </div>
+                <div class="hidden-accordian">
+                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                    <p>
+                        <strong>Monday - Friday 18:00 - 22:00</strong><br>
+                        <strong>Saturday 08:00 - 16:00</strong><br>
+                        <strong>Sunday 10:00 - 18:00</strong>
+                    </p>
+                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
+                </div>
+            </div>
+            <form id="form">
+                <div>
+                    <div class="flex-form">
+                        <div class="form-section">
+                            <label for="name">Your Name<span class="red-asterix"> *</span></label>
+                            <input type="text" id="name" name="user-name">
+                        </div>
+                        <div class="form-section">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="user-company">
+                        </div>
+                        <div class="form-section">
+                            <label for="email">Your Email<span class="red-asterix"> *</span></label>
+                            <input type="text" id="email" name="user-email">
+                        </div>
+                        <div class="form-section">
+                            <label for="telephone">Your Telephone Number<span class="red-asterix"> *</span></label>
+                            <input type="text" id="telephone" name="user-telephone"><br>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label for="message">Message<span class="red-asterix"> *</span></label>
+                        <textarea id="message" name="message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
+                        </textarea>
+                    </div>
+                    <div class="form-section">
+                        <label class="flexbox-checkbox">
+                            <!-- <input type="checkbox"id="checkbox" name="user-checkbox"> -->
+                            <span class="checkbox button"></span>
+                            <span class="checkbox-msg">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="perma-underline">Privacy Policy</a>
+                            for more information on how we keep your data safe.</span>
+                        </label>
+                    </div>
+                    <div class="form-section">
+                        <span class="reCAPTCHA">This site is protected by reCAPTCHA and the Google <a href="#" class="perma-underline">Privacy Policy</a> and <a href="#" class="perma-underline">Terms of Service</a> apply.</span>
+                    </div>
+                    <div class="enquiry-field">
+                        <button class="btn" id="send-enquiry">Send Enquiry</button>
+                        <small><span class="red-asterix"> *</span>Fields Required</small>
+                    </div>
+                </div>
+            </form> 
         </div>
-    </form> 
-    <div>
-        <p><strong>Email us on:</strong><br></p>
-        <p><a href="#">sales@netmatters.com</a></p>
-        <p><strong>Business hours:</strong></p>
-        <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
-        <p><a href="#">Out Of Hours IT Support</a></p>
     </div>
-    <div>
-        <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-        <p>
-            <strong>Monday - Friday 18:00 - 22:00</strong>
-            <strong>Saturday 08:00 - 16:00</strong><br>
-            <strong>Sunday 10:00 - 18:00</strong>
-        </p>
-        <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
-    </div>
-   
    
     
 

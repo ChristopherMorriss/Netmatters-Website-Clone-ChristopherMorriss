@@ -91,78 +91,79 @@
                     </div>
                 </div>
             </div>
-        </div>
-    <div class="container">
-        <div class="flex-enquiry">
-            <div id="active-hours">
-                <div class="bold">
-                    <p><strong>Email us on:</strong><br></p>
-                    <p><a href="#" class="h3" id="sales-email">sales@netmatters.com</a></p>
-                    <p><strong>Business hours:</strong></p>
-                    <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
-                    <p><strong><a href="#" class="accordian">Out Of Hours IT Support<em></em></a></p>
+        <div class="container section">
+            <div class="flex-enquiry">
+                <div id="active-hours">
+                    <div class="bold-contacts">
+                        <p><strong>Email us on:</strong><br></p>
+                        <p><a href="#" class="h3" id="sales-email">sales@netmatters.com</a></p>
+                        <p><strong>Business hours:</strong></p>
+                        <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
+                    </div>
+                    <div class="container out-of-hours">
+                        <h4 class="accordion">Out Of Hours IT Support<em></em></h4>
+                        <div class="hidden-accordion active">
+                            <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                            <p>
+                                <strong>Monday - Friday 18:00 - 22:00</strong><br>
+                                <strong>Saturday 08:00 - 16:00</strong><br>
+                                <strong>Sunday 10:00 - 18:00</strong>
+                            </p>
+                            <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden-accordian">
-                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                    <p>
-                        <strong>Monday - Friday 18:00 - 22:00</strong><br>
-                        <strong>Saturday 08:00 - 16:00</strong><br>
-                        <strong>Sunday 10:00 - 18:00</strong>
-                    </p>
-                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
-                </div>
+                <form id="form">
+                    <div>
+                        <div class="flex-form">
+                            <div class="form-section">
+                                <label for="name">Your Name<span class="red-asterix"> *</span></label>
+                                <input type="text" id="name" name="user-name">
+                            </div>
+                            <div class="form-section">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="user-company">
+                            </div>
+                            <div class="form-section">
+                                <label for="email">Your Email<span class="red-asterix"> *</span></label>
+                                <input type="text" id="email" name="user-email">
+                            </div>
+                            <div class="form-section">
+                                <label for="telephone">Your Telephone Number<span class="red-asterix"> *</span></label>
+                                <input type="text" id="telephone" name="user-telephone"><br>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <label for="message">Message<span class="red-asterix"> *</span></label>
+                            <textarea id="message" name="message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
+                            </textarea>
+                        </div>
+                        <div class="form-section">
+                            <label class="flexbox-checkbox">
+                                <!-- <input type="checkbox"id="checkbox" name="user-checkbox"> -->
+                                <span class="checkbox button"></span>
+                                <span class="checkbox-msg">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="perma-underline">Privacy Policy</a>
+                                for more information on how we keep your data safe.</span>
+                            </label>
+                        </div>
+                        <div class="form-section">
+                            <span class="reCAPTCHA">This site is protected by reCAPTCHA and the Google <a href="#" class="perma-underline">Privacy Policy</a> and <a href="#" class="perma-underline">Terms of Service</a> apply.</span>
+                        </div>
+                        <div class="enquiry-field">
+                            <button class="btn" id="send-enquiry">Send Enquiry</button>
+                            <small><span class="red-asterix"> *</span>Fields Required</small>
+                        </div>
+                    </div>
+                </form> 
             </div>
-            <form id="form">
-                <div>
-                    <div class="flex-form">
-                        <div class="form-section">
-                            <label for="name">Your Name<span class="red-asterix"> *</span></label>
-                            <input type="text" id="name" name="user-name">
-                        </div>
-                        <div class="form-section">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" name="user-company">
-                        </div>
-                        <div class="form-section">
-                            <label for="email">Your Email<span class="red-asterix"> *</span></label>
-                            <input type="text" id="email" name="user-email">
-                        </div>
-                        <div class="form-section">
-                            <label for="telephone">Your Telephone Number<span class="red-asterix"> *</span></label>
-                            <input type="text" id="telephone" name="user-telephone"><br>
-                        </div>
-                    </div>
-                    <div class="form-section">
-                        <label for="message">Message<span class="red-asterix"> *</span></label>
-                        <textarea id="message" name="message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
-                        </textarea>
-                    </div>
-                    <div class="form-section">
-                        <label class="flexbox-checkbox">
-                            <!-- <input type="checkbox"id="checkbox" name="user-checkbox"> -->
-                            <span class="checkbox button"></span>
-                            <span class="checkbox-msg">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="perma-underline">Privacy Policy</a>
-                            for more information on how we keep your data safe.</span>
-                        </label>
-                    </div>
-                    <div class="form-section">
-                        <span class="reCAPTCHA">This site is protected by reCAPTCHA and the Google <a href="#" class="perma-underline">Privacy Policy</a> and <a href="#" class="perma-underline">Terms of Service</a> apply.</span>
-                    </div>
-                    <div class="enquiry-field">
-                        <button class="btn" id="send-enquiry">Send Enquiry</button>
-                        <small><span class="red-asterix"> *</span>Fields Required</small>
-                    </div>
-                </div>
-            </form> 
         </div>
-    </div>
    
     
 
-
+    <?php include "php/cookie.php" ?>
     <?php include "php/menu.php" ?>
     <?php include "php/footer.php" ?>
-
+    </div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/slick.js"></script> 
     <script src="js/main.js"></script>

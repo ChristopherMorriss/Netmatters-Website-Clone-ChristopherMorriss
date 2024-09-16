@@ -2,7 +2,7 @@
 <header>
     <div class="f-container container">
         <div class="left-header container">
-            <a href="#"><img id="n-logo" class="f-line" src="img/netmatters-logo.webp" alt="Netmatters Logo"></a>
+            <a href="index.php"><img id="n-logo" class="f-line" src="img/netmatters-logo.webp" alt="Netmatters Logo"></a>
         </div>
         <div class="right-header container">
             <a href="#" class="marg-left btn f-line blue-btn" id="support"><span class="icon-mouse"></span>Support</a>

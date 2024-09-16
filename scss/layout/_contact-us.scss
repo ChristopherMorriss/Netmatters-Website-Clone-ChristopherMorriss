@@ -1,12 +1,14 @@
 .shadow-start{
     display: none;
     @include media(medium){
-        display: flex;
+        display: inline-block;
+        width: 100%;
         box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
         padding: 14px 0 13px;
     }  
     @include media(large){
-        display: flex;
+        display: inline-block;
+        width: 100%;
         box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
         padding: 14px 0 13px;
     }  
@@ -34,12 +36,17 @@
 }
 
 .contact-page{
-    a{
-        color:$background_black;
-        &:hover{
-            text-decoration: none;
+    .office-content,#active-hours{
+        p{
+            line-height: 1.875rem;
+            margin-bottom: 25px;
         }
-        
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+            
+        }
     }
     h1{
         font-size: 2.25rem;
@@ -47,10 +54,12 @@
         margin: 0 0 28px;
         color: $background_black;
     }
-    h2{
-        font-size: 1.25rem;
-        margin-bottom: 15px;
-        font-weight: 400;
+    .office-content{
+        h2{
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
     }
 }
 
@@ -101,12 +110,16 @@
 
 .office-content{
     padding: 30px;
+    a.purple-btn{
+        padding: 10px 30px;
+    }
+    
 }
 
 .telephone{
     margin-bottom: 10px;
     a{
-        color:$purple;
+        color:$purple !important;
         font-size: 1.625rem;
         font-weight: 700;
         &:hover{
@@ -148,7 +161,7 @@ input{
     border: 1px solid #e5e5e5;
     border-radius: 2px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    &:hover{
+    &:focus{
         border-color: #5bc0de;
         outline: 0;
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, .6);
@@ -209,29 +222,34 @@ textarea{
 }
 
 #sales-email{
-    color: $purple;
+    color: $purple !important;
     &:hover{
         text-decoration: underline;
     }
 }
 
-.hidden-accordian{
+.hidden-accordion{
     display: none;
 }
-
+.hidden-accordion.active{
+    display: block;
+}
 em{
     &::before{
         content: "\F078";
     }
 }
 
-.accordian{
+.accordion{
+    color: $background_black;
+    font-weight: 600;
+    cursor: pointer;
     &:hover{
         text-decoration: underline !important;
     }
 }
 
-.bold{
+.bold-contacts{
     font-weight: 600;
 }
 
@@ -255,12 +273,15 @@ em{
     #active-hours{
         @include media(x-large){
             left: 66.66666667%;
-            position: absolute;
+            position: relative;
+            width: 33%;
         }
     }
     #form{
         @include media(x-large){
-            width:66.6666667%;
+            width: 66.6666667%;
+            right: 33.3333333%;
+            position: relative;
         }
     }
     @include media(x-large){
@@ -268,15 +289,18 @@ em{
     }
 }
 
-p{
-    line-height: 1.875rem;
-    margin-bottom: 25px;
-}
 
 .perma-underline{
     text-decoration: underline;
+    color: $background_black;
+    cursor: pointer;
     &:hover{
         text-decoration: underline !important;
         color:$underline_black_hover;
     }
+}
+
+.out-of-hours{
+    width: auto;
+    padding: 0px;
 }

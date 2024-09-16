@@ -16,7 +16,7 @@ $('.all-logos').slick({
 });
 
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked
-                 //It's a boolean variable so it could be represented with true (1) and false (0) instead
+                  //It's a boolean variable so it could be represented with true (1) and false (0) instead
 let slideOutMenu = document.querySelector('#hamburger-menu'); //Targets the span which contains the hamburger menu icon
 slideOutMenu.addEventListener('click',()=>{
   if (hideOrShow===0){ //If hideOrShow variable =0 (is off) when clicked, display the menu 
@@ -167,6 +167,11 @@ window.addEventListener('scroll', function() {
   }
 });
 
-/*Feedback tasks to complete:
-Submission passes HTML validator - https://validator.w3.org/
-*/
+accordion=document.querySelector('.accordion');
+accordion.addEventListener('click',()=>{
+  $('.hidden-accordion').toggleClass('active');
+});
+
+enquiry_btn=document.querySelector('#send-enquiry');
+enquiry_btn.addEventListener('click',()=>{
+});

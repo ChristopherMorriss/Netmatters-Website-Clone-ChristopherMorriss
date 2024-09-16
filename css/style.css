@@ -2440,14 +2440,16 @@ i {
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .shadow-start {
-    display: flex;
+    display: inline-block;
+    width: 100%;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
     padding: 14px 0 13px;
   }
 }
 @media (min-width: 994px) {
   .shadow-start {
-    display: flex;
+    display: inline-block;
+    width: 100%;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
     padding: 14px 0 13px;
   }
@@ -2474,10 +2476,11 @@ i {
   color: #333645;
 }
 
-.contact-page a {
-  color: #333645;
+.contact-page .office-content p, .contact-page #active-hours p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
 }
-.contact-page a:hover {
+.contact-page .office-content a:hover, .contact-page #active-hours a:hover {
   text-decoration: none;
 }
 .contact-page h1 {
@@ -2486,7 +2489,7 @@ i {
   margin: 0 0 28px;
   color: #333645;
 }
-.contact-page h2 {
+.contact-page .office-content h2 {
   font-size: 1.25rem;
   margin-bottom: 15px;
   font-weight: 400;
@@ -2544,12 +2547,15 @@ i {
 .office-content {
   padding: 30px;
 }
+.office-content a.purple-btn {
+  padding: 10px 30px;
+}
 
 .telephone {
   margin-bottom: 10px;
 }
 .telephone a {
-  color: #926fb1;
+  color: #926fb1 !important;
   font-size: 1.625rem;
   font-weight: 700;
 }
@@ -2591,7 +2597,7 @@ input {
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-input:hover {
+input:focus {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
@@ -2653,25 +2659,34 @@ textarea:focus {
 }
 
 #sales-email {
-  color: #926fb1;
+  color: #926fb1 !important;
 }
 #sales-email:hover {
   text-decoration: underline;
 }
 
-.hidden-accordian {
+.hidden-accordion {
   display: none;
+}
+
+.hidden-accordion.active {
+  display: block;
 }
 
 em::before {
   content: "\f078";
 }
 
-.accordian:hover {
+.accordion {
+  color: #333645;
+  font-weight: 600;
+  cursor: pointer;
+}
+.accordion:hover {
   text-decoration: underline !important;
 }
 
-.bold {
+.bold-contacts {
   font-weight: 600;
 }
 
@@ -2695,12 +2710,15 @@ em::before {
 @media (min-width: 1260px) {
   .flex-enquiry #active-hours {
     left: 66.66666667%;
-    position: absolute;
+    position: relative;
+    width: 33%;
   }
 }
 @media (min-width: 1260px) {
   .flex-enquiry #form {
     width: 66.6666667%;
+    right: 33.3333333%;
+    position: relative;
   }
 }
 @media (min-width: 1260px) {
@@ -2709,17 +2727,19 @@ em::before {
   }
 }
 
-p {
-  line-height: 1.875rem;
-  margin-bottom: 25px;
-}
-
 .perma-underline {
   text-decoration: underline;
+  color: #333645;
+  cursor: pointer;
 }
 .perma-underline:hover {
   text-decoration: underline !important;
   color: #121419;
+}
+
+.out-of-hours {
+  width: auto;
+  padding: 0px;
 }
 
 #fixed-consent {

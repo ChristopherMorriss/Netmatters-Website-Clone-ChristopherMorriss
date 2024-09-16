@@ -19,7 +19,7 @@
                     <li><a href="#">News</a></li>
                     <li><a href="#">Our Careers</a></li>
                     <li><a href="#">Our Team</a></li>
-                    <li><a href="#contact-us.php">Contact Us</a></li>
+                    <li><a href="contact-us.php">Contact Us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Cookie Policy</a></li>
                     <li><a href="#">Data Retention & Disposal Policy</a></li>
@@ -77,3 +77,5 @@
         </div>
     </div>
 </div>
+<button id="fixed-consent">Manage Consent</button>
+<a href="#" class="btn-icon" id="live-chat"><span class="icon-chat"></span></a>

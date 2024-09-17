@@ -78,6 +78,11 @@
     @include media(large){
         width:33%;
     }
+    margin-bottom: 30px;
+    @include media(large){
+        margin-bottom: 0px;
+    }
+    overflow: auto; //Removes the top corners of the office images
     margin-right: 10px;
     border: 1px $border_grey solid;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);

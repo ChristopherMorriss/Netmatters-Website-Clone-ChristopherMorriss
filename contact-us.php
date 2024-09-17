@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php require "function.php" ?>
 <html lang="en">
     <head>  
         <meta charset="utf-8">
@@ -16,6 +17,30 @@
     </head>
 
     <body class="contact-page">
+    <?php 
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $name = trim(filter_input(INPUT_POST,'user-name',FILTER_SANITIZE_STRING)); 
+        $company = trim(filter_input(INPUT_POST,'user-company',FILTER_SANITIZE_STRING));
+        $telephone = trim(filter_input(INPUT_POST,'user-telephone',FILTER_SANITIZE_STRING));
+        $email = trim(filter_input(INPUT_POST,'user-email',FILTER_SANITIZE_STRING));
+        $message =trim(filter_input(INPUT_POST,'message',FILTER_SANITIZE_STRING));
+        if (empty($name) || empty($telephone) || empty($email) || empty($message)){
+            $error_message = 'Please fill in the required field: name, telephone, email and message';
+            // echo "<p>name = $name<br></p>";
+            // echo "<p>telephone = $telephone<br></p>";
+            // echo "<p>email = $email<br></p>";
+            // echo "<p>message = $message<br></p>";
+        }
+        else{
+            // echo "<p>name = $name<br></p>";
+            // echo "<p>telephone = $telephone<br></p>";
+            // echo "<p>email = $email<br></p>";
+            // echo "<p>message = $message<br></p>";
+            //delete_enquiry(); Used to delete all rows from table
+            add_enquiry($name,$company,$telephone,$email,$message);
+        }
+    }
+    ?>
         <div id="container">
             <header>
                 <?php include "php/header.php" ?>
@@ -113,6 +138,11 @@
                         </div>
                     </div>
                 </div>
+                <?php if (isset($error_message)){
+                    //echo "<p class='message'>$error_message</p>";
+                }
+                ?>
+
                 <form id="form" method="post" action="contact-us.php">
                     <div>
                         <div class="flex-form">
@@ -150,19 +180,11 @@
                             <span class="reCAPTCHA">This site is protected by reCAPTCHA and the Google <a href="#" class="perma-underline">Privacy Policy</a> and <a href="#" class="perma-underline">Terms of Service</a> apply.</span>
                         </div>
                         <div class="enquiry-field">
-                            <button class="btn" id="send-enquiry" onClick="return false;">Send Enquiry</button>
+                            <button class="btn" id="send-enquiry">Send Enquiry</button>
                             <small><span class="red-asterix"> *</span>Fields Required</small>
                         </div>
                     </div>
-                </form> 
-                <?php 
-                    if (isset($_POST['user-name'], $_POST['user-email'])){
-                        $name = $_POST['user-name'];
-                        $email = $_POST['user-email'];
-                        echo $name . '<br>'; 
-                        echo $email; 
-                        }
-                ?>
+                </form>              
             </div>
         </div>
    

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php require "function.php" ?>
 <html lang="en">
 
 <head>
@@ -8,6 +9,29 @@
 </head>
 
 <body>
+<?php 
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $name = trim(filter_input(INPUT_POST,'user-name',FILTER_SANITIZE_STRING)); 
+        $company = trim(filter_input(INPUT_POST,'user-company',FILTER_SANITIZE_STRING));
+        $telephone = trim(filter_input(INPUT_POST,'user-telephone',FILTER_SANITIZE_STRING));
+        $email = trim(filter_input(INPUT_POST,'user-email',FILTER_SANITIZE_STRING));
+        $message =trim(filter_input(INPUT_POST,'message',FILTER_SANITIZE_STRING));
+        if (empty($name) || empty($telephone) || empty($email) || empty($message)){
+            $error_message = 'Please fill in the required field: name, telephone, email and message';
+        }
+        else{
+            echo " name = $name<br>";
+            echo " telephone = $telephone<br>";
+            echo " email = $email<br>";
+            echo " message = $message<br>";
+            add_enquiry($name,$company,$telephone,$email,$message);
+        }
+    }
+    ?>
+    <?php if (isset($error_message)){
+        echo "<p class='message'>$error_message</p>";
+    }
+    ?>
     <form id="form" method="post" action="text.php">
         <div>
             <div class="flex-form">
@@ -51,12 +75,5 @@
             </div>
         </div>
     </form> 
-    <?php //This works with the input submit button
-        if (isset($_POST['user-name'], $_POST['user-email'])){
-            $name = $_POST['user-name'];
-            $email = $_POST['user-email'];
-            echo $name . '<br>'; 
-            echo $email; 
-            }
-    ?>
+    <?php include "connection.php" ?>
 </body>

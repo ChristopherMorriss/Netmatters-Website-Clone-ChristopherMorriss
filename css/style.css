@@ -2509,6 +2509,8 @@ i {
 }
 
 .office-box {
+  margin-bottom: 30px;
+  overflow: auto;
   margin-right: 10px;
   border: 1px #cccccc solid;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
@@ -2517,6 +2519,11 @@ i {
 @media (min-width: 994px) {
   .office-box {
     width: 33%;
+  }
+}
+@media (min-width: 994px) {
+  .office-box {
+    margin-bottom: 0px;
   }
 }
 .office-box img {

@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <form id="form">
+                <form id="form" method="post" action="contact-us.php">
                     <div>
                         <div class="flex-form">
                             <div class="form-section">
@@ -150,11 +150,19 @@
                             <span class="reCAPTCHA">This site is protected by reCAPTCHA and the Google <a href="#" class="perma-underline">Privacy Policy</a> and <a href="#" class="perma-underline">Terms of Service</a> apply.</span>
                         </div>
                         <div class="enquiry-field">
-                            <button class="btn" id="send-enquiry">Send Enquiry</button>
+                            <button class="btn" id="send-enquiry" onClick="return false;">Send Enquiry</button>
                             <small><span class="red-asterix"> *</span>Fields Required</small>
                         </div>
                     </div>
                 </form> 
+                <?php 
+                    if (isset($_POST['user-name'], $_POST['user-email'])){
+                        $name = $_POST['user-name'];
+                        $email = $_POST['user-email'];
+                        echo $name . '<br>'; 
+                        echo $email; 
+                        }
+                ?>
             </div>
         </div>
    

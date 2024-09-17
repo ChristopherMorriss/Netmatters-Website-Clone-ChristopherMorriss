@@ -15,6 +15,7 @@ $('.all-logos').slick({
 
 });
 
+
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked
                   //It's a boolean variable so it could be represented with true (1) and false (0) instead
 let slideOutMenu = document.querySelector('#hamburger-menu'); //Targets the span which contains the hamburger menu icon
@@ -172,6 +173,25 @@ accordion.addEventListener('click',()=>{
   $('.hidden-accordion').toggleClass('active');
 });
 
+
 enquiry_btn=document.querySelector('#send-enquiry');
 enquiry_btn.addEventListener('click',()=>{
+  let email = $('#email').val();
+  let telephone = $('#telephone').val();
+  let name1 = $('#name').val();
+ 
+  console.log(email);
+  if (email === ""){
+    //$('#email').addClass('error');
+    $('#email').css('border-color','#d64541');
+  }
+  if(telephone === ""){
+    $('#telephone').css('border-color','#d64541');
+  }
+  if(name1 === ""){
+    $('#name').css('border-color','#d64541');
+  }
+  else{
+    console.log('not empty');
+  }
 });

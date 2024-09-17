@@ -2742,6 +2742,10 @@ em::before {
   padding: 0px;
 }
 
+.error {
+  border-color: #d64541 !important;
+}
+
 #fixed-consent {
   text-transform: none;
   position: fixed;

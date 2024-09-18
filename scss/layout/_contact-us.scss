@@ -76,7 +76,7 @@
 
 .office-box{
     @include media(large){
-        width:33%;
+        //width:33%;
     }
     margin-bottom: 30px;
     @include media(large){
@@ -280,6 +280,8 @@ em{
             left: 66.66666667%;
             position: relative;
             width: 33%;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     #form{
@@ -312,4 +314,50 @@ em{
 
 .error{
     border-color: #d64541 !important;
+}
+
+.error-validation{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.error-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.success-validation{
+    color: #fff;
+    background: #2ecc71;
+    border-color: #d6e9c6;
+}
+
+.close{
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    &:focus,&:hover{
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: .5;
+    }
+}
+
+.validation-box{
+    display: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 2px;
 }

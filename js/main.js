@@ -18,6 +18,7 @@ $('.all-logos').slick({
 
 let hideOrShow=0; //Variable used to check what should happen after the menu is clicked
                   //It's a boolean variable so it could be represented with true (1) and false (0) instead
+let enquiry_pressed=0;
 let slideOutMenu = document.querySelector('#hamburger-menu'); //Targets the span which contains the hamburger menu icon
 slideOutMenu.addEventListener('click',()=>{
   if (hideOrShow===0){ //If hideOrShow variable =0 (is off) when clicked, display the menu 
@@ -171,27 +172,71 @@ window.addEventListener('scroll', function() {
 accordion=document.querySelector('.accordion');
 accordion.addEventListener('click',()=>{
   $('.hidden-accordion').toggleClass('active');
+  $('.hidden-accordion').slideToggle("slow",function(){ //Gives the accordion its sliding animation
+
+  });
 });
 
 
 enquiry_btn=document.querySelector('#send-enquiry');
 enquiry_btn.addEventListener('click',()=>{
+  enquiry_pressed=1;
   let email = $('#email').val();
   let telephone = $('#telephone').val();
   let name1 = $('#name').val();
- 
-  console.log(email);
+  let message = $('#message').val();
   if (email === ""){
-    //$('#email').addClass('error');
-    $('#email').css('border-color','#d64541');
+    $('#email').addClass('error');
   }
   if(telephone === ""){
-    $('#telephone').css('border-color','#d64541');
+    $('#telephone').addClass('error');
   }
   if(name1 === ""){
-    $('#name').css('border-color','#d64541');
+    $('#name').addClass('error');
   }
-  else{
-    console.log('not empty');
+  if(message === ""){
+    $('#message').addClass('error');
   }
+
 });
+
+/* Tasks to complete:
+Add news articles to database
+Add project to CPanel
+*/
+
+//id,category,tag,image,title,description readtime null author authorimage,date
+
+function validInput(){
+  if (enquiry_pressed === 1){
+    let email = $('#email').val();
+    let telephone = $('#telephone').val();
+    let name1 = $('#name').val();
+    let message = $('#message').val();
+    if (email === ""){
+      $('#email').addClass('error');
+    }
+    else{
+      $('#email').removeClass('error');
+    }
+    if(telephone === ""){
+      $('#telephone').addClass('error');
+    }
+    else{
+      $('#telephone').removeClass('error');
+    }
+    if(name1 === ""){
+      $('#name').addClass('error');
+    }
+    else{
+      $('#name').removeClass('error');
+    }
+    if(message === ""){
+      $('#message').addClass('error');
+    }
+    else{
+      $('#message').removeClass('error');
+    }
+
+  }
+}

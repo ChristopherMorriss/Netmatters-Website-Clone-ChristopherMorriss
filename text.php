@@ -10,16 +10,19 @@
 
 <body>
 <?php 
-    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $name = trim(filter_input(INPUT_POST,'user-name',FILTER_SANITIZE_STRING)); 
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){ 
+        //Filters the contents of the input fields with the name 'user-name', 'message' etc to prevent SQL injection 
+        $name = trim(filter_input(INPUT_POST,'user-name',FILTER_SANITIZE_STRING));  
         $company = trim(filter_input(INPUT_POST,'user-company',FILTER_SANITIZE_STRING));
         $telephone = trim(filter_input(INPUT_POST,'user-telephone',FILTER_SANITIZE_STRING));
         $email = trim(filter_input(INPUT_POST,'user-email',FILTER_SANITIZE_STRING));
         $message =trim(filter_input(INPUT_POST,'message',FILTER_SANITIZE_STRING));
         if (empty($name) || empty($telephone) || empty($email) || empty($message)){
-            $error_message = 'Please fill in the required field: name, telephone, email and message';
+            //If one of these input fields is empty, the error message is assigned 
+            //and is ready to be output in the relevant part of the HTML
+            $error_message = 'Please fill in the required fields: name, telephone, email and message';
         }
-        else{
+        else{ //
             echo " name = $name<br>";
             echo " telephone = $telephone<br>";
             echo " email = $email<br>";

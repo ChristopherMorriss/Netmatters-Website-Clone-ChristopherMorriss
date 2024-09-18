@@ -8,11 +8,7 @@
         <link href="css/slick.css" rel="stylesheet">
         <link href="css/slick-theme.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <?php
-            require_once realpath(__DIR__ . "/vendor/autoload.php");
-            use Dotenv\Dotenv;
-            $dotenv = Dotenv::createImmutable(__DIR__);
-            $dotenv->load();?>
+        <?php include "phpenv.php" ?>
     <title>Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters</title>
     </head>
 
@@ -35,13 +31,43 @@
             // echo "<p>message = $message<br></p>";
         }
         else{
-            // echo "<p>name = $name<br></p>";
-            // echo "<p>telephone = $telephone<br></p>";
-            // echo "<p>email = $email<br></p>";
-            // echo "<p>message = $message<br></p>";
+            $ready_for_submit = 1;
+            $phone_regex = "/^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/";
+            $match = preg_match($phone_regex,$telephone);
+            echo "<p>match=$match</p>";
+            echo "<p>telephone=$telephone</p>";
+            if ($match === 0) {
+                $ready_for_submit = 0;
+            }
+            $email_regex = "/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/";
+            $match2 = preg_match($email_regex,$email);
+            echo "<p>match2=$match2</p>";
+            echo "<p>email=$email</p>";
+            if ($match === 0) {
+                $ready_for_submit = 0;
+            }
+            $message2 = strlen($message);
+            if ($message2 < 5){
+                echo "<p>too short</p>";
+                $ready_for_submit = 0;
+            }
+            echo "<p>length=$message2</p>";
+            echo "<p>$ready_for_submit</p>";
+            if ($ready_for_submit === 1){
+                echo "<p>Added to database!</p>";
+                //add_enquiry($name,$company,$telephone,$email,$message);
+                //Triggers a function which uses SQL to add the variables to the database
+                $ready_for_submit = 0;
+            }
+
+            
+            echo "<p>name = $name<br></p>";
+            echo "<p>telephone = $telephone<br></p>";
+            echo "<p>email = $email<br></p>";
+            echo "<p>message = $message<br></p>";
             //delete_enquiry(); Used to delete all rows from table
-            add_enquiry($name,$company,$telephone,$email,$message); 
-            //Triggers a function which uses SQL to add the variables to the database
+
+            
         }
     }
     ?>
@@ -151,21 +177,26 @@
                 }
                 ?>
 
-                <form id="form" method="post" action="contact-us.php" onclick="return false">
+                <form id="form" method="post" action="contact-us.php"> 
+                    <!-- onclick="return false" -->
                     <div>
                         <div class="flex-form">
                             <div class="error-box">
                                 <div class="error-validation validation-box" id="wait">
                                     Please wait until submitting the form again
-                                    <button class="close">×</button>
+                                    <button class="close" onclick="deleteWaitMessage()">×</button>
                                 </div>
                                 <div class="error-validation validation-box" id="tele-format">
                                     The telephone format is incorrect.
-                                    <button class="close">×</button>
+                                    <button class="close" onclick="deleteTelephoneMessage()">×</button>
                                 </div>
                                 <div class="success-validation validation-box" id="sent-msg">
                                     Your message has been sent!
-                                    <button class="close">×</button>
+                                    <button class="close" onclick="deleteSuccessMessage()">×</button>
+                                </div>
+                                <div class="error-validation validation-box" id="characters">
+                                The message must be at least 5 characters.
+                                    <button class="close" onclick="deleteCharactersMessage()">×</button>
                                 </div>
                             </div>
                             <div class="form-section">

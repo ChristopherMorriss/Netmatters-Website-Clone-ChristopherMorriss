@@ -22,7 +22,7 @@
             //and is ready to be output in the relevant part of the HTML
             $error_message = 'Please fill in the required fields: name, telephone, email and message';
         }
-        else{ //
+        else{ 
             echo " name = $name<br>";
             echo " telephone = $telephone<br>";
             echo " email = $email<br>";

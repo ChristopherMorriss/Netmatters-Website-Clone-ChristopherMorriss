@@ -1,5 +1,5 @@
 <?php
-
+    include "phpenv.php";
     function add_enquiry($name,$company,$telephone,$email,$message){
         include "connection.php";
         $sql ='INSERT INTO enquiries(your_name, company, telephone, email, your_message) VALUES (?,?,?,?,?)';
@@ -16,6 +16,10 @@
             return false;
         }
     }
+
+    // function add_news_article($id,$category,$tag,$image,$title,$description,$read_time,$author,$author_image,$date){
+    //     $sql ='INSERT INTO enquiries() VALUES (?,?,?,?,?)';
+    // }
 
     function delete_enquiry(){
         include "connection.php";

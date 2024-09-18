@@ -181,23 +181,63 @@ accordion.addEventListener('click',()=>{
 enquiry_btn=document.querySelector('#send-enquiry');
 enquiry_btn.addEventListener('click',()=>{
   enquiry_pressed=1;
+  no_errors=1;
   let email = $('#email').val();
   let telephone = $('#telephone').val();
   let name1 = $('#name').val();
   let message = $('#message').val();
-  if (email === ""){
-    $('#email').addClass('error');
+  if (email != ""){
+    let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
+    let email1 = $('#email').val(); //Takes an input from the text box with the id 'email'
+    let test1= regex.test(email1); //Checks if the email entered follows one of the regular expressions specified above
+    console.log(test1);
+    if (test1 != true){
+      $('#email').addClass('error');
+      no_errors=0;
+    }
   }
-  if(telephone === ""){
+  else{
+    $('#email').addClass('error');
+    no_errors=0;
+  }
+  if(telephone != ""){
+    let phone_regex = new RegExp(/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/);
+    let telephone1 = $('#telephone').val(); //Takes an input from the text box with the id 'email'
+    let test2= phone_regex.test(telephone1); //Checks if the email entered follows one of the regular expressions specified above
+    console.log(test2);
+    if (test2 === true){
+      $('#telephone').removeClass('error');
+      $('#tele-format').css('display','none');
+    }
+    else{
+      $('#telephone').addClass('error');
+      $('#tele-format').css('display','block');
+      no_errors=0;
+    }
+    
+  }
+  else{
     $('#telephone').addClass('error');
+    no_errors=0;
+    
   }
   if(name1 === ""){
     $('#name').addClass('error');
+    no_errors=0;
   }
-  if(message === ""){
+  console.log(message.length);
+  if(message.length < 5){
     $('#message').addClass('error');
+    $('#characters').css('display','block');
+    no_errors=0;
   }
-
+  else{
+    $('#message').removeClass('error');
+    $('#characters').css('display','none');
+  }
+  if (no_errors === 1){
+    $('#sent-msg').css('display','block');
+  }
 });
 
 /* Tasks to complete:
@@ -213,11 +253,21 @@ function validInput(){
     let telephone = $('#telephone').val();
     let name1 = $('#name').val();
     let message = $('#message').val();
-    if (email === ""){
-      $('#email').addClass('error');
+    if (email != ""){
+      let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
+      let email1 = $('#email').val(); //Takes an input from the text box with the id 'email'
+      let test1= regex.test(email1); //Checks if the email entered follows one of the regular expressions specified above
+      console.log(test1);
+      if (test1 != true){
+        $('#email').addClass('error');
+      }
+      else{
+        $('#email').removeClass('error');
+      }
     }
     else{
-      $('#email').removeClass('error');
+      $('#email').addClass('error');
+      
     }
     if(telephone === ""){
       $('#telephone').addClass('error');
@@ -239,4 +289,20 @@ function validInput(){
     }
 
   }
+}
+
+function deleteWaitMessage(){
+  $('#wait').css('display','none');
+}
+
+function deleteTelephoneMessage(){
+  $('#tele-format').css('display','none');
+}
+
+function deleteSuccessMessage(){
+  $('#sent-msg').css('display','none');
+}
+
+function deleteCharactersMessage(){
+  $('#characters').css('display','none');
 }

@@ -1,5 +1,4 @@
-
-<header>
+<div class="inner">
     <div class="f-container container">
         <div class="left-header container">
             <a href="index.php"><img id="n-logo" class="f-line" src="img/netmatters-logo.webp" alt="Netmatters Logo"></a>
@@ -228,8 +227,8 @@
             </div>
         </div>   
     </div>
-
+</div>
             
     
     
-</header>
+

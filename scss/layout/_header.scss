@@ -46,7 +46,7 @@
                       $flex-wrap: wrap,
                       $align-content: center,
                       $align-items: normal,
-                      $justify-content:space-around,
+                      $justify-content:null,
                       );
         width:66.6667%;
         @include media(small){
@@ -197,7 +197,7 @@
   }
   @include media(medium){
     display:flex;
-    height:56px;
+    height:56px; 
     width:174px;
   }
   @include media(large){
@@ -206,6 +206,7 @@
   @include media(x-large){
     display:flex;
     height:56px;
+    width:240px;
   }
   
   padding:5px 15px;
@@ -282,6 +283,10 @@
   }
 }
 
+.mobile-search{
+  width: 100%;
+}
+
 #search-mobile,#search-mobile-clone{ //The search which appears on mobile or tablet devices only
   border: 1px solid $border_grey;
   box-shadow:  inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -291,7 +296,7 @@
   &:focus{
     border: 1px solid $border_white;
   }
-  width:95vw;
+  //width:100vw;
   margin-top: 15px; 
   height: 47px;
   @include media(medium){

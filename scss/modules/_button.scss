@@ -7,6 +7,7 @@
     font-weight: 600;
     font-size: 0.8rem;
     line-height: 22px;
+    z-index:9999; //Prevents other objects from covering it regardless of their z-index number
     border:none;
     left:0px;
     background-color: $consent;
@@ -23,6 +24,7 @@
   position: fixed;
   bottom: 5px;
   right: 20px;
+  z-index:9999;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
 

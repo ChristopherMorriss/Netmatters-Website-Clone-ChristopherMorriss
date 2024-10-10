@@ -510,6 +510,11 @@ html {
 #vow-1 {
   display: none;
 }
+@media (min-width: 768px) and (max-width: 993px) {
+  #vow-1 {
+    display: flex;
+  }
+}
 @media (min-width: 994px) {
   #vow-1 {
     display: flex;
@@ -520,6 +525,11 @@ html {
   display: flex;
   font-weight: 600;
   font-size: 1.625rem;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  #vow-2 {
+    display: none;
+  }
 }
 @media (min-width: 994px) {
   #vow-2 {
@@ -1880,6 +1890,12 @@ h2.white {
 #va-1 {
   font-weight: 600;
   display: none;
+  font-size: 1.625rem;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  #va-1 {
+    display: block;
+  }
 }
 @media (min-width: 994px) {
   #va-1 {
@@ -1890,7 +1906,13 @@ h2.white {
 #va-2 {
   display: flex;
   font-weight: 600;
+  align-items: center;
   font-size: 1.625rem;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  #va-2 {
+    display: none;
+  }
 }
 @media (min-width: 994px) {
   #va-2 {
@@ -1905,14 +1927,20 @@ h2.white {
   text-decoration: underline;
 }
 
+.no-bottom-padding {
+  padding-bottom: 0px !important;
+}
+
 .red-text {
   color: #CE4125;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .green-text {
   color: #2ECC71;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .blue-text {

@@ -149,15 +149,25 @@
 
 #vow-1{
   display:none;
+  @include media(medium){
+    display: flex;
+  }
   @include media(large){
     display: flex;
   }
 }
 
+// .our-services{
+//   margin-top: -13px;
+// }
+
 #vow-2{
   display:flex;
   font-weight: 600;
   font-size: 1.625rem;
+  @include media(medium){
+    display: none;
+  }
   @include media(large){
     display: none;
   }

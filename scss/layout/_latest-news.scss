@@ -31,6 +31,10 @@
 #va-1{
   font-weight: 600;
   display:none;
+  font-size: 1.625rem;
+  @include media(medium){
+    display:block;
+  }
   @include media(large){
     display:block;
   }
@@ -39,7 +43,11 @@
 #va-2{
   display:flex;
   font-weight: 600;
+  align-items: center;
   font-size: 1.625rem;
+  @include media(medium){
+    display:none;
+  }
   @include media(large){
     display:none;
   }
@@ -51,14 +59,18 @@
     text-decoration: underline;
   }
 }
-
+.no-bottom-padding{
+  padding-bottom: 0px !important;
+}
 .red-text{
   color: $dark_red;
   font-size: 1rem;
+  line-height: 1.5;
 }
 .green-text{
   color:$green;
   font-size: 1rem;
+  line-height: 1.5;
 }
 .blue-text{
   color: $blue;

@@ -93,8 +93,9 @@
             
         </header>
         <?php include "php/sticky-header.php" ?>
+        <main class="section">
         <div class="heading container">
-            <h2>Our Services</h2>
+            <h2 class="our-services">Our Services</h2>
             <h1 class="line-hover view" id="vow-1"><a href="#" class="black-text">View Our Work <span class="icon-arrow-right2"></span></a></h1>
         </div>
         <div class="grid container">
@@ -238,23 +239,26 @@
                 </div>
             </div>
         </div>
-
+        
+        <div class="section no-bottom-padding">
         <div class="heading container">
             <h1>Latest News</h1>
-            <h1 class="line-hover view" id="va-1"><a href="#" class="black-text">View All <span class="icon-arrow-right2"></span></a></h1>
+            <h3 class="line-hover view" id="va-1"><a href="#" class="black-text">View All <span class="icon-arrow-right2"></span></a></h3>
         </div>
         <div class="news section container">
-            <div class="container">
+            <div class="">
                     <div class="article article-1">
                         <a href="#" class="article-link"></a>
                         <a href="#" class="btn green-btn img-btn">Case Studies</a>
                         <a href="#" class="img-news">
                             <img src="img/ams-news.webp" alt="Abel's Moving Service">
                         </a>
-                        <h3 class="green-text news-title">Moving Forward: Proactive Digital Marketing with Abel's Moving Service</h3>
-                        <div class="article-info">
-                            <p>Who are abels moving Service? Abel's Moving Services is a high-end removal company with a rich hist...</p>
-                            <a href="#" class="btn green-btn read-btn">Read More</a>
+                        <div class="innards">
+                            <h3 class="green-text news-title">Moving Forward: Proactive Digital Marketing with Abel's Moving Service</h3>
+                            <div class="article-info">
+                                <p>Who are abels moving Service? Abel's Moving Services is a high-end removal company with a rich hist...</p>
+                                <a href="#" class="btn green-btn read-btn">Read More</a>
+                            </div>
                         </div>
                         <div class="article-footer">
                             <div class="img-footer">
@@ -317,7 +321,7 @@
             </div>
             <h1 class="line-hover container view" id="va-2"><a href="#" class="black-text">View All <span class="icon-arrow-right2"></span></a></h1>
         </div>
-        <div class="partners section">
+        <div class="partners">
             <div class="all-logos">
                 <div class="triangle-partners-1">
                     <div class="logo-container">
@@ -537,7 +541,8 @@
                 </div>
             </div>
         </div>
-        
+        </div>
+        </main>
         <?php include "php/cookie.php" ?>
     
 

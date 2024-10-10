@@ -46,7 +46,9 @@ footer{
 
 
 .footer{
-    &-1,&-2,&-3,&-4{
+    &-1{
+        margin-top:-22px;
+        margin-bottom:40px;
         line-height: 1.42857143;
         width:100%; //Fills up the whole width at the smallest viewport
         @include media(medium){
@@ -54,7 +56,27 @@ footer{
             margin-left: -40px;
         }
         @include media(large){
-            width: 25%; //All 4 columns are displayed on one ow for the largest viewport
+            width: 26%; //All 4 columns are displayed on one ow for the largest viewport
+        }
+        // @include media(x-large){
+        //     padding-left: 15px;
+        //     padding-right: 15px;
+        // }
+        ul{
+            font-size: .8125rem;
+        }
+    }
+    &-2,&-3,&-4{
+        margin-top:-22px;
+        margin-bottom:40px;
+        line-height: 1.42857143;
+        width:100%; //Fills up the whole width at the smallest viewport
+        @include media(medium){
+            width: 50%; //Splits into 2 per row for medium viwport
+            margin-left: -40px;
+        }
+        @include media(large){
+            width: 24%; //All 4 columns are displayed on one ow for the largest viewport
         }
         // @include media(x-large){
         //     padding-left: 15px;

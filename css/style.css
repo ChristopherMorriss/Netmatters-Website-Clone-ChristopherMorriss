@@ -1682,6 +1682,10 @@ h2.white {
   background-color: #000;
 }
 
+.slider-1 {
+  padding: 3.75rem 0;
+}
+
 .slider-content {
   text-align: center;
   flex-direction: column;
@@ -1904,6 +1908,7 @@ h2.white {
 }
 
 #va-2 {
+  margin-top: 50px;
   display: flex;
   font-weight: 600;
   align-items: center;
@@ -2247,22 +2252,44 @@ footer .marginalised a:hover {
   text-decoration: underline;
 }
 
-.footer-1, .footer-2, .footer-3, .footer-4 {
+.footer-1 {
+  margin-top: -22px;
+  margin-bottom: 40px;
   line-height: 1.42857143;
   width: 100%;
 }
 @media (min-width: 768px) and (max-width: 993px) {
-  .footer-1, .footer-2, .footer-3, .footer-4 {
+  .footer-1 {
     width: 50%;
     margin-left: -40px;
   }
 }
 @media (min-width: 994px) {
-  .footer-1, .footer-2, .footer-3, .footer-4 {
-    width: 25%;
+  .footer-1 {
+    width: 26%;
   }
 }
-.footer-1 ul, .footer-2 ul, .footer-3 ul, .footer-4 ul {
+.footer-1 ul {
+  font-size: 0.8125rem;
+}
+.footer-2, .footer-3, .footer-4 {
+  margin-top: -22px;
+  margin-bottom: 40px;
+  line-height: 1.42857143;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  .footer-2, .footer-3, .footer-4 {
+    width: 50%;
+    margin-left: -40px;
+  }
+}
+@media (min-width: 994px) {
+  .footer-2, .footer-3, .footer-4 {
+    width: 24%;
+  }
+}
+.footer-2 ul, .footer-3 ul, .footer-4 ul {
   font-size: 0.8125rem;
 }
 

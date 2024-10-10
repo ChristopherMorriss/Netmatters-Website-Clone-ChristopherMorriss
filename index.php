@@ -20,7 +20,7 @@
                     <div class="img_banner">
                         <img src="img/home.webp" alt="Banner image">
                     </div>
-                    <div class="slider-content container">
+                    <div class="slider-content slider-1 container">
                         <h1>The East Of England's Leading Technology Company </h1>
                         <p>Performance-driven digital and technology services <br> with complete transparency.</p>
                         <a href="#" class="btn purple-btn" id="long-btn">Why Choose Us? <span class="icon-arrow-right2"></span></a>
@@ -245,8 +245,8 @@
             <h1>Latest News</h1>
             <h3 class="line-hover view" id="va-1"><a href="#" class="black-text">View All <span class="icon-arrow-right2"></span></a></h3>
         </div>
-        <div class="news section container">
-            <div class="">
+        <div class="news section">
+            <div class="container">
                     <div class="article article-1">
                         <a href="#" class="article-link"></a>
                         <a href="#" class="btn green-btn img-btn">Case Studies</a>
@@ -575,3 +575,11 @@
         <script src="js/main.js"></script>
         </body>
     </html>
+    <!-- 
+    Feedback points remaining:
+    There are no console
+    Title and link are styled and aligned either side of page at the top 
+    View our work button reduce padding below the text
+    Card images are present and the same height - Abels Moving image is slightly smaller than the others 
+    Fix Z-index hover tooltip issue
+    -->

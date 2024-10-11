@@ -47,7 +47,9 @@ footer{
 
 .footer{
     &-1{
-        margin-top:-22px;
+        @include media(x-large){
+            margin-top:-22px;
+        }
         margin-bottom:40px;
         line-height: 1.42857143;
         width:100%; //Fills up the whole width at the smallest viewport
@@ -65,9 +67,14 @@ footer{
         ul{
             font-size: .8125rem;
         }
+        li{
+            margin-bottom: 3px;
+        }
     }
     &-2,&-3,&-4{
-        margin-top:-22px;
+        @include media(x-large){
+            margin-top:-22px;
+        }
         margin-bottom:40px;
         line-height: 1.42857143;
         width:100%; //Fills up the whole width at the smallest viewport
@@ -84,6 +91,9 @@ footer{
         // }
         ul{
             font-size: .8125rem;
+        }
+        li{
+            margin-bottom: 3px;
         }
         
     }

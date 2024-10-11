@@ -580,6 +580,7 @@
     There are no console
     Title and link are styled and aligned either side of page at the top 
     View our work button reduce padding below the text
+    Card content layout and spacing is correct 
     Card images are present and the same height - Abels Moving image is slightly smaller than the others 
     Fix Z-index hover tooltip issue
     -->

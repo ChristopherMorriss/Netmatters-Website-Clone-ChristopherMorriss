@@ -1,4 +1,7 @@
 .article{
+    @include media(x-large){
+      width:33.333%;
+    }
     border: 1px solid;
     margin-bottom: 10px;
     .img-news{
@@ -157,9 +160,14 @@
     margin-right: 15px;
   }
   @include media(large){
-    width:auto; //All three articles share the same line at the large media query
+    width:50%; //All three articles share the same line at the large media query
     margin-right: 15px;
   }
+  @include media(x-large){
+    width:33.33%; //All three articles share the same line at the x-large media query
+    margin-right: 15px;
+  }
+  
 }
 
 .article-3{

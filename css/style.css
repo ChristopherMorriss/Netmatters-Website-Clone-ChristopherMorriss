@@ -1875,6 +1875,11 @@ h2.white {
   transition: 0.5s ease;
   border-radius: 0 0 3px 3px;
 }
+@media (min-width: 1260px) {
+  .article {
+    width: 33.333%;
+  }
+}
 .article .img-news img {
   width: 100%;
 }
@@ -2030,7 +2035,13 @@ h2.white {
 }
 @media (min-width: 994px) {
   .article-1, .article-2 {
-    width: auto;
+    width: 50%;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1260px) {
+  .article-1, .article-2 {
+    width: 33.33%;
     margin-right: 15px;
   }
 }
@@ -2253,10 +2264,14 @@ footer .marginalised a:hover {
 }
 
 .footer-1 {
-  margin-top: -22px;
   margin-bottom: 40px;
   line-height: 1.42857143;
   width: 100%;
+}
+@media (min-width: 1260px) {
+  .footer-1 {
+    margin-top: -22px;
+  }
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .footer-1 {
@@ -2272,11 +2287,18 @@ footer .marginalised a:hover {
 .footer-1 ul {
   font-size: 0.8125rem;
 }
+.footer-1 li {
+  margin-bottom: 3px;
+}
 .footer-2, .footer-3, .footer-4 {
-  margin-top: -22px;
   margin-bottom: 40px;
   line-height: 1.42857143;
   width: 100%;
+}
+@media (min-width: 1260px) {
+  .footer-2, .footer-3, .footer-4 {
+    margin-top: -22px;
+  }
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .footer-2, .footer-3, .footer-4 {
@@ -2291,6 +2313,9 @@ footer .marginalised a:hover {
 }
 .footer-2 ul, .footer-3 ul, .footer-4 ul {
   font-size: 0.8125rem;
+}
+.footer-2 li, .footer-3 li, .footer-4 li {
+  margin-bottom: 3px;
 }
 
 .footer-logos {

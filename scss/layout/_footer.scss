@@ -134,6 +134,7 @@ footer{
     //Affects the span containing the copyright information
     //Need to make the copyright breakpoint display at different breakpoints
     background-color: $footer-black;
+    height:45px;
     padding-top:10px;
     font-size: 0.8125rem;
     background-size: 100vw;
@@ -154,7 +155,7 @@ footer{
 }
 
 .copyright{
-    padding: 5px 0px 10px;
+    //padding: 5px 0px 10px;
     @include media(medium){
         display: flex;
     }

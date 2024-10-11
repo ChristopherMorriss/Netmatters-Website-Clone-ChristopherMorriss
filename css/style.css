@@ -2373,6 +2373,7 @@ footer .marginalised a:hover {
 
 .footer-background {
   background-color: #212330;
+  height: 45px;
   padding-top: 10px;
   font-size: 0.8125rem;
   background-size: 100vw;
@@ -2396,9 +2397,6 @@ footer .marginalised a:hover {
   }
 }
 
-.copyright {
-  padding: 5px 0px 10px;
-}
 @media (min-width: 768px) and (max-width: 993px) {
   .copyright {
     display: flex;

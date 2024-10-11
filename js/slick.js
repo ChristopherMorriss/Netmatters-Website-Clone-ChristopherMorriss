@@ -662,7 +662,13 @@
         if(_.shouldClick === false) {
             event.stopImmediatePropagation();
             event.stopPropagation();
-            event.preventDefault();
+            if (event.cancelable){ //Added to try and fix error
+                event.preventDefault();
+            }
+            else{
+                console.log('Error prevented!');
+            }
+            
         }
 
     };
@@ -1980,7 +1986,13 @@
         }
 
         if (event.originalEvent !== undefined && _.touchObject.swipeLength > 4) {
-            event.preventDefault();
+            if (event.cancelable){ //Added if statement to fix console error 
+                event.preventDefault();
+            }
+            else{
+                //console.log('Error prevented!');
+                //When uncommented, this appears instead of the error "Ignored attempt to cancel a touchmove event with cancelable=false"
+            }
         }
 
         positionOffset = (_.options.rtl === false ? 1 : -1) * (_.touchObject.curX > _.touchObject.startX ? 1 : -1);

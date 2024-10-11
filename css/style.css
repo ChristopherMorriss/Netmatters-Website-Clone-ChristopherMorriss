@@ -527,6 +527,7 @@ html {
 
 #vow-2 {
   display: flex;
+  justify-content: center;
   font-weight: 600;
   font-size: 1.625rem;
 }
@@ -1877,7 +1878,7 @@ h2.white {
 
 .article {
   border: 1px solid;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   position: relative;
   border: 1px solid #ccc;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
@@ -1923,7 +1924,8 @@ h2.white {
 }
 
 #va-2 {
-  margin: 0px;
+  margin-top: -20px;
+  margin-bottom: 50px;
   display: flex;
   font-weight: 600;
   justify-content: center;
@@ -1949,6 +1951,11 @@ h2.white {
 
 .no-bottom-padding {
   padding-bottom: 0px !important;
+}
+@media (min-width: 994px) {
+  .no-bottom-padding {
+    padding-bottom: 50px;
+  }
 }
 
 .no-top-padding {
@@ -2086,7 +2093,6 @@ h2.white {
 }
 .news .read-btn {
   position: relative;
-  z-index: 2;
   height: auto;
   line-height: 35px;
   padding: 5px 15px;

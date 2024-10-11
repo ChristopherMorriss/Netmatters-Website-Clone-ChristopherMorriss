@@ -160,8 +160,8 @@
                         <div class="btn btn-styles dred-btn">Read More</div>
                     </div>
                 </a>
-                <h3 class="line-hover container view" id="vow-2"><a href="#" class="black-text">View Our Work <span class="icon-arrow-right2"></span></a></h3>
             </div>
+            <h3 class="line-hover container view" id="vow-2"><a href="#" class="black-text">View Our Work <span class="icon-arrow-right2"></span></a></h3>
         </div>
         <div class="partners section">
             <div class="all-logos set-1">
@@ -583,9 +583,5 @@
     </html>
     <!-- 
     Feedback points remaining:
-    There are no console
-    Increase the size of the search button
-    Latest news title and link slightly comes outside of the container and needs more padding above, but less padding below.
-    View our work button reduce padding below the text
-    Fix Z-index hover tooltip issue
+    There are no console errors
     -->

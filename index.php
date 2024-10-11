@@ -93,73 +93,75 @@
             
         </header>
         <?php include "php/sticky-header.php" ?>
-        <main class="section">
-        <div class="heading container">
-            <h2 class="our-services">Our Services</h2>
-            <h1 class="line-hover view" id="vow-1"><a href="#" class="black-text">View Our Work <span class="icon-arrow-right2"></span></a></h1>
-        </div>
-        <div class="grid container">
-            <a href="#">
-                <div class="grid-object object-1">
-                    <div class="btn-icon grey-btn"><span class="icon-cogs"></span></div>
-                    <h2>Bespoke Software</h2>
-                    <p>Bespoke software solutions for all your business needs including integetrations and reporting.</p>
-                    <div class="btn btn-styles grey_blue-btn">Read More</div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="grid-object object-2">
-                    <div class="btn-icon blue-btn"><span class="icon-display"></span></div>
-                    <h2>IT Support</h2>
-                    <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-                    <div class="btn btn-styles blue-btn">Read More</div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="grid-object object-3">
-                    <div class="btn-icon green-btn"><span class="icon-bar-graph"></span></div>
-                    <h2>Digital Marketing</h2>
-                    <p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
-                    <br class="filler-line">
-                    <div class="btn btn-styles green-btn">Read More</div>
-                </div>
-            </a>
-        </div>
-        <div class="grid2 container">  
-            <a href="#">
-                <div class="grid-object object-4">
-                    <div class="btn-icon dred-btn"><span class="icon-phone_in_talk"></span></div>
-                    <h2>Telecoms Services</h2>
-                    <p>Business telephony solutions including mobile &amp; connectivity solutions.</p>
-                    <div class="btn btn-styles dred-btn">Read More</div>
-            
-                </div>
-            </a>
-            <a href="#">
-                <div class="grid-object object-5">
-                    <div class="btn-icon purple-btn"><span class="icon-embed2"></span></div>
-                    <h2>Web Design</h2>
-                    <p>User-centric design for businesses looking to make a lasting impression.</p>
-                    <div class="btn btn-styles purple-btn">Read More</div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="grid-object object-6">
-                    <div class="btn-icon pred-btn"><span class="icon-security"></span></div>
-                    <h2>Cyber Security</h2>
-                    <p>Prevention, testing, consultancy &amp; breach management services.</p>
-                    <div class="btn btn-styles pred-btn">Read More</div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="grid-object object-4">
-                    <div class="btn-icon dred-btn"><span class="icon-graduation-cap"></span></div>
-                    <h2>Developer Training</h2>
-                    <p>Web design &amp; software training courses designed to secure a job in tech.</p>
-                    <div class="btn btn-styles dred-btn">Read More</div>
-                </div>
-            </a>
-            <h3 class="line-hover container view" id="vow-2"><a href="#" class="black-text">View Our Work <span class="icon-arrow-right2"></span></a></h3>
+        <main>
+        <div class="section no-bottom-padding">
+            <div class="heading container">
+                <h2 class="our-services">Our Services</h2>
+                <h1 class="line-hover view" id="vow-1"><a href="#" class="black-text">View Our Work <span class="icon-arrow-right2"></span></a></h1>
+            </div>
+            <div class="grid container">
+                <a href="#">
+                    <div class="grid-object object-1">
+                        <div class="btn-icon grey-btn"><span class="icon-cogs"></span></div>
+                        <h2>Bespoke Software</h2>
+                        <p>Bespoke software solutions for all your business needs including integetrations and reporting.</p>
+                        <div class="btn btn-styles grey_blue-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="grid-object object-2">
+                        <div class="btn-icon blue-btn"><span class="icon-display"></span></div>
+                        <h2>IT Support</h2>
+                        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                        <div class="btn btn-styles blue-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="grid-object object-3">
+                        <div class="btn-icon green-btn"><span class="icon-bar-graph"></span></div>
+                        <h2>Digital Marketing</h2>
+                        <p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
+                        <br class="filler-line">
+                        <div class="btn btn-styles green-btn">Read More</div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid2 container">  
+                <a href="#">
+                    <div class="grid-object object-4">
+                        <div class="btn-icon dred-btn"><span class="icon-phone_in_talk"></span></div>
+                        <h2>Telecoms Services</h2>
+                        <p>Business telephony solutions including mobile &amp; connectivity solutions.</p>
+                        <div class="btn btn-styles dred-btn">Read More</div>
+                
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="grid-object object-5">
+                        <div class="btn-icon purple-btn"><span class="icon-embed2"></span></div>
+                        <h2>Web Design</h2>
+                        <p>User-centric design for businesses looking to make a lasting impression.</p>
+                        <div class="btn btn-styles purple-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="grid-object object-6">
+                        <div class="btn-icon pred-btn"><span class="icon-security"></span></div>
+                        <h2>Cyber Security</h2>
+                        <p>Prevention, testing, consultancy &amp; breach management services.</p>
+                        <div class="btn btn-styles pred-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="grid-object object-4">
+                        <div class="btn-icon dred-btn"><span class="icon-graduation-cap"></span></div>
+                        <h2>Developer Training</h2>
+                        <p>Web design &amp; software training courses designed to secure a job in tech.</p>
+                        <div class="btn btn-styles dred-btn">Read More</div>
+                    </div>
+                </a>
+                <h3 class="line-hover container view" id="vow-2"><a href="#" class="black-text">View Our Work <span class="icon-arrow-right2"></span></a></h3>
+            </div>
         </div>
         <div class="partners section">
             <div class="all-logos set-1">
@@ -240,12 +242,12 @@
             </div>
         </div>
         
-        <div class="section no-bottom-padding">
+        <div class="div">
         <div class="heading container">
             <h1>Latest News</h1>
             <h3 class="line-hover view" id="va-1"><a href="#" class="black-text">View All <span class="icon-arrow-right2"></span></a></h3>
         </div>
-        <div class="news section">
+        <div class="news section no-top-padding">
             <div class="container">
                     <div class="article article-1">
                         <a href="#" class="article-link"></a>
@@ -259,14 +261,14 @@
                                 <p>Who are abels moving Service? Abel's Moving Services is a high-end removal company with a rich hist...</p>
                                 <a href="#" class="btn green-btn read-btn">Read More</a>
                             </div>
-                        </div>
-                        <div class="article-footer">
-                            <div class="img-footer">
-                                <img src="img/nm.png" alt="netmatters-logo">
-                            </div>
-                            <div class ="text-footer">
-                                <strong class="light-black">Posted By Netmatters</strong>
-                                <br>22nd May 2024
+                            <div class="article-footer">
+                                <div class="img-footer">
+                                    <img src="img/nm.png" alt="netmatters-logo">
+                                </div>
+                                <div class ="text-footer">
+                                    <strong class="light-black">Posted By Netmatters</strong>
+                                    <br>22nd May 2024
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -277,18 +279,20 @@
                         <img src="img/jtt-news.webp" alt="Junior Telecoms Technician">
                     </a>
                     <div class="article-contents">
-                        <h3 class="red-text news-title">Junior Telecoms Technician</h3>
-                        <div class="article-info">
-                            <p>Salary Range £25000 - £28000 per annum Hours 40 hours per week, Monday - Friday Location Wymondham...</p>
-                            <a href="#" class="btn dred-btn read-btn">Read More</a>
-                        </div>
-                        <div class="article-footer">
-                            <div class="img-footer">
-                                <img src="img/bs.png" alt="netmatters-logo">
+                        <div class="innards">
+                            <h3 class="red-text news-title">Junior Telecoms Technician</h3>
+                            <div class="article-info">
+                                <p>Salary Range £25000 - £28000 per annum Hours 40 hours per week, Monday - Friday Location Wymondham...</p>
+                                <a href="#" class="btn dred-btn read-btn">Read More</a>
                             </div>
-                            <div class ="text-footer">
-                                <strong class="light-black">Posted By Bethany Shakespeare</strong>
-                                <br>16th May 2024
+                            <div class="article-footer">
+                                <div class="img-footer">
+                                    <img src="img/bs.png" alt="netmatters-logo">
+                                </div>
+                                <div class ="text-footer">
+                                    <strong class="light-black">Posted By Bethany Shakespeare</strong>
+                                    <br>16th May 2024
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -299,29 +303,31 @@
                     <a href="#" class="img-news">
                         <img src="img/slt-news.webp" alt="2nd Line Technician">
                     </a>
-                    <div class="article-title news-title">
-                        <h3 class="blue-text">2nd Line Technician</h3>
-                        <span class="read-time">- 4 Minute Read</span>
-                    </div>
-                    <div class="article-info">
-                        <p>Salary Range £28k-£36k + Bonuses + Pension Hours 40 hours per week, Monday - Friday Location Wymondh...</p>
-                        <a href="#" class="btn blue-btn read-btn">Read More</a>
-                    </div>
-                    <div class="article-footer">
-                        <div class="img-footer">
-                            <img src="img/rm.png" alt="netmatters-logo">
+                    <div class="innards">
+                        <div class="article-title news-title">
+                            <h3 class="blue-text">2nd Line Technician</h3>
+                            <span class="read-time">- 4 Minute Read</span>
                         </div>
-                        <div class ="text-footer">
-                            <strong class="light-black">Posted By Rebecca Moore</strong>
-                            <br>9th May 2024
+                        <div class="article-info">
+                            <p>Salary Range £28k-£36k + Bonuses + Pension Hours 40 hours per week, Monday - Friday Location Wymondh...</p>
+                            <a href="#" class="btn blue-btn read-btn">Read More</a>
+                        </div>
+                        <div class="article-footer">
+                            <div class="img-footer">
+                                <img src="img/rm.png" alt="netmatters-logo">
+                            </div>
+                            <div class ="text-footer">
+                                <strong class="light-black">Posted By Rebecca Moore</strong>
+                                <br>9th May 2024
+                            </div>
                         </div>
                     </div>
                 </div>
                 
             </div>
-            <h1 class="line-hover container view" id="va-2"><a href="#" class="black-text">View All <span class="icon-arrow-right2"></span></a></h1>
         </div>
-        <div class="partners">
+        <h1 class="line-hover container view" id="va-2"><a href="#" class="black-text">View All <span class="icon-arrow-right2"></span></a></h1>
+        <div class="partners section">
             <div class="all-logos">
                 <div class="triangle-partners-1">
                     <div class="logo-container">
@@ -578,9 +584,8 @@
     <!-- 
     Feedback points remaining:
     There are no console
-    Title and link are styled and aligned either side of page at the top 
+    Increase the size of the search button
+    Latest news title and link slightly comes outside of the container and needs more padding above, but less padding below.
     View our work button reduce padding below the text
-    Card content layout and spacing is correct 
-    Card images are present and the same height - Abels Moving image is slightly smaller than the others 
     Fix Z-index hover tooltip issue
     -->

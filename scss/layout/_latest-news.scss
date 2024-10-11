@@ -44,10 +44,10 @@
 }
 
 #va-2{
-  margin-top: 50px;
+  margin: 0px;
   display:flex;
   font-weight: 600;
-  align-items: center;
+  justify-content: center;
   font-size: 1.625rem;
   @include media(medium){
     display:none;
@@ -65,6 +65,9 @@
 }
 .no-bottom-padding{
   padding-bottom: 0px !important;
+}
+.no-top-padding{
+  padding-top: 0px !important;
 }
 .red-text{
   color: $dark_red;
@@ -130,14 +133,15 @@
   display: flex;
   align-items: center;
   margin-top: 30px;
-  padding: 30px;
+  padding-top: 30px;
+  //padding: 30px;
   border-top: 1px solid #ccc;
   font-size: 0.875rem;
 }
 
 .article-info,.news-title{
-  padding-left:30px;
-  padding-right: 30px;
+  //padding-left:30px;
+  //padding-right: 30px;
   p{
     margin-bottom: 25px;
   }
@@ -154,7 +158,6 @@
 }
 
 .article-1,.article-2{
-  margin-bottom: 30px;
   @include media(medium){
     width:50%; //Both articles share the same line at the medium media query
     margin-right: 15px;
@@ -230,4 +233,8 @@
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+
+.innards{
+  padding: 30px;
 }

@@ -144,11 +144,12 @@
 
 
   } 
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
 }
 
 #vow-1{
   display:none;
+  margin-top: -3px;
   @include media(medium){
     display: flex;
   }
@@ -157,9 +158,9 @@
   }
 }
 
-// .our-services{
-//   margin-top: -13px;
-// }
+.our-services{
+  margin-top: -11px;
+}
 
 #vow-2{
   display:flex;
@@ -175,6 +176,8 @@
 }
 
 .heading{
+  margin-top: 20px;
+  margin-bottom: 20px;
   @include flex($flex-dir: null,
                 $display: flex,
                 $flex-wrap: wrap,
@@ -204,4 +207,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.row-gap-remove{
+  margin-bottom: -20px; //The row gap isn't needed for the last grid object so this is added to remove the row gap's 20px space
 }

@@ -1,7 +1,7 @@
 <?php
     include "phpenv.php";
     function add_enquiry($name,$company,$telephone,$email,$message){
-        include "connection.php";
+        include "connection.php"; //Stops working here
         $sql ='INSERT INTO enquiries(your_name, company, telephone, email, your_message) VALUES (?,?,?,?,?)';
         try{
             $results= $db -> prepare($sql);
@@ -11,6 +11,7 @@
             $results->bindValue(4, $email, PDO::PARAM_STR);
             $results->bindValue(5, $message, PDO::PARAM_STR);
             $results->execute();
+            //echo "Should have worked";
         } catch(exception $e){
             echo "Error! Could not add query to database<br>";
             return false;

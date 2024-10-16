@@ -37,7 +37,7 @@
             echo "<p>match=$match</p>";
             echo "<p>telephone=$telephone</p>";
             if ($match === 0) {
-                $ready_for_submit = 0;
+                //$ready_for_submit = 0;
             }
             $email_regex = "/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/";
             $match2 = preg_match($email_regex,$email);
@@ -55,7 +55,7 @@
             echo "<p>$ready_for_submit</p>";
             if ($ready_for_submit === 1){
                 echo "<p>Added to database!</p>";
-                //add_enquiry($name,$company,$telephone,$email,$message);
+                add_enquiry($name,$company,$telephone,$email,$message);
                 //Triggers a function which uses SQL to add the variables to the database
                 $ready_for_submit = 0;
             }

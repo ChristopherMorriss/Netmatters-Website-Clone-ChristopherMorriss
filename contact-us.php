@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require "function.php" ?>
+<?php require "php/function.php" ?>
 <html lang="en">
     <head>  
         <meta charset="utf-8">

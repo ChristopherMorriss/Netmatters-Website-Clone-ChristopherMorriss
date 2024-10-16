@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require "function.php" ?>
+<?php require "php/function.php" ?>
 <html lang="en">
 
 <head>
@@ -78,5 +78,5 @@
             </div>
         </div>
     </form> 
-    <?php include "connection.php" ?>
+    <?php include "php/connection.php" ?>
 </body>

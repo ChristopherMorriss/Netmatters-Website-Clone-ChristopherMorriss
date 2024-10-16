@@ -1,7 +1,7 @@
 <?php
     include "phpenv.php";
     function add_enquiry($name,$company,$telephone,$email,$message){
-        include "connection.php"; //Stops working here
+        include "php/connection.php"; //Stops working here
         $sql ='INSERT INTO enquiries(your_name, company, telephone, email, your_message) VALUES (?,?,?,?,?)';
         try{
             $results= $db -> prepare($sql);
@@ -23,7 +23,7 @@
     // }
 
     function delete_enquiry(){
-        include "connection.php";
+        include "php/connection.php";
         $sql ='DELETE FROM enquiries';
         try{
             $results= $db -> prepare($sql);

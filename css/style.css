@@ -2538,6 +2538,7 @@ i {
     width: 100%;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
     padding: 14px 0 13px;
+    border-top: 1px solid #333645;
   }
 }
 @media (min-width: 994px) {
@@ -2629,14 +2630,17 @@ i {
 }
 .our-offices-bg .our-offices {
   color: #FFFFFF;
+  margin: 0px;
 }
 @media (min-width: 994px) {
   .our-offices-bg {
     background-color: #FFFFFF;
     padding: 0px;
+    padding-top: 50px;
   }
   .our-offices-bg .our-offices {
     color: #333645;
+    margin: 0px 0px 28px;
   }
 }
 

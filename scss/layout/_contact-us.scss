@@ -5,6 +5,7 @@
         width: 100%;
         box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
         padding: 14px 0 13px;
+        border-top: 1px solid #333645;
     }  
     @include media(large){
         display: inline-block;
@@ -53,6 +54,7 @@
         font-weight: 400;
         margin: 0 0 28px;
         color: $background_black;
+
     }
     .office-content{
         h2{
@@ -103,12 +105,15 @@
     padding: 24px 0;
     .our-offices{
         color:$white;
+        margin: 0px;
     }
     @include media(large){
         background-color: $white;
         padding: 0px;
+        padding-top: 50px;
         .our-offices{
             color:$background_black;
+            margin: 0px 0px 28px;
         }
     }
 }
@@ -361,3 +366,4 @@ em{
     border: 1px solid transparent;
     border-radius: 2px;
 }
+

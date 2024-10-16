@@ -6,7 +6,7 @@
             </div>
             <div class="right-header container">
                 <a href="#" class="btn btn-styles f-line blue-btn marg-left" id="support-clone"><span class="icon-mouse"></span>Support</a>
-                <a href="#" class="btn btn-styles f-line grey-btn marg-left" id="contact-clone"><span class="icon-send"></span>Contact</a>
+                <a href="contact-us.php" class="btn btn-styles f-line grey-btn marg-left" id="contact-clone"><span class="icon-send"></span>Contact</a>
                 <div class="search-container">
                     <input type="text" placeholder="Search..." id="search-normal-clone" class="marg-left">
                     <button class="grey-btn" id="search-icon-clone"><span class="icon-search"></span></button>

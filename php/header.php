@@ -5,7 +5,7 @@
         </div>
         <div class="right-header container">
             <a href="#" class="marg-left btn f-line blue-btn" id="support"><span class="icon-mouse"></span>Support</a>
-            <a href="#" class="marg-left btn f-line grey-btn" id="contact"><span class="icon-send"></span>Contact</a>
+            <a href="contact-us.php" class="marg-left btn f-line grey-btn" id="contact"><span class="icon-send"></span>Contact</a>
             <div class="search-container">
                 <input type="text" placeholder="Search..." id="search-normal" class="marg-left">
                 <button class="grey-btn" id="search-icon"><span class="icon-search marg-left"></span></button>

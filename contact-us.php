@@ -13,64 +13,7 @@
     </head>
 
     <body class="contact-page">
-    <?php 
-    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-        //Filters the contents of the input fields with the name 'user-name', 'message' etc to prevent SQL injection 
-        $name = trim(filter_input(INPUT_POST,'user-name',FILTER_SANITIZE_STRING)); 
-        $company = trim(filter_input(INPUT_POST,'user-company',FILTER_SANITIZE_STRING));
-        $telephone = trim(filter_input(INPUT_POST,'user-telephone',FILTER_SANITIZE_STRING));
-        $email = trim(filter_input(INPUT_POST,'user-email',FILTER_SANITIZE_STRING));
-        $message =trim(filter_input(INPUT_POST,'message',FILTER_SANITIZE_STRING));
-        if (empty($name) || empty($telephone) || empty($email) || empty($message)){
-            //If one of these input fields is empty, the error message is assigned 
-            //and is ready to be output in the relevant part of the HTML
-            $error_message = 'Please fill in the required field: name, telephone, email and message';
-            // echo "<p>name = $name<br></p>";
-            // echo "<p>telephone = $telephone<br></p>";
-            // echo "<p>email = $email<br></p>";
-            // echo "<p>message = $message<br></p>";
-        }
-        else{
-            $ready_for_submit = 1;
-            $phone_regex = "/^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/";
-            $match = preg_match($phone_regex,$telephone);
-            echo "<p>match=$match</p>";
-            echo "<p>telephone=$telephone</p>";
-            if ($match === 0) {
-                //$ready_for_submit = 0;
-            }
-            $email_regex = "/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/";
-            $match2 = preg_match($email_regex,$email);
-            echo "<p>match2=$match2</p>";
-            echo "<p>email=$email</p>";
-            if ($match === 0) {
-                $ready_for_submit = 0;
-            }
-            $message2 = strlen($message);
-            if ($message2 < 5){
-                echo "<p>too short</p>";
-                $ready_for_submit = 0;
-            }
-            echo "<p>length=$message2</p>";
-            echo "<p>$ready_for_submit</p>";
-            if ($ready_for_submit === 1){
-                echo "<p>Added to database!</p>";
-                add_enquiry($name,$company,$telephone,$email,$message);
-                //Triggers a function which uses SQL to add the variables to the database
-                $ready_for_submit = 0;
-            }
-
-            
-            echo "<p>name = $name<br></p>";
-            echo "<p>telephone = $telephone<br></p>";
-            echo "<p>email = $email<br></p>";
-            echo "<p>message = $message<br></p>";
-            //delete_enquiry(); Used to delete all rows from table
-
-            
-        }
-    }
-    ?>
+    <?php require "php/validation.php" ?>
         <div id="container">
             <header>
                 <?php include "php/header.php" ?>
@@ -177,7 +120,7 @@
                 }
                 ?>
 
-                <form id="form" method="post" action="contact-us.php"> 
+                <form id="form" method="post" action="contact-us.php" target="frame">  
                     <!-- onclick="return false" -->
                     <div>
                         <div class="flex-form">
@@ -235,6 +178,7 @@
                         </div>
                         <div class="enquiry-field">
                             <button class="btn" id="send-enquiry">Send Enquiry</button>
+                            <!-- type="button" -->
                             <small><span class="red-asterix"> *</span>Fields Required</small>
                         </div>
                     </div>
@@ -248,6 +192,9 @@
     <?php include "php/menu.php" ?>
     <?php include "php/footer.php" ?>
     </div>
+    <iframe name="frame"></iframe>
+    <!-- Iframe stops the page from reloading without preventing the default behaviour -->
+    <!-- Preventing the default behaviour stops the "X" on the error/success message from working -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/slick.js"></script> 
     <script src="js/main.js"></script>

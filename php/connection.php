@@ -36,13 +36,13 @@ catch(exception $e){
 // mysqli_close($conn);
 
 
-try {
-    $results = $db->query("SELECT telephone, company, email FROM enquiries");
-    //echo "Retrieved Results ";
- } catch (Exception $e) {
-    echo "Unable to retrieve results ";
-    exit;
- }
+// try {
+//     $results = $db->query("SELECT telephone, company, email FROM enquiries");
+//     //echo "Retrieved Results ";
+//  } catch (Exception $e) {
+//     echo "Unable to retrieve results ";
+//     exit;
+//  }
 // var_dump($results);
 // var_dump($results->fetchAll(PDO::FETCH_ASSOC));
 ?>

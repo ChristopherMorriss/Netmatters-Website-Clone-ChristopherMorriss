@@ -244,10 +244,6 @@ enquiry_btn.addEventListener('click',()=>{
   }
 });
 
-/* Tasks to complete:
-Add news articles to database
-
-*/
 
 //id,category,tag,image,title,description readtime null author authorimage,date
 // $("#form").submit(function(e) {
@@ -377,3 +373,30 @@ function deleteSuccessMessage(){
 function deleteCharactersMessage(){
   $('#characters').css('display','none');
 }
+
+customCheckbox = document.querySelector('#custom-checkbox');
+customCheckbox.addEventListener('click',function(){
+  //console.log('Should work...');
+  $('#custom-checkbox').toggleClass('active-checkbox');
+  console.log(customCheckbox.className);
+  if(customCheckbox.className == "checkbox button active-checkbox"){
+    console.log('Correct Value!');
+    $('.invisible-box').val('1');
+  }
+  else{
+    $('.invisible-box').val('0');
+  }
+})
+/* Tasks to complete:
+Add news articles to database
+Put php.env into the PHP folder
+Site can be set up using the provided repo and details- Presumably need to explain how the repo code works so the user can copy it
+and download it themselves
+Fix Office styling
+On iPad landscape and desktop add some padding between the page title and the breadcrumbs 
+On iPhone and iPad reduce the padding below the page title & reduce the padding below the cards
+Review the text area placeholder styling and add a bit more padding to the button
+Fix accordion's auto close when clicked on first time
+HTML Validation Pass (Error: The element header must not appear as a descendant of the header element.)
+Added marketing checkbox info to database table
+*/

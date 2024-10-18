@@ -103,7 +103,7 @@
                         <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
                     </div>
                     <div class="container out-of-hours">
-                        <h4 class="accordion">Out Of Hours IT Support<em></em></h4>
+                        <h4 class="accordion">Out Of Hours IT Support<span class="ticon-chevron-down"></span></h4>
                         <div class="hidden-accordion">
                             <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                             <p>
@@ -168,9 +168,14 @@
                         </div>
                         <div class="form-section">
                             <label class="flexbox-checkbox">
-                                <span class="checkbox button"></span>
-                                <span class="checkbox-msg">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="perma-underline">Privacy Policy</a>
-                                for more information on how we keep your data safe.</span>
+                                <span class="checkbox button" id="custom-checkbox">
+                                    <span class="ticon-checkmark" id="invisible-tick"></span>
+                                    <input name="checkbox" type="checkbox" class="invisible-box" value="1">
+                                </span>
+                                <span class="checkbox-msg">
+                                    Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="perma-underline">Privacy Policy</a>
+                                    for more information on how we keep your data safe.
+                                </span>
                             </label>
                         </div>
                         <div class="form-section">

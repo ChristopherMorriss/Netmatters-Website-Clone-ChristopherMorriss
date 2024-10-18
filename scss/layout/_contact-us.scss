@@ -370,3 +370,23 @@ em{
 iframe{
     display: none;
 }
+
+#invisible-tick{
+    display: none;
+}
+
+.active-checkbox{
+    background-color: $background_black;
+    #invisible-tick{
+        display: block;
+    }
+}
+
+#custom-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.invisible-box{
+    display: block;
+}

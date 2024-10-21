@@ -115,9 +115,10 @@
                         </div>
                     </div>
                 </div>
-                <?php if (isset($error_message)){
-                    //echo "<p class='message'>$error_message</p>";
-                }
+                <?php
+                    if (isset($error_message)){
+                        echo "<p class='message'>$error_message</p>";
+                    }
                 ?>
 
                 <form id="form" method="post" action="contact-us.php" target="frame">  
@@ -169,8 +170,8 @@
                         <div class="form-section">
                             <label class="flexbox-checkbox">
                                 <span class="checkbox button" id="custom-checkbox">
+                                    <input name="checkbox" type="checkbox" class="invisible-box" value="0">
                                     <span class="ticon-checkmark" id="invisible-tick"></span>
-                                    <input name="checkbox" type="checkbox" class="invisible-box" value="1">
                                 </span>
                                 <span class="checkbox-msg">
                                     Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="perma-underline">Privacy Policy</a>
@@ -183,7 +184,6 @@
                         </div>
                         <div class="enquiry-field">
                             <button class="btn" id="send-enquiry">Send Enquiry</button>
-                            <!-- type="button" -->
                             <small><span class="red-asterix"> *</span>Fields Required</small>
                         </div>
                     </div>

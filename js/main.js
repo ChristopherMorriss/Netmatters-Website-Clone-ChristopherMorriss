@@ -172,10 +172,9 @@ window.addEventListener('scroll', function() {
 accordion=document.querySelector('.accordion');
 if (accordion){
   accordion.addEventListener('click',()=>{
-    $('.hidden-accordion').toggleClass('active');
     $('.hidden-accordion').slideToggle("slow",function(){ //Gives the accordion its sliding animation
-  
     });
+    $('.hidden-accordion').toggleClass('active');
   });
 }
 
@@ -374,17 +373,24 @@ function deleteCharactersMessage(){
   $('#characters').css('display','none');
 }
 
+
 customCheckbox = document.querySelector('#custom-checkbox');
-customCheckbox.addEventListener('click',function(){
-  //console.log('Should work...');
+invisibleCheckbox = document.querySelector('.invisible-box');
+invisibleCheckbox.addEventListener('click', function(){
   $('#custom-checkbox').toggleClass('active-checkbox');
   console.log(customCheckbox.className);
-  if(customCheckbox.className == "checkbox button active-checkbox"){
-    console.log('Correct Value!');
-    $('.invisible-box').val('1');
+  if(customCheckbox.className === "checkbox button active-checkbox"){
+      $('.invisible-box').val('1');
+      $('#invisible-tick').css('display','flex');
+      $('#custom-checkbox').css('background-color','#333645');
+      time_one=1;
+ 
+    time_one=1;
   }
   else{
-    $('.invisible-box').val('0');
+      $('.invisible-box').val('0');
+      $('#invisible-tick').css('display','none');
+      $('#custom-checkbox').css('background-color','#FFFFFF');
   }
 })
 /* Tasks to complete:
@@ -396,7 +402,6 @@ Fix Office styling
 On iPad landscape and desktop add some padding between the page title and the breadcrumbs 
 On iPhone and iPad reduce the padding below the page title & reduce the padding below the cards
 Review the text area placeholder styling and add a bit more padding to the button
-Fix accordion's auto close when clicked on first time
 HTML Validation Pass (Error: The element header must not appear as a descendant of the header element.)
 Added marketing checkbox info to database table
 */

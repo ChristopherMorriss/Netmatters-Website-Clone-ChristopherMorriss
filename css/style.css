@@ -2934,9 +2934,6 @@ iframe {
   display: none;
 }
 
-.active-checkbox {
-  background-color: #333645;
-}
 .active-checkbox #invisible-tick {
   display: block;
 }
@@ -2944,10 +2941,11 @@ iframe {
 #custom-checkbox {
   display: flex;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 .invisible-box {
-  display: block;
+  display: none;
 }
 
 #fixed-consent {

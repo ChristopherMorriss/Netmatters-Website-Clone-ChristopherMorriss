@@ -376,7 +376,6 @@ iframe{
 }
 
 .active-checkbox{
-    background-color: $background_black;
     #invisible-tick{
         display: block;
     }
@@ -385,8 +384,9 @@ iframe{
 #custom-checkbox{
     display: flex;
     align-items: center;
+    background-color: $white;
 }
 
 .invisible-box{
-    display: block;
+    display: none;
 }

@@ -6,13 +6,14 @@
         $telephone = trim(filter_input(INPUT_POST,'user-telephone',FILTER_SANITIZE_FULL_SPECIAL_CHARS));
         $email = trim(filter_input(INPUT_POST,'user-email',FILTER_SANITIZE_FULL_SPECIAL_CHARS));
         $message =trim(filter_input(INPUT_POST,'message',FILTER_SANITIZE_FULL_SPECIAL_CHARS));
-        echo ($_POST['checkbox'] == "1");
-        if ($_POST['checkbox'] == "1") {
+        echo ($_POST['checkbox'] ?? '0');
+        if (!empty($_POST['checkbox'] ?? '0' == "1")) {
             echo "Checkbox is checked!";
+            $marketing = 1;
         } else {
             echo "Checkbox is not checked.";
+            $marketing = 0;
         }
-        $marketing = $_POST['checkbox'];
         //$marketing = mysqli_prepare($conn, "INSERT INTO checkbox_values (value) VALUES (?)");
         if (empty($name) || empty($telephone) || empty($email) || empty($message)){
             //If one of these input fields is empty, the error message is assigned 

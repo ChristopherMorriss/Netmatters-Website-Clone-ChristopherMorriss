@@ -8,7 +8,7 @@
         <link href="css/slick.css" rel="stylesheet">
         <link href="css/slick-theme.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <?php include "phpenv.php" ?>
+        <?php include "php/phpenv.php" ?>
     <title>Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters</title>
     </head>
 
@@ -40,11 +40,11 @@
                 <div class="infor">
                     <div class="office-address-1 office-box">
                         <div class="office-img">
-                            <a><img src="img/cambridge.jpg" alt="Cambridge Office"></a>
+                            <a href="#"><img src="img/cambridge.jpg" alt="Cambridge Office"></a>
                         </div>
                         <div class="office-content">
                             <h2>Cambridge Office</h2>
-                            <p>
+                            <p class="address">
                                 Unit 1.31,<br>
                                 St John's Innovation Centre,<br>
                                 Cowley Road, Milton,<br>
@@ -59,11 +59,11 @@
                 <div class="infor">
                     <div class="office-address-2 office-box">
                         <div class="office-img">
-                            <a><img src="img/wymondham.jpg" alt="Wymondham Office"></a>
+                            <a href="#"><img src="img/wymondham.jpg" alt="Wymondham Office"></a>
                         </div>
                         <div class="office-content">
                             <h2>Wymondham Office</h2>
-                            <p>
+                            <p class="address">
                                 Unit 15,<br>
                                 Penfold Drive,<br>
                                 Gateway 11 Business Park,<br>
@@ -75,25 +75,27 @@
                         </div>
                     </div> 
                 </div>
-                <div class="office-address-3 office-box">
-                    <div class="office-img">
-                        <a><img src="img/yarmouth-2.jpg" alt="Great Yarmouth Office"></a>
-                    </div>
-                    <div class="office-content">
-                        <h2>Great Yarmouth Office</h2>
-                        <p>
-                            Suite F23,<br>
-                            Beacon Innovation Centre,<br>
-                            Beacon Park, Gorleston,<br>
-                            Great Yarmouth, Norfolk,<br>
-                            NR31 7RA<br>
-                        </p>
-                        <div class="telephone"><a href="#">01493 60 32 04</a></div>
-                        <a href="#" class="btn purple-btn">View More</a>
+                <div class="infor">
+                    <div class="office-address-3 office-box">
+                        <div class="office-img">
+                            <a href="#"><img src="img/yarmouth-2.jpg" alt="Great Yarmouth Office"></a>
+                        </div>
+                        <div class="office-content">
+                            <h2>Great Yarmouth Office</h2>
+                            <p class="address">
+                                Suite F23,<br>
+                                Beacon Innovation Centre,<br>
+                                Beacon Park, Gorleston,<br>
+                                Great Yarmouth, Norfolk,<br>
+                                NR31 7RA<br>
+                            </p>
+                            <div class="telephone"><a href="#">01493 60 32 04</a></div>
+                            <a href="#" class="btn purple-btn">View More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        <div class="container section">
+        <div class="container section form_for_contact">
             <div class="flex-enquiry">
                 <div id="active-hours">
                     <div class="bold-contacts">
@@ -162,9 +164,7 @@
                         </div>
                         <div class="form-section">
                             <label for="message">Message<span class="red-asterix"> *</span></label>
-                            <textarea id="message" name="message" oninput="validInput()">
-                                Hi, I am interested in discussing a Our Offices solution,
-                                could you please give me a call or send an email?
+                            <textarea id="message" name="message" oninput="validInput()">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
                             </textarea>
                         </div>
                         <div class="form-section">
@@ -179,12 +179,12 @@
                                 </span>
                             </label>
                         </div>
-                        <div class="form-section">
+                        <div class="form-section captcha">
                             <span class="reCAPTCHA">This site is protected by reCAPTCHA and the Google <a href="#" class="perma-underline">Privacy Policy</a> and <a href="#" class="perma-underline">Terms of Service</a> apply.</span>
                         </div>
                         <div class="enquiry-field">
                             <button class="btn" id="send-enquiry">Send Enquiry</button>
-                            <small><span class="red-asterix"> *</span>Fields Required</small>
+                            <small class="required-note"><span class="red-asterix"> *</span> Fields Required</small>
                         </div>
                     </div>
                 </form>              

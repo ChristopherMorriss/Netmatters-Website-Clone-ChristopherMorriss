@@ -66,10 +66,10 @@
 }
 
 .office-addresses{
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
     p{
         color: $article-text;
-        margin: 0 0 10px;
+        margin: 0 0 10px !important;
     }
     @include media(large){
         display: flex;
@@ -85,7 +85,6 @@
         margin-bottom: 0px;
     }
     overflow: auto; //Removes the top corners of the office images
-    margin-right: 10px;
     border: 1px $border_grey solid;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
     border-radius: 20px;
@@ -120,6 +119,7 @@
 
 .office-content{
     padding: 30px;
+    margin-top: -20px;
     a.purple-btn{
         padding: 10px 30px;
     }
@@ -192,6 +192,11 @@ textarea{
     padding: 5px 15px;
     font-size: 14px;
     color: #555;
+    border-color: #cccccc;
+    background-color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     &:focus{
         border-color: #5bc0de;
         outline: 0;
@@ -202,6 +207,8 @@ textarea{
 #send-enquiry{
     color: $white;
     font-size: 1.063rem;
+    line-height: 35px !important;
+    padding: 5px 15px !important;
     @include hover($background_black,$send-enquiry);
 }
 
@@ -261,6 +268,7 @@ em{
 
 .bold-contacts{
     font-weight: 600;
+    margin-top: -15px;
 }
 
 .flex-form{
@@ -389,4 +397,32 @@ iframe{
 
 .invisible-box{
     display: none;
+}
+
+.address{
+    font-size: .8125rem;
+    line-height: 1.375rem !important;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.infor{
+    margin-top: 30px;
+    padding-right: 15px;
+}
+
+.form_for_contact{
+    padding-top: 0px;
+    @include media(x-large){
+        padding-top: 50px;
+    }
+}
+
+.captcha{
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.required-note{
+    font-size: 85%;
 }

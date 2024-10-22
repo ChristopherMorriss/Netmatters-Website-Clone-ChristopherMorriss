@@ -1,5 +1,5 @@
 <?php 
-    loadArticles();
+    loadArticles(); 
     $category=trim(filter_input(INPUT_POST,$careers,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
     echo $careers;
     echo "<p>$category</p>";

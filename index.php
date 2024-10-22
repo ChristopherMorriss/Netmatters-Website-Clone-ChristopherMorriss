@@ -252,23 +252,19 @@
             <div class="container">
                     <div class="article article-1">
                         <a href="#" class="article-link"></a>
-                        <a href="#" class="btn green-btn img-btn">Case Studies</a>
-                        <a href="#" class="img-news">
-                            <img src="img/ams-news.webp" alt="Abel's Moving Service">
-                        </a>
+                        <?php $careers="<a href='#' class='btn green-btn img-btn'>Case Studies</a>"; echo $careers;?>
+                        <?php $image="<a href='#' class='img-news'><img src='img/ams-news.webp' alt='Abel's Moving Service'></a>"; echo $image;?>
                         <div class="innards">
-                            <h3 class="green-text news-title">Moving Forward: Proactive Digital Marketing with Abel's Moving Service</h3>
-                            <div class="article-info">
+                        <?php $title="<h3 class='green-text news-title'>Moving Forward: Proactive Digital Marketing with Abel's Moving Service</h3>"; echo $title ?>
+                        <?php $description="<div class='article-info'>
                                 <p>Who are abels moving Service? Abel's Moving Services is a high-end removal company with a rich hist...</p>
-                                <a href="#" class="btn green-btn read-btn">Read More</a>
-                            </div>
+                                <a href='#' class='btn green-btn read-btn'>Read More</a>
+                            </div>"; echo $description ?>
                             <div class="article-footer">
-                                <div class="img-footer">
-                                    <img src="img/nm.png" alt="netmatters-logo">
-                                </div>
+                                <?php $authorImage="<div class='img-footer'><img src='img/nm.png' alt='netmatters-logo'></div>"; echo $authorImage;?>
                                 <div class ="text-footer">
-                                    <strong class="light-black">Posted By Netmatters</strong>
-                                    <br>22nd May 2024
+                                    <?php $author ="<strong class='light-black'>Posted By Netmatters</strong>"; echo $author ?>
+                                    <?php $date="<br>22nd May 2024"; echo $date; ?>
                                 </div>
                             </div>
                         </div>
@@ -288,13 +284,18 @@
                             <?php $authorImage="<div class='img-footer'><img src='img/bs.png' alt='netmatters-logo'></div>"; echo $authorImage;?>
                                 <div class ="text-footer">
                                     <?php $author ="<strong class='light-black'>Posted By Bethany Shakespeare</strong>"; echo $author ?>
-                                    <?php $date="<br>16th May 2024" ?>
+                                    <?php $date="<br>16th May 2024"; echo $date; ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="article article-3">
+                <div class="article article-2">
+                    <a href="#" class="article-link"></a>
+                    <?php loadArticles() ?>
+                </div>
+                
+                <!-- <div class="article article-3">
                     <a href="#" class="article-link"></a>
                     <a href="#" class="btn blue-btn img-btn" type="category-tag">Careers</a>
                     <a href="#" class="img-news">
@@ -319,7 +320,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
             </div>
         </div>

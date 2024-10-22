@@ -58,13 +58,42 @@
     function loadArticles(){
         include "php/connection.php";
         try {
-            $results = $db->query("category, article_image, title, author_description, author, author_image, article_date FROM news_article");
-            //echo "Retrieved Results ";
+            $tests = $db->query("SELECT category, article_image, title, author_description, author, author_image, article_date FROM news_article LIMIT 1");
+            foreach ($tests as $test){
+                echo $test['category'];
+                echo $test['article_image'];
+                echo "<div class='article-contents'>";
+                echo "<div class='innards'>";
+                echo $test['title'];
+                echo $test['author_description'];
+                echo "<div class='article-footer'>";
+                echo $test['author_image'];
+                echo "<div class ='text-footer'>";
+                echo $test['author'];
+                echo $test['article_date'];
+                echo "</div>";
+                echo "</div>";
+                echo "</div>";
+                echo "</div>";
+            }
         } catch (Exception $e) {
             echo "Unable to retrieve results ";
             exit;
         }
-        var_dump($results);
-        var_dump($results->fetchAll(PDO::FETCH_ASSOC));
+        
+
+        // var_dump($results);
+        // var_dump($results->fetchAll(PDO::FETCH_ASSOC));
+    }
+    function deleteArticles(){
+        include "php/connection.php";
+        $sql ='DELETE FROM news_article';
+        try{
+            $results= $db -> prepare($sql);
+            $results->execute();
+        } catch(exception $e){
+            echo "Error! Could not add query to database<br>";
+            return false;
+        }
     }
 ?>

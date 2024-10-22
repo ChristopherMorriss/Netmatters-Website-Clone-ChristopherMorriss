@@ -8,6 +8,7 @@
         <link href="css/slick-theme.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <?php include "php/phpenv.php" ?>
+        <?php include "php/function.php" ?>
     <title>Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters</title>
     </head>
 
@@ -274,24 +275,20 @@
                     </div>
                 <div class="article article-2">
                     <a href="#" class="article-link"></a>
-                    <a href="#" class="btn dred-btn img-btn">Careers</a>
-                    <a href="#" class="img-news">
-                        <img src="img/jtt-news.webp" alt="Junior Telecoms Technician">
-                    </a>
+                    <?php $careers="<a href='#' class='btn dred-btn img-btn'>Careers</a>"; echo $careers;?>
+                    <?php $image="<a href='#' class='img-news'><img src='img/jtt-news.webp' alt='Junior Telecoms Technician'></a>"; echo $image;?>
                     <div class="article-contents">
                         <div class="innards">
-                            <h3 class="red-text news-title">Junior Telecoms Technician</h3>
-                            <div class="article-info">
+                            <?php $title="<h3 class='red-text news-title'>Junior Telecoms Technician</h3>"; echo $title ?>
+                            <?php $description="<div class='article-info'>
                                 <p>Salary Range £25000 - £28000 per annum Hours 40 hours per week, Monday - Friday Location Wymondham...</p>
-                                <a href="#" class="btn dred-btn read-btn">Read More</a>
-                            </div>
+                                <a href='#' class='btn dred-btn read-btn'>Read More</a>
+                            </div>"; echo $description ?>
                             <div class="article-footer">
-                                <div class="img-footer">
-                                    <img src="img/bs.png" alt="netmatters-logo">
-                                </div>
+                            <?php $authorImage="<div class='img-footer'><img src='img/bs.png' alt='netmatters-logo'></div>"; echo $authorImage;?>
                                 <div class ="text-footer">
-                                    <strong class="light-black">Posted By Bethany Shakespeare</strong>
-                                    <br>16th May 2024
+                                    <?php $author ="<strong class='light-black'>Posted By Bethany Shakespeare</strong>"; echo $author ?>
+                                    <?php $date="<br>16th May 2024" ?>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +296,7 @@
                 </div>
                 <div class="article article-3">
                     <a href="#" class="article-link"></a>
-                    <a href="#" class="btn blue-btn img-btn">Careers</a>
+                    <a href="#" class="btn blue-btn img-btn" type="category-tag">Careers</a>
                     <a href="#" class="img-news">
                         <img src="img/slt-news.webp" alt="2nd Line Technician">
                     </a>
@@ -579,7 +576,9 @@
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/slick.js"></script> 
         <script src="js/main.js"></script>
+        <?php require "php/validation.php" ?>
         </body>
+        
     </html>
     <!-- 
     Feedback points remaining:

@@ -34,4 +34,37 @@
             return false;
         }
     }
+
+    function storeArticle($careers,$image,$title,$description,$author,$authorImage,$date){
+        include "php/connection.php";
+        $sql ='INSERT INTO news_article(category, article_image, title, author_description, author, author_image, article_date) VALUES (?,?,?,?,?,?,?)';
+        try{
+            $results= $db -> prepare($sql);
+            $results->bindValue(1, $careers, PDO::PARAM_STR);
+            $results->bindValue(2, $image, PDO::PARAM_STR);
+            $results->bindValue(3, $title, PDO::PARAM_STR);
+            $results->bindValue(4, $description, PDO::PARAM_STR);
+            $results->bindValue(5, $author, PDO::PARAM_STR);
+            $results->bindValue(6, $authorImage, PDO::PARAM_STR);
+            $results->bindValue(7, $date, PDO::PARAM_STR);
+            $results->execute();
+            echo "Should have worked";
+        } catch(exception $e){
+            echo "Error! Could not add query to database<br>";
+            return false;
+        }
+    }
+
+    function loadArticles(){
+        include "php/connection.php";
+        try {
+            $results = $db->query("category, article_image, title, author_description, author, author_image, article_date FROM news_article");
+            //echo "Retrieved Results ";
+        } catch (Exception $e) {
+            echo "Unable to retrieve results ";
+            exit;
+        }
+        var_dump($results);
+        var_dump($results->fetchAll(PDO::FETCH_ASSOC));
+    }
 ?>

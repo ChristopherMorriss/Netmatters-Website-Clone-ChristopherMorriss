@@ -40,7 +40,7 @@
                 <div class="infor">
                     <div class="office-address-1 office-box">
                         <div class="office-img">
-                            <a href="#"><img src="img/cambridge.jpg" alt="Cambridge Office"></a>
+                            <a href='#'><img src='img/cambridge.jpg' alt='Cambridge Office'></a>
                         </div>
                         <div class="office-content">
                             <h2>Cambridge Office</h2>

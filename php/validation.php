@@ -1,4 +1,30 @@
 <?php 
+    loadArticles();
+    $category=trim(filter_input(INPUT_POST,$careers,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    echo $careers;
+    echo "<p>$category</p>";
+    $images=trim(filter_input(INPUT_POST,$image,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    echo $image;
+    echo "<p>$images</p>";
+    $titles=trim(filter_input(INPUT_POST,$title,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    echo $title;
+    echo "<p>$titles</p>";
+    $descriptions=trim(filter_input(INPUT_POST,$description,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    echo $description;
+    echo "<p>$descriptions</p>";
+    // $readTimes=trim(filter_input(INPUT_POST,$readTime,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    // echo $readTime;
+    // echo "<p>$readTimes</p>";
+    $authors=trim(filter_input(INPUT_POST,$author,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    echo $author;
+    echo "<p>$authors</p>";
+    $authorImages=trim(filter_input(INPUT_POST,$authorImage,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    echo $authorImage;
+    echo "<p>$authorImages</p>";
+    $dates=trim(filter_input(INPUT_POST,$date,FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+    echo $date;
+    echo "<p>$dates</p>";
+    storeArticle($careers,$image,$title,$description,$author,$authorImage,$date);
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         //Filters the contents of the input fields with the name 'user-name', 'message' etc to prevent SQL injection 
         $name = trim(filter_input(INPUT_POST,'user-name',FILTER_SANITIZE_FULL_SPECIAL_CHARS)); //FILTER_SANITIZE_STRING used but is deprecated

@@ -135,13 +135,15 @@ let lastScrollTop = 0;
 let up_not_down = 0;
 
 window.addEventListener('scroll', function() {
-    //Code that triggers when scrolling upwards
+    //Code that triggers when scrolling upwards. Used decide whether to show/hide the sticky header
     let currentScrollTop = window.scrollY || document.documentElement.scrollTop;
     if (currentScrollTop < lastScrollTop) {
         //console.log('Scrolling up');
-        up_not_down = 1;
+        up_not_down = 1; //Set to 1 to prevent the slideOutUp class from being readded by the next event listener
         $('.sticky-header').css('display','block');
-        $('.sticky-header').removeClass('slideOutUp');
+        $('.sticky-header').removeClass('slideOutUp'); 
+        //Removes the slideUp animation, adds sticky header to screen via slideOutDown
+        //since the slideOutDown is always a class attached to the sticky header, that animation will be triggered instead
     }
     else{
       up_not_down =0;
@@ -152,7 +154,7 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', (event) => {
   if (up_not_down != 1){
-    $('.sticky-header').addClass('slideOutUp'); 
+    $('.sticky-header').addClass('slideOutUp'); //Takes priority over the permanent class SlideOutDown, removes header from screen
   }
   up_not_down = 0;
 });
@@ -170,11 +172,12 @@ window.addEventListener('scroll', function() {
 
 
 accordion=document.querySelector('.accordion');
-if (accordion){
+if (accordion){//This checks that the selector is not null before trying to listen for events (added to prevent console error)
+  //Since this event is exclusive to the contact-us.php page, it would cause a console error in index.php
   accordion.addEventListener('click',()=>{
     $('.hidden-accordion').slideToggle("slow",function(){ //Gives the accordion its sliding animation
     });
-    $('.hidden-accordion').toggleClass('active');
+    $('.hidden-accordion').toggleClass('active'); //The active class is used to show the accordion's content
   });
 }
 
@@ -184,18 +187,18 @@ enquiry_btn=document.querySelector('#send-enquiry');
 if (enquiry_btn){
   enquiry_btn.addEventListener('click',()=>{
     enquiry_pressed=1;
-    no_errors=1;
-    let email = $('#email').val();
+    no_errors=1; //Starts at one meaning it is ready for PHP validation but gets set to 0 when the user enters an invalid into an input field
+    let email = $('#email').val(); //Assigns the input from submission form's email input field to the JS variable "emails"
     let telephone = $('#telephone').val();
     let name1 = $('#name').val();
     let message = $('#message').val();
-    if (email != ""){
+    if (email != ""){ //Confirms that the user has entered anything into the field before attempting to validate
       let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
       let email1 = $('#email').val(); //Takes an input from the text box with the id 'email'
       let test1= regex.test(email1); //Checks if the email entered follows one of the regular expressions specified above
       console.log(test1);
       if (test1 != true){
-        $('#email').addClass('error');
+        $('#email').addClass('error'); //The error class gives the input field a red border to tell the user there's an issue with the input
         no_errors=0;
       }
     }
@@ -379,7 +382,7 @@ function deleteCharactersMessage(){
 
 customCheckbox = document.querySelector('#custom-checkbox');
 invisibleCheckbox = document.querySelector('.invisible-box');
-if (invisibleCheckbox){
+if (invisibleCheckbox){ 
   invisibleCheckbox.addEventListener('click', function(){
     $('#custom-checkbox').toggleClass('active-checkbox');
     console.log(customCheckbox.className);
@@ -400,7 +403,6 @@ if (invisibleCheckbox){
 }
 
 /* Tasks to complete:
-Fix JS Console errors
 Site can be set up using the provided repo and details- Presumably need to explain how the repo code works so the user can copy it
 and download it themselves
 Test that everything works correctly in CPanel

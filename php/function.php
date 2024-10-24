@@ -59,28 +59,14 @@
         include "php/connection.php";
         try { //Currently generates each article three times
             $tests = $db->query("SELECT category, article_image, title, author_description, author, author_image, article_date FROM news_article ORDER BY article_date DESC LIMIT 3");
-            $test = $tests->fetch(PDO::FETCH_ASSOC);
-            // foreach ($tests as $test){
-            //     echo $test['category'];
-            //     echo $test['article_image'];
-            //     echo "<div class='article-contents'>";
-            //     echo "<div class='innards'>";
-            //     echo $test['title'];
-            //     echo $test['author_description'];
-            //     echo "<div class='article-footer'>";
-            //     echo $test['author_image'];
-            //     echo "<div class ='text-footer'>";
-            //     echo $test['author'];
-            //     echo $test['article_date'];
-            //     echo "</div>";
-            //     echo "</div>";
-            //     echo "</div>";
-            //     echo "</div>";
-            // }
-            for ($trial = 0; $trial < 3; $trial++) {
+            //$test = $tests->fetch(PDO::FETCH_ASSOC); //Array only shows a single news article
+            //var_dump($test);
+            
+            foreach ($tests as $test){
+                echo "<div class='article article-1'>";
+                echo "<a href='#' class='article-link'></a>";
                 echo $test['category'];
                 echo $test['article_image'];
-                echo "<div class='article-contents'>";
                 echo "<div class='innards'>";
                 echo $test['title'];
                 echo $test['author_description'];

@@ -250,18 +250,8 @@
         </div>
         <div class="news section no-top-padding">
             <div class="container">
-                <div class="article article-1">
-                    <a href="#" class="article-link"></a>
-                    <?php loadArticles() ?>
-                </div>
-                <div class="article article-2">
-                    <a href="#" class="article-link"></a>
-                    <?php loadArticles() ?>
-                </div>
-                <div class="article article-3">
-                    <a href="#" class="article-link"></a>
-                    <?php loadArticles() ?>
-                </div>
+            <?php loadArticles() ?>
+                
                 
             </div>
         </div>
@@ -511,14 +501,14 @@
         </div>
         <?php include "php/menu.php" ?>
         <?php include "php/footer.php" ?>
-
+        <?php require "php/validation.php" ?>
 
 
 
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/slick.js"></script> 
         <script src="js/main.js"></script>
-        <?php require "php/validation.php" ?>
+        
         </body>
         
     </html>

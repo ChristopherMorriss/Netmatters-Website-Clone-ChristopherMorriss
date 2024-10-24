@@ -181,67 +181,70 @@ if (accordion){
 
 
 enquiry_btn=document.querySelector('#send-enquiry');
-enquiry_btn.addEventListener('click',()=>{
-  enquiry_pressed=1;
-  no_errors=1;
-  let email = $('#email').val();
-  let telephone = $('#telephone').val();
-  let name1 = $('#name').val();
-  let message = $('#message').val();
-  if (email != ""){
-    let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
-    let email1 = $('#email').val(); //Takes an input from the text box with the id 'email'
-    let test1= regex.test(email1); //Checks if the email entered follows one of the regular expressions specified above
-    console.log(test1);
-    if (test1 != true){
+if (enquiry_btn){
+  enquiry_btn.addEventListener('click',()=>{
+    enquiry_pressed=1;
+    no_errors=1;
+    let email = $('#email').val();
+    let telephone = $('#telephone').val();
+    let name1 = $('#name').val();
+    let message = $('#message').val();
+    if (email != ""){
+      let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
+      let email1 = $('#email').val(); //Takes an input from the text box with the id 'email'
+      let test1= regex.test(email1); //Checks if the email entered follows one of the regular expressions specified above
+      console.log(test1);
+      if (test1 != true){
+        $('#email').addClass('error');
+        no_errors=0;
+      }
+    }
+    else{
       $('#email').addClass('error');
       no_errors=0;
     }
-  }
-  else{
-    $('#email').addClass('error');
-    no_errors=0;
-  }
-  if(telephone != ""){
-    let phone_regex = new RegExp(/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/);
-    let telephone1 = $('#telephone').val(); //Takes an input from the text box with the id 'email'
-    let test2= phone_regex.test(telephone1); //Checks if the email entered follows one of the regular expressions specified above
-    console.log(test2);
-    if (test2 === true){
-      $('#telephone').removeClass('error');
-      $('#tele-format').css('display','none');
+    if(telephone != ""){
+      let phone_regex = new RegExp(/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/);
+      let telephone1 = $('#telephone').val(); //Takes an input from the text box with the id 'email'
+      let test2= phone_regex.test(telephone1); //Checks if the email entered follows one of the regular expressions specified above
+      console.log(test2);
+      if (test2 === true){
+        $('#telephone').removeClass('error');
+        $('#tele-format').css('display','none');
+      }
+      else{
+        $('#telephone').addClass('error');
+        $('#tele-format').css('display','block');
+        no_errors=0;
+      }
+      
     }
     else{
       $('#telephone').addClass('error');
-      $('#tele-format').css('display','block');
+      no_errors=0;
+      
+    }
+    if(name1 === ""){
+      $('#name').addClass('error');
       no_errors=0;
     }
-    
-  }
-  else{
-    $('#telephone').addClass('error');
-    no_errors=0;
-    
-  }
-  if(name1 === ""){
-    $('#name').addClass('error');
-    no_errors=0;
-  }
-  console.log(message.length);
-  if(message.length < 5){
-    $('#message').addClass('error');
-    $('#characters').css('display','block');
-    no_errors=0;
-  }
-  else{
-    $('#message').removeClass('error');
-    $('#characters').css('display','none');
-  }
-  if (no_errors === 1){
-    $('#sent-msg').css('display','block');
+    console.log(message.length);
+    if(message.length < 5){
+      $('#message').addClass('error');
+      $('#characters').css('display','block');
+      no_errors=0;
+    }
+    else{
+      $('#message').removeClass('error');
+      $('#characters').css('display','none');
+    }
+    if (no_errors === 1){
+      $('#sent-msg').css('display','block');
+  
+    }
+  });
+}
 
-  }
-});
 
 
 //id,category,tag,image,title,description readtime null author authorimage,date
@@ -376,25 +379,28 @@ function deleteCharactersMessage(){
 
 customCheckbox = document.querySelector('#custom-checkbox');
 invisibleCheckbox = document.querySelector('.invisible-box');
-invisibleCheckbox.addEventListener('click', function(){
-  $('#custom-checkbox').toggleClass('active-checkbox');
-  console.log(customCheckbox.className);
-  if(customCheckbox.className === "checkbox button active-checkbox"){
-      $('.invisible-box').val('1');
-      $('#invisible-tick').css('display','flex');
-      $('#custom-checkbox').css('background-color','#333645');
+if (invisibleCheckbox){
+  invisibleCheckbox.addEventListener('click', function(){
+    $('#custom-checkbox').toggleClass('active-checkbox');
+    console.log(customCheckbox.className);
+    if(customCheckbox.className === "checkbox button active-checkbox"){
+        $('.invisible-box').val('1');
+        $('#invisible-tick').css('display','flex');
+        $('#custom-checkbox').css('background-color','#333645');
+        time_one=1;
+   
       time_one=1;
- 
-    time_one=1;
-  }
-  else{
-      $('.invisible-box').val('0');
-      $('#invisible-tick').css('display','none');
-      $('#custom-checkbox').css('background-color','#FFFFFF');
-  }
-})
+    }
+    else{
+        $('.invisible-box').val('0');
+        $('#invisible-tick').css('display','none');
+        $('#custom-checkbox').css('background-color','#FFFFFF');
+    }
+  })
+}
+
 /* Tasks to complete:
-Add news articles to database
+Fix JS Console errors
 Site can be set up using the provided repo and details- Presumably need to explain how the repo code works so the user can copy it
 and download it themselves
 Test that everything works correctly in CPanel

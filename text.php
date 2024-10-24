@@ -81,24 +81,24 @@
     <?php include "php/connection.php" ?>
 </body>
 <div class="article article-1">
-                    <a href="#" class="article-link"></a>
-                    <?php $careers="<a href='#' class='btn green-btn img-btn'>Case Studies</a>"; echo $careers;?>
-                    <?php $image="<a href='#' class='img-news'><img src='img/ams-news.webp' alt='Abel's Moving Service'></a>"; echo $image;?>
-                    <div class="innards">
-                    <?php $title="<h3 class='green-text news-title'>Moving Forward: Proactive Digital Marketing with Abel's Moving Service</h3>"; echo $title ?>
-                    <?php $description="<div class='article-info'>
-                            <p>Who are abels moving Service? Abel's Moving Services is a high-end removal company with a rich hist...</p>
-                            <a href='#' class='btn green-btn read-btn'>Read More</a>
-                        </div>"; echo $description ?>
-                        <div class="article-footer">
-                            <?php $authorImage="<div class='img-footer'><img src='img/nm.png' alt='netmatters-logo'></div>"; echo $authorImage;?>
-                            <div class ="text-footer">
-                                <?php $author ="<strong class='light-black'>Posted By Netmatters</strong>"; echo $author ?>
-                                <?php $date="<br>22nd May 2024"; echo $date; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <a href="#" class="article-link"></a>
+    <?php $careers="<a href='#' class='btn green-btn img-btn'>Case Studies</a>"; echo $careers;?>
+    <?php $image="<a href='#' class='img-news'><img src='img/ams-news.webp' alt='Abel's Moving Service'></a>"; echo $image;?>
+    <div class="innards">
+    <?php $title="<h3 class='green-text news-title'>Moving Forward: Proactive Digital Marketing with Abel's Moving Service</h3>"; echo $title ?>
+    <?php $description="<div class='article-info'>
+            <p>Who are abels moving Service? Abel's Moving Services is a high-end removal company with a rich hist...</p>
+            <a href='#' class='btn green-btn read-btn'>Read More</a>
+        </div>"; echo $description ?>
+        <div class="article-footer">
+            <?php $authorImage="<div class='img-footer'><img src='img/nm.png' alt='netmatters-logo'></div>"; echo $authorImage;?>
+            <div class ="text-footer">
+                <?php $author ="<strong class='light-black'>Posted By Netmatters</strong>"; echo $author ?>
+                <?php $date="<br>22nd May 2024"; echo $date; ?>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="article article-2">
     <a href="#" class="article-link"></a>
     <?php $careers="<a href='#' class='btn dred-btn img-btn'>Careers</a>"; echo $careers;?>

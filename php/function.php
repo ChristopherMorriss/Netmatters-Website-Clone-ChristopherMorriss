@@ -5,14 +5,14 @@
         $sql ='INSERT INTO enquiries(your_name, company, telephone, email, your_message, marketing) VALUES (?,?,?,?,?,?)';
         try{
             $results= $db -> prepare($sql);
-            $results->bindValue(1, $name, PDO::PARAM_STR);
-            $results->bindValue(2, $company, PDO::PARAM_STR);
-            $results->bindValue(3, $telephone, PDO::PARAM_STR);
-            $results->bindValue(4, $email, PDO::PARAM_STR);
-            $results->bindValue(5, $message, PDO::PARAM_STR);
-            $results->bindValue(6, $marketing, PDO::PARAM_INT);
-            $results->execute();
-            //echo "Should have worked";
+            $results->bind_param('sssssi', $name, $company, $telephone, $email, $message, $marketing); //mysqli equivalent of PDO's bindValue
+            // $results->bindValue(1, $name, PDO::PARAM_STR);
+            // $results->bindValue(2, $company, PDO::PARAM_STR);
+            // $results->bindValue(3, $telephone, PDO::PARAM_STR);
+            // $results->bindValue(4, $email, PDO::PARAM_STR);
+            // $results->bindValue(5, $message, PDO::PARAM_STR);
+            // $results->bindValue(6, $marketing, PDO::PARAM_INT);
+            //Code hashed out above this doesn't work outside of localhost
         } catch(exception $e){
             echo "Error! Could not add query to database<br>";
             return false;

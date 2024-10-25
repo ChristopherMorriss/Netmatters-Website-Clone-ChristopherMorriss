@@ -405,5 +405,4 @@ if (invisibleCheckbox){
 /* Tasks to complete:
 Site can be set up using the provided repo and details- Presumably need to explain how the repo code works so the user can copy it
 and download it themselves
-Test that everything works correctly in CPanel
 */

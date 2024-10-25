@@ -196,7 +196,7 @@ if (enquiry_btn){
       let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
       let email1 = $('#email').val(); //Takes an input from the text box with the id 'email'
       let test1= regex.test(email1); //Checks if the email entered follows one of the regular expressions specified above
-      console.log(test1);
+      //console.log(test1);
       if (test1 != true){
         $('#email').addClass('error'); //The error class gives the input field a red border to tell the user there's an issue with the input
         no_errors=0;
@@ -210,7 +210,7 @@ if (enquiry_btn){
       let phone_regex = new RegExp(/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/);
       let telephone1 = $('#telephone').val(); //Takes an input from the text box with the id 'email'
       let test2= phone_regex.test(telephone1); //Checks if the email entered follows one of the regular expressions specified above
-      console.log(test2);
+      //console.log(test2);
       if (test2 === true){
         $('#telephone').removeClass('error');
         $('#tele-format').css('display','none');
@@ -231,7 +231,7 @@ if (enquiry_btn){
       $('#name').addClass('error');
       no_errors=0;
     }
-    console.log(message.length);
+    //console.log(message.length);
     if(message.length < 5){
       $('#message').addClass('error');
       $('#characters').css('display','block');
@@ -327,7 +327,7 @@ function validInput(){
       let regex = new RegExp(/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/);
       let email1 = $('#email').val(); //Takes an input from the text box with the id 'email'
       let test1= regex.test(email1); //Checks if the email entered follows one of the regular expressions specified above
-      console.log(test1);
+      //console.log(test1);
       if (test1 != true){
         $('#email').addClass('error');
 
@@ -385,7 +385,7 @@ invisibleCheckbox = document.querySelector('.invisible-box');
 if (invisibleCheckbox){ 
   invisibleCheckbox.addEventListener('click', function(){
     $('#custom-checkbox').toggleClass('active-checkbox');
-    console.log(customCheckbox.className);
+    //console.log(customCheckbox.className);
     if(customCheckbox.className === "checkbox button active-checkbox"){
         $('.invisible-box').val('1');
         $('#invisible-tick').css('display','flex');
